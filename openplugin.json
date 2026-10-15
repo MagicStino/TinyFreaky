@@ -15,5 +15,17 @@
     "force",
     "armv7"
   ],
-  "packages": []
+  "packages": [
+    {
+      "version": "0.1.0",
+      "arch": "armv7",
+      "layout": "portable",
+      "devices": [
+        "force"
+      ],
+      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.1.0/Microfreeze-0.1.0-mpc-armv7.zip",
+      "size": 63257,
+      "sha256": "74f3944d4caa4e6eba4c0629a6a2c3ea8b0945d329ca1ff5b14c4f782663463a"
+    }
+  ]
 }
