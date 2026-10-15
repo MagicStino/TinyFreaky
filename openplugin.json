@@ -1,34 +1,33 @@
 {
   "schema": "openplugin.community/1",
-  "id": "microfreeze",
-  "name": "Microfreeze",
+  "id": "tinyfreaky",
+  "name": "Tinyfreaky",
   "author": "MagicStino",
   "repo": "MagicStino/microfreeze",
-  "summary": "Experimental independent synth: 16 oscillator prototypes, four-voice paraphony and a 5x7 modulation matrix. Original sound equivalence and full preset compatibility are unverified.",
+  "summary": "Experimental first release: hardware-style interface, 448 factory entries (334 partial translations; 114 unavailable and muted). Original sound equivalence and Force hardware playback unverified.",
   "kind": "instrument",
   "category": "synth",
   "license": "MIT",
   "tags": [
     "synth",
-    "cleanroom",
     "experimental",
     "force",
     "armv7"
   ],
   "packages": [
     {
-      "version": "0.1.0",
+      "version": "0.2.0-preview.1",
       "arch": "armv7",
       "layout": "portable",
       "devices": [
         "force"
       ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.1.0/Microfreeze-0.1.0-mpc-armv7.zip",
-      "size": 63257,
-      "sha256": "74f3944d4caa4e6eba4c0629a6a2c3ea8b0945d329ca1ff5b14c4f782663463a"
+      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.2.0-preview.1/Tinyfreaky-0.2.0-preview.1-mpc-armv7.zip",
+      "size": 12101686,
+      "sha256": "de1a0fc0497e56b898fdf2d29be66f0f2b08a698ebe8f0872484150c16436144"
     }
   ],
   "images": [
-    "https://raw.githubusercontent.com/MagicStino/microfreeze/main/assets/microfreeze-cover.png"
+    "https://github.com/MagicStino/microfreeze/releases/download/v0.2.0-preview.1/tinyfreaky-panel.png"
   ]
 }
