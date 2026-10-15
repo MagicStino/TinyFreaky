@@ -1782,5 +1782,14 @@
     "default": 0,
     "display": "int",
     "display_only": true
+  },
+  {
+    "key": "screen_mascot",
+    "name": "screen_mascot",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
   }
 ]

@@ -36,5 +36,9 @@ int main(void){
  silence(s);for(int i=0;i<32;i++)assert(s->visual[i]==8);assert(s->visual[34]==0);
  // Aliasing regression: exact multiples of the 10Hz refresh must show a full LFO sweep.
  for(int shape=0;shape<4;shape++)for(int hz=10;hz<=40;hz+=10){preset(s,0);silence(s);s->p[16]=shape;s->p[17]=hz;s->p[18]=0;render(s,audio,128);for(int b=1;b<35;b++)render(s,audio,128);assert(s->visual[33]==136);}
+ // Velocity-reactive mascot is bounded, stronger for hard notes, silent when idle.
+ int amplitudes[2];for(int hard=0;hard<2;hard++){preset(s,0);silence(s);noteon(s,60,hard?127:16);for(int b=0;b<35;b++)render(s,audio,128);amplitudes[hard]=abs((int)s->visual[35]-8);assert(s->visual[35]<=16);}
+ assert(amplitudes[1]>amplitudes[0]);for(int b=0;b<1200;b++)render(s,audio,128);assert(s->visual[35]==8);
+ silence(s);assert(s->visual[35]==8);char pose[16];assert(get_param(s,"screen_mascot",pose,sizeof pose)>0&&atoi(pose)==8);
  destroy(s);puts("quality: 16 engines x 3 filter modes x 4 extremes, eight-voice allocation/stealing/release, mono compatibility, polyphonic headroom, DC rejection and real detuning PASS");
 }

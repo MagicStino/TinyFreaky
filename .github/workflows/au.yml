@@ -2,7 +2,7 @@ name: macOS Audio Unit
 on:
   push:
     branches: [tinyfreaky]
-    paths: ['desktop/au/**', '.github/workflows/au.yml', 'tools/package-au.py']
+    paths: ['src/**', 'desktop/**', '.github/workflows/au.yml', 'tools/package-au.py']
   workflow_dispatch:
 permissions:
   contents: read
@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir -p "$HOME/Library/Audio/Plug-Ins/Components"
           ditto desktop/build-au/AU/Tinyfreaky.component "$HOME/Library/Audio/Plug-Ins/Components/Tinyfreaky.component"
-          lipo -verify_arch arm64 x86_64 desktop/build-au/AU/Tinyfreaky.component/Contents/MacOS/Tinyfreaky
+          lipo desktop/build-au/AU/Tinyfreaky.component/Contents/MacOS/Tinyfreaky -verify_arch arm64 x86_64
           codesign --verify --deep --strict desktop/build-au/AU/Tinyfreaky.component
           killall -9 AudioComponentRegistrar || true
           auval -v aumu TyFk MgSt | tee auval.log
@@ -38,7 +38,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Tinyfreaky-macOS-AU
-          path: dist/Tinyfreaky-0.3.4-macOS-AU.zip
+          path: dist/Tinyfreaky-0.3.5-macOS-AU.zip
   publish:
     needs: build
     runs-on: ubuntu-latest
@@ -53,4 +53,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
-        run: gh release upload v0.3.4 package/*.zip --clobber
+        run: |
+          gh release view v0.3.5 || gh release create v0.3.5 --target "${{ github.sha }}" --title "Tinyfreaky 0.3.5" --notes "MagicStino branding, subtle velocity-reactive white line mascot and Mac Audio Unit. Eight voices; original preset and missing-engine limitations remain."
+          gh release upload v0.3.5 package/*.zip --clobber

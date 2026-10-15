@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: MIT
 #include "plugin.h"
+#include "vstgui4/vstgui/lib/cbitmap.h"
+#include "public.sdk/source/common/openurl.h"
 #include "vstgui4/vstgui/plugin-bindings/vst3editor.h"
 #include "vstgui4/vstgui/lib/cdrawcontext.h"
 #include "vstgui4/vstgui/lib/cfont.h"
@@ -31,8 +33,13 @@ static const char* labels[9][8]={
  {"MODE","RISE","FALL","HOLD","AMOUNT","RISE CURVE","FALL CURVE","TEMPO"},
  {"SHAPE","RATE","SYNC","DIVISION","HOLD","BEND RANGE","OCTAVE","PANIC"},
  {},{"ASSIGN 1","ASSIGN 2","ASSIGN 3"},{"ARP ON","ARP MODE","ARP RATE","SWING","SEQ PLAY","SEQ RATE","LENGTH","TEMPO"},{"ARP OCTAVES","ARP GATE","CLOCK","SEQ GATE","VELOCITY","TRANSPOSE","RESTART","HOLD"},{}};
+struct MascotLine {int frame;double x1,y1,x2,y2;};
+static const MascotLine mascotLines[]={
+#include "mascot.inc"
+};
 struct Cell {std::string key,label;double x,y,r;bool matrix;};
 class Panel final:public CView {
+ SharedPointer<CBitmap> wordmark;
  Controller*controller;int page=0,seqBank=0,editing=-1,focus=-1;double startY=0,startValue=0;std::vector<Cell>cells;
  std::array<double,Count> previous{};std::array<double,VisualCount> visualPrevious{};const mpc_engine_t*api=mpc_engine();void*display=nullptr;
  void text(CDrawContext*d,const char*s,double x,double y,double w,double h,int size=28,CColor colour=white){d->setFont(kNormalFont,size);d->setFontColor(colour);d->drawString(s,CRect(x,y,x+w,y+h),kCenterText);}
@@ -47,11 +54,11 @@ class Panel final:public CView {
  void refreshCells(){cells.clear();if(page==4){const char*rows[]={"CYCLING ENV","ENVELOPE","LFO","PRESSURE","KEY / ARP"};for(int r=0;r<5;r++)for(int c=0;c<7;c++){char key[32];std::snprintf(key,sizeof key,"matrix_%d_%d",r,c);cells.push_back({key,rows[r],308.+145*c,316.+54*r,15,true});}}else if(page==8){for(int i=0;i<8;i++){int step=seqBank*8+i;cells.push_back({"seq_note_"+std::to_string(step),"STEP "+std::to_string(step+1),160.+320*(i%4),284.+180*(i/4),34,false});}}else for(int i=0;i<8&&keys[page][i];i++)cells.push_back({keys[page][i],labels[page][i],160.+320*(i%4),284.+180*(i/4),34,false});}
  void finish(){if(editing>=0){controller->endEdit(editing);editing=-1;}}
 public:
- Panel(Controller*c):CView(CRect(0,0,1280,628)),controller(c){previous.fill(-1);display=api->create(nullptr);refreshCells();setWantsIdle(true);}
+ Panel(Controller*c):CView(CRect(0,0,1280,628)),controller(c){wordmark=VSTGUI::owned(new CBitmap(CResourceDescription("wordmark.png")));visualPrevious[35]=.5;previous.fill(-1);display=api->create(nullptr);refreshCells();setWantsIdle(true);}
  ~Panel()override{finish();if(display)api->destroy(display);}
  void onIdle()override{bool changed=false;for(int i=0;i<Count;i++){double v=controller->getParamNormalized(i);if(v!=previous[i]){previous[i]=v;changed=true;}}for(int i=0;i<VisualCount;i++){double v=controller->getParamNormalized(VisualBase+i);if(v!=visualPrevious[i]){visualPrevious[i]=v;changed=true;}}if(changed)invalid();}
  void draw(CDrawContext*d)override{
-  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));text(d,"tinyfreaky",24,8,240,42,36);text(d,pageNames[page],450,13,380,34,24,green);text(d,"0.3.4",1130,13,120,34,24,orange);
+  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));if(wordmark)wordmark->draw(d,CRect(24,2,324,54));text(d,pageNames[page],450,13,380,34,24,green);text(d,"MagicStino  /  GitHub",908,10,340,24,21,orange);text(d,"0.3.5",1140,35,100,18,13,green);
   d->setFillColor(oled);d->drawRect(CRect(24,60,1256,234),kDrawFilled);gradient(d,CRect(24,252,1256,574),CColor(28,64,53),CColor(19,48,39));d->setFrameColor(CColor(80,114,96));d->setLineWidth(1);d->drawLine(CPoint(24,252),CPoint(1256,252));
   auto preset=value(0);if(preset.rfind("~ ",0)==0)preset.erase(0,2);text(d,preset.c_str(),48,68,800,54,36,cyan);
   int model=indexOf("osc_type");std::string modelText="ENGINE  "+value(model);text(d,modelText.c_str(),48,125,800,48,36,white);
@@ -72,13 +79,14 @@ public:
   for(auto&cell:cells){int id=indexOf(cell.key.c_str());double norm=controller->getParamNormalized(id);bool quiet=cell.matrix&&std::abs(norm-.5)<.00005;CColor colour=quiet?dim:orange;if(!cell.matrix){colour=green;if(id==3||id==0)colour=white;else if(id>=4&&id<=6||cell.key=="arp_on"||cell.key=="seq_on"||cell.key=="arp_mode")colour=orange;else if(definitions[id].steps>0)colour=oled;}
    d->setFillColor(colour);d->drawEllipse(CRect(cell.x-cell.r,cell.y-cell.r,cell.x+cell.r,cell.y+cell.r),kDrawFilled);double angle=(135+270*norm)*3.141592653589793/180.;d->setFrameColor(colour==oled?white:bg);d->setLineWidth(3);d->drawLine(CPoint(cell.x,cell.y),CPoint(cell.x+std::cos(angle)*(cell.r-5),cell.y+std::sin(angle)*(cell.r-5)));
    auto val=value(id);if(cell.matrix)text(d,val.c_str(),cell.x+20,cell.y-22,96,44,28,quiet?green:white);
-   else{std::string label=cell.label;if(display&&id>=4&&id<=6){char b[128],key[32];std::snprintf(key,sizeof key,"%s_name",cell.key.c_str());if(api->get_param(display,key,b,sizeof b)>0)label=b;}text(d,label.c_str(),cell.x-148,cell.y+40,296,38,26);text(d,val.c_str(),cell.x-148,cell.y+79,296,38,28,green);}
+   else{std::string label=cell.label;if(display&&id>=4&&id<=6){char b[128],key[32];std::snprintf(key,sizeof key,"%s_name",cell.key.c_str());if(api->get_param(display,key,b,sizeof b)>0)label=b;}text(d,label.c_str(),cell.x-(cell.y>400?126:148),cell.y+40,cell.y>400?252:296,38,26);text(d,val.c_str(),cell.x-(cell.y>400?126:148),cell.y+79,cell.y>400?252:296,38,28,green);}
    if(editing==id){d->setFrameColor(white);d->setLineWidth(2);d->drawRect(CRect(cell.x-cell.r-5,cell.y-cell.r-5,cell.x+cell.r+5,cell.y+cell.r+5));}
   }
+  if(page!=4){int pose=(int)std::lround(visualPrevious[35]*16);d->setFrameColor(white);d->setLineWidth(1.15);for(const auto&line:mascotLines)if(line.frame==pose)d->drawLine(CPoint(605+line.x1*.7,404+line.y1*.72),CPoint(605+line.x2*.7,404+line.y2*.72));}
   if(page==8){text(d,"< PREVIOUS 8",30,184,250,40,22,orange);text(d,"NEXT 8 >",1000,184,250,40,22,orange);}
   for(int i=0;i<9;i++){d->setFillColor(i==page?orange:surface);d->drawRect(CRect(24+i*138,590,152+i*138,622),kDrawFilled);text(d,pageNames[i],24+i*138,591,128,30,17,i==page?bg:white);}setDirty(false);
  }
- CMouseEventResult onMouseDown(CPoint&p,const CButtonState&b)override{if(!b.isLeftButton())return kMouseEventNotHandled;finish();if(page==8&&p.y>=180&&p.y<=228&&(p.x<280||p.x>1000)){seqBank=std::clamp(seqBank+(p.x<280?-1:1),0,7);refreshCells();invalid();return kMouseDownEventHandledButDontNeedMovedOrUpEvents;}if(p.y>=590&&p.x>=24&&p.x<1266){page=std::min(8,int((p.x-24)/138));refreshCells();invalid();return kMouseDownEventHandledButDontNeedMovedOrUpEvents;}for(auto&cell:cells){bool hit=cell.matrix?p.x>=cell.x-24&&p.x<=cell.x+118&&std::abs(p.y-cell.y)<=25:std::abs(p.x-cell.x)<=146&&p.y>=cell.y-cell.r-7&&p.y<=cell.y+118;if(hit){editing=focus=indexOf(cell.key.c_str());startY=p.y;startValue=controller->getParamNormalized(editing);controller->beginEdit(editing);if(!std::strcmp(cell.key.c_str(),"all_notes_off")||!std::strcmp(cell.key.c_str(),"seq_reset")){controller->setParamNormalized(editing,1);controller->performEdit(editing,1);finish();}invalid();return kMouseEventHandled;}}return kMouseEventNotHandled;}
+ CMouseEventResult onMouseDown(CPoint&p,const CButtonState&b)override{if(!b.isLeftButton())return kMouseEventNotHandled;finish();if(p.x>=908&&p.x<=1248&&p.y<=54){Steinberg::openURLInDefaultApplication("https://github.com/MagicStino/microfreeze");return kMouseDownEventHandledButDontNeedMovedOrUpEvents;}if(page==8&&p.y>=180&&p.y<=228&&(p.x<280||p.x>1000)){seqBank=std::clamp(seqBank+(p.x<280?-1:1),0,7);refreshCells();invalid();return kMouseDownEventHandledButDontNeedMovedOrUpEvents;}if(p.y>=590&&p.x>=24&&p.x<1266){page=std::min(8,int((p.x-24)/138));refreshCells();invalid();return kMouseDownEventHandledButDontNeedMovedOrUpEvents;}for(auto&cell:cells){bool hit=cell.matrix?p.x>=cell.x-24&&p.x<=cell.x+118&&std::abs(p.y-cell.y)<=25:std::abs(p.x-cell.x)<=146&&p.y>=cell.y-cell.r-7&&p.y<=cell.y+118;if(hit){editing=focus=indexOf(cell.key.c_str());startY=p.y;startValue=controller->getParamNormalized(editing);controller->beginEdit(editing);if(!std::strcmp(cell.key.c_str(),"all_notes_off")||!std::strcmp(cell.key.c_str(),"seq_reset")){controller->setParamNormalized(editing,1);controller->performEdit(editing,1);finish();}invalid();return kMouseEventHandled;}}return kMouseEventNotHandled;}
  CMouseEventResult onMouseMoved(CPoint&p,const CButtonState&)override{if(editing<0)return kMouseEventNotHandled;double v=std::clamp(startValue+(startY-p.y)/240.,0.,1.);auto&def=definitions[editing];if(def.steps)v=std::round(v*def.steps)/def.steps;controller->setParamNormalized(editing,v);controller->performEdit(editing,v);invalid();return kMouseEventHandled;}
  CMouseEventResult onMouseUp(CPoint&,const CButtonState&)override{finish();invalid();return kMouseEventHandled;}
  CMouseEventResult onMouseCancel()override{finish();invalid();return kMouseEventHandled;}

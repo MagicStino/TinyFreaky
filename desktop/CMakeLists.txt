@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(Tinyfreaky VERSION 0.3.4 LANGUAGES C CXX)
+project(Tinyfreaky VERSION 0.3.5 LANGUAGES C CXX)
 if(APPLE)
  enable_language(OBJCXX)
 endif()
@@ -57,7 +57,7 @@ if(TINYFREAKY_BUILD_TESTS)
  add_test(NAME desktop-smoke COMMAND tinyfreaky-desktop-smoke)
 endif()
 
-smtg_target_add_plugin_resources(Tinyfreaky RESOURCES resources/tinyfreaky.uidesc)
+smtg_target_add_plugin_resources(Tinyfreaky RESOURCES resources/tinyfreaky.uidesc resources/wordmark.png)
 
 option(TINYFREAKY_BUILD_AU "Build the macOS AUv2 component" OFF)
 if(TINYFREAKY_BUILD_AU)

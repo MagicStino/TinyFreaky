@@ -24,7 +24,7 @@ static const Definition definitions[]={
 };
 constexpr int Count=sizeof(definitions)/sizeof(definitions[0]);
 constexpr ParamID VisualBase=2000;
-constexpr int VisualCount=35;
+constexpr int VisualCount=36;
 constexpr ParamID MidiBase=10000;
 class Processor final: public AudioEffect {
 public:
