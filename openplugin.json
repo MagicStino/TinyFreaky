@@ -15,19 +15,19 @@
     "armv7"
   ],
   "images": [
-    "https://github.com/MagicStino/TinyFreaky/releases/download/v0.3.6/tinyfreaky-artwork.png"
+    "https://github.com/MagicStino/TinyFreaky/releases/download/v0.3.7/tinyfreaky-artwork.png"
   ],
   "packages": [
     {
-      "version": "0.3.6",
+      "version": "0.3.7",
       "arch": "armv7",
       "layout": "portable",
       "devices": [
         "force"
       ],
-      "url": "https://github.com/MagicStino/TinyFreaky/releases/download/v0.3.6/Tinyfreaky-0.3.6-mpc-armv7.zip",
-      "size": 2052484,
-      "sha256": "3f2f9f6bad57940993eb685ea5df9934eca9f13bd0002701e0cfc6cd67574de6"
+      "url": "https://github.com/MagicStino/TinyFreaky/releases/download/v0.3.7/Tinyfreaky-0.3.7-mpc-armv7.zip",
+      "size": 5243551,
+      "sha256": "d06c64d62f2d4801b9f75aa3191f78b65c47f3a9ec9271a6f198349726ce91a2"
     }
   ]
 }

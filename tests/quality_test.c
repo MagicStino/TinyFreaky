@@ -36,9 +36,21 @@ int main(void){
  silence(s);for(int i=0;i<32;i++)assert(s->visual[i]==8);assert(s->visual[34]==0);
  // Aliasing regression: exact multiples of the 10Hz refresh must show a full LFO sweep.
  for(int shape=0;shape<4;shape++)for(int hz=10;hz<=40;hz+=10){preset(s,0);silence(s);s->p[16]=shape;s->p[17]=hz;s->p[18]=0;render(s,audio,128);for(int b=1;b<35;b++)render(s,audio,128);assert(s->visual[33]==136);}
- // Velocity-reactive mascot is bounded, stronger for hard notes, silent when idle.
- int amplitudes[2];for(int hard=0;hard<2;hard++){preset(s,0);silence(s);noteon(s,60,hard?127:16);for(int b=0;b<35;b++)render(s,audio,128);amplitudes[hard]=abs((int)s->visual[35]-8);assert(s->visual[35]<=16);}
- assert(amplitudes[1]>amplitudes[0]);for(int b=0;b<1200;b++)render(s,audio,128);assert(s->visual[35]==8);
- silence(s);assert(s->visual[35]==8);char pose[16];assert(get_param(s,"screen_mascot",pose,sizeof pose)>0&&atoi(pose)==8);
+ // Cached motion stays bounded; pitch and velocity independently select styles.
+ for(int pitch=0;pitch<3;pitch++)for(int velocity=0;velocity<3;velocity++){
+  preset(s,0);silence(s);noteon(s,33+pitch*30,velocity==0?28:velocity==1?70:127);
+  for(int b=0;b<450;b++)render(s,audio,128);
+  assert(s->visual[35]>=1&&s->visual[35]<=540);
+  assert(((s->visual[35]-1)/60)==pitch*3+velocity);
+  char value[16];get_param(s,"screen_mascot_style",value,sizeof value);assert(atoi(value)==pitch*3+velocity);
+  for(int layer=0;layer<9;layer++){char key[32];snprintf(key,sizeof key,"screen_mascot_%d",layer);get_param(s,key,value,sizeof value);assert(atoi(value)==(layer==pitch*3+velocity?1+(s->visual[35]-1)%60:0));}
+ }
+ // Held and repeated notes advance without phase resets or retrigger locking.
+ for(int rapid=0;rapid<2;rapid++){unsigned char seen[541]={0};int count=0;for(int tick=0;tick<120;tick++){if(rapid)noteon(s,93,127);for(int b=0;b<12;b++)render(s,audio,128);seen[s->visual[35]]=1;}for(int i=1;i<=540;i++)count+=seen[i];assert(count>10);}
+ // Visual randomness never consumes the synthesis RNG; changes stay bounded.
+ unsigned audio_rng=s->rng;int varied=0;for(int loop=0;loop<40;loop++){s->mascot_phase=2*PI-.00001f;s->mascot_clock=1469;render(s,audio,1);assert(s->mascot_target>=.72f&&s->mascot_target<=1.37f);if(s->mascot_target!=1)varied++;}assert(varied>0);assert(s->rng==audio_rng);
+ s->p[11]=0;for(int i=0;i<N;i++){s->v[i].held=0;if(s->v[i].stage)s->v[i].stage=4;}
+ for(int b=0;b<1600;b++)render(s,audio,128);assert(s->visual[35]==0);
+ silence(s);char pose[16];assert(get_param(s,"screen_mascot",pose,sizeof pose)>0&&atoi(pose)==0);
  destroy(s);puts("quality: 16 engines x 3 filter modes x 4 extremes, eight-voice allocation/stealing/release, mono compatibility, polyphonic headroom, DC rejection and real detuning PASS");
 }

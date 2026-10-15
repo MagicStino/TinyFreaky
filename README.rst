@@ -13,10 +13,10 @@ Play with 16 engines, shape the sound with the 5 × 7 modulation matrix, and bui
    :alt: TinyFreaky interface with the mascot between Master and Glide
    :width: 1100
 
-A small white line-art mascot responds subtly to note velocity, then settles back to rest.
+The white line-art mascot follows pitch and note velocity: low notes bring hip sway, harder playing adds head movement, and occasional varied loops keep it lively. It settles after release.
 
 .. image:: assets/mascot-velocity.gif
-   :alt: Subtle velocity-driven mascot animation
+   :alt: Pitch- and velocity-driven mascot motion
    :width: 600
 
 Downloads

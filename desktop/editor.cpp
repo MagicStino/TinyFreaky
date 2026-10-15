@@ -33,7 +33,7 @@ static const char* labels[9][8]={
  {"MODE","RISE","FALL","HOLD","AMOUNT","RISE CURVE","FALL CURVE","TEMPO"},
  {"SHAPE","RATE","SYNC","DIVISION","HOLD","BEND RANGE","OCTAVE","PANIC"},
  {},{"ASSIGN 1","ASSIGN 2","ASSIGN 3"},{"ARP ON","ARP MODE","ARP RATE","SWING","SEQ PLAY","SEQ RATE","LENGTH","TEMPO"},{"ARP OCTAVES","ARP GATE","CLOCK","SEQ GATE","VELOCITY","TRANSPOSE","RESTART","HOLD"},{}};
-struct MascotLine {int frame;double x1,y1,x2,y2;};
+struct MascotLine {int part;float x1,y1,x2,y2;};
 static const MascotLine mascotLines[]={
 #include "mascot.inc"
 };
@@ -54,11 +54,11 @@ class Panel final:public CView {
  void refreshCells(){cells.clear();if(page==4){const char*rows[]={"CYCLING ENV","ENVELOPE","LFO","PRESSURE","KEY / ARP"};for(int r=0;r<5;r++)for(int c=0;c<7;c++){char key[32];std::snprintf(key,sizeof key,"matrix_%d_%d",r,c);cells.push_back({key,rows[r],308.+145*c,316.+54*r,15,true});}}else if(page==8){for(int i=0;i<8;i++){int step=seqBank*8+i;cells.push_back({"seq_note_"+std::to_string(step),"STEP "+std::to_string(step+1),160.+320*(i%4),284.+180*(i/4),34,false});}}else for(int i=0;i<8&&keys[page][i];i++)cells.push_back({keys[page][i],labels[page][i],160.+320*(i%4),284.+180*(i/4),34,false});}
  void finish(){if(editing>=0){controller->endEdit(editing);editing=-1;}}
 public:
- Panel(Controller*c):CView(CRect(0,0,1280,628)),controller(c){wordmark=VSTGUI::owned(new CBitmap(CResourceDescription("wordmark.png")));visualPrevious[35]=.5;previous.fill(-1);display=api->create(nullptr);refreshCells();setWantsIdle(true);}
+ Panel(Controller*c):CView(CRect(0,0,1280,628)),controller(c){wordmark=VSTGUI::owned(new CBitmap(CResourceDescription("wordmark.png")));visualPrevious[35]=0;previous.fill(-1);display=api->create(nullptr);refreshCells();setWantsIdle(true);}
  ~Panel()override{finish();if(display)api->destroy(display);}
  void onIdle()override{bool changed=false;for(int i=0;i<Count;i++){double v=controller->getParamNormalized(i);if(v!=previous[i]){previous[i]=v;changed=true;}}for(int i=0;i<VisualCount;i++){double v=controller->getParamNormalized(VisualBase+i);if(v!=visualPrevious[i]){visualPrevious[i]=v;changed=true;}}if(changed)invalid();}
  void draw(CDrawContext*d)override{
-  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));if(wordmark)wordmark->draw(d,CRect(24,2,324,54));text(d,pageNames[page],450,13,380,34,24,green);text(d,"MagicStino  /  GitHub",908,10,340,24,21,orange);text(d,"0.3.6",1140,35,100,18,13,green);
+  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));if(wordmark)wordmark->draw(d,CRect(24,2,324,54));text(d,pageNames[page],450,13,380,34,24,green);text(d,"MagicStino  /  GitHub",908,10,340,24,21,orange);text(d,"0.3.7",1140,35,100,18,13,green);
   d->setFillColor(oled);d->drawRect(CRect(24,60,1256,234),kDrawFilled);gradient(d,CRect(24,252,1256,574),CColor(28,64,53),CColor(19,48,39));d->setFrameColor(CColor(80,114,96));d->setLineWidth(1);d->drawLine(CPoint(24,252),CPoint(1256,252));
   auto preset=value(0);if(preset.rfind("~ ",0)==0)preset.erase(0,2);text(d,preset.c_str(),48,68,800,54,36,cyan);
   int model=indexOf("osc_type");std::string modelText="ENGINE  "+value(model);text(d,modelText.c_str(),48,125,800,48,36,white);
@@ -82,7 +82,9 @@ public:
    else{std::string label=cell.label;if(display&&id>=4&&id<=6){char b[128],key[32];std::snprintf(key,sizeof key,"%s_name",cell.key.c_str());if(api->get_param(display,key,b,sizeof b)>0)label=b;}text(d,label.c_str(),cell.x-(cell.y>400?126:148),cell.y+40,cell.y>400?252:296,38,26);text(d,val.c_str(),cell.x-(cell.y>400?126:148),cell.y+79,cell.y>400?252:296,38,28,green);}
    if(editing==id){d->setFrameColor(white);d->setLineWidth(2);d->drawRect(CRect(cell.x-cell.r-5,cell.y-cell.r-5,cell.x+cell.r+5,cell.y+cell.r+5));}
   }
-  if(page!=4){int pose=(int)std::lround(visualPrevious[35]*16);d->setFrameColor(white);d->setLineWidth(1.15);for(const auto&line:mascotLines)if(line.frame==pose)d->drawLine(CPoint(605+line.x1*.7,404+line.y1*.72),CPoint(605+line.x2*.7,404+line.y2*.72));}
+  if(page!=4){int pose=std::clamp((int)std::lround(visualPrevious[35]*540),0,540);int style=pose?(pose-1)/60:0;double t=pose?((pose-1)%60)*6.28318530718/60:0,high=(style/3)*.5,v=pose?(style%3==0?.22:style%3==1?.55:1):0,hip=3*(1.6*v+8.6*(1-high)*std::pow(v,.4))*std::sin(t),torso=(2+8*high)*v*std::sin(t+.55)*3.14159265359/180,head=(4+17*v*v+5*high)*v*std::sin(t+1.1)*3.14159265359/180,bob=(.8+4.2*v*v)*v*std::sin(2*t+.7);
+   auto point=[&](double x,double y,int part){if(part==0){double dx=x-49,dy=y-73;x=49+dx*std::cos(head)-dy*std::sin(head);y=73+dx*std::sin(head)+dy*std::cos(head)+bob;}if(part==2)x+=hip*(1-std::clamp((y-150)/64,0.,1.));else{double dx=x-49,dy=y-150;x=49+hip+dx*std::cos(torso)-dy*std::sin(torso);y=150+dx*std::sin(torso)+dy*std::cos(torso);}return CPoint(605+x*.7,404+y*.72);};
+   d->setFrameColor(white);d->setLineWidth(1.15);for(const auto&line:mascotLines)d->drawLine(point(line.x1,line.y1,line.part),point(line.x2,line.y2,line.part));}
   if(page==8){text(d,"< PREVIOUS 8",30,184,250,40,22,orange);text(d,"NEXT 8 >",1000,184,250,40,22,orange);}
   for(int i=0;i<9;i++){d->setFillColor(i==page?orange:surface);d->drawRect(CRect(24+i*138,590,152+i*138,622),kDrawFilled);text(d,pageNames[i],24+i*138,591,128,30,17,i==page?bg:white);}setDirty(false);
  }
