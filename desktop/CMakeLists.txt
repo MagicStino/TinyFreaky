@@ -58,3 +58,8 @@ if(TINYFREAKY_BUILD_TESTS)
 endif()
 
 smtg_target_add_plugin_resources(Tinyfreaky RESOURCES resources/tinyfreaky.uidesc)
+
+option(TINYFREAKY_BUILD_AU "Build the macOS AUv2 component" OFF)
+if(TINYFREAKY_BUILD_AU)
+ add_subdirectory(au)
+endif()
