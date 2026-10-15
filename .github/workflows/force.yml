@@ -2,7 +2,7 @@ name: Force ARMv7
 on:
   push:
     branches: [tinyfreaky]
-    paths: ['src/**', 'vst/**', 'tools/**', '.github/workflows/force.yml']
+    paths: ['assets/**', 'src/**', 'vst/**', 'tools/**', '.github/workflows/force.yml']
     tags: ['v*']
   workflow_dispatch:
 permissions:

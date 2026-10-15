@@ -1,18 +1,46 @@
-TinyFreaky / MagicStino
-======================
+TinyFreaky
+=========
 
-An eight-voice instrument for Force OpenPlugin, Windows/macOS/Linux VST3, and macOS Audio Unit. Sixteen engines, an output scope, readable controls, a 5 x 7 modulation matrix, arpeggiator with swing, and a 64-step sequencer.
+An **8-voice synthesizer by MagicStino** for Akai Force, Windows, macOS and Linux.
 
-Original TinyFreaky patch names identify 456 stable slots. Eight starter patches and 334 mapped patches are playable; 114 slots require unavailable engines and remain explicitly muted. Names are new; numeric sound settings and slot IDs are preserved. Sequence/sample payloads are not fully supported.
+.. image:: assets/tinyfreaky-artwork.png
+   :alt: TinyFreaky artwork
+   :width: 840
 
-MagicStino branding links to https://github.com/MagicStino/TinyFreaky on desktop. Force has a MagicStino source page. The white line-art mascot between Master and Glide responds subtly to velocity using 17 cached poses at 10 Hz, then settles to rest.
+Play with 16 engines, shape the sound with the 5 × 7 modulation matrix, and build patterns with the arpeggiator, swing and 64-step sequencer. The green, orange and white panel has large labels, a clear engine display and a live output scope.
 
-Builds
-------
+.. image:: assets/force-readable-preview.png
+   :alt: TinyFreaky interface with the mascot between Master and Glide
+   :width: 1100
 
-Force: set MPC_VST_TOOLS to the pinned checkout in tools/build-force.sh and run that helper. Desktop: set VST3_SDK_ROOT to the recursive revision in desktop/SDK_REVISION and run tools/build-desktop.sh. AU build and installation are documented in docs/AUDIOUNIT.md. Run tools/test-engine.py and tools/test-force-host.sh for engine and host-contract checks.
+A small white line-art mascot responds subtly to note velocity, then settles back to rest.
 
-Licenses
---------
+.. image:: assets/mascot-velocity.gif
+   :alt: Subtle velocity-driven mascot animation
+   :width: 600
 
-Plugin code and Mutable Instruments cores are MIT. Third-party source, SDK, VSTGUI and wrapper notices remain intact. Source-bank archives and sample/wavetable assets are excluded from the instrument packages. See THIRD_PARTY_NOTICES.md.
+Downloads
+---------
+
+Get the latest version from `Releases <https://github.com/MagicStino/TinyFreaky/releases/latest>`_. Version 0.3.6 is being rebuilt for all formats.
+
+* **Force:** ARMv7 package through the OpenPlugin catalog.
+* **Windows:** 64-bit VST3.
+* **macOS:** universal Intel/Apple Silicon VST3 and Audio Unit.
+* **Linux:** 64-bit VST3.
+
+The macOS builds are ad-hoc signed and are not Apple-notarized. The AU is checked with Apple's Audio Unit validator before publication.
+
+Patches and projects
+--------------------
+
+456 TinyFreaky-named patch slots keep stable IDs and sound settings. 342 slots are playable; 114 require unavailable engines and are clearly marked. Six engine families and full sequence/sample payload support remain unfinished.
+
+Save the instrument in your project to retain its settings. Install the entire desktop plug-in bundle and follow the instructions included with its download.
+
+Source and license
+------------------
+
+Source and updates: https://github.com/MagicStino/TinyFreaky
+
+Plugin code is MIT. Required licenses and copyright notices for reused code are included in THIRD_PARTY_NOTICES.md.

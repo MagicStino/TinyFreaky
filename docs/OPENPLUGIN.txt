@@ -1,12 +1,5 @@
-OpenPlugin discovery and update metadata
+TinyFreaky updates
 
-Published manifest:
-https://raw.githubusercontent.com/MagicStino/TinyFreaky/main/openplugin.json
+Catalog manifest: https://raw.githubusercontent.com/MagicStino/TinyFreaky/main/openplugin.json
 
-This is openplugin.community/1, validated against Force OpenPlugin's schema and its actual catalog_bridge.py validation. It declares the ARMv7 portable Force package, release download URL, exact byte size and SHA256. The desktop VST3 is not declared as a Force package.
-
-The Force OpenPlugin shared catalog must register MagicStino/TinyFreaky before automatic discovery can use this manifest. Its existing package review process controls download enablement separately. No change to that shared catalog was made by this repository publication.
-
-For manual use, download the ARMv7 portable ZIP from the v0.1.0 release and follow its INSTALL.md. Hardware playback remains unverified. The manifest alone does not install or flash anything on the Force.
-
-For future releases, build/package first, publish the package as a GitHub release asset, then run tools/make-openplugin.py with the real package path/version and publish the generated manifest after verifying the remote asset hash. The build workflows have read-only repository access and do not publish releases or change main automatically.
+Refresh the OpenPlugin catalog on Force to see the current package. The manifest contains its download address, byte size and SHA256. Desktop VST3 and AU downloads are available separately at https://github.com/MagicStino/TinyFreaky/releases/latest . Follow the included installation instructions.
