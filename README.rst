@@ -56,3 +56,8 @@ licenses. Factory parameter, sample and wavetable assets originate from Arturia'
 official MIDI Control Center distribution and are not relicensed as MIT.
 See assets/factory/SOURCE.txt. Names identify compatibility targets; this project
 is unaffiliated with Arturia, Akai, inMusic and Steinberg.
+
+Force UI update 0.2.1-preview.1
+-----------------------------
+
+35px knob labels, eight controls per page, and a live OLED-style preset/model/parameter display replace the cramped panel. Desktop layout and DSP remain unchanged. See docs/UI-UPDATE-0.2.1.txt.

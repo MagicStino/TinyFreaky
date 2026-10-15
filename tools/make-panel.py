@@ -61,3 +61,7 @@ cfg=json.loads((p/'vst/vst.json').read_text());cfg['art']='html';(p/'vst/vst.jso
 # Shared coordinates and keys are consumed directly by the desktop editor.
 (p/'desktop/panel.inc').write_text('\n'.join('{"%(key)s","%(label)s",%(x)s,%(y)s,%(r)s,"%(color)s"},'%k for k in controls)+'\n')
 (p/'desktop/groups.inc').write_text('\n'.join('{"%(label)s",%(x)s,%(y)s,%(w)s,%(h)s},'%g for g in groups)+'\n')
+
+# Force uses the readable layout; the compact design above remains a desktop reference.
+import runpy
+runpy.run_path(str(p/"tools/make-force-ui.py"),run_name="__main__")

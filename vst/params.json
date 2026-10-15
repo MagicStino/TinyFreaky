@@ -707,5 +707,25 @@
     "name": "Implementation status",
     "display": "string",
     "poll": false
+  },
+  {
+    "key": "screen_preset",
+    "name": "screen_preset",
+    "display": "string"
+  },
+  {
+    "key": "screen_model",
+    "name": "screen_model",
+    "display": "string"
+  },
+  {
+    "key": "screen_detail",
+    "name": "screen_detail",
+    "display": "string"
+  },
+  {
+    "key": "screen_hint",
+    "name": "screen_hint",
+    "display": "string"
   }
 ]
