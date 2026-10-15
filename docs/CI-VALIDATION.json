@@ -1,6 +1,6 @@
 {
   "product": "TinyFreaky",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "voices": 8,
   "formats": [
     "Force ARMv7",
@@ -9,11 +9,11 @@
     "Linux x64 VST3",
     "macOS universal AUv2"
   ],
-  "native_vst3_run": 38798150959,
-  "au_run": 38798150947,
-  "force_run": 38798150913,
-  "result": "All five packages built and published. Steinberg validator, Apple auval, engine/ABI, audio/state and complete playable-bank audibility regressions passed. Public ZIP sizes, SHA256 and archive CRC verified.",
-  "hardware": "New Force/MPC firmware flash, boot and redraw performance remain untested.",
+  "native_vst3_run": 38806085204,
+  "au_run": 38806085095,
+  "force_run": 38806085030,
+  "result": "All five formats built and published; ZIP sizes, SHA256 and CRC verified. Steinberg VST3 validation, Apple auval, engine/ABI and all 342 playable-bank audibility regressions passed.",
+  "hardware": "The reported Force callback has not been captured. Physical Force confirmation of this correction remains pending.",
   "mascot_host": "67 distinct held-note poses delivered through VST3 output parameters at 48 kHz; 540 artwork poses bounded and unclipped.",
   "preset_audit": {
     "playable": 342,
@@ -21,5 +21,21 @@
     "calibrated": 78,
     "tick_or_silent": 0,
     "clipped_samples": 0
+  },
+  "voice_regression": {
+    "local_midi_presets": [
+      "Ivory Comet Keys",
+      "Jade Orbit Keys",
+      "First Light",
+      "Silver Drift"
+    ],
+    "simulated_host_jump": "At bar5, original audio fades/cuts and corrected audio stays bit-identical to uninterrupted 24-second playback.",
+    "note_tests": [
+      "same-pitch overlap",
+      "MIDI channel identity",
+      "stolen-note stale release",
+      "released-tail priority",
+      "external chord transport start/loop preservation"
+    ]
   }
 }

@@ -7,7 +7,7 @@ An **8-voice synthesizer by MagicStino** for Akai Force, Windows, macOS and Linu
    :alt: TinyFreaky artwork
    :width: 840
 
-Version 0.3.8 corrects pluck decay/release and filtered-noise playback, with 78 calibrated factory patches and an audibility check across every playable slot.
+Version 0.3.9 preserves externally played chords across host playback-position changes and corrects note stealing and overlapping note releases. It retains the fuller plucks and clearer noise playback introduced in 0.3.8.
 
 Play with 16 engines, shape the sound with the 5 × 7 modulation matrix, and build patterns with the arpeggiator, swing and 64-step sequencer. The green, orange and white panel has large labels, a clear engine display and a live output scope.
 

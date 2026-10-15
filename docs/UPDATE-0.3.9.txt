@@ -1,0 +1,9 @@
+TinyFreaky 0.3.9
+
+External MIDI chords now survive host playback starts, PPQ loop jumps and temporarily missing host position. Only the internal arp/sequencer resets its generated notes on transport changes.
+
+Note releases match their original note-on on the same MIDI channel and pitch. A stale note-off from a stolen voice cannot release its replacement. Quiet released tails are reclaimed before held notes are stolen. Channel all-notes-off messages leave other channels playing; the explicit panic control still stops the whole instrument.
+
+Regression cases include Ivory Comet Keys and Jade Orbit Keys in eight-voice mode with a synthetic four-note chord and a host position jump. The original build fades/cuts after the jump; corrected local playback remains audible. This reproduces the reported symptom, but the physical Force callback has not been captured and this is not yet a hardware-verified diagnosis.
+
+Factory patch values are unchanged in this update. Existing preset names, slots, saved patches and artwork are preserved.
