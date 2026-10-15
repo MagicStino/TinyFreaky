@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import re
 
-def manifest(package=None,version='0.3.3-preview.1',image=None):
+def manifest(package=None,version='0.3.3',image=None):
     result={
         'schema':'openplugin.community/1','id':'tinyfreaky','name':'Tinyfreaky',
         'author':'MagicStino','repo':'MagicStino/microfreeze',
@@ -29,7 +29,7 @@ def manifest(package=None,version='0.3.3-preview.1',image=None):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--package',type=Path)
-    p.add_argument('--version',default='0.3.3-preview.1')
+    p.add_argument('--version',default='0.3.3')
     p.add_argument('--image',help='Public HTTPS catalog preview URL')
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
