@@ -13,6 +13,10 @@
 namespace Tinyfreaky {
 using namespace VSTGUI;
 static const CColor bg(16,43,37),surface(22,56,47),white(242,239,223),orange(241,138,60),green(184,219,145),dim(75,112,94),oled(7,15,21),cyan(217,248,255);
+// Smooth chassis and inset gradients, matching the Force skin.
+static void gradient(CDrawContext*d,const CRect&r,CColor top,CColor bottom){
+ for(int y=(int)r.top;y<(int)r.bottom;++y){double t=(y-r.top)/(r.getHeight()-1);CColor c((uint8_t)(top.red+(bottom.red-top.red)*t),(uint8_t)(top.green+(bottom.green-top.green)*t),(uint8_t)(top.blue+(bottom.blue-top.blue)*t));d->setFillColor(c);d->drawRect(CRect(r.left,y,r.right,y+1),kDrawFilled);}
+}
 static int indexOf(const char*key){for(int i=0;i<Count;i++)if(!std::strcmp(key,definitions[i].key))return i;return -1;}
 static const char* pageNames[]={"OSCILLATOR","FILTER + ENV","CYCLING ENV","LFO + PLAY","MATRIX","ASSIGN","RHYTHM","SETUP","SEQ"};
 static const char* keys[9][8]={
@@ -46,8 +50,8 @@ public:
  ~Panel()override{finish();if(display)api->destroy(display);}
  void onIdle()override{bool changed=false;for(int i=0;i<Count;i++){double v=controller->getParamNormalized(i);if(v!=previous[i]){previous[i]=v;changed=true;}}if(changed)invalid();}
  void draw(CDrawContext*d)override{
-  d->setDrawMode(kAntiAliasing);d->setFillColor(bg);d->drawRect(getViewSize(),kDrawFilled);text(d,"tinyfreaky",24,8,240,42,36);text(d,pageNames[page],450,13,380,34,24,green);text(d,"0.3.0",1130,13,120,34,24,orange);
-  d->setFillColor(oled);d->drawRect(CRect(24,60,1256,234),kDrawFilled);d->setFillColor(surface);d->drawRect(CRect(24,252,1256,574),kDrawFilled);
+  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));text(d,"tinyfreaky",24,8,240,42,36);text(d,pageNames[page],450,13,380,34,24,green);text(d,"0.3.0",1130,13,120,34,24,orange);
+  d->setFillColor(oled);d->drawRect(CRect(24,60,1256,234),kDrawFilled);gradient(d,CRect(24,252,1256,574),CColor(28,64,53),CColor(19,48,39));d->setFrameColor(CColor(80,114,96));d->setLineWidth(1);d->drawLine(CPoint(24,252),CPoint(1256,252));
   auto preset=value(0);if(preset.rfind("~ ",0)==0)preset.erase(0,2);text(d,preset.c_str(),48,68,1184,54,36,cyan);
   int model=indexOf("osc_type");std::string modelText="OSC  "+value(model);text(d,modelText.c_str(),48,125,690,44,28,green);
   int routes=0;for(int i=0;i<Count;i++)if(!std::strncmp(definitions[i].key,"matrix_",7)&&std::abs(controller->getParamNormalized(i)-.5)>.00005)routes++;

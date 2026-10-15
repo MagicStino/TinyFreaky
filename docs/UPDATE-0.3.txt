@@ -1,6 +1,6 @@
 Tinyfreaky 0.3 preview
 
-The Force interface keeps six top-level tabs. MATRIX shows all 35 routes; use its Q-Link banks for sources and ASSIGNMENTS for the three configurable destinations. Zero-depth cells are dim; nonzero cells are orange. Filter Amount and Envelope > Cutoff are the same bipolar route, fixing the previous extra envelope contribution.
+A shaded green chassis and glossy inset panels keep the orange controls and large labels readable. The Force interface keeps six top-level tabs. MATRIX shows all 35 routes; use its Q-Link banks for sources and ASSIGNMENTS for the three configurable destinations. Zero-depth cells are dim; nonzero cells are orange. Filter Amount and Envelope > Cutoff are the same bipolar route, fixing the previous extra envelope contribution.
 
 RHYTHM has ARPEGGIATOR, SEQUENCER and eight note-editor banks (STEPS 1-8 through STEPS 57-64). Enable ARP and hold notes; choose Up, Order, Random or a repeating Pattern. Rate includes straight and triplet divisions; swing ranges from 50% (straight) to 75%. Octaves, gate and Hold are available. For sequences, choose PLAY and edit pitches or REST in the step banks. Length is 1-64, with gate, velocity, transpose and restart. Internal clock follows Tempo; Host clock waits for host playback and follows its tempo. The display reports the current step. The desktop editor has corresponding rhythm/setup/note pages.
 
