@@ -26,7 +26,7 @@ static const char* keys[9][8]={
  {"lfo_shape","lfo_rate_free","lfo_sync","lfo_rate_sync","hold","bend_range","octave","all_notes_off"},
  {},{"assign1","assign2","assign3"},{"arp_on","arp_mode","arp_rate","swing","seq_on","seq_rate","seq_length","tempo"},{"arp_octaves","arp_gate","rhythm_sync","seq_gate","seq_velocity","seq_transpose","seq_reset","hold"},{}};
 static const char* labels[9][8]={
- {"TYPE","WAVE","TIMBRE","SHAPE","PRESET","MASTER","GLIDE","PARAPHONIC"},
+ {"ENGINE","WAVE","TIMBRE","SHAPE","PRESET","MASTER","GLIDE","PARAPHONIC"},
  {"MODE","CUTOFF","RESONANCE","ENV AMOUNT","ATTACK","DECAY / REL","SUSTAIN","AMP ENV"},
  {"MODE","RISE","FALL","HOLD","AMOUNT","RISE CURVE","FALL CURVE","TEMPO"},
  {"SHAPE","RATE","SYNC","DIVISION","HOLD","BEND RANGE","OCTAVE","PANIC"},
@@ -38,6 +38,7 @@ class Panel final:public CView {
  void text(CDrawContext*d,const char*s,double x,double y,double w,double h,int size=28,CColor colour=white){d->setFont(kNormalFont,size);d->setFontColor(colour);d->drawString(s,CRect(x,y,x+w,y+h),kCenterText);}
  std::string value(int id){String128 str{};controller->getParamStringByValue(id,controller->getParamNormalized(id),str);char b[192]{};UString(str,128).toAscii(b,sizeof b);auto&def=definitions[id];double raw=def.lo+controller->getParamNormalized(id)*(def.hi-def.lo);
   if(!std::strncmp(def.key,"seq_note_",9)){int pitch=(int)std::lround(raw);const char*notes[]={"C","C#","D","D#","E","F","F#","G","G#","A","A#","B"};if(pitch<0)std::snprintf(b,sizeof b,"REST");else std::snprintf(b,sizeof b,"%s%d",notes[pitch%12],pitch/12-1);}
+  else if(!std::strcmp(def.key,"cutoff"))std::snprintf(b,sizeof b,"%.0f Hz",30+19970*raw*raw*raw);
   else if(!std::strcmp(def.key,"filter_amount"))std::snprintf(b,sizeof b,"%+.0f",raw*200-100);
   else if(def.lo==0&&def.hi==1&&def.steps==0)std::snprintf(b,sizeof b,"%.0f%%",raw*100);
   else if(def.lo==-100&&def.hi==100)std::snprintf(b,sizeof b,"%+.0f",raw);
@@ -50,17 +51,17 @@ public:
  ~Panel()override{finish();if(display)api->destroy(display);}
  void onIdle()override{bool changed=false;for(int i=0;i<Count;i++){double v=controller->getParamNormalized(i);if(v!=previous[i]){previous[i]=v;changed=true;}}if(changed)invalid();}
  void draw(CDrawContext*d)override{
-  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));text(d,"tinyfreaky",24,8,240,42,36);text(d,pageNames[page],450,13,380,34,24,green);text(d,"0.3.0",1130,13,120,34,24,orange);
+  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));text(d,"tinyfreaky",24,8,240,42,36);text(d,pageNames[page],450,13,380,34,24,green);text(d,"0.3.1",1130,13,120,34,24,orange);
   d->setFillColor(oled);d->drawRect(CRect(24,60,1256,234),kDrawFilled);gradient(d,CRect(24,252,1256,574),CColor(28,64,53),CColor(19,48,39));d->setFrameColor(CColor(80,114,96));d->setLineWidth(1);d->drawLine(CPoint(24,252),CPoint(1256,252));
   auto preset=value(0);if(preset.rfind("~ ",0)==0)preset.erase(0,2);text(d,preset.c_str(),48,68,1184,54,36,cyan);
-  int model=indexOf("osc_type");std::string modelText="OSC  "+value(model);text(d,modelText.c_str(),48,125,690,44,28,green);
+  int model=indexOf("osc_type");std::string modelText="ENGINE  "+value(model);text(d,modelText.c_str(),48,125,730,48,36,white);
   int routes=0;for(int i=0;i<Count;i++)if(!std::strncmp(definitions[i].key,"matrix_",7)&&std::abs(controller->getParamNormalized(i)-.5)>.00005)routes++;
   char routeText[48];std::snprintf(routeText,sizeof routeText,"%d ROUTES",routes);text(d,routeText,850,125,370,44,26,orange);
   std::string detail=focus>=0?std::string(definitions[focus].name)+"   "+value(focus):"TOUCH A CONTROL  /  DRAG TO ADJUST";text(d,detail.c_str(),48,180,1184,44,28,cyan);
   if(display){char raw[24];std::snprintf(raw,sizeof raw,"%.0f",controller->getParamNormalized(model)*15);api->set_param(display,"osc_type",raw);}
   if(page==4){const char*rows[]={"CYCLING ENV","ENVELOPE","LFO","PRESSURE","KEY / ARP"};const char*cols[]={"PITCH","WAVE","TIMBRE","CUTOFF","ASSIGN 1","ASSIGN 2","ASSIGN 3"};for(int c=0;c<7;c++)text(d,cols[c],240+c*145,256,136,34,22);for(int r=0;r<5;r++)text(d,rows[r],32,296+r*54,194,36,22,green);}
-  for(auto&cell:cells){int id=indexOf(cell.key.c_str());double norm=controller->getParamNormalized(id);bool quiet=cell.matrix&&std::abs(norm-.5)<.00005;CColor colour=quiet?dim:orange;if(!cell.matrix&&(page==1&&id!=13&&id<16||page==3&&id>=16&&id<=19))colour=green;
-   d->setFillColor(colour);d->drawEllipse(CRect(cell.x-cell.r,cell.y-cell.r,cell.x+cell.r,cell.y+cell.r),kDrawFilled);double angle=(135+270*norm)*3.141592653589793/180.;d->setFrameColor(bg);d->setLineWidth(3);d->drawLine(CPoint(cell.x,cell.y),CPoint(cell.x+std::cos(angle)*(cell.r-5),cell.y+std::sin(angle)*(cell.r-5)));
+  for(auto&cell:cells){int id=indexOf(cell.key.c_str());double norm=controller->getParamNormalized(id);bool quiet=cell.matrix&&std::abs(norm-.5)<.00005;CColor colour=quiet?dim:orange;if(!cell.matrix){colour=green;if(id==3||id==0)colour=white;else if(id>=4&&id<=6||cell.key=="arp_on"||cell.key=="seq_on"||cell.key=="arp_mode")colour=orange;else if(definitions[id].steps>0)colour=oled;}
+   d->setFillColor(colour);d->drawEllipse(CRect(cell.x-cell.r,cell.y-cell.r,cell.x+cell.r,cell.y+cell.r),kDrawFilled);double angle=(135+270*norm)*3.141592653589793/180.;d->setFrameColor(colour==oled?white:bg);d->setLineWidth(3);d->drawLine(CPoint(cell.x,cell.y),CPoint(cell.x+std::cos(angle)*(cell.r-5),cell.y+std::sin(angle)*(cell.r-5)));
    auto val=value(id);if(cell.matrix)text(d,val.c_str(),cell.x+20,cell.y-22,96,44,28,quiet?green:white);
    else{std::string label=cell.label;if(display&&id>=4&&id<=6){char b[128],key[32];std::snprintf(key,sizeof key,"%s_name",cell.key.c_str());if(api->get_param(display,key,b,sizeof b)>0)label=b;}text(d,label.c_str(),cell.x-148,cell.y+40,296,38,26);text(d,val.c_str(),cell.x-148,cell.y+79,296,38,28,green);}
    if(editing==id){d->setFrameColor(white);d->setLineWidth(2);d->drawRect(CRect(cell.x-cell.r-5,cell.y-cell.r-5,cell.x+cell.r+5,cell.y+cell.r+5));}
