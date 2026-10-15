@@ -23,6 +23,8 @@ static const Definition definitions[]={
 #include "parameters.inc"
 };
 constexpr int Count=sizeof(definitions)/sizeof(definitions[0]);
+constexpr ParamID VisualBase=2000;
+constexpr int VisualCount=35;
 constexpr ParamID MidiBase=10000;
 class Processor final: public AudioEffect {
 public:
@@ -40,7 +42,7 @@ private:
  std::mutex engineMutex;
  const mpc_engine_t* api; void* instance=nullptr;
  std::array<double,Count> normalized{};
- bool presetChanged=false;
+ bool presetChanged=false;unsigned visualRev=~0u;
  double ratio=1,phase=0; float before[2]{},current[2]{};
  struct Action {int offset; int type; int index; double value; Event event; int order;};
  std::array<Action,8192> actions{};

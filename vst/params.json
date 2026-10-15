@@ -19,10 +19,10 @@
   {
     "key": "paraphonic",
     "name": "Paraphonic",
-    "default": "Four voices",
+    "default": "Eight voices",
     "options": [
       "Mono",
-      "Four voices"
+      "Eight voices"
     ]
   },
   {
@@ -1467,5 +1467,320 @@
     "default": -1,
     "display": "int",
     "dynamic_display": true
+  },
+  {
+    "key": "screen_scope_0",
+    "name": "screen_scope_0",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_1",
+    "name": "screen_scope_1",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_2",
+    "name": "screen_scope_2",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_3",
+    "name": "screen_scope_3",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_4",
+    "name": "screen_scope_4",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_5",
+    "name": "screen_scope_5",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_6",
+    "name": "screen_scope_6",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_7",
+    "name": "screen_scope_7",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_8",
+    "name": "screen_scope_8",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_9",
+    "name": "screen_scope_9",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_10",
+    "name": "screen_scope_10",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_11",
+    "name": "screen_scope_11",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_12",
+    "name": "screen_scope_12",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_13",
+    "name": "screen_scope_13",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_14",
+    "name": "screen_scope_14",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_15",
+    "name": "screen_scope_15",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_16",
+    "name": "screen_scope_16",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_17",
+    "name": "screen_scope_17",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_18",
+    "name": "screen_scope_18",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_19",
+    "name": "screen_scope_19",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_20",
+    "name": "screen_scope_20",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_21",
+    "name": "screen_scope_21",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_22",
+    "name": "screen_scope_22",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_23",
+    "name": "screen_scope_23",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_24",
+    "name": "screen_scope_24",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_25",
+    "name": "screen_scope_25",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_26",
+    "name": "screen_scope_26",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_27",
+    "name": "screen_scope_27",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_28",
+    "name": "screen_scope_28",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_29",
+    "name": "screen_scope_29",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_30",
+    "name": "screen_scope_30",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_scope_31",
+    "name": "screen_scope_31",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_env",
+    "name": "screen_env",
+    "min": 0,
+    "max": 16,
+    "default": 0,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_lfo",
+    "name": "screen_lfo",
+    "min": 0,
+    "max": 16,
+    "default": 8,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_state",
+    "name": "screen_state",
+    "min": 0,
+    "max": 3,
+    "default": 0,
+    "display": "int",
+    "display_only": true
   }
 ]

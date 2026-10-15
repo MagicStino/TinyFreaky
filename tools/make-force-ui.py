@@ -6,19 +6,28 @@ ROOT=Path(__file__).resolve().parents[1]
 params=json.loads((ROOT/'vst/params.json').read_text());bykey={p['key']:p for p in params}
 for key in ['screen_preset','screen_model','screen_detail','screen_hint']:
  if key not in bykey:params.append(dict(key=key,name=key,display='string'))
+for i in range(35):
+ key='screen_scope_'+str(i) if i<32 else ['screen_env','screen_lfo','screen_state'][i-32]
+ if key not in bykey:params.append(dict(key=key,name=key,min=0,max=3 if i==34 else 16,default=8 if i<32 or i==33 else 0,display='int',display_only=True))
 (ROOT/'vst/params.json').write_text(json.dumps(params,indent=2)+'\n')
-(ROOT/'src/screen_names.inc').write_text('\n'.join(json.dumps(p['name'])+',' for p in params if p.get('display')!='string')+'\n')
-(ROOT/'src/screen_options.inc').write_text('\n'.join(json.dumps('\t'.join(p.get('options',[])))+',' for p in params if p.get('display')!='string')+'\n')
-svg='''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628"><defs><linearGradient id="chassis" x1="0" y1="0" x2="0.7" y2="1"><stop offset="0" stop-color="#183a30"/><stop offset="0.38" stop-color="#143329"/><stop offset="1" stop-color="#0e251f"/></linearGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c4035"/><stop offset="0.16" stop-color="#193b31"/><stop offset="0.6" stop-color="#17372e"/><stop offset="1" stop-color="#133027"/></linearGradient></defs><rect width="1280" height="628" fill="url(#chassis)"/><text x="26" y="42" fill="#f2efdf" font-family="DejaVu Sans" font-size="36" font-weight="bold">tinyfreaky</text><text x="1252" y="40" text-anchor="end" fill="#f18a3c" font-family="DejaVu Sans" font-size="28">0.3.2</text><rect x="24" y="60" width="1232" height="174" rx="12" fill="#070f15" stroke="#507d84" stroke-width="2"/><path d="M48 118H1230 M48 176H1230" stroke="#243c46"/><rect x="24" y="252" width="1232" height="366" rx="12" fill="url(#panel)" stroke="#507260"/></svg>'''
+(ROOT/'src/screen_names.inc').write_text('\n'.join(json.dumps(p['name'])+',' for p in params if p.get('display')!='string' and not p.get('display_only'))+'\n')
+(ROOT/'src/screen_options.inc').write_text('\n'.join(json.dumps('\t'.join(p.get('options',[])))+',' for p in params if p.get('display')!='string' and not p.get('display_only'))+'\n')
+svg='''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628"><defs><linearGradient id="chassis" x1="0" y1="0" x2="0.7" y2="1"><stop offset="0" stop-color="#183a30"/><stop offset="0.38" stop-color="#143329"/><stop offset="1" stop-color="#0e251f"/></linearGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c4035"/><stop offset="0.16" stop-color="#193b31"/><stop offset="0.6" stop-color="#17372e"/><stop offset="1" stop-color="#133027"/></linearGradient></defs><rect width="1280" height="628" fill="url(#chassis)"/><text x="26" y="42" fill="#f2efdf" font-family="DejaVu Sans" font-size="36" font-weight="bold">tinyfreaky</text><text x="1252" y="40" text-anchor="end" fill="#f18a3c" font-family="DejaVu Sans" font-size="28">0.3.3</text><rect x="24" y="60" width="1232" height="174" rx="12" fill="#070f15" stroke="#507d84" stroke-width="2"/><path d="M48 118H1230 M48 176H1230" stroke="#243c46"/><rect x="24" y="252" width="1232" height="366" rx="12" fill="url(#panel)" stroke="#507260"/></svg>'''
 (ROOT/'vst/readable-panel.svg').write_text(svg)
 lines=['style=dark','theme_bg=102b25','theme_panel=16382f','theme_ink=f2efdf','theme_ink_dim=b8db91','theme_accent=f18a3c','theme_accent_hi=b8db91','theme_knob_face=f18a3c']
 
 def header(tab,title):
  lines.extend([f'[tab {tab}]','art file=readable-panel.svg',f'text cx=646 cy=119 label="{title}" size=2.4 font="Titillium Web" weight=600 color=b8db91',
- 'readout box=0 cx=640 cy=177 w=1176 h=50 label="" key=screen_preset tsize=36 tcolor=d9f8ff tpad=0 talign=left',
- 'readout box=0 cx=398 cy=234 w=700 h=48 label="" key=screen_model tsize=44 tcolor=f2efdf tpad=0 talign=left',
- 'readout box=0 cx=1010 cy=234 w=444 h=48 label="" key=screen_hint tsize=28 tcolor=f18a3c tpad=0 talign=right',
- 'readout box=0 cx=640 cy=289 w=1176 h=48 label="" key=screen_detail tsize=36 tcolor=d9f8ff tpad=0 talign=left'])
+ 'readout box=0 cx=448 cy=177 w=800 h=50 label="" key=screen_preset tsize=36 tcolor=d9f8ff tpad=0 talign=left',
+ 'readout box=0 cx=448 cy=234 w=800 h=48 label="" key=screen_model tsize=44 tcolor=f2efdf tpad=0 talign=left',
+ 'readout box=0 cx=1030 cy=289 w=400 h=48 label="" key=screen_hint tsize=28 tcolor=f18a3c tpad=0 talign=right',
+ 'readout box=0 cx=448 cy=289 w=800 h=48 label="" key=screen_detail tsize=32 tcolor=d9f8ff tpad=0 talign=left'])
+ lines.append('text cx=862 cy=202 label="E L" size=1.6 font="Titillium Web" weight=600 color=b8db91')
+ lines.append('text cx=1040 cy=177 label="OUTPUT SCOPE / AUTO" size=2.2 font="Titillium Web" weight=600 color=b8db91')
+ for i in range(32):lines.append(f'meter cx={895+i*10} cy=234 w=10 h=56 key=screen_scope_{i} strip=scope-strip.png frames=17')
+ lines.extend(['meter cx=1226 cy=177 w=32 h=32 key=screen_state strip=state-strip.png frames=4',
+ 'meter cx=854 cy=234 w=8 h=56 key=screen_env strip=env-strip.png frames=17',
+ 'meter cx=870 cy=234 w=8 h=56 key=screen_lfo strip=lfo-strip.png frames=17'])
 
 def knobs(keys,labels=None,bank=None):
  for i,key in enumerate(keys):

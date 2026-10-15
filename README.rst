@@ -1,3 +1,8 @@
+Live display
+============
+
+Actual output scope, envelope/LFO indicators and play/wait/hold/idle symbols update at 10 Hz using fixed buffers. See docs/UPDATE-0.3.3.txt for scope scaling and hardware limits.
+
 Eight-voice update
 ==================
 

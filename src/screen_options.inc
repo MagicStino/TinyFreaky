@@ -1,6 +1,6 @@
 "",
 "",
-"Mono\tFour voices",
+"Mono\tEight voices",
 "BasicWaves\tSuperWave\tWavetable\tHarmo\tKarplusStr\tV.Analog\tWaveshaper\tTwo Op.FM\tFormant\tChords\tSpeech\tModal\tNoise\tBass\tSawx\tHarm",
 "",
 "",

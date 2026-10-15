@@ -29,5 +29,10 @@ int main(void){
  // SuperWave's two side voices must accumulate different phases when detune is raised.
  preset(s,0);silence(s);s->p[3]=1;s->p[5]=1;noteon(s,69,100);render(s,audio,128);
  assert(fabs(s->v[0].detune[0]-s->v[0].detune[1])>.01);
+ // Capture publishes at 10 Hz with bounded quantized values, then returns to a flat line.
+ preset(s,0);silence(s);noteon(s,69,100);char rev[32];get_param(s,"scope_rev",rev,sizeof rev);unsigned before=strtoul(rev,0,10);
+ for(int b=0;b<35;b++)render(s,audio,128);
+ assert(s->scope_rev==before+1);int moved=0;for(int i=0;i<35;i++)assert(s->visual[i]<= (i==34?3:16));for(int i=0;i<32;i++)if(s->visual[i]!=8)moved++;assert(moved>8);
+ silence(s);for(int i=0;i<32;i++)assert(s->visual[i]==8);assert(s->visual[34]==0);
  destroy(s);puts("quality: 16 engines x 3 filter modes x 4 extremes, eight-voice allocation/stealing/release, mono compatibility, polyphonic headroom, DC rejection and real detuning PASS");
 }
