@@ -6,13 +6,14 @@ import json
 from pathlib import Path
 import re
 
-def manifest(package=None,version='0.2.0-preview.1'):
+def manifest(package=None,version='0.2.2-preview.1',image=None):
     result={
         'schema':'openplugin.community/1','id':'tinyfreaky','name':'Tinyfreaky',
         'author':'MagicStino','repo':'MagicStino/microfreeze',
         'summary':'Experimental independent synth: hardware-style controls, 448 factory entries (334 partial, 114 unavailable) and a 5x7 modulation matrix. Original sound equivalence and full preset compatibility are unverified.',
         'kind':'instrument','category':'synth','license':'MIT',
         'tags':['synth','experimental','force','armv7'],
+        'images':[image or f'https://github.com/MagicStino/microfreeze/releases/download/v{version}/force-readable-preview.png'],
         'packages':[]
     }
     if package:
@@ -28,7 +29,8 @@ def manifest(package=None,version='0.2.0-preview.1'):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--package',type=Path)
-    p.add_argument('--version',default='0.2.0-preview.1')
+    p.add_argument('--version',default='0.2.2-preview.1')
+    p.add_argument('--image',help='Public HTTPS catalog preview URL')
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
-    a.output.write_text(json.dumps(manifest(a.package,a.version),indent=2)+'\n')
+    a.output.write_text(json.dumps(manifest(a.package,a.version,a.image),indent=2)+'\n')
