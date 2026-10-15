@@ -13,7 +13,8 @@
     "name": "Master",
     "default": 0.65,
     "min": 0,
-    "max": 1
+    "max": 1,
+    "dynamic_display": true
   },
   {
     "key": "paraphonic",
@@ -53,7 +54,9 @@
     "default": 0.25,
     "min": 0,
     "max": 1,
-    "cc": 10
+    "cc": 10,
+    "dynamic_display": true,
+    "dynamic_name": true
   },
   {
     "key": "osc_timbre",
@@ -61,7 +64,9 @@
     "default": 0.4,
     "min": 0,
     "max": 1,
-    "cc": 12
+    "cc": 12,
+    "dynamic_display": true,
+    "dynamic_name": true
   },
   {
     "key": "osc_shape",
@@ -69,7 +74,9 @@
     "default": 0.2,
     "min": 0,
     "max": 1,
-    "cc": 13
+    "cc": 13,
+    "dynamic_display": true,
+    "dynamic_name": true
   },
   {
     "key": "glide",
@@ -77,7 +84,8 @@
     "default": 0,
     "min": 0,
     "max": 1,
-    "cc": 5
+    "cc": 5,
+    "dynamic_display": true
   },
   {
     "key": "cutoff",
@@ -85,7 +93,8 @@
     "default": 0.78,
     "min": 0,
     "max": 1,
-    "cc": 23
+    "cc": 23,
+    "dynamic_display": true
   },
   {
     "key": "resonance",
@@ -93,7 +102,8 @@
     "default": 0.1,
     "min": 0,
     "max": 1,
-    "cc": 83
+    "cc": 83,
+    "dynamic_display": true
   },
   {
     "key": "attack",
@@ -101,7 +111,8 @@
     "default": 0.01,
     "min": 0,
     "max": 1,
-    "cc": 105
+    "cc": 105,
+    "dynamic_display": true
   },
   {
     "key": "decay",
@@ -109,7 +120,8 @@
     "default": 0.25,
     "min": 0,
     "max": 1,
-    "cc": 106
+    "cc": 106,
+    "dynamic_display": true
   },
   {
     "key": "sustain",
@@ -117,22 +129,25 @@
     "default": 0.7,
     "min": 0,
     "max": 1,
-    "cc": 29
+    "cc": 29,
+    "dynamic_display": true
   },
   {
     "key": "filter_amount",
     "name": "Filter amount",
-    "default": 0.15,
+    "default": 0.5,
     "min": 0,
     "max": 1,
-    "cc": 26
+    "cc": 26,
+    "dynamic_display": true
   },
   {
     "key": "amp_mod",
     "name": "Amp envelope",
     "default": 1,
     "min": 0,
-    "max": 1
+    "max": 1,
+    "dynamic_display": true
   },
   {
     "key": "filter_type",
@@ -205,7 +220,8 @@
     "default": 0.2,
     "min": 0,
     "max": 1,
-    "cc": 102
+    "cc": 102,
+    "dynamic_display": true
   },
   {
     "key": "cyc_fall",
@@ -213,7 +229,8 @@
     "default": 0.3,
     "min": 0,
     "max": 1,
-    "cc": 103
+    "cc": 103,
+    "dynamic_display": true
   },
   {
     "key": "cyc_hold",
@@ -221,7 +238,8 @@
     "default": 0.2,
     "min": 0,
     "max": 1,
-    "cc": 28
+    "cc": 28,
+    "dynamic_display": true
   },
   {
     "key": "cyc_amount",
@@ -229,7 +247,8 @@
     "default": 1,
     "min": 0,
     "max": 1,
-    "cc": 24
+    "cc": 24,
+    "dynamic_display": true
   },
   {
     "key": "cyc_rise_curve",
@@ -700,7 +719,8 @@
     "default": 0,
     "min": 0,
     "max": 1,
-    "momentary": true
+    "momentary": true,
+    "dynamic_display": true
   },
   {
     "key": "status",
@@ -727,5 +747,725 @@
     "key": "screen_hint",
     "name": "screen_hint",
     "display": "string"
+  },
+  {
+    "key": "arp_on",
+    "name": "Arpeggiator",
+    "options": [
+      "Off",
+      "On"
+    ],
+    "default": 0
+  },
+  {
+    "key": "arp_mode",
+    "name": "Arp mode",
+    "options": [
+      "Up",
+      "Order",
+      "Random",
+      "Pattern"
+    ],
+    "default": 0
+  },
+  {
+    "key": "arp_rate",
+    "name": "Arp rate",
+    "options": [
+      "8/1",
+      "4/1",
+      "2/1",
+      "1/1",
+      "1/2",
+      "1/2T",
+      "1/4",
+      "1/4T",
+      "1/8",
+      "1/8T",
+      "1/16",
+      "1/16T",
+      "1/32",
+      "1/32T"
+    ],
+    "default": 10
+  },
+  {
+    "key": "swing",
+    "name": "Swing",
+    "min": 50,
+    "max": 75,
+    "default": 50,
+    "dynamic_display": true
+  },
+  {
+    "key": "arp_octaves",
+    "name": "Arp octaves",
+    "min": 1,
+    "max": 4,
+    "default": 1,
+    "display": "int"
+  },
+  {
+    "key": "arp_gate",
+    "name": "Arp gate",
+    "min": 0.05,
+    "max": 1,
+    "default": 0.6,
+    "dynamic_display": true
+  },
+  {
+    "key": "rhythm_sync",
+    "name": "Rhythm clock",
+    "options": [
+      "Internal",
+      "Host"
+    ],
+    "default": 0
+  },
+  {
+    "key": "seq_on",
+    "name": "Sequence",
+    "options": [
+      "Off",
+      "Play"
+    ],
+    "default": 0
+  },
+  {
+    "key": "seq_rate",
+    "name": "Sequence rate",
+    "options": [
+      "8/1",
+      "4/1",
+      "2/1",
+      "1/1",
+      "1/2",
+      "1/2T",
+      "1/4",
+      "1/4T",
+      "1/8",
+      "1/8T",
+      "1/16",
+      "1/16T",
+      "1/32",
+      "1/32T"
+    ],
+    "default": 10
+  },
+  {
+    "key": "seq_length",
+    "name": "Sequence length",
+    "min": 1,
+    "max": 64,
+    "default": 16,
+    "display": "int"
+  },
+  {
+    "key": "seq_gate",
+    "name": "Sequence gate",
+    "min": 0.05,
+    "max": 1,
+    "default": 0.6,
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_velocity",
+    "name": "Sequence velocity",
+    "min": 0,
+    "max": 1,
+    "default": 0.8,
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_transpose",
+    "name": "Sequence transpose",
+    "min": -24,
+    "max": 24,
+    "default": 0,
+    "display": "int"
+  },
+  {
+    "key": "seq_reset",
+    "name": "Restart sequence",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "momentary": true
+  },
+  {
+    "key": "seq_note_0",
+    "name": "Step 1",
+    "min": -1,
+    "max": 127,
+    "default": 60,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_1",
+    "name": "Step 2",
+    "min": -1,
+    "max": 127,
+    "default": 64,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_2",
+    "name": "Step 3",
+    "min": -1,
+    "max": 127,
+    "default": 67,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_3",
+    "name": "Step 4",
+    "min": -1,
+    "max": 127,
+    "default": 72,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_4",
+    "name": "Step 5",
+    "min": -1,
+    "max": 127,
+    "default": 67,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_5",
+    "name": "Step 6",
+    "min": -1,
+    "max": 127,
+    "default": 64,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_6",
+    "name": "Step 7",
+    "min": -1,
+    "max": 127,
+    "default": 62,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_7",
+    "name": "Step 8",
+    "min": -1,
+    "max": 127,
+    "default": 59,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_8",
+    "name": "Step 9",
+    "min": -1,
+    "max": 127,
+    "default": 60,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_9",
+    "name": "Step 10",
+    "min": -1,
+    "max": 127,
+    "default": 64,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_10",
+    "name": "Step 11",
+    "min": -1,
+    "max": 127,
+    "default": 67,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_11",
+    "name": "Step 12",
+    "min": -1,
+    "max": 127,
+    "default": 72,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_12",
+    "name": "Step 13",
+    "min": -1,
+    "max": 127,
+    "default": 67,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_13",
+    "name": "Step 14",
+    "min": -1,
+    "max": 127,
+    "default": 64,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_14",
+    "name": "Step 15",
+    "min": -1,
+    "max": 127,
+    "default": 62,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_15",
+    "name": "Step 16",
+    "min": -1,
+    "max": 127,
+    "default": 59,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_16",
+    "name": "Step 17",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_17",
+    "name": "Step 18",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_18",
+    "name": "Step 19",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_19",
+    "name": "Step 20",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_20",
+    "name": "Step 21",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_21",
+    "name": "Step 22",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_22",
+    "name": "Step 23",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_23",
+    "name": "Step 24",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_24",
+    "name": "Step 25",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_25",
+    "name": "Step 26",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_26",
+    "name": "Step 27",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_27",
+    "name": "Step 28",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_28",
+    "name": "Step 29",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_29",
+    "name": "Step 30",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_30",
+    "name": "Step 31",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_31",
+    "name": "Step 32",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_32",
+    "name": "Step 33",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_33",
+    "name": "Step 34",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_34",
+    "name": "Step 35",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_35",
+    "name": "Step 36",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_36",
+    "name": "Step 37",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_37",
+    "name": "Step 38",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_38",
+    "name": "Step 39",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_39",
+    "name": "Step 40",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_40",
+    "name": "Step 41",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_41",
+    "name": "Step 42",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_42",
+    "name": "Step 43",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_43",
+    "name": "Step 44",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_44",
+    "name": "Step 45",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_45",
+    "name": "Step 46",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_46",
+    "name": "Step 47",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_47",
+    "name": "Step 48",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_48",
+    "name": "Step 49",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_49",
+    "name": "Step 50",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_50",
+    "name": "Step 51",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_51",
+    "name": "Step 52",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_52",
+    "name": "Step 53",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_53",
+    "name": "Step 54",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_54",
+    "name": "Step 55",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_55",
+    "name": "Step 56",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_56",
+    "name": "Step 57",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_57",
+    "name": "Step 58",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_58",
+    "name": "Step 59",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_59",
+    "name": "Step 60",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_60",
+    "name": "Step 61",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_61",
+    "name": "Step 62",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_62",
+    "name": "Step 63",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
+  },
+  {
+    "key": "seq_note_63",
+    "name": "Step 64",
+    "min": -1,
+    "max": 127,
+    "default": -1,
+    "display": "int",
+    "dynamic_display": true
   }
 ]

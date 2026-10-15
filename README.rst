@@ -1,63 +1,20 @@
 Tinyfreaky
 ==========
 
-MicroFreak-style instrument for Force OpenPlugin (ARMv7 VST2) and desktop VST3.
-Green, orange and white controls are grouped by the original hardware panel:
-digital oscillator, filter, cycling envelope, LFO, envelope and performance.
-The desktop editor and Force skin expose all 35 modulation matrix amounts.
+An experimental synthesizer for Akai Force OpenPlugin and desktop VST3. Green, orange and white controls, a live OLED-style display, a readable 5x7 modulation matrix, arpeggiator, swing and an editable 64-step note sequencer.
 
-Current status
---------------
+Version 0.3 adds original MIT Mutable Instruments cores to eleven oscillator paths, corrects the shared bipolar Filter Amount route, imports identified factory arp controls and adds rhythm/state support. See docs/UPDATE-0.3.txt for operation and compatibility.
 
-This is a research build, not a complete firmware port. Direct firmware reverse
-engineering is now permitted for this project; there is no cleanroom restriction.
-The existing DSP remains independently authored and approximate. A new interface
-and included factory parameters do not establish original sound equivalence.
-Original analog circuitry is not contained in the firmware image.
+Factory data includes all 448 unique originals collected from the official MIDI Control Center banks, with source records retained. 334 entries use currently available models. 114 entries require missing user-table/sample/granular/vocoder engines and remain clearly unavailable. Original sequence/modulation bytes are retained but not yet decoded. Arturia sound equivalence is unverified.
 
-Factory presets
----------------
+Builds
+------
 
-All four MicroFreak factory banks shipped with the official Arturia MIDI Control
-Center 1.23.0.134 package have been collected: Factory3.0, Factory6.0,
-New Presets 4.0, New Presets 5.0. There are 832 populated records, 960 empty slots,
-and 448 distinct decoded payloads. The original bank archive preserves every
-record, including duplicate locations and empty slots.
+Force: set MPC_VST_TOOLS to the pinned checkout listed in tools/build-force.sh, then run that helper. It builds the ARM instrument and skin. Run tools/test-engine.py and tools/test-force-host.sh for the native checks.
 
-All 448 distinct presets are compiled into the Force and desktop browser after
-eight native presets, so no manual preset-folder copying is required.
-334 entries have partial parameter translations; their names start with ``~``.
-These use approximate DSP and do not reproduce original sequences or all routing.
-114 entries require unsupported engines; their names start with ``[Unavailable]``
-and selecting them mutes audio instead of playing a substitute sound.
+Desktop: set VST3_SDK_ROOT to desktop/SDK_REVISION with recursive submodules, then run tools/build-desktop.sh. The official Steinberg SDK and VSTGUI provide the VST3/editor.
 
-The original banks and sample/wavetable assets are preserved under assets/factory.
-The sample and wavetable archives are not yet decoded by the audio engine.
-See assets/factory/index.json for every name, source bank, digest and limitation.
-Factory6.0 is the bank's supplied name; it is not a claim of MicroFreak firmware 6.
+Licenses
+--------
 
-Build
------
-
-Force: set MPC_VST_TOOLS to the pinned dependency and run tools/build-force.sh.
-Skin generation requires Pillow, Playwright and Chromium. Desktop: set
-VST3_SDK_ROOT to the revision in desktop/SDK_REVISION, then run
-tools/build-desktop.sh. The official VST3 SDK and VSTGUI provide the custom editor.
-
-The current build passes engine/import tests and Linux Steinberg validation.
-Physical Force playback, touchscreen rendering, CPU usage and exact sound are
-not verified. Windows and macOS builds of this revision still require CI.
-
-Licenses and provenance
------------------------
-
-Original plugin code is MIT; SDK, VSTGUI and wrapper components retain their
-licenses. Factory parameter, sample and wavetable assets originate from Arturia's
-official MIDI Control Center distribution and are not relicensed as MIT.
-See assets/factory/SOURCE.txt. Names identify compatibility targets; this project
-is unaffiliated with Arturia, Akai, inMusic and Steinberg.
-
-Force UI update 0.2.1-preview.1
------------------------------
-
-35px knob labels, eight controls per page, and a live OLED-style preset/model/parameter display replace the cramped panel. Desktop layout and DSP remain unchanged. See docs/UI-UPDATE-0.2.1.txt.
+Plugin code and the upstream Mutable Instruments sources are MIT, with full upstream headers and revision provenance retained. SDK, VSTGUI, wrapper and fonts retain their notices. Factory parameter, sample and wavetable assets originate from Arturia's official MIDI Control Center and are not relicensed as MIT; see assets/factory/SOURCE.txt. Artwork is a generated promotional illustration, not a photograph of hardware. This independent project is unaffiliated with Arturia, Akai, inMusic or Steinberg.

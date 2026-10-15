@@ -103,7 +103,7 @@ def translate(data, name, params):
         raise ValueError('No oscillator type field; refusing an unidentified patch')
     model_supported = True
     values, consumed, warnings = {}, set(), [
-        'Original sound equivalence is unverified; all DSP is independently implemented.',
+        'Original sound equivalence is unverified; selected oscillator paths use licensed Mutable Instruments cores.',
         'Time/rate/cutoff response curves have not been measured against hardware.'
     ]
     bykey={p['key']:p for p in params}
@@ -137,6 +137,13 @@ def translate(data, name, params):
         elif field in ('VCF.Type','VCF.DType','LFO.Shape','VCO.BendRng'):
             put({'VCF.Type':'filter_type','VCF.DType':'filter_type',
                  'LFO.Shape':'lfo_shape','VCO.BendRng':'bend_range'}[field],discrete(f),f)
+        elif field in ('Arp.Range','Arp.Swing','Arp.Dir','Arp.Div'):
+            key={'Arp.Range':'arp_octaves','Arp.Swing':'swing','Arp.Dir':'arp_mode','Arp.Div':'arp_rate'}[field]
+            value=discrete(f)+(1 if field=='Arp.Range' else 50 if field=='Arp.Swing' else 3 if field=='Arp.Div' else 0)
+            put(key,value,f)
+        elif field=='Arp.Enable':
+            sequence_on=any(x['group']=='Arp' and x['name']=='SeqOn' and discrete(x) for x in items)
+            if not sequence_on:put('arp_on',discrete(f),f)
         elif field=='Kbd.Octave':
             put('octave',discrete(f)-3,f)
         elif field=='EG1.Mode':
@@ -162,7 +169,7 @@ def translate(data, name, params):
     if sequence:
         warnings.append('Binary sequence/modulation-track region preserved, not imported')
     if any(f['group']=='Arp' and f['name']=='Enable' and discrete(f) for f in items):
-        warnings.append('Enabled original arpeggiator/sequencer is not implemented')
+        warnings.append('Original sequence/modulation tracks and free-rate curve are not yet decoded; arpeggiator controls are mapped where identified')
     model=int(values.get('osc_type',0))
     if model>=16:
         warnings.append('Selected engine needs unavailable wavetable/sample/audio-input support')
@@ -206,7 +213,7 @@ def main():
                 default=p.get('default',p.get('min',0))
                 if isinstance(default,str): default=p['options'].index(default)
                 vals.append(str(patch['parameters'].get(p['key'],default)))
-            state='MFZNAME:'+name.replace('\n',' ')+'\nMFZ1;'+';'.join(vals)+';\n'
+            state='MFZNAME:'+name.replace('\n',' ')+'\nMFZ2;'+';'.join(vals)+';\n'
             (a.output/(stem+'.mfz')).write_text(state)
         print(f'{name}: partial; {len(patch["parameters"])} mapped controls; {len(patch["unmapped_records"])} retained fields')
 

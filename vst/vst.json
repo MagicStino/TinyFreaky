@@ -2,7 +2,7 @@
   "name": "Tinyfreaky",
   "vendor": "MagicStino",
   "uid": "TyFk",
-  "version": 2020,
+  "version": 3000,
   "so": "tinyfreaky.so",
   "params": "params.json",
   "layout": "layout.conf",
@@ -13,10 +13,39 @@
   "build": {
     "root": "..",
     "sources": [
-      "src/engine.c"
+      "src/engine.c",
+      "src/plaits_bridge.cpp",
+      "third_party/eurorack/plaits/dsp/chords/chord_bank.cc",
+      "third_party/eurorack/plaits/dsp/engine/virtual_analog_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/additive_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/fm_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/chord_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/grain_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/string_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/modal_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/waveshaping_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/noise_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/wavetable_engine.cc",
+      "third_party/eurorack/plaits/dsp/engine/speech_engine.cc",
+      "third_party/eurorack/plaits/dsp/speech/naive_speech_synth.cc",
+      "third_party/eurorack/plaits/dsp/speech/lpc_speech_synth_controller.cc",
+      "third_party/eurorack/plaits/dsp/speech/lpc_speech_synth.cc",
+      "third_party/eurorack/plaits/dsp/speech/sam_speech_synth.cc",
+      "third_party/eurorack/plaits/dsp/speech/lpc_speech_synth_words.cc",
+      "third_party/eurorack/plaits/dsp/speech/lpc_speech_synth_phonemes.cc",
+      "third_party/eurorack/plaits/dsp/physical_modelling/modal_voice.cc",
+      "third_party/eurorack/plaits/dsp/physical_modelling/resonator.cc",
+      "third_party/eurorack/plaits/dsp/physical_modelling/string.cc",
+      "third_party/eurorack/plaits/dsp/physical_modelling/string_voice.cc",
+      "third_party/eurorack/plaits/dsp/fm/algorithms.cc",
+      "third_party/eurorack/plaits/dsp/fm/dx_units.cc",
+      "third_party/eurorack/plaits/resources.cc",
+      "third_party/eurorack/stmlib/dsp/units.cc",
+      "third_party/eurorack/stmlib/utils/random.cc"
     ],
     "cflags": [
-      "-std=c99"
+      "-DTEST",
+      "-Ithird_party/eurorack"
     ],
     "libs": [
       "-lm"
@@ -26,7 +55,9 @@
     "SAMPLE_ACCURATE": 1,
     "HAS_SONG_POS": 1,
     "MODULE_SUBDIR": "\"presets\"",
-    "PARAM_TEXT_MAX": 128
+    "PARAM_TEXT_MAX": 128,
+    "HAS_DISPLAY_REV": 1,
+    "DISPLAY_REV_NO_UPDATE": 1
   },
   "art": "html"
 }

@@ -1,9 +1,9 @@
 name: Desktop VST3
 on:
   push:
-    paths: ['src/**', 'desktop/**', 'vst/params.json', 'tools/gen-desktop-params.py', '.github/workflows/desktop.yml']
+    paths: ['src/**', 'third_party/**', 'desktop/**', 'vst/params.json', 'tools/gen-desktop-params.py', '.github/workflows/desktop.yml']
   pull_request:
-    paths: ['src/**', 'desktop/**', 'vst/params.json', 'tools/gen-desktop-params.py', '.github/workflows/desktop.yml']
+    paths: ['src/**', 'third_party/**', 'desktop/**', 'vst/params.json', 'tools/gen-desktop-params.py', '.github/workflows/desktop.yml']
   workflow_dispatch:
 permissions:
   contents: read

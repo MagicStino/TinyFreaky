@@ -4,7 +4,7 @@
   "name": "Tinyfreaky",
   "author": "MagicStino",
   "repo": "MagicStino/microfreeze",
-  "summary": "Experimental synth with readable controls and live OLED-style display. 448 factory entries: 334 partial, 114 unavailable/muted. Original sound equivalence unverified.",
+  "summary": "Synth with a readable 5x7 matrix, arp, swing and editable 64-step sequencer. Eleven oscillator paths use original Mutable Instruments cores. 448 factory entries: 334 translated, 114 require unavailable engines. Original sound equivalence is unverified.",
   "kind": "instrument",
   "category": "synth",
   "license": "MIT",
@@ -15,9 +15,21 @@
     "armv7"
   ],
   "images": [
-    "https://github.com/MagicStino/microfreeze/releases/download/v0.2.2-preview.1/force-readable-preview.png"
+    "https://github.com/MagicStino/microfreeze/releases/download/v0.3.0-preview.1/tinyfreaky-artwork.png",
+    "https://github.com/MagicStino/microfreeze/releases/download/v0.3.0-preview.1/force-readable-preview.png"
   ],
   "packages": [
+    {
+      "version": "0.3.0-preview.1",
+      "arch": "armv7",
+      "layout": "portable",
+      "devices": [
+        "force"
+      ],
+      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.3.0-preview.1/Tinyfreaky-0.3.0-preview.1-mpc-armv7.zip",
+      "size": 11826640,
+      "sha256": "a1862f7a00584f279031dcc79222f185d8c547f3c67b66e2ecd604817dfa3f2d"
+    },
     {
       "version": "0.2.2-preview.1",
       "arch": "armv7",
