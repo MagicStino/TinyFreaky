@@ -22,4 +22,4 @@ Host state preserves exact engine state and parameter values. Loading a preset r
 
 ## Validation
 
-Final engine build (16 supported oscillator choices, preset range 0–511): Linux x86_64 official SDK validator passed 47 tests with zero failures. Additional smoke checks pass at 44.1, 48 and 96 kHz, verify finite audible output, block-partition invariance, note timing at 44.1 kHz and host-state restoration. Windows and macOS builds are configured in CI and were not executed locally. Distribution bundles are unsigned.
+Final engine build (16 supported oscillator choices, preset range 0–511): Linux x86_64 official SDK validator passed 47 tests with zero failures. Additional smoke checks pass at 44.1, 48 and 96 kHz, verify finite audible output, block-partition invariance, note timing at 44.1 kHz and host-state restoration. The same checks also pass at the SDK stress rates 1234.568 and 1234567.8 Hz. Windows and macOS CI validation is pending for this revision. Distribution bundles are unsigned.

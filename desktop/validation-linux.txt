@@ -2,7 +2,7 @@ SDK commit: 3cdf9ca5d1f5b1b21e0a86832aa4abe55607bd96
 Linux x86_64 / Debian 12 / GCC 12.2 / CMake 3.25
 Final parameter metadata: 70 numeric controls, 16 supported oscillator choices, stable preset slots 0–511.
 Official Steinberg validator: 47 tests passed, 0 failed.
-CTest desktop-smoke: passed (44.1/48/96 kHz, MIDI event timing, streaming block partition independence, finite audible output, exact saved state bytes after restore).
-Windows and macOS: CI configured, not run locally. Shared src/engine.h used directly, including MSVC guard.
+CTest desktop-smoke: passed (44.1/48/96 kHz and SDK stress rates 1234.568/1234567.8 Hz, MIDI event timing, streaming block partition independence, finite audible output, exact saved state bytes after restore).
+Windows and macOS: portability fixes applied; CI rerun pending. Shared src/engine.h used directly, including MSVC guard.
 Engine source SHA256: cd71e3b1cef8141a43000ae569066575b443db060d8674c7aa429e01c990802a
-Binary SHA256: d24c31e58aec9b5a13401c2cbffd042b4080620e3b91b9e6ecebaf7abba1573d
+Binary SHA256: d9e048e6d37e45804b300f8a9c0e5fbcd9ba7e0469a1973ece45715864d73035
