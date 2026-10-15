@@ -1769,8 +1769,8 @@
     "key": "screen_lfo",
     "name": "screen_lfo",
     "min": 0,
-    "max": 16,
-    "default": 8,
+    "max": 152,
+    "default": 44,
     "display": "int",
     "display_only": true
   },

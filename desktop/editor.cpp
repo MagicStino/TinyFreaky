@@ -51,7 +51,7 @@ public:
  ~Panel()override{finish();if(display)api->destroy(display);}
  void onIdle()override{bool changed=false;for(int i=0;i<Count;i++){double v=controller->getParamNormalized(i);if(v!=previous[i]){previous[i]=v;changed=true;}}for(int i=0;i<VisualCount;i++){double v=controller->getParamNormalized(VisualBase+i);if(v!=visualPrevious[i]){visualPrevious[i]=v;changed=true;}}if(changed)invalid();}
  void draw(CDrawContext*d)override{
-  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));text(d,"tinyfreaky",24,8,240,42,36);text(d,pageNames[page],450,13,380,34,24,green);text(d,"0.3.3",1130,13,120,34,24,orange);
+  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));text(d,"tinyfreaky",24,8,240,42,36);text(d,pageNames[page],450,13,380,34,24,green);text(d,"0.3.4",1130,13,120,34,24,orange);
   d->setFillColor(oled);d->drawRect(CRect(24,60,1256,234),kDrawFilled);gradient(d,CRect(24,252,1256,574),CColor(28,64,53),CColor(19,48,39));d->setFrameColor(CColor(80,114,96));d->setLineWidth(1);d->drawLine(CPoint(24,252),CPoint(1256,252));
   auto preset=value(0);if(preset.rfind("~ ",0)==0)preset.erase(0,2);text(d,preset.c_str(),48,68,800,54,36,cyan);
   int model=indexOf("osc_type");std::string modelText="ENGINE  "+value(model);text(d,modelText.c_str(),48,125,800,48,36,white);
@@ -62,7 +62,9 @@ public:
   text(d,"OUTPUT SCOPE / AUTO",890,70,320,28,18,green);
   d->setFrameColor(CColor(36,60,70));d->setLineWidth(1);d->drawLine(CPoint(890,132),CPoint(1210,132));d->setFrameColor(cyan);d->setLineWidth(2);
   CPoint last(890,132);for(int i=0;i<32;i++){CPoint next(895+i*10,156-48*visualPrevious[i]);if(i)d->drawLine(last,next);last=next;}
-  for(int i=0;i<2;i++){double x=850+i*16;d->setFillColor(i?orange:green);d->drawRect(CRect(x,160-56*visualPrevious[32+i],x+6,160),kDrawFilled);}
+  d->setFillColor(green);d->drawRect(CRect(850,160-56*visualPrevious[32],856,160),kDrawFilled);
+  int range=(int)std::lround(visualPrevious[33]*152),hi=0;while(hi<16&&(hi+1)*(hi+2)/2<=range)hi++;int lo=range-hi*(hi+1)/2;
+  double top=156-hi*3.,bottom=156-lo*3.;d->setFillColor(CColor(146,86,44));d->drawRect(CRect(868,top,874,std::max(top+2,bottom)),kDrawFilled);d->setFrameColor(orange);d->setLineWidth(2);d->drawLine(CPoint(866,top),CPoint(876,top));d->drawLine(CPoint(866,bottom),CPoint(876,bottom));
   int state=(int)std::lround(visualPrevious[34]*3);d->setFillColor(state==1?orange:state==2?green:dim);d->setFrameColor(state==1?orange:state==2?green:dim);
   if(state==1){d->setLineWidth(3);d->drawLine(CPoint(1220,82),CPoint(1238,92));d->drawLine(CPoint(1238,92),CPoint(1220,102));d->drawLine(CPoint(1220,102),CPoint(1220,82));}else if(state==2){d->drawRect(CRect(1220,82,1226,102),kDrawFilled);d->drawRect(CRect(1232,82,1238,102),kDrawFilled);}else d->drawRect(CRect(1220,84,1238,102),state==3?kDrawStroked:kDrawFilled);
   if(display){char raw[24];std::snprintf(raw,sizeof raw,"%.0f",controller->getParamNormalized(model)*15);api->set_param(display,"osc_type",raw);}

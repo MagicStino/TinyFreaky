@@ -1,0 +1,5 @@
+Tinyfreaky 0.3.4
+
+The LFO indicator now shows the minimum and maximum modulation value traversed during each 100 ms display window, rather than one instantaneous dot. This removes the false frozen-dot effect at LFO rates near multiples of the 10 Hz refresh. Fast cycles appear as a full swept range; slow motion shows a short moving span. A genuinely held sample-and-hold level stays stationary until it changes. This is a range indicator, not a slowed or fabricated LFO animation.
+
+Capture keeps two floats and updates at the existing 10 Hz rate, with no allocations or FFT. A single shared 8x8568 filmstrip contains 153 min/max combinations, below the native strip height limit. Musical DSP, modulation rate, parameter IDs and saved state are unchanged. Force native display performance still needs hardware verification.
