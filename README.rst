@@ -7,19 +7,38 @@ An **8-voice synthesizer by MagicStino** for Akai Force, Windows, macOS and Linu
    :alt: TinyFreaky artwork
    :width: 840
 
-Version 0.3.9 preserves externally played chords across host playback-position changes and corrects note stealing and overlapping note releases. It retains the fuller plucks and clearer noise playback introduced in 0.3.8.
+Explore 16 synthesis engines with up to **8 voices**, from broad detuned waves and evolving digital textures to plucked strings, resonant percussion and vocal tones. Shape their character with the engine-specific Wave, Timbre and Shape controls.
 
-Play with 16 engines, shape the sound with the 5 × 7 modulation matrix, and build patterns with the arpeggiator, swing and 64-step sequencer. The green, orange and white panel has large labels, a clear engine display and a live output scope.
+The green, orange and white panel puts the selected engine, its controls and a live output scope in view.
 
 .. image:: assets/force-readable-preview.png
-   :alt: TinyFreaky interface with the mascot between Master and Glide
+   :alt: TinyFreaky synthesizer interface
    :width: 1100
 
-The white line-art mascot follows pitch and note velocity: low notes bring hip sway, harder playing adds head movement, and occasional varied loops keep it lively. It settles after release.
+Inside the engines
+------------------
 
-.. image:: assets/mascot-velocity.gif
-   :alt: Pitch- and velocity-driven mascot motion
-   :width: 600
+* **Basic Waves** — blend familiar oscillator shapes with pulse-width character and a sub-oscillator.
+* **SuperWave** — spread detuned oscillators into wide leads, pads and ensemble textures.
+* **Wavetable** — scan digital wave shapes for moving, harmonically rich tones.
+* **Harmonic** — shape an additive spectrum, from rounded fundamentals to bright overtones.
+* **Karplus Strong** — excited strings for plucks, twangs and ringing decay.
+* **Virtual Analog** — classic oscillator character for basses, leads and layered chords.
+* **Waveshaper** — reshape the waveform for folded, edged and saturated colours.
+* **Two Operator FM** — explore frequency ratios, modulation and feedback for bells, electric keys and metallic tones.
+* **Formant** — formant-like resonances for vowel-coloured digital textures.
+* **Chords** — generate chord structures inside an oscillator voice and explore their voicing.
+* **Speech** — synthetic vocal and speech-like sounds.
+* **Modal** — resonant, struck-object textures with bell-like and inharmonic partials.
+* **Noise** — clocked and filtered noise, from pitched textures to airy or percussive sounds.
+* **Bass** — driven wave blends with nonlinear shaping and a noise component.
+* **SawX** — saw-based textures with phase movement, noise and sub weight.
+* **Harm** — harmonic-ratio tones with rectification and noise for additional edge.
+
+Modulation and movement
+-----------------------
+
+Route the **5 × 7 modulation matrix** to animate engine controls and shape the sound over time. Build rhythmic phrases with the arpeggiator, rate and swing controls, or use the **64-step sequencer**. Eight-voice playing makes room for chords, layered voicings and overlapping releases.
 
 Downloads
 ---------
