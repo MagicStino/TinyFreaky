@@ -15,10 +15,21 @@
     "armv7"
   ],
   "images": [
-    "https://github.com/MagicStino/microfreeze/releases/download/v0.3.3/tinyfreaky-artwork.png",
-    "https://github.com/MagicStino/microfreeze/releases/download/v0.3.3/force-readable-preview.png"
+    "https://github.com/MagicStino/microfreeze/releases/download/v0.3.4/tinyfreaky-artwork.png",
+    "https://github.com/MagicStino/microfreeze/releases/download/v0.3.4/force-readable-preview.png"
   ],
   "packages": [
+    {
+      "version": "0.3.4",
+      "arch": "armv7",
+      "layout": "portable",
+      "devices": [
+        "force"
+      ],
+      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.3.4/Tinyfreaky-0.3.4-mpc-armv7.zip",
+      "size": 12671251,
+      "sha256": "acac7994ac3a76b4235fa6feebdaa093cea1cdcca2a35057e160fe15cf8756cf"
+    },
     {
       "version": "0.3.3",
       "arch": "armv7",
