@@ -31,6 +31,8 @@ jobs:
           python3 tools/gen-desktop-params.py
           if [[ "$RUNNER_OS" == macOS ]]; then
             cmake -S desktop -B desktop/build -DCMAKE_BUILD_TYPE=Release -DVST3_SDK_ROOT="$RUNNER_TEMP/vst3sdk" "-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64"
+          elif [[ "$RUNNER_OS" == Windows ]]; then
+            cmake -S desktop -B desktop/build -T ClangCL -DCMAKE_BUILD_TYPE=Release -DVST3_SDK_ROOT="$RUNNER_TEMP/vst3sdk"
           else
             cmake -S desktop -B desktop/build -DCMAKE_BUILD_TYPE=Release -DVST3_SDK_ROOT="$RUNNER_TEMP/vst3sdk"
           fi
@@ -38,7 +40,30 @@ jobs:
         run: cmake --build desktop/build --config Release --parallel 2
       - name: Desktop smoke
         run: ctest --test-dir desktop/build -C Release --output-on-failure
+      - name: Package shareable VST3
+        shell: bash
+        run: python3 tools/package-desktop.py --platform "${{ runner.os }}" --version 0.3.3
       - uses: actions/upload-artifact@v4
         with:
           name: Tinyfreaky-${{ runner.os }}-VST3
-          path: desktop/build/VST3/**/*.vst3
+          path: dist/Tinyfreaky-0.3.3-*-VST3.zip
+
+  publish:
+    if: github.ref == 'refs/heads/tinyfreaky'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: Tinyfreaky-*-VST3
+          merge-multiple: true
+          path: packages
+      - name: Publish verified platform downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release view v0.3.3 || gh release create v0.3.3 --target "${{ github.sha }}" --title "Tinyfreaky 0.3.3" --notes "Eight-voice VST3 instrument with live output scope, modulation matrix, arp/swing and sequencer. Native platform builds passed the Steinberg validator and desktop smoke test. macOS includes Apple Silicon and Intel; the Mac build is ad-hoc signed, not notarized. Six engine families and exact original factory sound remain incomplete."
+          gh release upload v0.3.3 packages/*.zip --clobber
