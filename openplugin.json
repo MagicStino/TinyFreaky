@@ -1,10 +1,10 @@
 {
   "schema": "openplugin.community/1",
-  "id": "microfreeze",
-  "name": "Microfreeze",
+  "id": "tinyfreaky",
+  "name": "Tinyfreaky",
   "author": "MagicStino",
   "repo": "MagicStino/microfreeze",
-  "summary": "Experimental independent synth: hardware-style controls, 448 factory entries (334 partial, 114 unavailable) and a 5x7 modulation matrix. Original sound equivalence and full preset compatibility are unverified.",
+  "summary": "Experimental first release: hardware-style interface, 448 factory entries (334 partial translations; 114 unavailable and muted). Original sound equivalence and Force hardware playback unverified.",
   "kind": "instrument",
   "category": "synth",
   "license": "MIT",
@@ -14,5 +14,20 @@
     "force",
     "armv7"
   ],
-  "packages": []
+  "packages": [
+    {
+      "version": "0.2.0-preview.1",
+      "arch": "armv7",
+      "layout": "portable",
+      "devices": [
+        "force"
+      ],
+      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.2.0-preview.1/Tinyfreaky-0.2.0-preview.1-mpc-armv7.zip",
+      "size": 12101686,
+      "sha256": "de1a0fc0497e56b898fdf2d29be66f0f2b08a698ebe8f0872484150c16436144"
+    }
+  ],
+  "images": [
+    "https://github.com/MagicStino/microfreeze/releases/download/v0.2.0-preview.1/tinyfreaky-panel.png"
+  ]
 }
