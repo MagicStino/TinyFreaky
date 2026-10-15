@@ -1,49 +1,58 @@
-Microfreeze
-===========
+Tinyfreaky
+==========
 
-Independent synthesizer prototype for Akai Force OpenPlugin (ARMv7 VST2) and desktop hosts (VST3).
+MicroFreak-style instrument for Force OpenPlugin (ARMv7 VST2) and desktop VST3.
+Green, orange and white controls are grouped by the original hardware panel:
+digital oscillator, filter, cycling envelope, LFO, envelope and performance.
+The desktop editor and Force skin expose all 35 modulation matrix amounts.
 
-Status
-------
-
-This is an experimental cleanroom implementation, not the Arturia firmware running in a plugin. Sixteen oscillator prototypes, four-voice paraphony, a shared multimode filter, envelopes, LFO, MIDI expression and a 5 x 7 modulation matrix are implemented. Original sound equivalence has not been established. Read MODEL_COVERAGE.txt before using it for an existing patch.
-
-User wavetable, sample/granular and vocoder models are unavailable and are explicitly rejected. Original sequences and some modulation assignments are not implemented. The panel inventory documents the target feature set; it does not imply every documented feature is implemented.
-
-Force
------
-
-Use the ARMv7 portable package with Force OpenPlugin on Force 3.9.1. The package contains the library, touchscreen pages, Q-Link mapping and upstream installer. Hardware playback and CPU use still need testing. Follow the install instructions inside the ZIP. The desktop VST3 is a separate binary.
-
-Eight independently created presets are included. Save the plugin in a Force project to preserve its parameter state. User .mfz banks are read from the plugin's presets directory when the instrument is instantiated; reopen the instrument after adding files.
-
-Original presets
-----------------
-
-tools/import-presets.py reads legacy .mbp/.mfp and ZIP .mfprojz/.mfpz containers into a preservation report. It maps understood controls and retains unknown records. It does not claim matching sound, sequences or samples. The V5 engine order still needs fixture verification.
-
-Run ``python3 tools/import-presets.py input.mfprojz converted`` for reports. Only ``--allow-partial`` explicitly emits experimental .mfz patches for supported models. Inspect every report. Unsupported models are not emitted as playable replacements. No original bank or firmware asset is distributed here.
-
-Desktop
--------
-
-The desktop version uses Steinberg's official VST3 SDK. Linux, Windows and macOS require separate builds. The host's generic parameter editor is used; the Force touchscreen skin is specific to Force. See desktop/ and the desktop build workflow. Engine processing is 44.1 kHz internally; the desktop wrapper converts other host rates.
-
-Build and test
+Current status
 --------------
 
-Force build: set MPC_VST_TOOLS to the pinned upstream checkout and run tools/build-force.sh. See docs/FORCE-BUILD.md. Desktop: set VST3_SDK_ROOT to the recursive checkout at desktop/SDK_REVISION and run tools/build-desktop.sh.
+This is a research build, not a complete firmware port. Direct firmware reverse
+engineering is now permitted for this project; there is no cleanroom restriction.
+The existing DSP remains independently authored and approximate. A new interface
+and included factory parameters do not establish original sound equivalence.
+Original analog circuitry is not contained in the firmware image.
 
-Engine tests: ``cc -std=c99 -Wall -Wextra -Werror -Idesktop src/engine.c tests/engine_test.c -lm -o engine-test`` followed by ``./engine-test``. Importer tests: ``python3 tests/test_import.py``.
+Factory presets
+---------------
 
-Cleanroom boundary
-------------------
+All four MicroFreak factory banks shipped with the official Arturia MIDI Control
+Center 1.23.0.134 package have been collected: Factory3.0, Factory6.0,
+New Presets 4.0, New Presets 5.0. There are 832 populated records, 960 empty slots,
+and 448 distinct decoded payloads. The original bank archive preserves every
+record, including duplicate locations and empty slots.
 
-The engine was written by an implementation worker that received only the public-manual control specification and the MIT host ABI. It was instructed not to inspect the firmware, disassembly, recovered DSP, original tables or other synth implementations. Research and implementation were separated. This is a recorded workflow boundary, not an independently audited cleanroom certification.
+All 448 distinct presets are compiled into the Force and desktop browser after
+eight native presets, so no manual preset-folder copying is required.
+334 entries have partial parameter translations; their names start with ``~``.
+These use approximate DSP and do not reproduce original sequences or all routing.
+114 entries require unsupported engines; their names start with ``[Unavailable]``
+and selecting them mutes audio instead of playing a substitute sound.
 
-Public control and file-format specifications are in docs/. Original firmware, disassembly, factory banks and extracted audio data are excluded. Firmware inventory observations are research evidence rather than a recovered audio implementation. Full behavioral reverse engineering remains incomplete.
+The original banks and sample/wavetable assets are preserved under assets/factory.
+The sample and wavetable archives are not yet decoded by the audio engine.
+See assets/factory/index.json for every name, source bank, digest and limitation.
+Factory6.0 is the bank's supplied name; it is not a claim of MicroFreak firmware 6.
 
-License
--------
+Build
+-----
 
-Independent code is MIT. Steinberg SDK components and the Force wrapper retain their respective MIT notices. Product and model names identify compatibility targets and documented controls; this project is unaffiliated with Arturia, Akai, inMusic or Steinberg.
+Force: set MPC_VST_TOOLS to the pinned dependency and run tools/build-force.sh.
+Skin generation requires Pillow, Playwright and Chromium. Desktop: set
+VST3_SDK_ROOT to the revision in desktop/SDK_REVISION, then run
+tools/build-desktop.sh. The official VST3 SDK and VSTGUI provide the custom editor.
+
+The current build passes engine/import tests and Linux Steinberg validation.
+Physical Force playback, touchscreen rendering, CPU usage and exact sound are
+not verified. Windows and macOS builds of this revision still require CI.
+
+Licenses and provenance
+-----------------------
+
+Original plugin code is MIT; SDK, VSTGUI and wrapper components retain their
+licenses. Factory parameter, sample and wavetable assets originate from Arturia's
+official MIDI Control Center distribution and are not relicensed as MIT.
+See assets/factory/SOURCE.txt. Names identify compatibility targets; this project
+is unaffiliated with Arturia, Akai, inMusic and Steinberg.

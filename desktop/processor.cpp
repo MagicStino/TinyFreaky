@@ -8,10 +8,10 @@
 #include <cstring>
 #include <cstdlib>
 #include <string>
-namespace Microfreeze {
+namespace Tinyfreaky {
 Processor::Processor():api(mpc_engine()){setControllerClass(ControllerID);processContextRequirements.needTempo().needProjectTimeMusic().needTransportState();for(int i=0;i<Count;i++)normalized[i]=(definitions[i].initial-definitions[i].lo)/(definitions[i].hi-definitions[i].lo);}
 Processor::~Processor(){if(instance)api->destroy(instance);}
-tresult PLUGIN_API Processor::initialize(FUnknown* context){auto r=AudioEffect::initialize(context);if(r!=kResultOk)return r;addAudioOutput(STR16("Stereo"),SpeakerArr::kStereo);addEventInput(STR16("MIDI"),16);instance=api->create(std::getenv("MICROFREEZE_PRESETS"));return instance?kResultOk:kResultFalse;}
+tresult PLUGIN_API Processor::initialize(FUnknown* context){auto r=AudioEffect::initialize(context);if(r!=kResultOk)return r;addAudioOutput(STR16("Stereo"),SpeakerArr::kStereo);addEventInput(STR16("MIDI"),16);instance=api->create(std::getenv("TINYFREAKY_PRESETS"));return instance?kResultOk:kResultFalse;}
 tresult PLUGIN_API Processor::setBusArrangements(SpeakerArrangement*,int32 ni,SpeakerArrangement* out,int32 no){if(ni||no!=1||out[0]!=SpeakerArr::kStereo)return kResultFalse;return AudioEffect::setBusArrangements(nullptr,0,out,no);}
 tresult PLUGIN_API Processor::canProcessSampleSize(int32 s){return s==kSample32?kResultTrue:kResultFalse;}
 void Processor::resetAudio(){phase=0;before[0]=before[1]=current[0]=current[1]=0;}

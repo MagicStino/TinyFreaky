@@ -1,0 +1,7 @@
+The earlier Microfreeze implementation used a cleanroom workflow.
+At the user's explicit request on 2026-10-15, Tinyfreaky lifts that restriction
+and permits direct firmware inspection and reverse engineering.
+
+This changes the permitted workflow, not the current engine's provenance or
+fidelity. The engine has not been replaced by recovered firmware DSP.
+Private firmware/disassembly analysis stays outside the public source tree.

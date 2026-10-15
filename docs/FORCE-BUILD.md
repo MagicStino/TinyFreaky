@@ -6,18 +6,18 @@ The build helper works from any current directory. It requires Docker, a native 
 MPC_VST_TOOLS=/absolute/path/to/mpc-vst-plugins ./tools/build-force.sh
 ```
 
-Set `PYTHON=/path/to/python3` if Pillow is installed in a different Python environment. `HOST_CC` selects the native skin-artwork compiler. The default Docker image name is `microfreeze-force-cross:bullseye`; override `FORCE_BUILD_IMAGE` if needed.
+Set `PYTHON=/path/to/python3` if Pillow is installed in a different Python environment. `HOST_CC` selects the native skin-artwork compiler. The default Docker image name is `tinyfreaky-force-cross:bullseye`; override `FORCE_BUILD_IMAGE` if needed.
 
 The helper builds skin artwork locally with the upstream renderer and generates `vst/build/params.h`, the native skin, and `pluginlist-entry.xml`. The plugin is cross-compiled in an isolated amd64 Debian bullseye container with the Debian ARM hard-float compiler and glibc 2.31 sysroot. No global emulator registration or privileged container is required. The Dockerfile pins its Debian base image digest; package versions come from the bullseye repositories and are not fully hermetically pinned.
 
-The helper checks that `vst/build/microfreeze.so` is ARM hard-float, exports `VSTPluginMain`, and requires no GLIBC version newer than 2.32. Complete ELF inspection is saved to `vst/build/elf-report.txt`. Generated skins and binaries are build outputs; rebuild them when parameters change.
+The helper checks that `vst/build/tinyfreaky.so` is ARM hard-float, exports `VSTPluginMain`, and requires no GLIBC version newer than 2.32. Complete ELF inspection is saved to `vst/build/elf-report.txt`. Generated skins and binaries are build outputs; rebuild them when parameters change.
 
 ## Verification on 2026-10-15
 
 - Native Docker host: x86-64 Linux.
 - Upstream `arm32v7/gcc:11-bullseye` image downloaded successfully but cannot execute here: `exec format error`, because ARM QEMU/binfmt is unavailable.
 - The cross-compiler alternative produced a real ARMv7 EABI5 hard-float shared library with VFPv3-D16 attributes.
-- The completed Microfreeze plugin compiled and exported `VSTPluginMain`; highest GLIBC dependency: 2.27.
+- The completed Tinyfreaky plugin compiled and exported `VSTPluginMain`; highest GLIBC dependency: 2.27.
 - Skin generation completed without layout warnings. The upstream artwork renderer emitted one compiler warning about potentially truncated text formatting; it did not prevent rendering.
 
 Compilation and ELF checks establish the binary architecture and link compatibility. They do not establish device CPU usage, correct playback on Force, project persistence on hardware, or sonic equivalence to MicroFreak. Device smoke testing remains required. This build process does not access or modify a Force.

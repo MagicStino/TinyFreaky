@@ -1,9 +1,9 @@
 {
-  "name": "Microfreeze",
-  "vendor": "Cleanroom Audio",
-  "uid": "McFz",
-  "version": 1000,
-  "so": "microfreeze.so",
+  "name": "Tinyfreaky",
+  "vendor": "MagicStino",
+  "uid": "TyFk",
+  "version": 2000,
+  "so": "tinyfreaky.so",
   "params": "params.json",
   "layout": "layout.conf",
   "cc": false,
@@ -26,5 +26,6 @@
     "SAMPLE_ACCURATE": 1,
     "HAS_SONG_POS": 1,
     "MODULE_SUBDIR": "\"presets\""
-  }
+  },
+  "art": "html"
 }

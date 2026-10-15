@@ -4,7 +4,7 @@ set -euo pipefail
 PROJECT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 UPSTREAM="${MPC_VST_TOOLS:-$PROJECT/vendor/mpc-vst-plugins}"
 PYTHON="${PYTHON:-python3}"
-IMAGE="${FORCE_BUILD_IMAGE:-microfreeze-force-cross:bullseye}"
+IMAGE="${FORCE_BUILD_IMAGE:-tinyfreaky-force-cross:bullseye}"
 PIN=3167a8df46c085f41277537eebaba4b8d6530ea0
 if [[ ! -f "$UPSTREAM/tools/gen_vst.py" ]]; then
   echo "Set MPC_VST_TOOLS to mpc-vst-plugins checkout at $PIN" >&2; exit 1

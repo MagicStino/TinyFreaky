@@ -28,10 +28,10 @@ jobs:
         shell: bash
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
-          if [[ "$GITHUB_REF_TYPE" != tag ]]; then VERSION=0.1.0; fi
-          python3 "$RUNNER_TEMP/mpc-vst-plugins/tools/release.py" --so vst/build/microfreeze.so --skin 'vst/build/skin/Cleanroom Audio - VST - Microfreeze' --entry vst/build/pluginlist-entry.xml --version "$VERSION" --id microfreeze --repo MagicStino/microfreeze --license MIT --user-data presets --about 'Experimental independent instrument. Original sound equivalence and hardware playback unverified.' -o dist
-          python3 tools/make-openplugin.py --package "dist/Microfreeze-$VERSION-mpc-armv7.zip" --version "$VERSION" --output dist/openplugin-release.json
+          if [[ "$GITHUB_REF_TYPE" != tag ]]; then VERSION=0.2.0-preview.1; fi
+          python3 "$RUNNER_TEMP/mpc-vst-plugins/tools/release.py" --so vst/build/tinyfreaky.so --skin 'vst/build/skin/MagicStino - VST - Tinyfreaky' --entry vst/build/pluginlist-entry.xml --version "$VERSION" --id tinyfreaky --repo MagicStino/microfreeze --license MIT --user-data presets --about 'Experimental independent instrument. Original sound equivalence and hardware playback unverified.' -o dist
+          python3 tools/make-openplugin.py --package "dist/Tinyfreaky-$VERSION-mpc-armv7.zip" --version "$VERSION" --output dist/openplugin-release.json
       - uses: actions/upload-artifact@v4
         with:
-          name: Microfreeze-Force-ARMv7
+          name: Tinyfreaky-Force-ARMv7
           path: dist/*

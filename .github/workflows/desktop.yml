@@ -24,7 +24,7 @@ jobs:
           git -C "$RUNNER_TEMP/vst3sdk" submodule update --init --recursive
       - name: Linux dependencies
         if: runner.os == 'Linux'
-        run: sudo apt-get update && sudo apt-get install -y libx11-dev libxcb-util-dev libxcb-cursor-dev libxcb-keysyms1-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libfreetype-dev libgtkmm-3.0-dev
+        run: sudo apt-get update && sudo apt-get install -y libx11-dev libxcb-util-dev libxcb-cursor-dev libxcb-keysyms1-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libfreetype-dev libgtkmm-3.0-dev libsqlite3-dev libwayland-dev wayland-protocols libexpat1-dev
       - name: Configure
         shell: bash
         run: |
@@ -40,5 +40,5 @@ jobs:
         run: ctest --test-dir desktop/build -C Release --output-on-failure
       - uses: actions/upload-artifact@v4
         with:
-          name: Microfreeze-${{ runner.os }}-VST3
+          name: Tinyfreaky-${{ runner.os }}-VST3
           path: desktop/build/VST3/**/*.vst3

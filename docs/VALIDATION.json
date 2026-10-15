@@ -1,42 +1,22 @@
 {
-  "status": "experimental",
+  "product": "Tinyfreaky",
+  "version": "0.2.0-preview.1",
+  "linux_vst3": {
+    "validator_passed": 47,
+    "validator_failed": 0,
+    "smoke": "pass"
+  },
   "force": {
-    "target": "Force 3.9.1 OpenPlugin ARMv7",
-    "arm_build": true,
-    "vst_abi_tests": "passed ASan/UBSan; leak checker unavailable under ptrace",
-    "catalog_warnings": 0,
-    "hardware_tested": false,
-    "cpu_benchmarked": false
+    "elf_armv7_hard_float": "pass",
+    "max_glibc": "2.27",
+    "host_abi": "pass",
+    "physical_device": "not tested"
   },
-  "desktop": {
-    "linux_x86_64_build": true,
-    "steinberg_validator_passed": 47,
-    "steinberg_validator_failed": 0,
-    "sample_rates_tested": [
-      44100,
-      48000,
-      96000
-    ],
-    "midi_timing": true,
-    "state_roundtrip": true,
-    "windows_build": "GitHub CI passed47/0 and smoke",
-    "macos_build": "GitHub CI universal build passed47/0 and smoke on runner architecture",
-    "source_commit": "1de5fc88f7b80595371abae45e727b4452f66756"
+  "presets": {
+    "distinct_originals": 448,
+    "partial_translations": 334,
+    "unavailable_muted": 114
   },
-  "original_presets": {
-    "importer": "partial; 5 parser tests passed",
-    "original_audio_equivalence": false,
-    "sequence_import": false,
-    "sample_dependencies": false
-  },
-  "packages": {
-    "Microfreeze-0.1.0-mpc-armv7.zip": {
-      "bytes": 63257,
-      "sha256": "74f3944d4caa4e6eba4c0629a6a2c3ea8b0945d329ca1ff5b14c4f782663463a"
-    },
-    "Microfreeze-linux-x86_64-VST3.zip": {
-      "bytes": 143974,
-      "sha256": "fb41c2d4cd79903b3b3f57b391a35f326b8a666f8a8213a72865c2001503e6d3"
-    }
-  }
+  "windows_macos": "not built for this revision",
+  "firmware_dsp_equivalence": "not established"
 }

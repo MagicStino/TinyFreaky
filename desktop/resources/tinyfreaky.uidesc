@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vstgui-ui-description version="1"><template name="Main" class="CViewContainer" size="1280, 628" minSize="1280, 628" maxSize="1280, 628" background-color="#102b25ff"><view class="CView" custom-view-name="TinyfreakyPanel" origin="0, 0" size="1280, 628" mouse-enabled="true"/></template></vstgui-ui-description>

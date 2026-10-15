@@ -1,8 +1,8 @@
 # Independent prototype coverage
 
-All code in src/engine.c is original MIT code written from public control names and general synthesis mathematics. It is not firmware-derived and does not establish sonic fidelity or original factory preset compatibility.
+The DSP in src/engine.c is still approximate independent code. Direct firmware reverse engineering is now permitted. Factory parameters are included separately; this does not establish original sound or complete preset behavior.
 
-Indices 0–15 are Microfreeze stable UI indices, never firmware model IDs. Indices 16–21 identify unavailable documented models for import diagnostics and are omitted from the selectable UI.
+Indices 0–15 are Tinyfreaky stable UI indices, never firmware model IDs. Indices 16–21 identify unavailable documented models for import diagnostics and are omitted from the selectable UI.
 
 | UI indices / names | Independent implementation | Limits |
 |---|---|---|
@@ -37,3 +37,5 @@ State MFZ1 stores stable numeric parameter order, validates all fields and rejec
 External banks: create(data_dir) scans sorted .mfz text files once, preloading up to 504 valid patches plus eight built-ins. Optional first line MFZNAME:name, followed by the MFZ1 state line. Invalid or unsupported patches are omitted. bank_count reports available slots; preset selection acknowledges 0..511 for host automation. Selecting an absent slot retains the previous sound, stores the selected slot and explicitly reports unavailable. MIDI CC9 is intentionally ignored because the public model chapter order does not establish firmware enumeration. Other documented synthesis CCs are mapped; arp CC91/92 are unavailable.
 
 The preset control is an integer selector rounded by the engine, with programs available through the native preset menu. Its 512-slot Q-Link behavior depends on the host wrapper handling continuous drags separately from wheel ticks. Unavailable slot selection is retained for host automation while the last playable patch continues sounding.
+
+Factory browser: 448 distinct original entries embedded, 334 partial translations, 114 unavailable engines muted. Original banks and required asset containers are retained in assets/factory.

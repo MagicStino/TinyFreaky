@@ -10,9 +10,9 @@ def manifest(package=None,version='0.1.0'):
     result={
         'schema':'openplugin.community/1','id':'microfreeze','name':'Microfreeze',
         'author':'MagicStino','repo':'MagicStino/microfreeze',
-        'summary':'Experimental independent synth: 16 oscillator prototypes, four-voice paraphony and a 5x7 modulation matrix. Original sound equivalence and full preset compatibility are unverified.',
+        'summary':'Experimental independent synth: hardware-style controls, 448 factory entries (334 partial, 114 unavailable) and a 5x7 modulation matrix. Original sound equivalence and full preset compatibility are unverified.',
         'kind':'instrument','category':'synth','license':'MIT',
-        'tags':['synth','cleanroom','experimental','force','armv7'],
+        'tags':['synth','experimental','force','armv7'],
         'packages':[]
     }
     if package:
