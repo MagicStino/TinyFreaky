@@ -42,7 +42,7 @@ private:
  std::mutex engineMutex;
  const mpc_engine_t* api; void* instance=nullptr;
  std::array<double,Count> normalized{};
- bool presetChanged=false;unsigned visualRev=~0u;
+ bool presetChanged=false;unsigned visualRev=~0u,mascotRev=~0u;
  double ratio=1,phase=0; float before[2]{},current[2]{};
  struct Action {int offset; int type; int index; double value; Event event; int order;};
  std::array<Action,8192> actions{};

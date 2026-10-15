@@ -1787,9 +1787,107 @@
     "key": "screen_mascot",
     "name": "screen_mascot",
     "min": 0,
-    "max": 16,
-    "default": 8,
+    "max": 540,
+    "default": 0,
     "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_0",
+    "name": "screen_mascot_0",
+    "min": 0,
+    "max": 61,
+    "default": 61,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_1",
+    "name": "screen_mascot_1",
+    "min": 0,
+    "max": 60,
+    "default": 0,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_2",
+    "name": "screen_mascot_2",
+    "min": 0,
+    "max": 60,
+    "default": 0,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_3",
+    "name": "screen_mascot_3",
+    "min": 0,
+    "max": 60,
+    "default": 0,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_4",
+    "name": "screen_mascot_4",
+    "min": 0,
+    "max": 60,
+    "default": 0,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_5",
+    "name": "screen_mascot_5",
+    "min": 0,
+    "max": 60,
+    "default": 0,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_6",
+    "name": "screen_mascot_6",
+    "min": 0,
+    "max": 60,
+    "default": 0,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_7",
+    "name": "screen_mascot_7",
+    "min": 0,
+    "max": 60,
+    "default": 0,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_8",
+    "name": "screen_mascot_8",
+    "min": 0,
+    "max": 60,
+    "default": 0,
+    "display": "int",
+    "display_only": true
+  },
+  {
+    "key": "screen_mascot_style",
+    "name": "Motion style",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "default": 0,
     "display_only": true
   }
 ]

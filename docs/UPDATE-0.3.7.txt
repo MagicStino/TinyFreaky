@@ -1,0 +1,7 @@
+TinyFreaky 0.3.7
+
+Expressive mascot motion follows played pitch and MIDI velocity. Low, softly played notes favor deep hip sway; harder playing adds head tilt and nodding. The torso rotates intact, without localized chest warping. Pitch reaches a lively pace sooner; master gain and distortion do not drive the animation.
+
+Held notes keep moving and repeated notes do not reset the phase. Occasional asymmetric loops and smoothly changing speed use a separate visual random stream, preserving the synthesis random sequence. Motion settles after release and panic resets to neutral.
+
+60 phase poses per pitch/velocity style. Force uses nine compact cached filmstrips, one visible at a time, all below the device-tested strip-size limit; native editors draw a small base mesh on the UI thread. The audio thread publishes bounded pose indices at 30 Hz without allocations or drawing. Sound settings, patch slots and musical control IDs remain unchanged.
