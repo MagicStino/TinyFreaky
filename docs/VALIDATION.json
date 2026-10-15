@@ -19,8 +19,9 @@
     ],
     "midi_timing": true,
     "state_roundtrip": true,
-    "windows_build": "workflow supplied, not yet run",
-    "macos_build": "workflow supplied, not yet run"
+    "windows_build": "GitHub CI passed47/0 and smoke",
+    "macos_build": "GitHub CI universal build passed47/0 and smoke on runner architecture",
+    "source_commit": "1de5fc88f7b80595371abae45e727b4452f66756"
   },
   "original_presets": {
     "importer": "partial; 5 parser tests passed",
