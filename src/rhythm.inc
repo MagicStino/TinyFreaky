@@ -26,7 +26,7 @@ static int rhythm_display(Synth*s,const char*k,char*b,int n){
 }
 static void midi(void*o,const uint8_t*m,int len){
  Synth*s=o;if(len<1)return;int type=m[0]&0xf0;
- if(len>=3&&type==0xb0&&(m[1]==120||m[1]==123)){put(s,"seq_on",0);put(s,"arp_on",0);silence(s);s->rev++;return;}
+ if(len>=3&&type==0xb0&&(m[1]==120||m[1]==123)){if(s->p[R_SEQ_ON]>.5f||s->p[R_ARP_ON]>.5f){put(s,"seq_on",0);put(s,"arp_on",0);silence(s);s->rev++;return;}}
  if(len>=3&&(type==0x90||type==0x80)){
   int note=m[1]&127,down=type==0x90&&m[2]>0;
   if(down){int pressed=0;for(int i=0;i<128;i++)pressed+=s->input_held[i]!=0;

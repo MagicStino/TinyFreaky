@@ -8,8 +8,8 @@ with tempfile.TemporaryDirectory(prefix='tinyfreaky-test-') as tmp:
  objs=[]
  for i,src in enumerate(cfg['sources']):
   cpp=Path(src).suffix!='.c';out=Path(tmp)/f'{i}.o';subprocess.run(['g++' if cpp else 'cc','-std=c++17' if cpp else '-std=c11',*flags,'-c',str(r/src),'-o',str(out)],check=True);objs.append(str(out))
- for name in ['engine_test','screen_test','factory_test','rhythm_test','quality_test','sound_test']:
+ for name in ['engine_test','screen_test','factory_test','rhythm_test','overlap_test','quality_test','sound_test']:
   obj=Path(tmp)/(name+'.o');binary=Path(tmp)/name
   subprocess.run(['cc','-std=c11',*flags,'-c',str(r/'tests'/(name+'.c')),'-o',str(obj)],check=True)
-  subprocess.run(['g++',*flags,*(objs[1:] if name in ('rhythm_test','quality_test','sound_test') else objs),str(obj),'-pthread','-lm','-o',str(binary)],check=True)
+  subprocess.run(['g++',*flags,*(objs[1:] if name in ('rhythm_test','overlap_test','quality_test','sound_test') else objs),str(obj),'-pthread','-lm','-o',str(binary)],check=True)
   subprocess.run([str(binary)],env=dict(os.environ,ASAN_OPTIONS='detect_leaks=0'),check=True)

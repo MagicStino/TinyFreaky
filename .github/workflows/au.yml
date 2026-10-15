@@ -38,7 +38,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Tinyfreaky-macOS-AU
-          path: dist/Tinyfreaky-0.3.8-macOS-AU.zip
+          path: dist/Tinyfreaky-0.3.9-macOS-AU.zip
   publish:
     needs: build
     runs-on: ubuntu-latest
@@ -54,5 +54,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh release view v0.3.8 || gh release create v0.3.8 --target "${{ github.sha }}" --title "Tinyfreaky 0.3.8" --notes "MagicStino branding, expressive pitch and velocity white line mascot and Mac Audio Unit. Eight voices, 456 original TinyFreaky patch names, stable slots and corrected envelope/noise playback. Six engine families remain unavailable."
-          gh release upload v0.3.8 package/*.zip --clobber
+          gh release view v0.3.9 || gh release create v0.3.9 --target "${{ github.sha }}" --title "Tinyfreaky 0.3.9" --notes "MagicStino branding, expressive pitch and velocity white line mascot and Mac Audio Unit. Eight voices, 456 original TinyFreaky patch names, stable slots and corrected envelope/noise playback. Six engine families remain unavailable."
+          gh release upload v0.3.9 package/*.zip --clobber
