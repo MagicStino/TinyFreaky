@@ -1,6 +1,10 @@
 TinyFreaky
 =========
 
+.. image:: assets/homepage-header.svg
+   :alt: TinyFreaky — 8 voices, 16 engines, MagicStino
+   :width: 960
+
 An **8-voice synthesizer by MagicStino** for Akai Force, Windows, macOS and Linux.
 
 .. image:: assets/tinyfreaky-artwork.png
