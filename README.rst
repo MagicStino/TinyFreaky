@@ -7,22 +7,24 @@ An **8-voice synthesizer by MagicStino** for Akai Force, Windows, macOS and Linu
    :alt: TinyFreaky artwork
    :width: 840
 
+Version 0.3.8 corrects pluck decay/release and filtered-noise playback, with 78 calibrated factory patches and an audibility check across every playable slot.
+
 Play with 16 engines, shape the sound with the 5 × 7 modulation matrix, and build patterns with the arpeggiator, swing and 64-step sequencer. The green, orange and white panel has large labels, a clear engine display and a live output scope.
 
 .. image:: assets/force-readable-preview.png
    :alt: TinyFreaky interface with the mascot between Master and Glide
    :width: 1100
 
-A small white line-art mascot responds subtly to note velocity, then settles back to rest.
+The white line-art mascot follows pitch and note velocity: low notes bring hip sway, harder playing adds head movement, and occasional varied loops keep it lively. It settles after release.
 
 .. image:: assets/mascot-velocity.gif
-   :alt: Subtle velocity-driven mascot animation
+   :alt: Pitch- and velocity-driven mascot motion
    :width: 600
 
 Downloads
 ---------
 
-Get the latest version from `Releases <https://github.com/MagicStino/TinyFreaky/releases/latest>`_. Version 0.3.6 is being rebuilt for all formats.
+Get the latest version from `Releases <https://github.com/MagicStino/TinyFreaky/releases/latest>`_.
 
 * **Force:** ARMv7 package through the OpenPlugin catalog.
 * **Windows:** 64-bit VST3.
