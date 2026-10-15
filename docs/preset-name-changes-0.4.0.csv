@@ -1,0 +1,457 @@
+slot,old_name,new_name,engine,status,basis
+1,First Light,Soft Sawtooth Keys 01,Basic Waves,Playable,Basic Waves; C4 spectral centre 609 Hz; rise 0 ms; decay/release setting 0.20 s; sustain 70%
+2,Silver Drift,Stacked Saw Keys 01,SuperWave,Playable,SuperWave; C4 spectral centre 728 Hz; rise 0 ms; decay/release setting 0.22 s; sustain 70%
+3,Prism Keys,Soft FM Keys 01,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 43 Hz; rise 0 ms; decay/release setting 0.37 s; sustain 70%
+4,Copper String,Soft String Knock 01,Karplus Strong,Playable,Karplus Strong; C4 spectral centre 130 Hz; rise 0 ms; decay/release setting 0.58 s; sustain 0%
+5,Orbit Stack,Chord Stack 01,Chords,Playable,Chords; C4 spectral centre 1663 Hz; rise 0 ms; decay/release setting 0.90 s; sustain 70%
+6,Dust Bloom,Hollow Knock 01,Modal,Playable,Modal; C4 spectral centre 864 Hz; rise 0 ms; decay/release setting 1.35 s; sustain 0%
+7,Furnace Bass,Fold Bass 01,Bass,Playable,Bass; C4 spectral centre 856 Hz; rise 0 ms; decay/release setting 1.97 s; sustain 70%
+8,Neon Throat,Sharp Mouth Organ,Formant,Playable,Formant; C4 spectral centre 2279 Hz; rise 0 ms; decay/release setting 2.82 s; sustain 70%
+9,Velvet Orbit Keys,Soft Mouth Organ,Formant,Playable,Formant; C4 spectral centre 621 Hz; rise 0 ms; decay/release setting 0.66 s; sustain 23%
+10,Neon Orbit Pluck,Soft Stacked Pulse Pluck 01,SuperWave,Playable,SuperWave; C4 spectral centre 145 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+11,Copper Orbit Keys,Soft Detune Saw Keys 01,SuperWave,Playable,SuperWave; C4 spectral centre 484 Hz; rise 0 ms; decay/release setting 0.90 s; sustain 68%
+12,Silver Orbit Pluck,Soft Detune Triangle Pluck,SuperWave,Playable,SuperWave; C4 spectral centre 523 Hz; rise 0 ms; decay/release setting 0.75 s; sustain 0%
+13,Lunar Orbit Keys,Squelchy Detune Saw Keys,SuperWave,Playable,SuperWave; C4 spectral centre 736 Hz; rise 0 ms; decay/release setting 0.30 s; sustain 28%
+14,Amber Orbit Pad,Sliding Table Creep,Wavetable,Playable,Wavetable; C4 spectral centre 1838 Hz; rise 240 ms; decay/release setting 2.73 s; sustain 20%
+15,Cobalt Orbit Pluck,Arp Feedback Pluck,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 308 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 13%
+16,Ivory Orbit Pad,Soft Stacked Saw Swell,SuperWave,Playable,SuperWave; C4 spectral centre 479 Hz; rise 230 ms; decay/release setting 1.06 s; sustain 100%
+17,Prism Orbit Bass,Bent Reed 01,Waveshaper,Playable,Waveshaper; C4 spectral centre 954 Hz; rise 0 ms; decay/release setting 0.10 s; sustain 59%
+18,Ember Orbit Pluck,Sharp Pulse Stab,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 2316 Hz; rise 0 ms; decay/release setting 1.14 s; sustain 0%
+19,Polar Orbit Pluck,Soft Chord Stab 01,Chords,Playable,Chords; C4 spectral centre 445 Hz; rise 20 ms; decay/release setting 0.26 s; sustain 10%
+20,Violet Orbit Pad,Soft Detune Saw Swell 01,SuperWave,Playable,SuperWave; C4 spectral centre 381 Hz; rise 1350 ms; decay/release setting 4.16 s; sustain 100%
+21,Solar Orbit Pad,Chord Bloom 01,Chords,Playable,Chords; C4 spectral centre 1155 Hz; rise 540 ms; decay/release setting 16.96 s; sustain 7%
+22,Jade Orbit Keys,Pulse Keys 01,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 942 Hz; rise 0 ms; decay/release setting 0.20 s; sustain 100%
+23,Scarlet Orbit Pluck,Arp Bent Bark,Waveshaper,Playable,Waveshaper; C4 spectral centre 600 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+24,Opal Orbit Texture,Sliding Robot Whisper,Speech,Playable,Speech; C4 spectral centre 446 Hz; rise 0 ms; decay/release setting 1.96 s; sustain 30%
+25,Velvet Lantern Pluck,Hollow Knock 02,Modal,Playable,Modal; C4 spectral centre 2102 Hz; rise 0 ms; decay/release setting 2.03 s; sustain 0%
+26,Neon Lantern Keys,Soft Pulse Keys 01,Basic Waves,Playable,Basic Waves; C4 spectral centre 438 Hz; rise 0 ms; decay/release setting 1.26 s; sustain 68%
+27,Copper Lantern Keys,Squelchy Pulse Keys 01,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 512 Hz; rise 40 ms; decay/release setting 1.49 s; sustain 79%
+28,Silver Lantern Keys,Table Keys 01,Wavetable,Playable,Wavetable; C4 spectral centre 1240 Hz; rise 0 ms; decay/release setting 1.82 s; sustain 49%
+29,Lunar Lantern Keys,Soft Pulse Keys 02,Basic Waves,Playable,Basic Waves; C4 spectral centre 626 Hz; rise 20 ms; decay/release setting 0.05 s; sustain 72%
+30,Amber Lantern Pluck,Arp Pulse Pluck,Basic Waves,Playable,Basic Waves; C4 spectral centre 235 Hz; rise 0 ms; decay/release setting 1.39 s; sustain 2%
+31,Cobalt Lantern Pluck,Table Knock 01,Wavetable,Playable,Wavetable; C4 spectral centre 1182 Hz; rise 20 ms; decay/release setting 5.15 s; sustain 0%
+32,Ivory Lantern Keys,Bent Reed 02,Waveshaper,Playable,Waveshaper; C4 spectral centre 812 Hz; rise 0 ms; decay/release setting 0.00 s; sustain 47%
+33,Prism Lantern Chord,Soft Chord Stack 01,Chords,Playable,Chords; C4 spectral centre 325 Hz; rise 30 ms; decay/release setting 2.61 s; sustain 73%
+34,Ember Lantern Keys,Soft Clang Keys,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 520 Hz; rise 0 ms; decay/release setting 0.02 s; sustain 40%
+35,Polar Lantern Keys,Soft Sawtooth Keys 02,Basic Waves,Playable,Basic Waves; C4 spectral centre 431 Hz; rise 0 ms; decay/release setting 3.31 s; sustain 68%
+36,Violet Lantern Pluck,Syllable Spit,Speech,Playable,Speech; C4 spectral centre 680 Hz; rise 150 ms; decay/release setting 1.24 s; sustain 0%
+37,Solar Lantern Texture,Arp Robot Ramble,Speech,Playable,Speech; C4 spectral centre 2601 Hz; rise 200 ms; decay/release setting 0.19 s; sustain 100%
+38,Jade Lantern Pad,Sliding Chord Bloom,Chords,Playable,Chords; C4 spectral centre 950 Hz; rise 970 ms; decay/release setting 7.34 s; sustain 65%
+39,Scarlet Lantern Keys,Soft Saw Keys 01,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 279 Hz; rise 0 ms; decay/release setting 0.45 s; sustain 100%
+40,Opal Lantern Pluck,Squelchy Chord Stab 01,Chords,Playable,Chords; C4 spectral centre 1081 Hz; rise 10 ms; decay/release setting 0.26 s; sustain 0%
+41,Velvet Circuit Bass,Soft Chord Stack 02,Chords,Playable,Chords; C4 spectral centre 356 Hz; rise 0 ms; decay/release setting 0.18 s; sustain 100%
+42,Neon Circuit Bass,Squelchy Table Keys 01,Wavetable,Playable,Wavetable; C4 spectral centre 462 Hz; rise 0 ms; decay/release setting 0.04 s; sustain 55%
+43,Copper Circuit Keys,Squelchy Feedback Keys,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 5473 Hz; rise 0 ms; decay/release setting 0.11 s; sustain 100%
+44,Silver Circuit Keys,Soft Stacked Saw Keys,SuperWave,Playable,SuperWave; C4 spectral centre 556 Hz; rise 0 ms; decay/release setting 0.25 s; sustain 77%
+45,Lunar Circuit Bass,Soft Folded Reed,Waveshaper,Playable,Waveshaper; C4 spectral centre 237 Hz; rise 0 ms; decay/release setting 0.19 s; sustain 16%
+46,Amber Circuit Keys,Soft Sawtooth Keys 03,Basic Waves,Playable,Basic Waves; C4 spectral centre 132 Hz; rise 10 ms; decay/release setting 0.22 s; sustain 50%
+47,Cobalt Circuit Keys,Saw Keys,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 740 Hz; rise 0 ms; decay/release setting 0.10 s; sustain 54%
+48,Ivory Circuit Pluck,Squelchy Tine Pluck,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 1829 Hz; rise 0 ms; decay/release setting 0.29 s; sustain 0%
+49,Prism Circuit Bass,Squelchy Table Keys 02,Wavetable,Playable,Wavetable; C4 spectral centre 1599 Hz; rise 0 ms; decay/release setting 1.05 s; sustain 23%
+50,Ember Circuit Pluck,Detune Saw Pluck,SuperWave,Playable,SuperWave; C4 spectral centre 680 Hz; rise 0 ms; decay/release setting 0.96 s; sustain 0%
+51,Polar Circuit Keys,Soft Saw Keys 02,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 484 Hz; rise 0 ms; decay/release setting 0.34 s; sustain 100%
+52,Violet Circuit Keys,Harmonic Keys,Harmonic,Playable,Harmonic; C4 spectral centre 686 Hz; rise 10 ms; decay/release setting 0.04 s; sustain 59%
+53,Solar Circuit Pad,Squelchy Table Knock,Wavetable,Playable,Wavetable; C4 spectral centre 2073 Hz; rise 60 ms; decay/release setting 3.17 s; sustain 0%
+54,Jade Circuit Bass,Soft Table Keys 01,Wavetable,Playable,Wavetable; C4 spectral centre 400 Hz; rise 30 ms; decay/release setting 19.79 s; sustain 100%
+55,Scarlet Circuit Mallet,Ringing Body 01,Modal,Playable,Modal; C4 spectral centre 834 Hz; rise 10 ms; decay/release setting 6.19 s; sustain 80%
+56,Opal Circuit Pluck,Soft Saw Stab 01,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 211 Hz; rise 0 ms; decay/release setting 2.97 s; sustain 0%
+57,Velvet Comet Bass,Chord Stack 02,Chords,Playable,Chords; C4 spectral centre 1464 Hz; rise 0 ms; decay/release setting 0.31 s; sustain 100%
+58,Neon Comet Bass,Bent Reed 03,Waveshaper,Playable,Waveshaper; C4 spectral centre 882 Hz; rise 0 ms; decay/release setting 0.20 s; sustain 49%
+59,Copper Comet Pluck,Table Knock 02,Wavetable,Playable,Wavetable; C4 spectral centre 910 Hz; rise 0 ms; decay/release setting 3.62 s; sustain 0%
+60,Silver Comet Bass,Arp Ringing Body,Modal,Playable,Modal; C4 spectral centre 742 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 31%
+61,Lunar Comet Chord,Chord Stack 03,Chords,Playable,Chords; C4 spectral centre 1639 Hz; rise 360 ms; decay/release setting 1.80 s; sustain 21%
+62,Amber Comet Pluck,Soft Stacked Pulse Pluck 02,SuperWave,Playable,SuperWave; C4 spectral centre 304 Hz; rise 0 ms; decay/release setting 1.45 s; sustain 0%
+63,Cobalt Comet Keys,Soft Saw Keys 03,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 548 Hz; rise 20 ms; decay/release setting 8.45 s; sustain 96%
+64,Ivory Comet Keys,Squelchy Pulse Keys 02,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 1945 Hz; rise 0 ms; decay/release setting 1.05 s; sustain 23%
+65,Prism Comet Keys,Sharp Detune Saw Keys,SuperWave,Playable,SuperWave; C4 spectral centre 3393 Hz; rise 0 ms; decay/release setting 1.04 s; sustain 100%
+66,Ember Comet Pluck,Arp Tine Pluck,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 4292 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+67,Polar Comet Pluck,Squelchy Chord Stab 02,Chords,Playable,Chords; C4 spectral centre 309 Hz; rise 30 ms; decay/release setting 0.26 s; sustain 0%
+68,Violet Comet Keys,Pulse Keys 02,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 816 Hz; rise 10 ms; decay/release setting 0.96 s; sustain 100%
+69,Solar Comet Pluck,Sharp Metal Knock,Modal,Playable,Modal; C4 spectral centre 4039 Hz; rise 10 ms; decay/release setting 0.55 s; sustain 0%
+70,Jade Comet Pad,Sliding Detune Saw Swell,SuperWave,Playable,SuperWave; C4 spectral centre 682 Hz; rise 1360 ms; decay/release setting 16.09 s; sustain 100%
+71,Scarlet Comet Keys,Soft Saw Keys 04,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 484 Hz; rise 0 ms; decay/release setting 0.76 s; sustain 36%
+72,Opal Comet Chord,Chord Stack 04,Chords,Playable,Chords; C4 spectral centre 848 Hz; rise 0 ms; decay/release setting 6.82 s; sustain 47%
+73,Velvet Ribbon Pluck,Soft Chord Stab 02,Chords,Playable,Chords; C4 spectral centre 551 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+74,Neon Ribbon Bass,Squelchy Folded Reed,Waveshaper,Playable,Waveshaper; C4 spectral centre 271 Hz; rise 10 ms; decay/release setting 2.37 s; sustain 31%
+75,Copper Ribbon Keys,Soft Detune Pulse Keys 01,SuperWave,Playable,SuperWave; C4 spectral centre 330 Hz; rise 550 ms; decay/release setting 1.81 s; sustain 50%
+76,Silver Ribbon Bass,Squelchy Saw Bass,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 226 Hz; rise 20 ms; decay/release setting 2.42 s; sustain 56%
+77,Lunar Ribbon Keys,Sliding FM Keys 01,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 1803 Hz; rise 0 ms; decay/release setting 0.40 s; sustain 52%
+78,Amber Ribbon Bass,Soft Pulse Bass 01,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 208 Hz; rise 10 ms; decay/release setting 0.13 s; sustain 63%
+79,Cobalt Ribbon Keys,Sliding FM Keys 02,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 930 Hz; rise 0 ms; decay/release setting 1.15 s; sustain 25%
+80,Ivory Ribbon Keys,Feedback Keys 01,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 689 Hz; rise 0 ms; decay/release setting 0.11 s; sustain 63%
+81,Prism Ribbon Keys,Squelchy Pulse Keys 03,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 561 Hz; rise 0 ms; decay/release setting 0.25 s; sustain 100%
+82,Ember Ribbon Pluck,Squelchy Bent Bark 01,Waveshaper,Playable,Waveshaper; C4 spectral centre 355 Hz; rise 20 ms; decay/release setting 0.26 s; sustain 0%
+83,Polar Ribbon Pad,FM Keys 01,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 852 Hz; rise 40 ms; decay/release setting 2.82 s; sustain 60%
+84,Violet Ribbon Pad,Chord Bloom 02,Chords,Playable,Chords; C4 spectral centre 1017 Hz; rise 790 ms; decay/release setting 2.00 s; sustain 65%
+85,Solar Ribbon Pluck,Soft Stacked Triangle Pluck,SuperWave,Playable,SuperWave; C4 spectral centre 522 Hz; rise 0 ms; decay/release setting 0.31 s; sustain 0%
+86,Jade Ribbon Keys,Soft Stacked Pulse Keys,SuperWave,Playable,SuperWave; C4 spectral centre 277 Hz; rise 0 ms; decay/release setting 11.50 s; sustain 32%
+87,Scarlet Ribbon Pluck,Arp Sawtooth Pluck,Basic Waves,Playable,Basic Waves; C4 spectral centre 959 Hz; rise 20 ms; decay/release setting 0.57 s; sustain 0%
+88,Opal Ribbon Keys,Soft Pulse Keys 03,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 577 Hz; rise 0 ms; decay/release setting 0.12 s; sustain 41%
+89,Velvet Harbor Bass,Soft Pulse Bass 02,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 430 Hz; rise 0 ms; decay/release setting 0.05 s; sustain 17%
+90,Neon Harbor Keys,Soft Pulse Keys 04,Basic Waves,Playable,Basic Waves; C4 spectral centre 220 Hz; rise 0 ms; decay/release setting 0.17 s; sustain 64%
+91,Copper Harbor Pad,Sharp Overtone Bloom,Harmonic,Playable,Harmonic; C4 spectral centre 3135 Hz; rise 240 ms; decay/release setting 7.60 s; sustain 84%
+92,Silver Harbor Keys,Soft Sawtooth Keys 04,Basic Waves,Playable,Basic Waves; C4 spectral centre 199 Hz; rise 0 ms; decay/release setting 0.40 s; sustain 67%
+93,Lunar Harbor Pluck,Squelchy Pulse Stab,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 599 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+94,Amber Harbor Pad,Overtone Bloom,Harmonic,Playable,Harmonic; C4 spectral centre 1075 Hz; rise 130 ms; decay/release setting 1.08 s; sustain 62%
+95,Cobalt Harbor Bass,Soft Table Keys 02,Wavetable,Playable,Wavetable; C4 spectral centre 118 Hz; rise 0 ms; decay/release setting 0.22 s; sustain 100%
+96,Ivory Harbor Keys,Soft Subby Keys,Basic Waves,Playable,Basic Waves; C4 spectral centre 135 Hz; rise 0 ms; decay/release setting 0.17 s; sustain 100%
+97,Prism Harbor Pad,Soft Chord Stack 03,Chords,Playable,Chords; C4 spectral centre 345 Hz; rise 270 ms; decay/release setting 0.10 s; sustain 100%
+98,Ember Harbor Pluck,Soft Folded Bark,Waveshaper,Playable,Waveshaper; C4 spectral centre 649 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 13%
+99,Polar Harbor Pluck,Mouth Pop,Formant,Playable,Formant; C4 spectral centre 1057 Hz; rise 0 ms; decay/release setting 0.70 s; sustain 0%
+100,Violet Harbor Keys,Sliding Stacked Saw Keys,SuperWave,Playable,SuperWave; C4 spectral centre 1175 Hz; rise 0 ms; decay/release setting 0.22 s; sustain 100%
+101,Solar Harbor Pluck,Sliding Syllable Spit,Speech,Playable,Speech; C4 spectral centre 1767 Hz; rise 10 ms; decay/release setting 10.70 s; sustain 0%
+102,Jade Harbor Pluck,Table Knock 03,Wavetable,Playable,Wavetable; C4 spectral centre 1167 Hz; rise 30 ms; decay/release setting 10.70 s; sustain 0%
+103,Scarlet Harbor Pluck,Sliding Table Knock,Wavetable,Playable,Wavetable; C4 spectral centre 126 Hz; rise 20 ms; decay/release setting 6.02 s; sustain 0%
+104,Opal Harbor Pad,Sliding Bent Drone,Waveshaper,Playable,Waveshaper; C4 spectral centre 608 Hz; rise 370 ms; decay/release setting 13.47 s; sustain 100%
+105,Velvet Prism Bass,Soft Table Keys 03,Wavetable,Playable,Wavetable; C4 spectral centre 313 Hz; rise 10 ms; decay/release setting 0.00 s; sustain 47%
+106,Neon Prism Mallet,Squelchy Loose String,Karplus Strong,Playable,Karplus Strong; C4 spectral centre 836 Hz; rise 0 ms; decay/release setting 3.94 s; sustain 50%
+107,Copper Prism Pad,Soft Feedback Bloom,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 271 Hz; rise 1220 ms; decay/release setting 20.00 s; sustain 0%
+108,Silver Prism Pluck,Sharp Table Teeth,Wavetable,Playable,Wavetable; C4 spectral centre 2330 Hz; rise 10 ms; decay/release setting 8.82 s; sustain 0%
+109,Lunar Prism Keys,Sliding Bent Reed,Waveshaper,Playable,Waveshaper; C4 spectral centre 1158 Hz; rise 0 ms; decay/release setting 0.06 s; sustain 48%
+110,Amber Prism Pluck,Pulse Stab,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 920 Hz; rise 80 ms; decay/release setting 4.28 s; sustain 0%
+111,Cobalt Prism Keys,Pulse Keys 03,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 950 Hz; rise 0 ms; decay/release setting 20.00 s; sustain 100%
+112,Ivory Prism Pluck,Soft Bent Bark 01,Waveshaper,Playable,Waveshaper; C4 spectral centre 639 Hz; rise 0 ms; decay/release setting 0.55 s; sustain 0%
+113,Prism Prism Pad,Table Keys 02,Wavetable,Playable,Wavetable; C4 spectral centre 2061 Hz; rise 50 ms; decay/release setting 19.81 s; sustain 100%
+114,Ember Prism Pad,Soft Ringing String 01,Karplus Strong,Playable,Karplus Strong; C4 spectral centre 530 Hz; rise 40 ms; decay/release setting 0.22 s; sustain 100%
+115,Polar Prism Pluck,Soft String Knock 02,Karplus Strong,Playable,Karplus Strong; C4 spectral centre 254 Hz; rise 0 ms; decay/release setting 0.74 s; sustain 0%
+116,Violet Prism Keys,Squelchy Table Keys 03,Wavetable,Playable,Wavetable; C4 spectral centre 735 Hz; rise 1520 ms; decay/release setting 0.86 s; sustain 100%
+117,Solar Prism Keys,Squelchy Overtone Organ,Harmonic,Playable,Harmonic; C4 spectral centre 911 Hz; rise 20 ms; decay/release setting 0.04 s; sustain 100%
+118,Jade Prism Bass,Soft Clang Bass 01,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 298 Hz; rise 0 ms; decay/release setting 0.13 s; sustain 33%
+119,Scarlet Prism Bass,Soft Throat Bass 01,Formant,Playable,Formant; C4 spectral centre 514 Hz; rise 0 ms; decay/release setting 0.28 s; sustain 90%
+120,Opal Prism Bass,Squelchy Subby Bass,Basic Waves,Playable,Basic Waves; C4 spectral centre 78 Hz; rise 10 ms; decay/release setting 0.93 s; sustain 100%
+121,Velvet Reactor Pluck,Partial Pluck,Harmonic,Playable,Harmonic; C4 spectral centre 849 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+122,Neon Reactor Pluck,Soft Mouth Pop,Formant,Playable,Formant; C4 spectral centre 68 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+123,Copper Reactor Keys,FM Keys 02,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 1071 Hz; rise 0 ms; decay/release setting 0.70 s; sustain 39%
+124,Silver Reactor Keys,Soft Saw Keys 05,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 232 Hz; rise 0 ms; decay/release setting 0.19 s; sustain 50%
+125,Lunar Reactor Keys,Sliding Detune Pulse Keys,SuperWave,Playable,SuperWave; C4 spectral centre 316 Hz; rise 10 ms; decay/release setting 0.14 s; sustain 62%
+126,Amber Reactor Chord,Soft Chord Stack 04,Chords,Playable,Chords; C4 spectral centre 433 Hz; rise 20 ms; decay/release setting 0.27 s; sustain 22%
+127,Cobalt Reactor Texture,Filter Hiss 01,Noise,Playable,Noise; C4 spectral centre 1045 Hz; rise 20 ms; decay/release setting 1.44 s; sustain 43%
+128,Ivory Reactor Mallet,Soft Ringing Body 01,Modal,Playable,Modal; C4 spectral centre 284 Hz; rise 0 ms; decay/release setting 0.15 s; sustain 100%
+129,Prism Reactor Pluck,Soft Stacked Saw Pluck,SuperWave,Playable,SuperWave; C4 spectral centre 282 Hz; rise 0 ms; decay/release setting 0.66 s; sustain 0%
+130,Ember Reactor Pluck,Hiss Snap 01,Noise,Playable,Noise; C4 spectral centre 2490 Hz; rise 60 ms; decay/release setting 1.86 s; sustain 0%
+131,Polar Reactor Keys,Soft Saw Keys 06,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 268 Hz; rise 0 ms; decay/release setting 0.21 s; sustain 37%
+132,Violet Reactor Pluck,Noise Knock 01,Noise,Playable,Noise; C4 spectral centre 1041 Hz; rise 40 ms; decay/release setting 0.26 s; sustain 10%
+133,Solar Reactor Pluck,Static Pop 01,Noise,Playable,Noise; C4 spectral centre 404 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+134,Jade Reactor Keys,Soft Pulse Keys 05,Basic Waves,Playable,Basic Waves; C4 spectral centre 374 Hz; rise 0 ms; decay/release setting 1.00 s; sustain 21%
+135,Scarlet Reactor Pad,Table Keys 03,Wavetable,Playable,Wavetable; C4 spectral centre 651 Hz; rise 60 ms; decay/release setting 0.49 s; sustain 65%
+136,Opal Reactor Bass,Folded Reed,Waveshaper,Playable,Waveshaper; C4 spectral centre 1018 Hz; rise 0 ms; decay/release setting 2.79 s; sustain 43%
+137,Velvet Garden Pluck,Sand Spit 01,Noise,Playable,Noise; C4 spectral centre 3037 Hz; rise 10 ms; decay/release setting 0.26 s; sustain 0%
+138,Neon Garden Bass,Arp Bent Reed,Waveshaper,Playable,Waveshaper; C4 spectral centre 274 Hz; rise 10 ms; decay/release setting 0.47 s; sustain 57%
+139,Copper Garden Pluck,Sliding Chord Stab,Chords,Playable,Chords; C4 spectral centre 868 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+140,Silver Garden Pluck,Hiss Snap 02,Noise,Playable,Noise; C4 spectral centre 3579 Hz; rise 0 ms; decay/release setting 0.70 s; sustain 0%
+141,Lunar Garden Pluck,Noise Knock 02,Noise,Playable,Noise; C4 spectral centre 1058 Hz; rise 10 ms; decay/release setting 1.27 s; sustain 14%
+142,Amber Garden Bass,Soft Pulse Bass 03,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 260 Hz; rise 10 ms; decay/release setting 4.86 s; sustain 57%
+143,Cobalt Garden Keys,Soft Detune Saw Keys 02,SuperWave,Playable,SuperWave; C4 spectral centre 294 Hz; rise 0 ms; decay/release setting 0.15 s; sustain 29%
+144,Ivory Garden Pluck,Static Tail 01,Noise,Playable,Noise; C4 spectral centre 570 Hz; rise 0 ms; decay/release setting 11.60 s; sustain 12%
+145,Prism Garden Pluck,Squelchy Crunch Tick 01,Noise,Playable,Noise; C4 spectral centre 1815 Hz; rise 30 ms; decay/release setting 0.28 s; sustain 0%
+146,Ember Garden Bass,Robot Ramble 01,Speech,Playable,Speech; C4 spectral centre 796 Hz; rise 40 ms; decay/release setting 0.67 s; sustain 100%
+147,Polar Garden Pad,Sliding FM Bass,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 322 Hz; rise 0 ms; decay/release setting 0.46 s; sustain 15%
+148,Violet Garden Pluck,Arp Thin Air Pop,Noise,Playable,Noise; C4 spectral centre 1499 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+149,Solar Garden Pad,Static Rise,Noise,Playable,Noise; C4 spectral centre 1048 Hz; rise 1360 ms; decay/release setting 3.60 s; sustain 100%
+150,Jade Garden Texture,Squelchy Clock Crunch,Noise,Playable,Noise; C4 spectral centre 131 Hz; rise 190 ms; decay/release setting 3.88 s; sustain 100%
+151,Scarlet Garden Pluck,Squelchy Crunch Tick 02,Noise,Playable,Noise; C4 spectral centre 5278 Hz; rise 30 ms; decay/release setting 0.78 s; sustain 0%
+152,Opal Garden Pluck,Sand Spit 02,Noise,Playable,Noise; C4 spectral centre 4520 Hz; rise 10 ms; decay/release setting 0.26 s; sustain 0%
+153,Velvet Signal Pluck,Sand Spit 03,Noise,Playable,Noise; C4 spectral centre 2539 Hz; rise 20 ms; decay/release setting 0.26 s; sustain 0%
+154,Neon Signal Pluck,Crunch Tick 01,Noise,Playable,Noise; C4 spectral centre 1029 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+155,Copper Signal Pluck,Noise Knock 03,Noise,Playable,Noise; C4 spectral centre 1256 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+156,Silver Signal Pluck,Sand Spit 04,Noise,Playable,Noise; C4 spectral centre 2786 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+157,Lunar Signal Pluck,Static Tail 02,Noise,Playable,Noise; C4 spectral centre 1508 Hz; rise 60 ms; decay/release setting 2.89 s; sustain 0%
+158,Amber Signal Chord,Squelchy Chord Stack,Chords,Playable,Chords; C4 spectral centre 1671 Hz; rise 0 ms; decay/release setting 0.04 s; sustain 60%
+159,Cobalt Signal Pad,Soft Saw Keys 07,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 281 Hz; rise 90 ms; decay/release setting 3.81 s; sustain 100%
+160,Ivory Signal Texture,Clock Crunch 01,Noise,Playable,Noise; C4 spectral centre 641 Hz; rise 120 ms; decay/release setting 0.22 s; sustain 100%
+161,Prism Signal Keys,Sharp Overtone Organ,Harmonic,Playable,Harmonic; C4 spectral centre 2649 Hz; rise 260 ms; decay/release setting 0.08 s; sustain 100%
+162,Ember Signal Pad,Feedback Bloom,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 1116 Hz; rise 120 ms; decay/release setting 1.40 s; sustain 25%
+163,Polar Signal Texture,Squelchy Filter Hiss,Noise,Playable,Noise; C4 spectral centre 1224 Hz; rise 10 ms; decay/release setting 0.09 s; sustain 20%
+164,Violet Signal Pluck,Noise Thud,Noise,Playable,Noise; C4 spectral centre 524 Hz; rise 640 ms; decay/release setting 0.31 s; sustain 1%
+165,Solar Signal Texture,Filter Hiss 02,Noise,Playable,Noise; C4 spectral centre 1026 Hz; rise 10 ms; decay/release setting 3.26 s; sustain 67%
+166,Jade Signal Bass,Squelchy Noise Rumble,Noise,Playable,Noise; C4 spectral centre 404 Hz; rise 200 ms; decay/release setting 0.63 s; sustain 19%
+167,Scarlet Signal Pluck,Noise Knock 04,Noise,Playable,Noise; C4 spectral centre 1048 Hz; rise 250 ms; decay/release setting 0.97 s; sustain 4%
+168,Opal Signal Pluck,Squelchy Static Tail,Noise,Playable,Noise; C4 spectral centre 584 Hz; rise 90 ms; decay/release setting 17.38 s; sustain 0%
+169,Velvet Atlas Texture,Clock Crunch 02,Noise,Playable,Noise; C4 spectral centre 329 Hz; rise 0 ms; decay/release setting 3.82 s; sustain 53%
+170,Neon Atlas Pluck,Static Pop 02,Noise,Playable,Noise; C4 spectral centre 1038 Hz; rise 60 ms; decay/release setting 0.50 s; sustain 0%
+171,Copper Atlas Pad,Soft Table Creep 01,Wavetable,Playable,Wavetable; C4 spectral centre 165 Hz; rise 300 ms; decay/release setting 6.09 s; sustain 100%
+172,Silver Atlas Keys,Soft Pulse Keys 06,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 441 Hz; rise 10 ms; decay/release setting 0.12 s; sustain 95%
+173,Lunar Atlas Keys,Soft Saw Keys 08,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 186 Hz; rise 430 ms; decay/release setting 3.32 s; sustain 67%
+174,Amber Atlas Pluck,Arp Partial Pluck,Harmonic,Playable,Harmonic; C4 spectral centre 1167 Hz; rise 0 ms; decay/release setting 0.40 s; sustain 0%
+175,Cobalt Atlas Pad,Soft Loose String 01,Karplus Strong,Playable,Karplus Strong; C4 spectral centre 257 Hz; rise 50 ms; decay/release setting 3.52 s; sustain 80%
+176,Ivory Atlas Pluck,Crunch Tick 02,Noise,Playable,Noise; C4 spectral centre 1049 Hz; rise 50 ms; decay/release setting 0.40 s; sustain 0%
+177,Prism Atlas Texture,Squelchy Air Hiss,Noise,Playable,Noise; C4 spectral centre 3757 Hz; rise 0 ms; decay/release setting 0.32 s; sustain 31%
+178,Ember Atlas Pluck,Thin Air Pop,Noise,Playable,Noise; C4 spectral centre 983 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+179,Polar Atlas Pluck,Noise Knock 05,Noise,Playable,Noise; C4 spectral centre 1046 Hz; rise 10 ms; decay/release setting 0.26 s; sustain 0%
+180,Violet Atlas Pluck,Noise Knock 06,Noise,Playable,Noise; C4 spectral centre 1196 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+181,Solar Atlas Texture,Noise Rumble,Noise,Playable,Noise; C4 spectral centre 441 Hz; rise 10 ms; decay/release setting 1.69 s; sustain 100%
+182,Jade Atlas Pluck,Soft Subby Pluck,Basic Waves,Playable,Basic Waves; C4 spectral centre 257 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+183,Scarlet Atlas Pad,Squelchy Static Rise,Noise,Playable,Noise; C4 spectral centre 625 Hz; rise 500 ms; decay/release setting 0.00 s; sustain 100%
+184,Opal Atlas Mallet,Soft Ringing String 02,Karplus Strong,Playable,Karplus Strong; C4 spectral centre 263 Hz; rise 20 ms; decay/release setting 0.46 s; sustain 30%
+185,Velvet Mirage Keys,Sawtooth Keys,Basic Waves,Playable,Basic Waves; C4 spectral centre 706 Hz; rise 0 ms; decay/release setting 0.01 s; sustain 100%
+186,Neon Mirage Pluck,Table Knock 04,Wavetable,Playable,Wavetable; C4 spectral centre 965 Hz; rise 10 ms; decay/release setting 0.26 s; sustain 0%
+187,Copper Mirage Keys,Soft FM Keys 02,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 533 Hz; rise 0 ms; decay/release setting 0.06 s; sustain 40%
+188,Silver Mirage Keys,Soft Saw Keys 09,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 561 Hz; rise 0 ms; decay/release setting 0.40 s; sustain 49%
+189,Lunar Mirage Pluck,Soft Tine Pluck 01,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 523 Hz; rise 0 ms; decay/release setting 0.29 s; sustain 0%
+190,Amber Mirage Keys,FM Keys 03,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 996 Hz; rise 0 ms; decay/release setting 0.22 s; sustain 20%
+191,Cobalt Mirage Pad,Soft Detune Saw Swell 02,SuperWave,Playable,SuperWave; C4 spectral centre 522 Hz; rise 740 ms; decay/release setting 0.15 s; sustain 100%
+192,Ivory Mirage Pluck,Soft Tine Pluck 02,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 412 Hz; rise 0 ms; decay/release setting 1.12 s; sustain 0%
+193,Prism Mirage Pad,Soft Sawtooth Keys 05,Basic Waves,Playable,Basic Waves; C4 spectral centre 413 Hz; rise 50 ms; decay/release setting 0.40 s; sustain 72%
+194,Ember Mirage Pad,Pulse Keys 04,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 1041 Hz; rise 30 ms; decay/release setting 1.01 s; sustain 55%
+195,Polar Mirage Mallet,Ringing String,Karplus Strong,Playable,Karplus Strong; C4 spectral centre 812 Hz; rise 0 ms; decay/release setting 1.53 s; sustain 39%
+196,Violet Mirage Mallet,Soft Loose String 02,Karplus Strong,Playable,Karplus Strong; C4 spectral centre 261 Hz; rise 10 ms; decay/release setting 0.31 s; sustain 100%
+197,Solar Mirage Keys,Soft Sawtooth Keys 06,Basic Waves,Playable,Basic Waves; C4 spectral centre 574 Hz; rise 0 ms; decay/release setting 0.22 s; sustain 77%
+198,Jade Mirage Pad,Soft Detune Saw Bass,SuperWave,Playable,SuperWave; C4 spectral centre 186 Hz; rise 60 ms; decay/release setting 0.96 s; sustain 44%
+199,Scarlet Mirage Pad,Soft Saw Creep,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 198 Hz; rise 120 ms; decay/release setting 0.26 s; sustain 0%
+200,Opal Mirage Pluck,Soft Sawtooth Pluck 01,Basic Waves,Playable,Basic Waves; C4 spectral centre 366 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+201,Velvet Petal Pluck,Table Knock 05,Wavetable,Playable,Wavetable; C4 spectral centre 681 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+202,Neon Petal Keys,Soft Overtone Organ,Harmonic,Playable,Harmonic; C4 spectral centre 277 Hz; rise 0 ms; decay/release setting 1.61 s; sustain 100%
+203,Copper Petal Bass,Soft Chord Stack 05,Chords,Playable,Chords; C4 spectral centre 455 Hz; rise 0 ms; decay/release setting 0.18 s; sustain 100%
+204,Silver Petal Chord,Soft Chord Stack 06,Chords,Playable,Chords; C4 spectral centre 371 Hz; rise 0 ms; decay/release setting 0.07 s; sustain 49%
+205,Lunar Petal Keys,Soft Pulse Keys 07,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 405 Hz; rise 20 ms; decay/release setting 0.55 s; sustain 64%
+206,Amber Petal Keys,Stacked Saw Keys 02,SuperWave,Playable,SuperWave; C4 spectral centre 1106 Hz; rise 0 ms; decay/release setting 0.22 s; sustain 100%
+207,Cobalt Petal Bass,Soft FM Bass,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 158 Hz; rise 0 ms; decay/release setting 0.53 s; sustain 19%
+208,Ivory Petal Pluck,Soft Pulse Pluck,Basic Waves,Playable,Basic Waves; C4 spectral centre 135 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 15%
+209,Prism Petal Pluck,Soft Sawtooth Pluck 02,Basic Waves,Playable,Basic Waves; C4 spectral centre 160 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 15%
+210,Ember Petal Pluck,Squelchy Pulse Pluck,Basic Waves,Playable,Basic Waves; C4 spectral centre 705 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 15%
+211,Polar Petal Pluck,Squelchy Sawtooth Pluck,Basic Waves,Playable,Basic Waves; C4 spectral centre 563 Hz; rise 160 ms; decay/release setting 0.26 s; sustain 15%
+212,Violet Petal Pluck,Squelchy Bent Bark 02,Waveshaper,Playable,Waveshaper; C4 spectral centre 458 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+213,Solar Petal Pluck,Soft Tine Pluck 03,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 262 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+214,Jade Petal Pluck,Soft Hollow Knock,Modal,Playable,Modal; C4 spectral centre 317 Hz; rise 10 ms; decay/release setting 1.24 s; sustain 0%
+215,Scarlet Petal Keys,FM Keys 04,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 730 Hz; rise 0 ms; decay/release setting 1.87 s; sustain 100%
+216,Opal Petal Keys,Ratio Tone 01,Harm,Playable,Harm; C4 spectral centre 1322 Hz; rise 20 ms; decay/release setting 1.63 s; sustain 92%
+217,Velvet Current Pulse,Arp Ratio Tone,Harm,Playable,Harm; C4 spectral centre 2053 Hz; rise 0 ms; decay/release setting 0.04 s; sustain 28%
+218,Neon Current Bass,Soft Ratio Tone 01,Harm,Playable,Harm; C4 spectral centre 231 Hz; rise 0 ms; decay/release setting 0.41 s; sustain 81%
+219,Copper Current Keys,Rectified Tone 01,Harm,Playable,Harm; C4 spectral centre 1207 Hz; rise 0 ms; decay/release setting 0.40 s; sustain 28%
+220,Silver Current Bass,Soft Saw Stack 01,SawX,Playable,SawX; C4 spectral centre 219 Hz; rise 0 ms; decay/release setting 0.45 s; sustain 66%
+221,Lunar Current Keys,Rectified Tone 02,Harm,Playable,Harm; C4 spectral centre 1147 Hz; rise 0 ms; decay/release setting 0.47 s; sustain 43%
+222,Amber Current Pad,Rectified Bloom 01,Harm,Playable,Harm; C4 spectral centre 1097 Hz; rise 260 ms; decay/release setting 6.34 s; sustain 100%
+223,Cobalt Current Bass,Soft Saw Stack 02,SawX,Playable,SawX; C4 spectral centre 149 Hz; rise 0 ms; decay/release setting 0.11 s; sustain 64%
+224,Ivory Current Keys,Bass Purr 01,Bass,Playable,Bass; C4 spectral centre 413 Hz; rise 0 ms; decay/release setting 2.12 s; sustain 69%
+225,Prism Current Pluck,Soft Rectified Knock 01,Harm,Playable,Harm; C4 spectral centre 403 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 13%
+226,Ember Current Pluck,Ratio Knock 01,Harm,Playable,Harm; C4 spectral centre 806 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 9%
+227,Polar Current Bass,Soft Ratio Tone 02,Harm,Playable,Harm; C4 spectral centre 414 Hz; rise 0 ms; decay/release setting 3.58 s; sustain 92%
+228,Violet Current Pluck,Sharp Ratio Knock,Harm,Playable,Harm; C4 spectral centre 2364 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+229,Solar Current Pluck,Ratio Knock 02,Harm,Playable,Harm; C4 spectral centre 1394 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+230,Jade Current Pluck,Saw Stab,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 1965 Hz; rise 0 ms; decay/release setting 1.49 s; sustain 13%
+231,Scarlet Current Bass,Squelchy Ratio Tone 01,Harm,Playable,Harm; C4 spectral centre 242 Hz; rise 40 ms; decay/release setting 0.19 s; sustain 48%
+232,Opal Current Keys,Rectified Tone 03,Harm,Playable,Harm; C4 spectral centre 1447 Hz; rise 0 ms; decay/release setting 0.32 s; sustain 24%
+233,Velvet Meteor Keys,Soft Saw Wiggle,SawX,Playable,SawX; C4 spectral centre 280 Hz; rise 0 ms; decay/release setting 2.06 s; sustain 45%
+234,Neon Meteor Pluck,Soft Bent Bark 02,Waveshaper,Playable,Waveshaper; C4 spectral centre 320 Hz; rise 0 ms; decay/release setting 1.44 s; sustain 3%
+235,Copper Meteor Pluck,Saw Dust Pluck 01,SawX,Playable,SawX; C4 spectral centre 755 Hz; rise 0 ms; decay/release setting 7.78 s; sustain 0%
+236,Silver Meteor Keys,Driven Bass 01,Bass,Playable,Bass; C4 spectral centre 922 Hz; rise 0 ms; decay/release setting 1.65 s; sustain 76%
+237,Lunar Meteor Bass,Driven Bass 02,Bass,Playable,Bass; C4 spectral centre 1139 Hz; rise 0 ms; decay/release setting 0.85 s; sustain 42%
+238,Amber Meteor Keys,Saw Dust 01,SawX,Playable,SawX; C4 spectral centre 930 Hz; rise 10 ms; decay/release setting 2.13 s; sustain 100%
+239,Cobalt Meteor Pluck,Bass Thump 01,Bass,Playable,Bass; C4 spectral centre 139 Hz; rise 0 ms; decay/release setting 0.43 s; sustain 0%
+240,Ivory Meteor Bass,Squelchy Fold Bass,Bass,Playable,Bass; C4 spectral centre 697 Hz; rise 0 ms; decay/release setting 0.02 s; sustain 72%
+241,Prism Meteor Pad,Rectified Bloom 02,Harm,Playable,Harm; C4 spectral centre 935 Hz; rise 440 ms; decay/release setting 1.92 s; sustain 100%
+242,Ember Meteor Pluck,Squelchy Saw Stack Pluck,SawX,Playable,SawX; C4 spectral centre 300 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 9%
+243,Polar Meteor Pluck,Saw Dust Pluck 02,SawX,Playable,SawX; C4 spectral centre 2109 Hz; rise 0 ms; decay/release setting 1.47 s; sustain 0%
+244,Violet Meteor Pluck,Sliding Tine Pluck,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 2581 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+245,Solar Meteor Pluck,Squelchy Bass Thump,Bass,Playable,Bass; C4 spectral centre 137 Hz; rise 10 ms; decay/release setting 0.53 s; sustain 0%
+246,Jade Meteor Pluck,Soft Rectified Knock 02,Harm,Playable,Harm; C4 spectral centre 556 Hz; rise 10 ms; decay/release setting 1.97 s; sustain 0%
+247,Scarlet Meteor Pluck,Soft Rectified Knock 03,Harm,Playable,Harm; C4 spectral centre 146 Hz; rise 0 ms; decay/release setting 0.31 s; sustain 0%
+248,Opal Meteor Keys,Sharp Ratio Buzz,Harm,Playable,Harm; C4 spectral centre 5394 Hz; rise 0 ms; decay/release setting 0.98 s; sustain 100%
+249,Velvet Tangle Bass,Squelchy Bass Purr 01,Bass,Playable,Bass; C4 spectral centre 132 Hz; rise 10 ms; decay/release setting 7.59 s; sustain 34%
+250,Neon Tangle Bass,Bass Grunt 01,Bass,Playable,Bass; C4 spectral centre 701 Hz; rise 110 ms; decay/release setting 7.56 s; sustain 48%
+251,Copper Tangle Bass,Soft Saw Stack 03,SawX,Playable,SawX; C4 spectral centre 321 Hz; rise 0 ms; decay/release setting 0.04 s; sustain 23%
+252,Silver Tangle Keys,Saw Dust 02,SawX,Playable,SawX; C4 spectral centre 1753 Hz; rise 0 ms; decay/release setting 1.46 s; sustain 66%
+253,Lunar Tangle Bass,Squelchy Ratio Tone 02,Harm,Playable,Harm; C4 spectral centre 152 Hz; rise 1520 ms; decay/release setting 0.11 s; sustain 100%
+254,Amber Tangle Bass,Arp Saw Stack,SawX,Playable,SawX; C4 spectral centre 215 Hz; rise 10 ms; decay/release setting 0.12 s; sustain 54%
+255,Cobalt Tangle Keys,Saw Stack 01,SawX,Playable,SawX; C4 spectral centre 658 Hz; rise 0 ms; decay/release setting 0.68 s; sustain 56%
+256,Ivory Tangle Bass,Sharp Saw Wiggle,SawX,Playable,SawX; C4 spectral centre 3039 Hz; rise 30 ms; decay/release setting 0.05 s; sustain 100%
+257,Prism Tangle Keys,Feedback Keys 02,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 1175 Hz; rise 0 ms; decay/release setting 0.22 s; sustain 100%
+258,Ember Tangle Pluck,Tine Pluck,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 1301 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+259,Polar Tangle Bass,Soft Saw Stack 04,SawX,Playable,SawX; C4 spectral centre 166 Hz; rise 0 ms; decay/release setting 0.04 s; sustain 62%
+260,Violet Tangle Bass,Soft Saw Stack 05,SawX,Playable,SawX; C4 spectral centre 137 Hz; rise 0 ms; decay/release setting 0.52 s; sustain 20%
+261,Solar Tangle Bass,Soft Saw Stack 06,SawX,Playable,SawX; C4 spectral centre 140 Hz; rise 10 ms; decay/release setting 0.22 s; sustain 46%
+262,Jade Tangle Pluck,Arp Hollow Knock 01,Modal,Playable,Modal; C4 spectral centre 1434 Hz; rise 10 ms; decay/release setting 0.26 s; sustain 0%
+263,Scarlet Tangle Bass,Soft Clang Bass 02,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 448 Hz; rise 20 ms; decay/release setting 0.09 s; sustain 49%
+264,Opal Tangle Mallet,Ringing Body 02,Modal,Playable,Modal; C4 spectral centre 2126 Hz; rise 0 ms; decay/release setting 0.00 s; sustain 100%
+265,Velvet Horizon Keys,Saw Stack 02,SawX,Playable,SawX; C4 spectral centre 1901 Hz; rise 0 ms; decay/release setting 0.10 s; sustain 100%
+266,Neon Horizon Pad,Squelchy Saw Stack Swell,SawX,Playable,SawX; C4 spectral centre 91 Hz; rise 1490 ms; decay/release setting 1.07 s; sustain 0%
+267,Copper Horizon Pad,Bass Creep 01,Bass,Playable,Bass; C4 spectral centre 264 Hz; rise 760 ms; decay/release setting 2.21 s; sustain 78%
+268,Silver Horizon Pluck,Bass Thump 02,Bass,Playable,Bass; C4 spectral centre 1063 Hz; rise 0 ms; decay/release setting 0.54 s; sustain 0%
+269,Lunar Horizon Keys,Bass Purr 02,Bass,Playable,Bass; C4 spectral centre 536 Hz; rise 0 ms; decay/release setting 0.55 s; sustain 64%
+270,Amber Horizon Keys,Saw Wiggle,SawX,Playable,SawX; C4 spectral centre 1521 Hz; rise 20 ms; decay/release setting 0.27 s; sustain 100%
+271,Cobalt Horizon Pad,Ratio Bloom 01,Harm,Playable,Harm; C4 spectral centre 1508 Hz; rise 1170 ms; decay/release setting 2.65 s; sustain 61%
+272,Ivory Horizon Pulse,Arp Rectified Tone,Harm,Playable,Harm; C4 spectral centre 823 Hz; rise 0 ms; decay/release setting 0.31 s; sustain 34%
+273,Prism Horizon Pad,Ratio Bloom 02,Harm,Playable,Harm; C4 spectral centre 699 Hz; rise 1190 ms; decay/release setting 5.33 s; sustain 97%
+274,Ember Horizon Pad,Bass Purr 03,Bass,Playable,Bass; C4 spectral centre 562 Hz; rise 100 ms; decay/release setting 2.84 s; sustain 98%
+275,Polar Horizon Keys,Squelchy Bass Purr 02,Bass,Playable,Bass; C4 spectral centre 1118 Hz; rise 0 ms; decay/release setting 0.69 s; sustain 100%
+276,Violet Horizon Keys,Bass Purr 04,Bass,Playable,Bass; C4 spectral centre 603 Hz; rise 0 ms; decay/release setting 0.60 s; sustain 100%
+277,Solar Horizon Pluck,Ratio Knock 03,Harm,Playable,Harm; C4 spectral centre 1135 Hz; rise 0 ms; decay/release setting 0.70 s; sustain 0%
+278,Jade Horizon Pad,Soft Saw Stack 07,SawX,Playable,SawX; C4 spectral centre 311 Hz; rise 30 ms; decay/release setting 0.13 s; sustain 53%
+279,Scarlet Horizon Keys,Ratio Tone 02,Harm,Playable,Harm; C4 spectral centre 761 Hz; rise 0 ms; decay/release setting 0.22 s; sustain 100%
+280,Opal Horizon Chord,Soft Chord Stack 07,Chords,Playable,Chords; C4 spectral centre 259 Hz; rise 0 ms; decay/release setting 0.25 s; sustain 100%
+281,Velvet Quarry Pad,Ratio Bloom 03,Harm,Playable,Harm; C4 spectral centre 942 Hz; rise 1200 ms; decay/release setting 4.92 s; sustain 100%
+282,Neon Quarry Keys,Ratio Tone 03,Harm,Playable,Harm; C4 spectral centre 776 Hz; rise 20 ms; decay/release setting 2.63 s; sustain 100%
+283,Copper Quarry Pluck,Bass Thump 03,Bass,Playable,Bass; C4 spectral centre 1636 Hz; rise 0 ms; decay/release setting 0.44 s; sustain 0%
+284,Silver Quarry Bass,Soft Rectified Tone 01,Harm,Playable,Harm; C4 spectral centre 232 Hz; rise 0 ms; decay/release setting 3.69 s; sustain 46%
+285,Lunar Quarry Keys,Bass Purr 05,Bass,Playable,Bass; C4 spectral centre 269 Hz; rise 20 ms; decay/release setting 0.13 s; sustain 35%
+286,Amber Quarry Keys,Ratio Tone 04,Harm,Playable,Harm; C4 spectral centre 1225 Hz; rise 0 ms; decay/release setting 1.68 s; sustain 100%
+287,Cobalt Quarry Bass,Soft Sawtooth Bass,Basic Waves,Playable,Basic Waves; C4 spectral centre 159 Hz; rise 10 ms; decay/release setting 0.87 s; sustain 100%
+288,Ivory Quarry Keys,Bass Purr 06,Bass,Playable,Bass; C4 spectral centre 408 Hz; rise 10 ms; decay/release setting 0.21 s; sustain 100%
+289,Prism Quarry Pluck,Bass Drool,Bass,Playable,Bass; C4 spectral centre 499 Hz; rise 10 ms; decay/release setting 5.86 s; sustain 8%
+290,Ember Quarry Pluck,Soft Saw Stack Pluck 01,SawX,Playable,SawX; C4 spectral centre 218 Hz; rise 10 ms; decay/release setting 1.03 s; sustain 0%
+291,Polar Quarry Keys,Ratio Tone 05,Harm,Playable,Harm; C4 spectral centre 678 Hz; rise 0 ms; decay/release setting 3.10 s; sustain 36%
+292,Violet Quarry Pluck,Arp Saw Stack Pluck,SawX,Playable,SawX; C4 spectral centre 147 Hz; rise 0 ms; decay/release setting 0.60 s; sustain 0%
+293,Solar Quarry Keys,Soft Saw Dust 01,SawX,Playable,SawX; C4 spectral centre 490 Hz; rise 0 ms; decay/release setting 0.05 s; sustain 69%
+294,Jade Quarry Pluck,Soft Saw Stack Pluck 02,SawX,Playable,SawX; C4 spectral centre 145 Hz; rise 0 ms; decay/release setting 2.83 s; sustain 0%
+295,Scarlet Quarry Pad,Bass Creep 02,Bass,Playable,Bass; C4 spectral centre 304 Hz; rise 580 ms; decay/release setting 1.93 s; sustain 95%
+296,Opal Quarry Pluck,Arp Ratio Knock,Harm,Playable,Harm; C4 spectral centre 230 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+297,Velvet Capsule Pluck,Arp Bass Thump,Bass,Playable,Bass; C4 spectral centre 255 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 4%
+298,Neon Capsule Bass,Bass Purr 07,Bass,Playable,Bass; C4 spectral centre 132 Hz; rise 0 ms; decay/release setting 0.20 s; sustain 34%
+299,Copper Capsule Keys,Soft Ratio Tone 03,Harm,Playable,Harm; C4 spectral centre 319 Hz; rise 0 ms; decay/release setting 0.21 s; sustain 40%
+300,Silver Capsule Pad,Soft Rectified Bloom,Harm,Playable,Harm; C4 spectral centre 477 Hz; rise 210 ms; decay/release setting 12.72 s; sustain 11%
+301,Lunar Capsule Keys,Squelchy Bass Purr 03,Bass,Playable,Bass; C4 spectral centre 1908 Hz; rise 10 ms; decay/release setting 2.45 s; sustain 40%
+302,Amber Capsule Bass,Soft Saw Dust 02,SawX,Playable,SawX; C4 spectral centre 204 Hz; rise 0 ms; decay/release setting 1.62 s; sustain 51%
+303,Cobalt Capsule Pluck,Soft Saw Dust Pluck 01,SawX,Playable,SawX; C4 spectral centre 108 Hz; rise 0 ms; decay/release setting 0.36 s; sustain 0%
+304,Ivory Capsule Pluck,Soft Rectified Knock 04,Harm,Playable,Harm; C4 spectral centre 265 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 10%
+305,Prism Capsule Pluck,Squelchy Rectified Knock,Harm,Playable,Harm; C4 spectral centre 12467 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 4%
+306,Ember Capsule Bass,Bass Purr 08,Bass,Playable,Bass; C4 spectral centre 262 Hz; rise 0 ms; decay/release setting 0.03 s; sustain 26%
+307,Polar Capsule Keys,Soft Saw Stack 08,SawX,Playable,SawX; C4 spectral centre 371 Hz; rise 0 ms; decay/release setting 1.39 s; sustain 67%
+308,Violet Capsule Keys,Soft Ratio Tone 04,Harm,Playable,Harm; C4 spectral centre 363 Hz; rise 0 ms; decay/release setting 0.35 s; sustain 54%
+309,Solar Capsule Bass,Fold Bass 02,Bass,Playable,Bass; C4 spectral centre 133 Hz; rise 20 ms; decay/release setting 0.29 s; sustain 19%
+310,Jade Capsule Bass,Rectified Tone 04,Harm,Playable,Harm; C4 spectral centre 932 Hz; rise 0 ms; decay/release setting 1.41 s; sustain 42%
+311,Scarlet Capsule Keys,Sharp Saw Dust,SawX,Playable,SawX; C4 spectral centre 2842 Hz; rise 50 ms; decay/release setting 6.68 s; sustain 57%
+312,[Unavailable] Opal Capsule Keys,Unavailable 312,Unavailable,Unavailable,Unsupported engine; no sound name invented
+313,[Unavailable] Velvet Beacon Keys,Unavailable 313,Unavailable,Unavailable,Unsupported engine; no sound name invented
+314,[Unavailable] Neon Beacon Bass,Unavailable 314,Unavailable,Unavailable,Unsupported engine; no sound name invented
+315,[Unavailable] Copper Beacon Keys,Unavailable 315,Unavailable,Unavailable,Unsupported engine; no sound name invented
+316,[Unavailable] Silver Beacon Keys,Unavailable 316,Unavailable,Unavailable,Unsupported engine; no sound name invented
+317,[Unavailable] Lunar Beacon Keys,Unavailable 317,Unavailable,Unavailable,Unsupported engine; no sound name invented
+318,[Unavailable] Amber Beacon Pulse,Unavailable 318,Unavailable,Unavailable,Unsupported engine; no sound name invented
+319,[Unavailable] Cobalt Beacon Keys,Unavailable 319,Unavailable,Unavailable,Unsupported engine; no sound name invented
+320,[Unavailable] Ivory Beacon Bass,Unavailable 320,Unavailable,Unavailable,Unsupported engine; no sound name invented
+321,[Unavailable] Prism Beacon Bass,Unavailable 321,Unavailable,Unavailable,Unsupported engine; no sound name invented
+322,[Unavailable] Ember Beacon Keys,Unavailable 322,Unavailable,Unavailable,Unsupported engine; no sound name invented
+323,[Unavailable] Polar Beacon Keys,Unavailable 323,Unavailable,Unavailable,Unsupported engine; no sound name invented
+324,[Unavailable] Violet Beacon Keys,Unavailable 324,Unavailable,Unavailable,Unsupported engine; no sound name invented
+325,[Unavailable] Solar Beacon Bass,Unavailable 325,Unavailable,Unavailable,Unsupported engine; no sound name invented
+326,[Unavailable] Jade Beacon Keys,Unavailable 326,Unavailable,Unavailable,Unsupported engine; no sound name invented
+327,[Unavailable] Scarlet Beacon Bass,Unavailable 327,Unavailable,Unavailable,Unsupported engine; no sound name invented
+328,[Unavailable] Opal Beacon Keys,Unavailable 328,Unavailable,Unavailable,Unsupported engine; no sound name invented
+329,[Unavailable] Velvet Vector Keys,Unavailable 329,Unavailable,Unavailable,Unsupported engine; no sound name invented
+330,[Unavailable] Neon Vector Pluck,Unavailable 330,Unavailable,Unavailable,Unsupported engine; no sound name invented
+331,[Unavailable] Copper Vector Keys,Unavailable 331,Unavailable,Unavailable,Unsupported engine; no sound name invented
+332,[Unavailable] Silver Vector Keys,Unavailable 332,Unavailable,Unavailable,Unsupported engine; no sound name invented
+333,Lunar Vector Bass,Robot Ramble 02,Speech,Playable,Speech; C4 spectral centre 1183 Hz; rise 350 ms; decay/release setting 0.03 s; sustain 100%
+334,[Unavailable] Amber Vector Keys,Unavailable 334,Unavailable,Unavailable,Unsupported engine; no sound name invented
+335,[Unavailable] Cobalt Vector Keys,Unavailable 335,Unavailable,Unavailable,Unsupported engine; no sound name invented
+336,[Unavailable] Ivory Vector Pluck,Unavailable 336,Unavailable,Unavailable,Unsupported engine; no sound name invented
+337,[Unavailable] Prism Vector Pad,Unavailable 337,Unavailable,Unavailable,Unsupported engine; no sound name invented
+338,[Unavailable] Ember Vector Keys,Unavailable 338,Unavailable,Unavailable,Unsupported engine; no sound name invented
+339,Polar Vector Bass,Soft Rectified Tone 02,Harm,Playable,Harm; C4 spectral centre 226 Hz; rise 0 ms; decay/release setting 0.81 s; sustain 32%
+340,[Unavailable] Violet Vector Keys,Unavailable 340,Unavailable,Unavailable,Unsupported engine; no sound name invented
+341,[Unavailable] Solar Vector Bass,Unavailable 341,Unavailable,Unavailable,Unsupported engine; no sound name invented
+342,[Unavailable] Jade Vector Keys,Unavailable 342,Unavailable,Unavailable,Unsupported engine; no sound name invented
+343,[Unavailable] Scarlet Vector Pluck,Unavailable 343,Unavailable,Unavailable,Unsupported engine; no sound name invented
+344,Opal Vector Keys,Sliding Feedback Keys,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 263 Hz; rise 10 ms; decay/release setting 0.21 s; sustain 100%
+345,[Unavailable] Velvet Ripple Keys,Unavailable 345,Unavailable,Unavailable,Unsupported engine; no sound name invented
+346,Neon Ripple Pluck,Soft Tine Pluck 04,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 321 Hz; rise 0 ms; decay/release setting 1.59 s; sustain 0%
+347,Copper Ripple Keys,Soft Bent Reed,Waveshaper,Playable,Waveshaper; C4 spectral centre 286 Hz; rise 0 ms; decay/release setting 0.23 s; sustain 37%
+348,[Unavailable] Silver Ripple Keys,Unavailable 348,Unavailable,Unavailable,Unsupported engine; no sound name invented
+349,Lunar Ripple Pluck,Arp Hollow Knock 02,Modal,Playable,Modal; C4 spectral centre 328 Hz; rise 0 ms; decay/release setting 1.09 s; sustain 0%
+350,[Unavailable] Amber Ripple Pluck,Unavailable 350,Unavailable,Unavailable,Unsupported engine; no sound name invented
+351,Cobalt Ripple Bass,Soft Feedback Bass,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 146 Hz; rise 0 ms; decay/release setting 0.04 s; sustain 50%
+352,[Unavailable] Ivory Ripple Pluck,Unavailable 352,Unavailable,Unavailable,Unsupported engine; no sound name invented
+353,[Unavailable] Prism Ripple Pluck,Unavailable 353,Unavailable,Unavailable,Unsupported engine; no sound name invented
+354,[Unavailable] Ember Ripple Pluck,Unavailable 354,Unavailable,Unavailable,Unsupported engine; no sound name invented
+355,[Unavailable] Polar Ripple Pad,Unavailable 355,Unavailable,Unavailable,Unsupported engine; no sound name invented
+356,[Unavailable] Violet Ripple Bass,Unavailable 356,Unavailable,Unavailable,Unsupported engine; no sound name invented
+357,[Unavailable] Solar Ripple Keys,Unavailable 357,Unavailable,Unavailable,Unsupported engine; no sound name invented
+358,[Unavailable] Jade Ripple Pluck,Unavailable 358,Unavailable,Unavailable,Unsupported engine; no sound name invented
+359,[Unavailable] Scarlet Ripple Keys,Unavailable 359,Unavailable,Unavailable,Unsupported engine; no sound name invented
+360,[Unavailable] Opal Ripple Bass,Unavailable 360,Unavailable,Unavailable,Unsupported engine; no sound name invented
+361,[Unavailable] Velvet Lattice Pluck,Unavailable 361,Unavailable,Unavailable,Unsupported engine; no sound name invented
+362,[Unavailable] Neon Lattice Bass,Unavailable 362,Unavailable,Unavailable,Unsupported engine; no sound name invented
+363,[Unavailable] Copper Lattice Keys,Unavailable 363,Unavailable,Unavailable,Unsupported engine; no sound name invented
+364,Silver Lattice Pad,Table Creep,Wavetable,Playable,Wavetable; C4 spectral centre 1444 Hz; rise 320 ms; decay/release setting 2.33 s; sustain 66%
+365,[Unavailable] Lunar Lattice Pad,Unavailable 365,Unavailable,Unavailable,Unsupported engine; no sound name invented
+366,[Unavailable] Amber Lattice Pulse,Unavailable 366,Unavailable,Unavailable,Unsupported engine; no sound name invented
+367,[Unavailable] Cobalt Lattice Keys,Unavailable 367,Unavailable,Unavailable,Unsupported engine; no sound name invented
+368,[Unavailable] Ivory Lattice Keys,Unavailable 368,Unavailable,Unavailable,Unsupported engine; no sound name invented
+369,Prism Lattice Bass,Bass Grunt 02,Bass,Playable,Bass; C4 spectral centre 146 Hz; rise 40 ms; decay/release setting 2.22 s; sustain 39%
+370,[Unavailable] Ember Lattice Pad,Unavailable 370,Unavailable,Unavailable,Unsupported engine; no sound name invented
+371,[Unavailable] Polar Lattice Keys,Unavailable 371,Unavailable,Unavailable,Unsupported engine; no sound name invented
+372,[Unavailable] Violet Lattice Pluck,Unavailable 372,Unavailable,Unavailable,Unsupported engine; no sound name invented
+373,[Unavailable] Solar Lattice Pluck,Unavailable 373,Unavailable,Unavailable,Unsupported engine; no sound name invented
+374,[Unavailable] Jade Lattice Pluck,Unavailable 374,Unavailable,Unavailable,Unsupported engine; no sound name invented
+375,[Unavailable] Scarlet Lattice Keys,Unavailable 375,Unavailable,Unavailable,Unsupported engine; no sound name invented
+376,[Unavailable] Opal Lattice Pluck,Unavailable 376,Unavailable,Unavailable,Unsupported engine; no sound name invented
+377,[Unavailable] Velvet Shadow Pluck,Unavailable 377,Unavailable,Unavailable,Unsupported engine; no sound name invented
+378,[Unavailable] Neon Shadow Keys,Unavailable 378,Unavailable,Unavailable,Unsupported engine; no sound name invented
+379,[Unavailable] Copper Shadow Pluck,Unavailable 379,Unavailable,Unavailable,Unsupported engine; no sound name invented
+380,[Unavailable] Silver Shadow Keys,Unavailable 380,Unavailable,Unavailable,Unsupported engine; no sound name invented
+381,Lunar Shadow Keys,Soft Saw Stack 09,SawX,Playable,SawX; C4 spectral centre 477 Hz; rise 0 ms; decay/release setting 0.62 s; sustain 23%
+382,[Unavailable] Amber Shadow Bass,Unavailable 382,Unavailable,Unavailable,Unsupported engine; no sound name invented
+383,[Unavailable] Cobalt Shadow Pad,Unavailable 383,Unavailable,Unavailable,Unsupported engine; no sound name invented
+384,[Unavailable] Ivory Shadow Pluck,Unavailable 384,Unavailable,Unavailable,Unsupported engine; no sound name invented
+385,[Unavailable] Prism Shadow Pad,Unavailable 385,Unavailable,Unavailable,Unsupported engine; no sound name invented
+386,Ember Shadow Pluck,Soft Bent Bark 03,Waveshaper,Playable,Waveshaper; C4 spectral centre 316 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+387,[Unavailable] Polar Shadow Pluck,Unavailable 387,Unavailable,Unavailable,Unsupported engine; no sound name invented
+388,Violet Shadow Pad,Soft Detune Saw Swell 03,SuperWave,Playable,SuperWave; C4 spectral centre 545 Hz; rise 330 ms; decay/release setting 1.58 s; sustain 100%
+389,Solar Shadow Pluck,Soft Saw Stack Pluck 03,SawX,Playable,SawX; C4 spectral centre 449 Hz; rise 0 ms; decay/release setting 0.55 s; sustain 10%
+390,[Unavailable] Jade Shadow Keys,Unavailable 390,Unavailable,Unavailable,Unsupported engine; no sound name invented
+391,[Unavailable] Scarlet Shadow Keys,Unavailable 391,Unavailable,Unavailable,Unsupported engine; no sound name invented
+392,[Unavailable] Opal Shadow Bass,Unavailable 392,Unavailable,Unavailable,Unsupported engine; no sound name invented
+393,Velvet Arcade Bass,Soft Ringing Body 02,Modal,Playable,Modal; C4 spectral centre 188 Hz; rise 0 ms; decay/release setting 0.69 s; sustain 100%
+394,Neon Arcade Keys,Soft Detune Pulse Keys 02,SuperWave,Playable,SuperWave; C4 spectral centre 333 Hz; rise 0 ms; decay/release setting 1.12 s; sustain 23%
+395,Copper Arcade Pad,Sharp Detune Saw Swell,SuperWave,Playable,SuperWave; C4 spectral centre 3214 Hz; rise 1500 ms; decay/release setting 7.88 s; sustain 86%
+396,Silver Arcade Bass,Throat Bass,Formant,Playable,Formant; C4 spectral centre 699 Hz; rise 10 ms; decay/release setting 0.04 s; sustain 100%
+397,[Unavailable] Lunar Arcade Pluck,Unavailable 397,Unavailable,Unavailable,Unsupported engine; no sound name invented
+398,[Unavailable] Amber Arcade Keys,Unavailable 398,Unavailable,Unavailable,Unsupported engine; no sound name invented
+399,[Unavailable] Cobalt Arcade Keys,Unavailable 399,Unavailable,Unavailable,Unsupported engine; no sound name invented
+400,[Unavailable] Ivory Arcade Keys,Unavailable 400,Unavailable,Unavailable,Unsupported engine; no sound name invented
+401,[Unavailable] Prism Arcade Pluck,Unavailable 401,Unavailable,Unavailable,Unsupported engine; no sound name invented
+402,[Unavailable] Ember Arcade Pad,Unavailable 402,Unavailable,Unavailable,Unsupported engine; no sound name invented
+403,[Unavailable] Polar Arcade Bass,Unavailable 403,Unavailable,Unavailable,Unsupported engine; no sound name invented
+404,[Unavailable] Violet Arcade Pad,Unavailable 404,Unavailable,Unavailable,Unsupported engine; no sound name invented
+405,[Unavailable] Solar Arcade Pluck,Unavailable 405,Unavailable,Unavailable,Unsupported engine; no sound name invented
+406,[Unavailable] Jade Arcade Pad,Unavailable 406,Unavailable,Unavailable,Unsupported engine; no sound name invented
+407,[Unavailable] Scarlet Arcade Bass,Unavailable 407,Unavailable,Unavailable,Unsupported engine; no sound name invented
+408,Opal Arcade Pad,Sliding Stacked Pulse Keys,SuperWave,Playable,SuperWave; C4 spectral centre 542 Hz; rise 350 ms; decay/release setting 5.72 s; sustain 48%
+409,[Unavailable] Velvet Tundra Keys,Unavailable 409,Unavailable,Unavailable,Unsupported engine; no sound name invented
+410,[Unavailable] Neon Tundra Keys,Unavailable 410,Unavailable,Unavailable,Unsupported engine; no sound name invented
+411,[Unavailable] Copper Tundra Pluck,Unavailable 411,Unavailable,Unavailable,Unsupported engine; no sound name invented
+412,[Unavailable] Silver Tundra Keys,Unavailable 412,Unavailable,Unavailable,Unsupported engine; no sound name invented
+413,[Unavailable] Lunar Tundra Bass,Unavailable 413,Unavailable,Unavailable,Unsupported engine; no sound name invented
+414,Amber Tundra Mallet,Soft Ringing String 03,Karplus Strong,Playable,Karplus Strong; C4 spectral centre 321 Hz; rise 0 ms; decay/release setting 4.28 s; sustain 17%
+415,[Unavailable] Cobalt Tundra Keys,Unavailable 415,Unavailable,Unavailable,Unsupported engine; no sound name invented
+416,[Unavailable] Ivory Tundra Pad,Unavailable 416,Unavailable,Unavailable,Unsupported engine; no sound name invented
+417,[Unavailable] Prism Tundra Keys,Unavailable 417,Unavailable,Unavailable,Unsupported engine; no sound name invented
+418,[Unavailable] Ember Tundra Keys,Unavailable 418,Unavailable,Unavailable,Unsupported engine; no sound name invented
+419,Polar Tundra Keys,Soft Table Glide,Wavetable,Playable,Wavetable; C4 spectral centre 289 Hz; rise 20 ms; decay/release setting 1.72 s; sustain 62%
+420,[Unavailable] Violet Tundra Bass,Unavailable 420,Unavailable,Unavailable,Unsupported engine; no sound name invented
+421,[Unavailable] Solar Tundra Keys,Unavailable 421,Unavailable,Unavailable,Unsupported engine; no sound name invented
+422,[Unavailable] Jade Tundra Keys,Unavailable 422,Unavailable,Unavailable,Unsupported engine; no sound name invented
+423,[Unavailable] Scarlet Tundra Pad,Unavailable 423,Unavailable,Unavailable,Unsupported engine; no sound name invented
+424,Opal Tundra Pad,Sliding Mouth Organ,Formant,Playable,Formant; C4 spectral centre 1128 Hz; rise 0 ms; decay/release setting 0.14 s; sustain 70%
+425,Velvet Spark Keys,Squelchy Mouth Organ,Formant,Playable,Formant; C4 spectral centre 464 Hz; rise 0 ms; decay/release setting 4.50 s; sustain 68%
+426,[Unavailable] Neon Spark Pluck,Unavailable 426,Unavailable,Unavailable,Unsupported engine; no sound name invented
+427,[Unavailable] Copper Spark Keys,Unavailable 427,Unavailable,Unavailable,Unsupported engine; no sound name invented
+428,[Unavailable] Silver Spark Pluck,Unavailable 428,Unavailable,Unavailable,Unsupported engine; no sound name invented
+429,[Unavailable] Lunar Spark Pad,Unavailable 429,Unavailable,Unavailable,Unsupported engine; no sound name invented
+430,[Unavailable] Amber Spark Keys,Unavailable 430,Unavailable,Unavailable,Unsupported engine; no sound name invented
+431,Cobalt Spark Keys,Soft Pulse Keys 08,Basic Waves,Playable,Basic Waves; C4 spectral centre 546 Hz; rise 10 ms; decay/release setting 2.85 s; sustain 55%
+432,[Unavailable] Ivory Spark Pluck,Unavailable 432,Unavailable,Unavailable,Unsupported engine; no sound name invented
+433,Prism Spark Pad,Squelchy Bent Drone,Waveshaper,Playable,Waveshaper; C4 spectral centre 1445 Hz; rise 930 ms; decay/release setting 2.10 s; sustain 100%
+434,Ember Spark Keys,Saw Dust 03,SawX,Playable,SawX; C4 spectral centre 1000 Hz; rise 0 ms; decay/release setting 5.07 s; sustain 54%
+435,[Unavailable] Polar Spark Bass,Unavailable 435,Unavailable,Unavailable,Unsupported engine; no sound name invented
+436,Violet Spark Mallet,Ringing Body 03,Modal,Playable,Modal; C4 spectral centre 656 Hz; rise 10 ms; decay/release setting 0.35 s; sustain 48%
+437,[Unavailable] Solar Spark Pad,Unavailable 437,Unavailable,Unavailable,Unsupported engine; no sound name invented
+438,Jade Spark Bass,Soft Throat Bass 02,Formant,Playable,Formant; C4 spectral centre 399 Hz; rise 0 ms; decay/release setting 4.50 s; sustain 68%
+439,[Unavailable] Scarlet Spark Pluck,Unavailable 439,Unavailable,Unavailable,Unsupported engine; no sound name invented
+440,Opal Spark Pluck,Soft Saw Dust Pluck 02,SawX,Playable,SawX; C4 spectral centre 144 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+441,[Unavailable] Velvet Echo Keys,Unavailable 441,Unavailable,Unavailable,Unsupported engine; no sound name invented
+442,[Unavailable] Neon Echo Keys,Unavailable 442,Unavailable,Unavailable,Unsupported engine; no sound name invented
+443,[Unavailable] Copper Echo Pluck,Unavailable 443,Unavailable,Unavailable,Unsupported engine; no sound name invented
+444,[Unavailable] Silver Echo Bass,Unavailable 444,Unavailable,Unavailable,Unsupported engine; no sound name invented
+445,Lunar Echo Bass,FM Bass,Two Operator FM,Playable,Two Operator FM; C4 spectral centre 1616 Hz; rise 210 ms; decay/release setting 0.99 s; sustain 80%
+446,[Unavailable] Amber Echo Pad,Unavailable 446,Unavailable,Unavailable,Unsupported engine; no sound name invented
+447,[Unavailable] Cobalt Echo Pluck,Unavailable 447,Unavailable,Unavailable,Unsupported engine; no sound name invented
+448,Ivory Echo Pluck,Soft Saw Stab 02,Virtual Analog,Playable,Virtual Analog; C4 spectral centre 306 Hz; rise 0 ms; decay/release setting 0.26 s; sustain 0%
+449,Prism Echo Pad,Soft Table Creep 02,Wavetable,Playable,Wavetable; C4 spectral centre 290 Hz; rise 300 ms; decay/release setting 5.15 s; sustain 18%
+450,[Unavailable] Ember Echo Keys,Unavailable 450,Unavailable,Unavailable,Unsupported engine; no sound name invented
+451,[Unavailable] Polar Echo Pluck,Unavailable 451,Unavailable,Unavailable,Unsupported engine; no sound name invented
+452,[Unavailable] Violet Echo Bass,Unavailable 452,Unavailable,Unavailable,Unsupported engine; no sound name invented
+453,[Unavailable] Solar Echo Keys,Unavailable 453,Unavailable,Unavailable,Unsupported engine; no sound name invented
+454,[Unavailable] Jade Echo Keys,Unavailable 454,Unavailable,Unavailable,Unsupported engine; no sound name invented
+455,[Unavailable] Scarlet Echo Pad,Unavailable 455,Unavailable,Unavailable,Unsupported engine; no sound name invented
+456,[Unavailable] Opal Echo Pluck,Unavailable 456,Unavailable,Unavailable,Unsupported engine; no sound name invented

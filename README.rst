@@ -5,7 +5,7 @@ TinyFreaky
    :alt: TinyFreaky — 8 voices, 16 engines, MagicStino
    :width: 960
 
-An **8-voice synthesizer by MagicStino** for Akai Force, Windows, macOS and Linux.
+An **8-voice synthesizer by MagicStino** for Akai Force and MPC via OpenPlugin, Windows, macOS and Linux.
 
 .. image:: assets/tinyfreaky-artwork.png
    :alt: TinyFreaky artwork
@@ -49,7 +49,7 @@ Downloads
 
 Get the latest version from `Releases <https://github.com/MagicStino/TinyFreaky/releases/latest>`_.
 
-* **Force:** ARMv7 package through the OpenPlugin catalog.
+* **Force / MPC:** ARMv7 package through the OpenPlugin catalog; see its device and firmware compatibility listing.
 * **Windows:** 64-bit VST3.
 * **macOS:** universal Intel/Apple Silicon VST3 and Audio Unit.
 * **Linux:** 64-bit VST3.
@@ -58,6 +58,8 @@ The macOS builds are ad-hoc signed and are not Apple-notarized. The AU is checke
 
 Patches and projects
 --------------------
+
+Version **0.4.0** gives the factory bank sound-informed names, from Mouth Pop and Bent Bark to Static Rise and Bass Drool. Slots and sound settings stay unchanged. The complete old-to-new name list is in ``docs/preset-name-changes-0.4.0.csv``.
 
 456 TinyFreaky-named patch slots keep stable IDs and sound settings. 342 slots are playable; 114 require unavailable engines and are clearly marked. Six engine families and full sequence/sample payload support remain unfinished.
 

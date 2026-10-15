@@ -6,11 +6,11 @@ import json
 from pathlib import Path
 import re
 
-def manifest(package=None,version='0.3.9',image=None):
+def manifest(package=None,version='0.4.0',image=None):
     result={
         'schema':'openplugin.community/1','id':'tinyfreaky','name':'Tinyfreaky',
         'author':'MagicStino','repo':'MagicStino/TinyFreaky',
-        'summary':'MagicStino eight-voice synth with 16 engines, output scope, velocity mascot, 5x7 matrix, arp/swing and 64-step sequencer. 456 original TinyFreaky patch names: 342 playable slots, 114 unavailable/muted. Sequence/sample payloads are not fully supported.',
+        'summary':'MagicStino eight-voice synth with 16 engines, output scope, 5x7 matrix, arp/swing and 64-step sequencer. Sound-informed names and stable IDs across 456 slots: 342 playable slots, 114 unavailable/muted. Sequence/sample payloads are not fully supported.',
         'kind':'instrument','category':'synth','license':'MIT',
         'tags':['synth','experimental','force','armv7'],
         'images':[image or f'https://github.com/MagicStino/TinyFreaky/releases/download/v{version}/tinyfreaky-artwork.png'],
@@ -29,7 +29,7 @@ def manifest(package=None,version='0.3.9',image=None):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--package',type=Path)
-    p.add_argument('--version',default='0.3.9')
+    p.add_argument('--version',default='0.4.0')
     p.add_argument('--image',help='Public HTTPS catalog preview URL')
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()

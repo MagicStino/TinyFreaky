@@ -30,7 +30,7 @@ def collect(source,out):
  rows=[]
  for entry in entries.values():
   values=','.join(format(float(v),'.9g')+'f' if '.' in format(float(v),'.9g') or 'e' in format(float(v),'.9g') else str(int(v))+'.0f' for v in entry['values'])
-  label=('' if entry['loadable'] else '[Unavailable] ')+entry['name']
+  label=entry['name'] if entry['loadable'] or entry['name'].startswith('Unavailable ') else '[Unavailable] '+entry['name']
   rows.append('{'+json.dumps(label,ensure_ascii=True)+',{'+values+'},'+str(int(entry['loadable']))+'},')
  (ROOT/'src/factory_bank.inc').write_text('/* Generated factory parameter data; source/limitations: assets/factory/index.json. */\n'+'\n'.join(rows)+'\n')
  index=dict(schema='tinyfreaky.factory/2',banks=banks,unique_presets=len(entries),partial_translations=sum(e['loadable'] for e in entries.values()),unsupported=sum(not e['loadable'] for e in entries.values()),empty_slots=len(empty),entries=[{k:v for k,v in e.items() if k!='values'} for e in entries.values()])

@@ -1,0 +1,12 @@
+TinyFreaky 0.4.0
+
+Approved sound-informed names replace the arbitrary colour/object naming system.
+All 342 playable slots are named using their synthesis engine, envelope, routed
+movement and rendered sound measurements. 114 unavailable slots are labelled
+Unavailable plus their existing displayed slot number, without invented sounds.
+See preset-name-changes-0.4.0.csv for the complete old-to-new mapping.
+
+Slot order, parameter values, synthesis code, plugin IDs and state format remain
+unchanged. Saved projects retain their sound and selected slots. User-loaded
+patch names are not renamed. This release does not add engine families or alter
+preset fidelity. Six engine families remain unavailable.

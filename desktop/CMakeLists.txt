@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(Tinyfreaky VERSION 0.3.9 LANGUAGES C CXX)
+project(Tinyfreaky VERSION 0.4.0 LANGUAGES C CXX)
 if(APPLE)
  enable_language(OBJCXX)
 endif()

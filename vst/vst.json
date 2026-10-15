@@ -2,7 +2,7 @@
   "name": "Tinyfreaky",
   "vendor": "MagicStino",
   "uid": "TyFk",
-  "version": 3000,
+  "version": 4000,
   "so": "tinyfreaky.so",
   "params": "params.json",
   "layout": "layout.conf",

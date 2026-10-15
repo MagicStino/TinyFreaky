@@ -24,7 +24,7 @@
   "empty_slots": 960,
   "entries": [
     {
-      "name": "Velvet Orbit Keys",
+      "name": "Soft Mouth Organ",
       "sha256": "e0aeb52195da038ec0cfc80bb9b7362b14d1a88991f350b173e60fad44f51bb8",
       "loadable": true,
       "warnings": [
@@ -37,7 +37,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Orbit Pluck",
+      "name": "Soft Stacked Pulse Pluck 01",
       "sha256": "ac1abe292dce9a8131d717f7fea764143c84582115aebca483205dd5a51d9161",
       "loadable": true,
       "warnings": [
@@ -51,7 +51,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Orbit Keys",
+      "name": "Soft Detune Saw Keys 01",
       "sha256": "af4561ec16e7189e2c543ca450e0cc6833a8dc02069d32cb9f734bbab100f9ba",
       "loadable": true,
       "warnings": [
@@ -66,7 +66,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Orbit Pluck",
+      "name": "Soft Detune Triangle Pluck",
       "sha256": "a6de25f6ee548e0aa1e06ef3ca751b7e09855469f7321fab840ae70163c139ad",
       "loadable": true,
       "warnings": [
@@ -81,7 +81,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Orbit Keys",
+      "name": "Squelchy Detune Saw Keys",
       "sha256": "77f963b8f4b12c34efa27e30cec104419dd64e5f2bbc3f3e7b954f9ec0ee18fc",
       "loadable": true,
       "warnings": [
@@ -95,7 +95,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Orbit Pad",
+      "name": "Sliding Table Creep",
       "sha256": "e0bebf20d1fcd7b7b8a3b6f538cace320c3babc9cd3e9532489b491856ff8f80",
       "loadable": true,
       "warnings": [
@@ -109,7 +109,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Orbit Pluck",
+      "name": "Arp Feedback Pluck",
       "sha256": "493b4072b7e4dbd4e767e231094d9d690bd5fdc2bcad7c0b96c67951b05c67e7",
       "loadable": true,
       "warnings": [
@@ -123,7 +123,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Orbit Pad",
+      "name": "Soft Stacked Saw Swell",
       "sha256": "0b6b7f64f01598d88f7ad19dca137ff52c755ebbf84a2dc5c902ab14762e6675",
       "loadable": true,
       "warnings": [
@@ -136,7 +136,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Orbit Bass",
+      "name": "Bent Reed 01",
       "sha256": "4f955af4f4f964068fe2fd9bc5777ba4a20bc2c895910b25cf6e9477420b64ba",
       "loadable": true,
       "warnings": [
@@ -151,7 +151,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Orbit Pluck",
+      "name": "Sharp Pulse Stab",
       "sha256": "96f949aa1b8129082b3213258d70be0ef8b66ccda003572ec83e50d6fee07c88",
       "loadable": true,
       "warnings": [
@@ -164,7 +164,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Orbit Pluck",
+      "name": "Soft Chord Stab 01",
       "sha256": "0ae2ac6348ece9cd00f7ebd8f688d24027f9bb618afe4cb12f3e38a99fc817e1",
       "loadable": true,
       "warnings": [
@@ -180,7 +180,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Orbit Pad",
+      "name": "Soft Detune Saw Swell 01",
       "sha256": "eb5b9a9568519405c27726bc2103d1d0eb37fe5fa76e351af757f93643f4571f",
       "loadable": true,
       "warnings": [
@@ -195,7 +195,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Orbit Pad",
+      "name": "Chord Bloom 01",
       "sha256": "ca0c3db43b8c6e4975022388b8d968c33c7b88be5035df937bf2507b55caca85",
       "loadable": true,
       "warnings": [
@@ -208,7 +208,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Orbit Keys",
+      "name": "Pulse Keys 01",
       "sha256": "036ac323ba95f41907053571b35a594633e1ff1a8d66543bcff169b6d7bda810",
       "loadable": true,
       "warnings": [
@@ -224,7 +224,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Orbit Pluck",
+      "name": "Arp Bent Bark",
       "sha256": "44c9efdf33bafe87dbeaae5942a4b270d7a034f94d058f310cc47fbd9bf2fc26",
       "loadable": true,
       "warnings": [
@@ -241,7 +241,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Orbit Texture",
+      "name": "Sliding Robot Whisper",
       "sha256": "9026c4c67cc7f83de5af61edf5476a2b3c470eedc8cc20ef6c4de1f7e7f32417",
       "loadable": true,
       "warnings": [
@@ -256,7 +256,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Lantern Pluck",
+      "name": "Hollow Knock 02",
       "sha256": "0d276a1271fe3460e9d2d5605dd8e542aa4b614a73ddbe006f44071cce60ea27",
       "loadable": true,
       "warnings": [
@@ -272,7 +272,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Lantern Keys",
+      "name": "Soft Pulse Keys 01",
       "sha256": "8faa2b72e8468d782528f18745d1dbb12a1bf38db6de0a77a7962984f56e3d31",
       "loadable": true,
       "warnings": [
@@ -287,7 +287,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Lantern Keys",
+      "name": "Squelchy Pulse Keys 01",
       "sha256": "8a7a54b29b89b401efbe85dc232327bf1fcdf84d7c36a37d973a8e94f003991b",
       "loadable": true,
       "warnings": [
@@ -301,7 +301,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Lantern Keys",
+      "name": "Table Keys 01",
       "sha256": "23f22ea9ffc3db849059d2ae67a3eb95ac1908878ae2ed141588e10ddc3d1436",
       "loadable": true,
       "warnings": [
@@ -316,7 +316,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Lantern Keys",
+      "name": "Soft Pulse Keys 02",
       "sha256": "a6f885f2df0fe21c554bf28cbd636224a9402189edb011a5e9dee836f9f9c19a",
       "loadable": true,
       "warnings": [
@@ -331,7 +331,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Lantern Pluck",
+      "name": "Arp Pulse Pluck",
       "sha256": "57fe8607b6d9f3bccd4dc5cdbf723128cdf4c507301601f3bde8b4b1f09809d5",
       "loadable": true,
       "warnings": [
@@ -345,7 +345,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Lantern Pluck",
+      "name": "Table Knock 01",
       "sha256": "f4658a3f8b39efd15b859c0816e50b122f01ef6c71e4da75c0fa47c566992dc5",
       "loadable": true,
       "warnings": [
@@ -360,7 +360,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Lantern Keys",
+      "name": "Bent Reed 02",
       "sha256": "4d4781f6a2afe5bab095a04560c5709e3adbd18dcde137c42f1b6c18b094e11b",
       "loadable": true,
       "warnings": [
@@ -373,7 +373,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Lantern Chord",
+      "name": "Soft Chord Stack 01",
       "sha256": "d7410ad07e7f58e8af27fcdabda64a4d0daf37a6ec969695286390f5edb18a11",
       "loadable": true,
       "warnings": [
@@ -389,7 +389,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Lantern Keys",
+      "name": "Soft Clang Keys",
       "sha256": "30f743fbe1537e5675a0342e0e782a173eb5f9a8005500199f5b30a91cd527f6",
       "loadable": true,
       "warnings": [
@@ -405,7 +405,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Lantern Keys",
+      "name": "Soft Sawtooth Keys 02",
       "sha256": "e371fbef7e949727fd8540ab2b6f3f8cd5f4759111646ee9f1e13362c22a0177",
       "loadable": true,
       "warnings": [
@@ -420,7 +420,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Lantern Pluck",
+      "name": "Syllable Spit",
       "sha256": "597ec636ee50f0143ecd0a8f6fc8a71dae0205807e62c570d1a932cd66faef1d",
       "loadable": true,
       "warnings": [
@@ -435,7 +435,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Lantern Texture",
+      "name": "Arp Robot Ramble",
       "sha256": "ab744684308845628c8c2805351e75003ff8fad60c85908495a7c3192aaeefc4",
       "loadable": true,
       "warnings": [
@@ -449,7 +449,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Lantern Pad",
+      "name": "Sliding Chord Bloom",
       "sha256": "1a17b3e8668caec8ca3c0c7adc1dbcf8477a4470ddbec24115ea78d99a1422f6",
       "loadable": true,
       "warnings": [
@@ -463,7 +463,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Lantern Keys",
+      "name": "Soft Saw Keys 01",
       "sha256": "908027a8585bd9b355da8e10ffce8185550a3e3da0d7ca0aaf13383611c1767c",
       "loadable": true,
       "warnings": [
@@ -476,7 +476,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Lantern Pluck",
+      "name": "Squelchy Chord Stab 01",
       "sha256": "008f3e43db764752ca0660a17a72c9526f796f73f288046d516d39bb24148b88",
       "loadable": true,
       "warnings": [
@@ -489,7 +489,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Circuit Bass",
+      "name": "Soft Chord Stack 02",
       "sha256": "067779e575ebc87dcc1bd27f1bbc7ad0f29d188edf8852927694f11dd3b8c2c2",
       "loadable": true,
       "warnings": [
@@ -503,7 +503,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Circuit Bass",
+      "name": "Squelchy Table Keys 01",
       "sha256": "a75bbd987119efe7ccb3ee9847b03fcce0e31e894a468721fa88916011ff5eac",
       "loadable": true,
       "warnings": [
@@ -519,7 +519,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Circuit Keys",
+      "name": "Squelchy Feedback Keys",
       "sha256": "a342bbecdbef445c59cda7a256204776b219f8829e4db5473d5a13b883fed030",
       "loadable": true,
       "warnings": [
@@ -534,7 +534,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Circuit Keys",
+      "name": "Soft Stacked Saw Keys",
       "sha256": "727ca779240c38842e33a8e71e9f8da3965cd16d808c6aa4c6c112dac4833c38",
       "loadable": true,
       "warnings": [
@@ -547,7 +547,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Circuit Bass",
+      "name": "Soft Folded Reed",
       "sha256": "4f2955475aac0f5bce8b06883e95426ac2d648184639da2452e48d203a643c17",
       "loadable": true,
       "warnings": [
@@ -562,7 +562,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Circuit Keys",
+      "name": "Soft Sawtooth Keys 03",
       "sha256": "7eb9edea82d8911612e0a4554b4f687aa79cf7e4a34c7e827fd61ca9e033a3b9",
       "loadable": true,
       "warnings": [
@@ -577,7 +577,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Circuit Keys",
+      "name": "Saw Keys",
       "sha256": "64fd44cebcfc98c208a9b761ee9e34e1a98db38db3c6f3573f8c7af1d2a18889",
       "loadable": true,
       "warnings": [
@@ -591,7 +591,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Circuit Pluck",
+      "name": "Squelchy Tine Pluck",
       "sha256": "c7b5c381594edfaed9d8342d85357c117e30984aa6ae6ce4adcc91bda16b6758",
       "loadable": true,
       "warnings": [
@@ -605,7 +605,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Circuit Bass",
+      "name": "Squelchy Table Keys 02",
       "sha256": "6bbe96e2d667d7df456d0d14ddc05c8cb6a1bce1a294f8cdb111462a828057ec",
       "loadable": true,
       "warnings": [
@@ -619,7 +619,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Circuit Pluck",
+      "name": "Detune Saw Pluck",
       "sha256": "7e6152f73bc82a3be1f05db1bbf7fc69bc56a3ca2d3b23ba0266090bcbc9a60a",
       "loadable": true,
       "warnings": [
@@ -635,7 +635,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Circuit Keys",
+      "name": "Soft Saw Keys 02",
       "sha256": "ea55b0129103e0799baf99c09167710cf61acc8b3bc64631b392fa9fe27ea79d",
       "loadable": true,
       "warnings": [
@@ -651,7 +651,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Circuit Keys",
+      "name": "Harmonic Keys",
       "sha256": "c6ec984e4a3e9ed713bceb117eacf51c4c434ef6290f73d2d26eac5571a5aa59",
       "loadable": true,
       "warnings": [
@@ -667,7 +667,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Circuit Pad",
+      "name": "Squelchy Table Knock",
       "sha256": "c2076b2d4e1f5b4f3c09dd57d4151c1ae51faf6a212757f7eb24e584de945d5b",
       "loadable": true,
       "warnings": [
@@ -681,7 +681,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Circuit Bass",
+      "name": "Soft Table Keys 01",
       "sha256": "664de06ea8213868f764dd709a2431b4a544ff0cf911e4d32cda8159cf7a96e1",
       "loadable": true,
       "warnings": [
@@ -696,7 +696,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Circuit Mallet",
+      "name": "Ringing Body 01",
       "sha256": "3f63a9641f1c2b6e0abf5497be4d84f1610d901f340864ffe79d151a57496c41",
       "loadable": true,
       "warnings": [
@@ -712,7 +712,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Circuit Pluck",
+      "name": "Soft Saw Stab 01",
       "sha256": "20c303e2847394dd56cc6002ab18021e992751ba5c030783ef2e4975618082b4",
       "loadable": true,
       "warnings": [
@@ -725,7 +725,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Comet Bass",
+      "name": "Chord Stack 02",
       "sha256": "bce4a785d8cc0094e098cdf234e1b1986f51868d128a11ea1f6d893f22efae3f",
       "loadable": true,
       "warnings": [
@@ -741,7 +741,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Comet Bass",
+      "name": "Bent Reed 03",
       "sha256": "85abf399384d1ea7da0ec85bab98937a7c5e39cb7f998ebaa95a6775c7d9fbb1",
       "loadable": true,
       "warnings": [
@@ -755,7 +755,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Comet Pluck",
+      "name": "Table Knock 02",
       "sha256": "ad8c6d2e3f47a1f99c3165e5d29fe9a55f46d3c43b30ce6f94249a8cd515a199",
       "loadable": true,
       "warnings": [
@@ -771,7 +771,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Comet Bass",
+      "name": "Arp Ringing Body",
       "sha256": "79484ddc5827f7b3ef1a82451dc79044e337d9c3ed34dfa050f0201d174dc7c5",
       "loadable": true,
       "warnings": [
@@ -786,7 +786,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Comet Chord",
+      "name": "Chord Stack 03",
       "sha256": "23210ff207089316c0e86d8e7386ee9f4fc0315be23a04df48f14b599bb3bbbb",
       "loadable": true,
       "warnings": [
@@ -800,7 +800,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Comet Pluck",
+      "name": "Soft Stacked Pulse Pluck 02",
       "sha256": "0d311ce8932ea3bbb548150228edd29ca44eb6730b17e24da958a6be8430bd89",
       "loadable": true,
       "warnings": [
@@ -814,7 +814,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Comet Keys",
+      "name": "Soft Saw Keys 03",
       "sha256": "c35879cb72e000f0e19579e7338c97f188f824c44740371c9fe8673cf1c47c41",
       "loadable": true,
       "warnings": [
@@ -830,7 +830,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Comet Keys",
+      "name": "Squelchy Pulse Keys 02",
       "sha256": "c89741495db06914f81b1a909f992fbf32499325a542adc575d32b8b93a65230",
       "loadable": true,
       "warnings": [
@@ -845,7 +845,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Comet Keys",
+      "name": "Sharp Detune Saw Keys",
       "sha256": "57e6487df0a5a089c409934122da6e9c092a3f64af28c522c34e33677c9d6275",
       "loadable": true,
       "warnings": [
@@ -859,7 +859,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Comet Pluck",
+      "name": "Arp Tine Pluck",
       "sha256": "1fc3f5ac56dc5cb345d6511ae4b3632a0b7dd3d3569f8c13cba295d1872bfdb5",
       "loadable": true,
       "warnings": [
@@ -874,7 +874,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Comet Pluck",
+      "name": "Squelchy Chord Stab 02",
       "sha256": "691c0d1d97ac6c1999b9228aff6502e94189b84407b8cb5b1350358909f9d3ed",
       "loadable": true,
       "warnings": [
@@ -888,7 +888,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Comet Keys",
+      "name": "Pulse Keys 02",
       "sha256": "3c195fd6ff00039c8f618e2d1a539c82429ff5843b2da0dd14a2ae16b30a0b9c",
       "loadable": true,
       "warnings": [
@@ -901,7 +901,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Comet Pluck",
+      "name": "Sharp Metal Knock",
       "sha256": "97a0a26b4893d2faa6709faa07d54a494130262da2185a8fbe2666c7b15b4215",
       "loadable": true,
       "warnings": [
@@ -917,7 +917,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Comet Pad",
+      "name": "Sliding Detune Saw Swell",
       "sha256": "3843b409442fe16e7335a519aa609ae4aa340497e64327c38a0cd6125f2db67f",
       "loadable": true,
       "warnings": [
@@ -933,7 +933,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Comet Keys",
+      "name": "Soft Saw Keys 04",
       "sha256": "7f9da4046c6e28c3097916bf9b34c561b0887c2a58a41536a015989188583b1e",
       "loadable": true,
       "warnings": [
@@ -946,7 +946,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Comet Chord",
+      "name": "Chord Stack 04",
       "sha256": "56abd2cf762b26107195c682296b79ecce105b2df9b6ae0ec5cb6e32bb92ae22",
       "loadable": true,
       "warnings": [
@@ -961,7 +961,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Ribbon Pluck",
+      "name": "Soft Chord Stab 02",
       "sha256": "84e368ffdf8b516ab18404c38b0e4aa5af7225b91a84f07308dc671d1a6e464f",
       "loadable": true,
       "warnings": [
@@ -976,7 +976,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Ribbon Bass",
+      "name": "Squelchy Folded Reed",
       "sha256": "eb4f53e6921af6f4d358342b876d23f766f629329f4a1466387e82cb6b30709d",
       "loadable": true,
       "warnings": [
@@ -992,7 +992,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Ribbon Keys",
+      "name": "Soft Detune Pulse Keys 01",
       "sha256": "8bbf422a8e768f214bb029f1bde79176a41d4844f6d3b299eb15e6189e06ab8a",
       "loadable": true,
       "warnings": [
@@ -1007,7 +1007,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Ribbon Bass",
+      "name": "Squelchy Saw Bass",
       "sha256": "c0f27bc98d0f1ffa11467a54878d27c5f01b42705b0fe85742d57f8ae714549a",
       "loadable": true,
       "warnings": [
@@ -1022,7 +1022,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Ribbon Keys",
+      "name": "Sliding FM Keys 01",
       "sha256": "a17a5af3902c7d68022b79c87a514e2900473f25e78d2ffcee7be1883a53ef5b",
       "loadable": true,
       "warnings": [
@@ -1035,7 +1035,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Ribbon Bass",
+      "name": "Soft Pulse Bass 01",
       "sha256": "2e4680d75586e1cd4144d0f2bed2d012ff4ccaa07183c92ad88c90a2b319a786",
       "loadable": true,
       "warnings": [
@@ -1051,7 +1051,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Ribbon Keys",
+      "name": "Sliding FM Keys 02",
       "sha256": "333907d0af314cba622d0b2495726422a2d8529be15604112eadaa82f7672626",
       "loadable": true,
       "warnings": [
@@ -1065,7 +1065,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Ribbon Keys",
+      "name": "Feedback Keys 01",
       "sha256": "3dcf5319f81a93be840c34188a3268734bf6d549b63bb86e28009526187c58f0",
       "loadable": true,
       "warnings": [
@@ -1081,7 +1081,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Ribbon Keys",
+      "name": "Squelchy Pulse Keys 03",
       "sha256": "0a2efe55823b6ce6d8ba8404008a07ab4f07282641b913e4fbc26adb1c44b647",
       "loadable": true,
       "warnings": [
@@ -1094,7 +1094,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Ribbon Pluck",
+      "name": "Squelchy Bent Bark 01",
       "sha256": "2263a26c1e31911d41c33fdf9fa6af4b21548a8ae9fec8405538cbb83b0dc362",
       "loadable": true,
       "warnings": [
@@ -1109,7 +1109,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Ribbon Pad",
+      "name": "FM Keys 01",
       "sha256": "7203ef39832229a47dd31aed6f1daba5277bd9f4b09547aa807e8d176d70f298",
       "loadable": true,
       "warnings": [
@@ -1123,7 +1123,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Ribbon Pad",
+      "name": "Chord Bloom 02",
       "sha256": "e1bbf4956f311d774e2b76f4eb566aab0b1177f87f80b278663187aceeb19e01",
       "loadable": true,
       "warnings": [
@@ -1137,7 +1137,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Ribbon Pluck",
+      "name": "Soft Stacked Triangle Pluck",
       "sha256": "624115940c2b017552604779e109c39e0c6299cc7b85864a1263eb61bc42ab9a",
       "loadable": true,
       "warnings": [
@@ -1152,7 +1152,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Ribbon Keys",
+      "name": "Soft Stacked Pulse Keys",
       "sha256": "58076b6a8aed3aef5af89fb364adab1ad9c6116ca4cb1a365d02300b3e0c0485",
       "loadable": true,
       "warnings": [
@@ -1168,7 +1168,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Ribbon Pluck",
+      "name": "Arp Sawtooth Pluck",
       "sha256": "2c08b5b46f79fb0f36f2aab3ffb61f5bb4efdab634ed44213fe81d17cbd09d8e",
       "loadable": true,
       "warnings": [
@@ -1182,7 +1182,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Ribbon Keys",
+      "name": "Soft Pulse Keys 03",
       "sha256": "260a4a75265a0e5a599184e738d4344313bb73d877cda31cfd03d0aecb9f7bb5",
       "loadable": true,
       "warnings": [
@@ -1196,7 +1196,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Harbor Bass",
+      "name": "Soft Pulse Bass 02",
       "sha256": "2d7bd847efe96d54c126a1a67d2c85098d72a5ecd7f0107af0f037d758331cc7",
       "loadable": true,
       "warnings": [
@@ -1211,7 +1211,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Harbor Keys",
+      "name": "Soft Pulse Keys 04",
       "sha256": "92ff4a6b2c865c17a0cdbdcdecba8b4969dfc2d010f1e60d8a41fad0cfabfa21",
       "loadable": true,
       "warnings": [
@@ -1226,7 +1226,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Harbor Pad",
+      "name": "Sharp Overtone Bloom",
       "sha256": "b6af682506f68a0b96dbf1b3b7439b093ca9f40d5de5259ea929e4df4e3cffc1",
       "loadable": true,
       "warnings": [
@@ -1242,7 +1242,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Harbor Keys",
+      "name": "Soft Sawtooth Keys 04",
       "sha256": "b711beac44c8127050f1f854012d01364ae0946b901ba1f2fa074fd8e6d385a2",
       "loadable": true,
       "warnings": [
@@ -1256,7 +1256,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Harbor Pluck",
+      "name": "Squelchy Pulse Stab",
       "sha256": "2101b39c3f91e916bbf652b6c65c8dae6505e53cc7187edc25799121d9a05d62",
       "loadable": true,
       "warnings": [
@@ -1269,7 +1269,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Harbor Pad",
+      "name": "Overtone Bloom",
       "sha256": "469f791031147dc7b163c9a32feb960256054a480808946e0e144fd22b96d8fe",
       "loadable": true,
       "warnings": [
@@ -1284,7 +1284,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Harbor Bass",
+      "name": "Soft Table Keys 02",
       "sha256": "86c5ed8a17dbd062d2da0ea22f324d08a7015d33d2b80ae52d96fcb45b77f385",
       "loadable": true,
       "warnings": [
@@ -1297,7 +1297,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Harbor Keys",
+      "name": "Soft Subby Keys",
       "sha256": "df122f9a0aaf8c317fd10d97aaae6738370045dd7952d4f520faf0282ab822e6",
       "loadable": true,
       "warnings": [
@@ -1312,7 +1312,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Harbor Pad",
+      "name": "Soft Chord Stack 03",
       "sha256": "a86f8234613e99fd514245d3bb51cb2cc4f7f4f3f4a922c71688d4b22f37d1fc",
       "loadable": true,
       "warnings": [
@@ -1327,7 +1327,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Harbor Pluck",
+      "name": "Soft Folded Bark",
       "sha256": "9a5830a3c6b34319c178ba91d78a31cdd71c6f783748f097a892ecab6f12e353",
       "loadable": true,
       "warnings": [
@@ -1341,7 +1341,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Harbor Pluck",
+      "name": "Mouth Pop",
       "sha256": "c08cba68e85f5f3ce4104dc9f2f7a379eca55847186446ef93d59a881b85d08f",
       "loadable": true,
       "warnings": [
@@ -1355,7 +1355,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Harbor Keys",
+      "name": "Sliding Stacked Saw Keys",
       "sha256": "a848213f0d4f47fde3dfe9e6a7f2035b855f08197ba4b78221f0182000facfd8",
       "loadable": true,
       "warnings": [
@@ -1368,7 +1368,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Harbor Pluck",
+      "name": "Sliding Syllable Spit",
       "sha256": "36fdbec984a040b0c7355811f554f3ae07c190d59942eecc9eab279376006fd8",
       "loadable": true,
       "warnings": [
@@ -1381,7 +1381,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Harbor Pluck",
+      "name": "Table Knock 03",
       "sha256": "4ec04a825fb5bf4c6004d29a12ccad31196642e0754632c5bcf26e27679589b1",
       "loadable": true,
       "warnings": [
@@ -1394,7 +1394,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Harbor Pluck",
+      "name": "Sliding Table Knock",
       "sha256": "79fd562c35c7a82963040691e67a1888c3335c12a22f20b0a52d3dc8c3897461",
       "loadable": true,
       "warnings": [
@@ -1410,7 +1410,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Harbor Pad",
+      "name": "Sliding Bent Drone",
       "sha256": "cc77e3bd5fdd10f1e8079b24f3857098d70155f3e4136b47b20950f5c4cb341f",
       "loadable": true,
       "warnings": [
@@ -1424,7 +1424,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Prism Bass",
+      "name": "Soft Table Keys 03",
       "sha256": "3a81cd62e424908749d2434f3653cdc4da716c1ee3d076a79347f6ae8b25f18d",
       "loadable": true,
       "warnings": [
@@ -1438,7 +1438,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Prism Mallet",
+      "name": "Squelchy Loose String",
       "sha256": "cbc27afce47ce5cbd72d647f4bc86a95e2b36bcc39bc1b164b5e8beb09b8738c",
       "loadable": true,
       "warnings": [
@@ -1452,7 +1452,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Prism Pad",
+      "name": "Soft Feedback Bloom",
       "sha256": "e362a565f4c3919205285d1c4d71b293db5efc9b819ace9f4c61bc4d4129e1e2",
       "loadable": true,
       "warnings": [
@@ -1467,7 +1467,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Prism Pluck",
+      "name": "Sharp Table Teeth",
       "sha256": "4b8afa1d56a7afd38f008814a16d40ca7f0cb820f8f272f0e94c3e646a1e67d5",
       "loadable": true,
       "warnings": [
@@ -1482,7 +1482,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Prism Keys",
+      "name": "Sliding Bent Reed",
       "sha256": "419ed71183ea09524a7f3081c3105d5229e841a5e5234aa1fac0d592c44b555d",
       "loadable": true,
       "warnings": [
@@ -1498,7 +1498,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Prism Pluck",
+      "name": "Pulse Stab",
       "sha256": "e476534957bfa216bb5d07c9373b5a0aec38442fcc27898dd4add84e76f38f4b",
       "loadable": true,
       "warnings": [
@@ -1512,7 +1512,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Prism Keys",
+      "name": "Pulse Keys 03",
       "sha256": "8f955382c35b3fffc771ded8a43800032246b9425d2fe0f9bdecc0e614203b26",
       "loadable": true,
       "warnings": [
@@ -1528,7 +1528,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Prism Pluck",
+      "name": "Soft Bent Bark 01",
       "sha256": "49ed49c4082de3d724506dfa9c2daa0d6f2862a15725c4360543a41e920f50b7",
       "loadable": true,
       "warnings": [
@@ -1541,7 +1541,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Prism Pad",
+      "name": "Table Keys 02",
       "sha256": "cb9b66c11f9a6cd0541b59e72491ce57cea7780a05b04da0951fb82a227c1c17",
       "loadable": true,
       "warnings": [
@@ -1556,7 +1556,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Prism Pad",
+      "name": "Soft Ringing String 01",
       "sha256": "cc74a2196b4b5bf554fc3b0db454d5fab44c63c662669b5b7439ebc50c7122c9",
       "loadable": true,
       "warnings": [
@@ -1572,7 +1572,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Prism Pluck",
+      "name": "Soft String Knock 02",
       "sha256": "5f80d4eed4ec6dc24406495b9442ef6fa3080ff852f53803bf2ff154dba33c46",
       "loadable": true,
       "warnings": [
@@ -1586,7 +1586,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Prism Keys",
+      "name": "Squelchy Table Keys 03",
       "sha256": "6eca724f4ce9a26e4cab45ff2374eaf4a8d2c5d1c788926afe85107128d2cdbc",
       "loadable": true,
       "warnings": [
@@ -1599,7 +1599,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Prism Keys",
+      "name": "Squelchy Overtone Organ",
       "sha256": "85e0892577dc68c912c4755d34db639d2949ef267746c4bbb2c394228d6f9809",
       "loadable": true,
       "warnings": [
@@ -1612,7 +1612,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Prism Bass",
+      "name": "Soft Clang Bass 01",
       "sha256": "f21b62b8a8424ac429637e4bc2123cd3d1a8a97af1cf4df68758e20ea7c68f5c",
       "loadable": true,
       "warnings": [
@@ -1627,7 +1627,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Prism Bass",
+      "name": "Soft Throat Bass 01",
       "sha256": "c9c3082d2857e666d3e5fbcb8357e4dea0733f63b7f996831cf40692d94f03a9",
       "loadable": true,
       "warnings": [
@@ -1642,7 +1642,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Prism Bass",
+      "name": "Squelchy Subby Bass",
       "sha256": "41301e7c19ec28d4b0df6d9665fc6438ef89cc793ea5eb76b87fe42b1b10f123",
       "loadable": true,
       "warnings": [
@@ -1658,7 +1658,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Reactor Pluck",
+      "name": "Partial Pluck",
       "sha256": "771db17290079938a11cd866b4de5833ccdea51b3b3913f3467f25311560c124",
       "loadable": true,
       "warnings": [
@@ -1671,7 +1671,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Reactor Pluck",
+      "name": "Soft Mouth Pop",
       "sha256": "0334e64c0e41371096e2f0cb2dbdc228636988b6dc8d4d325e38eb764ddc1bd1",
       "loadable": true,
       "warnings": [
@@ -1684,7 +1684,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Reactor Keys",
+      "name": "FM Keys 02",
       "sha256": "75de7cfc5a0c7b2f11fe58094b8da36b4dafac855735ffc259fd7e0e9a5070a1",
       "loadable": true,
       "warnings": [
@@ -1697,7 +1697,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Reactor Keys",
+      "name": "Soft Saw Keys 05",
       "sha256": "429c906806e67a467a31ef38029c4d30ce7b9072e5a2c234dc63f5f1365d33d0",
       "loadable": true,
       "warnings": [
@@ -1710,7 +1710,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Reactor Keys",
+      "name": "Sliding Detune Pulse Keys",
       "sha256": "f80445f3359b17628416934613b12c0305266488fcbd25f536fc7288a48ced0d",
       "loadable": true,
       "warnings": [
@@ -1723,7 +1723,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Reactor Chord",
+      "name": "Soft Chord Stack 04",
       "sha256": "a0e66e555277d662851a0f15cde863c4f8fa682047a4588e4483dd6c0f516324",
       "loadable": true,
       "warnings": [
@@ -1736,7 +1736,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Reactor Texture",
+      "name": "Filter Hiss 01",
       "sha256": "e7739878464dca2bf88dd4eade6959ef265cb0c32b2cfdcc53e39832ecd81aec",
       "loadable": true,
       "warnings": [
@@ -1749,7 +1749,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Reactor Mallet",
+      "name": "Soft Ringing Body 01",
       "sha256": "2a66b2b86e8dad8d0ce20ced184c3a421be48724b0ee86f3cd81d44a4cf6d7fb",
       "loadable": true,
       "warnings": [
@@ -1762,7 +1762,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Reactor Pluck",
+      "name": "Soft Stacked Saw Pluck",
       "sha256": "a95b346cf4619f9d0e957003295d4a00aea24ab9be92f8fda125c2902ca1433b",
       "loadable": true,
       "warnings": [
@@ -1775,7 +1775,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Reactor Pluck",
+      "name": "Hiss Snap 01",
       "sha256": "879068c8b4d46d8baca413173368200db07e484f19a0e07a78c6ca6dfe829d04",
       "loadable": true,
       "warnings": [
@@ -1788,7 +1788,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Reactor Keys",
+      "name": "Soft Saw Keys 06",
       "sha256": "7ebe1dc09d351587080b0f4fddbcff9d402e1ebdada9da0c1ee681d4e3a7f50e",
       "loadable": true,
       "warnings": [
@@ -1801,7 +1801,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Reactor Pluck",
+      "name": "Noise Knock 01",
       "sha256": "2080e5314ee09d6f3d8a9f47cf888767607fed0f996f69aa27e9f7e88abe3791",
       "loadable": true,
       "warnings": [
@@ -1814,7 +1814,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Reactor Pluck",
+      "name": "Static Pop 01",
       "sha256": "44250b8a8870bf02a07ca53a4757bea17e078e3590d943a0339e6d8d90250017",
       "loadable": true,
       "warnings": [
@@ -1827,7 +1827,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Reactor Keys",
+      "name": "Soft Pulse Keys 05",
       "sha256": "486e5c86ed19063bf85c15209c2c51df807f48c29427ef41c582046fce7cb109",
       "loadable": true,
       "warnings": [
@@ -1840,7 +1840,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Reactor Pad",
+      "name": "Table Keys 03",
       "sha256": "06157cf573a66f467f8f339350e3a3e1c0b3f00de98bd18cb2047e005630d31a",
       "loadable": true,
       "warnings": [
@@ -1853,7 +1853,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Reactor Bass",
+      "name": "Folded Reed",
       "sha256": "3ced1f2195d9f79c3b9bc10c1d0c72bc6f415a5d6764ab7c92fed09255f37b24",
       "loadable": true,
       "warnings": [
@@ -1868,7 +1868,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Garden Pluck",
+      "name": "Sand Spit 01",
       "sha256": "d4e26540145f69c2fc2e7ddcf5810e0e6ab40b789520d88f56b50a66ae81f8af",
       "loadable": true,
       "warnings": [
@@ -1881,7 +1881,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Garden Bass",
+      "name": "Arp Bent Reed",
       "sha256": "49e5af415b67b64c1901a1f11a3cf43d020f5a6e36fc017852dcb11ba39e0281",
       "loadable": true,
       "warnings": [
@@ -1895,7 +1895,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Garden Pluck",
+      "name": "Sliding Chord Stab",
       "sha256": "d1f9d88debcae4f0d30c239692f088bff00fc4aeb36726cdd0e961343bcecddf",
       "loadable": true,
       "warnings": [
@@ -1908,7 +1908,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Garden Pluck",
+      "name": "Hiss Snap 02",
       "sha256": "ddd5386f53364907ffcfd472fb4838d253558635b06fd76b5553bc614065fad2",
       "loadable": true,
       "warnings": [
@@ -1921,7 +1921,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Garden Pluck",
+      "name": "Noise Knock 02",
       "sha256": "f7fad5cd6e9eb7f790b54498875b827237c9cf9ca92808e467f6c26317e23e2c",
       "loadable": true,
       "warnings": [
@@ -1934,7 +1934,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Garden Bass",
+      "name": "Soft Pulse Bass 03",
       "sha256": "c11e181e826b6a63c79ea1242495a22e21f3524985e7b3d4d09ad28919f90ac7",
       "loadable": true,
       "warnings": [
@@ -1947,7 +1947,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Garden Keys",
+      "name": "Soft Detune Saw Keys 02",
       "sha256": "453e8ce4446bd5d5ff5fede7093e9c50e67a8d15196e8f5bbca392bd3804bcfd",
       "loadable": true,
       "warnings": [
@@ -1960,7 +1960,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Garden Pluck",
+      "name": "Static Tail 01",
       "sha256": "d875a89f1a3ad3d1882c5e8e458a3a9130aabdb61704f769774d9f987f17d600",
       "loadable": true,
       "warnings": [
@@ -1973,7 +1973,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Garden Pluck",
+      "name": "Squelchy Crunch Tick 01",
       "sha256": "e5a8572a6100527cd76309cfbeaac7b5fc22a258dbd8df53ba7e6bd48ec64e27",
       "loadable": true,
       "warnings": [
@@ -1986,7 +1986,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Garden Bass",
+      "name": "Robot Ramble 01",
       "sha256": "4abdd7830e7e4c80ed6be38533a9ff32812ac5767960c82d63c1b8d6fcca7a7e",
       "loadable": true,
       "warnings": [
@@ -2000,7 +2000,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Garden Pad",
+      "name": "Sliding FM Bass",
       "sha256": "9f88b88c17a53b9a1de844360b7a0c8b586db41f32f687f25eb3225fe95e38ed",
       "loadable": true,
       "warnings": [
@@ -2013,7 +2013,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Garden Pluck",
+      "name": "Arp Thin Air Pop",
       "sha256": "e690c9cf72724af7872e002d69ebec53c430689c3a54d5915f2fe427d5eb3aff",
       "loadable": true,
       "warnings": [
@@ -2027,7 +2027,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Garden Pad",
+      "name": "Static Rise",
       "sha256": "ff934c3d048338678435e58c9ec22de121f27417bd88a4b104dc9a61dc35166b",
       "loadable": true,
       "warnings": [
@@ -2040,7 +2040,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Garden Texture",
+      "name": "Squelchy Clock Crunch",
       "sha256": "cca1ac42707b3fe66e479b98b44c517e0595b8cc8456adb7030706ee085e3323",
       "loadable": true,
       "warnings": [
@@ -2053,7 +2053,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Garden Pluck",
+      "name": "Squelchy Crunch Tick 02",
       "sha256": "8dc8789b6fd202a023a575fdf9f392d1f4636d8dffff9b6c0e5138fed277753a",
       "loadable": true,
       "warnings": [
@@ -2066,7 +2066,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Garden Pluck",
+      "name": "Sand Spit 02",
       "sha256": "98774b7038f86fb25231196e370ad305ebeb66822f428e5f2ac079e4281e9b25",
       "loadable": true,
       "warnings": [
@@ -2079,7 +2079,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Signal Pluck",
+      "name": "Sand Spit 03",
       "sha256": "1753604702ed58b6b934dd620b66f1e079dfedbff668ce73a15f9c6a15addb8f",
       "loadable": true,
       "warnings": [
@@ -2092,7 +2092,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Signal Pluck",
+      "name": "Crunch Tick 01",
       "sha256": "309ce59f752ab3d3636552d445945af9f18ea2a86ba60d00356d28b3ba37d178",
       "loadable": true,
       "warnings": [
@@ -2105,7 +2105,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Signal Pluck",
+      "name": "Noise Knock 03",
       "sha256": "c16ef01037f2a4b09faa9b27e96d5554b7f76345c5f1f84c0dd6b4aef7dd6622",
       "loadable": true,
       "warnings": [
@@ -2118,7 +2118,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Signal Pluck",
+      "name": "Sand Spit 04",
       "sha256": "f19e48516732d772585f76e4677f4e6fbf2047eb63ad393701d1bb4ab4b5ca8e",
       "loadable": true,
       "warnings": [
@@ -2131,7 +2131,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Signal Pluck",
+      "name": "Static Tail 02",
       "sha256": "b76f253453d7442be31b2a220f23431cc6f45ff2ce87710a90fc22361715891e",
       "loadable": true,
       "warnings": [
@@ -2144,7 +2144,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Signal Chord",
+      "name": "Squelchy Chord Stack",
       "sha256": "c9470b1b3b9192743a5a7e4f7b84fbe2b8cba498d766ed42a411c1fd517a9d41",
       "loadable": true,
       "warnings": [
@@ -2157,7 +2157,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Signal Pad",
+      "name": "Soft Saw Keys 07",
       "sha256": "d7bd7130c296b5fca4ef5ab6eb530884dce8e7f4b377776f0cff07c5fe0710bd",
       "loadable": true,
       "warnings": [
@@ -2170,7 +2170,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Signal Texture",
+      "name": "Clock Crunch 01",
       "sha256": "f38e341248af760ee6debd420b73ca61cdf5225030ea828fb94a5ad414f2f4ee",
       "loadable": true,
       "warnings": [
@@ -2184,7 +2184,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Signal Keys",
+      "name": "Sharp Overtone Organ",
       "sha256": "e4eb82fe06b9a3d84d95b33951b3879f33c6e1f76f2542406c34da6e32bc1a33",
       "loadable": true,
       "warnings": [
@@ -2197,7 +2197,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Signal Pad",
+      "name": "Feedback Bloom",
       "sha256": "952db0c9621bde0ad974a7fe9115d96445790a803cc51202932cdf3dfa14cded",
       "loadable": true,
       "warnings": [
@@ -2210,7 +2210,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Signal Texture",
+      "name": "Squelchy Filter Hiss",
       "sha256": "b45a786b82b331f4cabbe11b7b027e95a7d39fbb95c9e2c9eb429a86362b01b6",
       "loadable": true,
       "warnings": [
@@ -2223,7 +2223,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Signal Pluck",
+      "name": "Noise Thud",
       "sha256": "7deeb2fe58f9badab44c186215eb44b15d36c8c05bc87e95a00be15004d652aa",
       "loadable": true,
       "warnings": [
@@ -2236,7 +2236,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Signal Texture",
+      "name": "Filter Hiss 02",
       "sha256": "9a888d8f55cce0250806fea62cec415efc7cf77a99de3a366aeab8a13f85aae9",
       "loadable": true,
       "warnings": [
@@ -2249,7 +2249,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Signal Bass",
+      "name": "Squelchy Noise Rumble",
       "sha256": "c2b480502400b2fe7bd5fb3303fbfbcea06982a7d4023dac88f66e7cfeba1890",
       "loadable": true,
       "warnings": [
@@ -2262,7 +2262,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Signal Pluck",
+      "name": "Noise Knock 04",
       "sha256": "3c127dfee75a742b52e7265294c07bdc61b4f97e9c3ecb879f40f03652b21b7c",
       "loadable": true,
       "warnings": [
@@ -2275,7 +2275,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Signal Pluck",
+      "name": "Squelchy Static Tail",
       "sha256": "8654b863a74322884c23f6aaaa1362f241a895e1b1ef9714b99970d063325660",
       "loadable": true,
       "warnings": [
@@ -2288,7 +2288,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Atlas Texture",
+      "name": "Clock Crunch 02",
       "sha256": "a2c9b1bcc4d0a5ef8084e70c6ecdba58e82994ffb713cfc9093927b418d0838e",
       "loadable": true,
       "warnings": [
@@ -2301,7 +2301,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Atlas Pluck",
+      "name": "Static Pop 02",
       "sha256": "b3a1232d1299d89a4e8aaa119685e0b789f78ad5a730be33dbf1e0812508aac7",
       "loadable": true,
       "warnings": [
@@ -2314,7 +2314,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Atlas Pad",
+      "name": "Soft Table Creep 01",
       "sha256": "eec59ce4453bc5c39a749558de615b3a087aded8b642f1d4b22a4e2f9ce7c6ae",
       "loadable": true,
       "warnings": [
@@ -2328,7 +2328,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Atlas Keys",
+      "name": "Soft Pulse Keys 06",
       "sha256": "483d6bf25145dcc7f3195584df145c8fc178295f988bc89fdc29b576387c8442",
       "loadable": true,
       "warnings": [
@@ -2341,7 +2341,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Atlas Keys",
+      "name": "Soft Saw Keys 08",
       "sha256": "55bba31cdcd44f48401e497877d54effe3d211a853df5841ef5de41fe98072fa",
       "loadable": true,
       "warnings": [
@@ -2354,7 +2354,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Atlas Pluck",
+      "name": "Arp Partial Pluck",
       "sha256": "d5de66438de31c8b5a74949021eaef5effc48d40b07c4372aaae8f59a7fc6efd",
       "loadable": true,
       "warnings": [
@@ -2369,7 +2369,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Atlas Pad",
+      "name": "Soft Loose String 01",
       "sha256": "2dff5238558288d461762df3512873d3108514f3a9c4e3ff01b78f655afa7a9b",
       "loadable": true,
       "warnings": [
@@ -2382,7 +2382,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Atlas Pluck",
+      "name": "Crunch Tick 02",
       "sha256": "d550dca10cfdd42ae6d4ae8694a81150b49549b0e8af6f64d393da9fcd828743",
       "loadable": true,
       "warnings": [
@@ -2395,7 +2395,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Atlas Texture",
+      "name": "Squelchy Air Hiss",
       "sha256": "cc616ee01bbf794429751b7fbce56b31b2478248c0a1765c90c495127668cc35",
       "loadable": true,
       "warnings": [
@@ -2408,7 +2408,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Atlas Pluck",
+      "name": "Thin Air Pop",
       "sha256": "4668aeb163c555a4f4a703e3727c4e3c42937b128b909b417091f50ac6c94e87",
       "loadable": true,
       "warnings": [
@@ -2421,7 +2421,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Atlas Pluck",
+      "name": "Noise Knock 05",
       "sha256": "d4d22b7ff21bd9c85959a58dd32c189968c1a694ba35058f499dd7e0151b8489",
       "loadable": true,
       "warnings": [
@@ -2434,7 +2434,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Atlas Pluck",
+      "name": "Noise Knock 06",
       "sha256": "2a5ee2335b8aeddedcd8c7020f2424270ebf0339aa86ed205810d66e9eade380",
       "loadable": true,
       "warnings": [
@@ -2447,7 +2447,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Atlas Texture",
+      "name": "Noise Rumble",
       "sha256": "399e5f222d3609dcf6a2ef78bb53d1079bd2d02d9a2394e2ff785b749c10ad33",
       "loadable": true,
       "warnings": [
@@ -2460,7 +2460,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Atlas Pluck",
+      "name": "Soft Subby Pluck",
       "sha256": "b53c6bee43094e945b0c4f7959d7b3ac70b9be8847bc98ab1785c796461dc009",
       "loadable": true,
       "warnings": [
@@ -2473,7 +2473,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Atlas Pad",
+      "name": "Squelchy Static Rise",
       "sha256": "346a0e16a5be080c7f123afd4552aa819a16e1512d4f987b2c9565e7a2d23e73",
       "loadable": true,
       "warnings": [
@@ -2486,7 +2486,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Atlas Mallet",
+      "name": "Soft Ringing String 02",
       "sha256": "d21672614167a697312903e7d29f3c4c0eeb67368fa73d1960dadb6f7d64e184",
       "loadable": true,
       "warnings": [
@@ -2499,7 +2499,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Mirage Keys",
+      "name": "Sawtooth Keys",
       "sha256": "5eea0f85c95e0c49d66b38f8e45f6966871e59c01b82788798a327f505b66836",
       "loadable": true,
       "warnings": [
@@ -2512,7 +2512,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Mirage Pluck",
+      "name": "Table Knock 04",
       "sha256": "f417b6f03e17781df1a013c7328be2515e3e17b99a1a6b29a8586a91040507e2",
       "loadable": true,
       "warnings": [
@@ -2527,7 +2527,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Mirage Keys",
+      "name": "Soft FM Keys 02",
       "sha256": "e5afd1e84c45d0b3fbfc751af10c9bf9f46324bb4f039227c7b11c9f4e7e8bb4",
       "loadable": true,
       "warnings": [
@@ -2540,7 +2540,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Mirage Keys",
+      "name": "Soft Saw Keys 09",
       "sha256": "fa299481c9e38877e136341b1d3959ef5e7ded7692c4ddb25eb5fc4d75993ddc",
       "loadable": true,
       "warnings": [
@@ -2553,7 +2553,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Mirage Pluck",
+      "name": "Soft Tine Pluck 01",
       "sha256": "1cb7be6229b5d08af85bdb5036305491caed1a2f8b3b88407673afe5f857f19d",
       "loadable": true,
       "warnings": [
@@ -2569,7 +2569,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Mirage Keys",
+      "name": "FM Keys 03",
       "sha256": "4eea3353939bfb5349a52b6a9e4d87b99b498ea42e6b04af028fe54413b56f16",
       "loadable": true,
       "warnings": [
@@ -2584,7 +2584,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Mirage Pad",
+      "name": "Soft Detune Saw Swell 02",
       "sha256": "3a3f3453b539503118f44fbdab99cffc71f52904b4286bbcf51bf2ccacc657ce",
       "loadable": true,
       "warnings": [
@@ -2597,7 +2597,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Mirage Pluck",
+      "name": "Soft Tine Pluck 02",
       "sha256": "7671c02a600b109704916d73626c9f95558749a4296b09eb06884c53de4946d4",
       "loadable": true,
       "warnings": [
@@ -2610,7 +2610,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Mirage Pad",
+      "name": "Soft Sawtooth Keys 05",
       "sha256": "df716280bf45dc52d959d3fe7f6401b848ed8b5980220a4da35dfbd3ad8edb58",
       "loadable": true,
       "warnings": [
@@ -2625,7 +2625,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Mirage Pad",
+      "name": "Pulse Keys 04",
       "sha256": "a64af7fd1d32fa1e6c49bdac4cca22eb837a77843481c893be1c50e6769fe163",
       "loadable": true,
       "warnings": [
@@ -2641,7 +2641,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Mirage Mallet",
+      "name": "Ringing String",
       "sha256": "8a7ecd1121b2200859af0f6c4b9f0814f7d1f4fac9c87b15b8b0fe611bb9ea95",
       "loadable": true,
       "warnings": [
@@ -2657,7 +2657,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Mirage Mallet",
+      "name": "Soft Loose String 02",
       "sha256": "a3f4f067916f9a806982e2d898bb6fa1a92652072dad5025f979e2386344318b",
       "loadable": true,
       "warnings": [
@@ -2670,7 +2670,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Mirage Keys",
+      "name": "Soft Sawtooth Keys 06",
       "sha256": "7c4834886a44b5b5b26b8cbac456b371d29a6593ca778cd3b7c4c2592db76dd1",
       "loadable": true,
       "warnings": [
@@ -2683,7 +2683,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Mirage Pad",
+      "name": "Soft Detune Saw Bass",
       "sha256": "f0f2660b64443e52b713bdbcf03d82b86520c18ff8b0c66a814435f4b2f9d8d5",
       "loadable": true,
       "warnings": [
@@ -2698,7 +2698,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Mirage Pad",
+      "name": "Soft Saw Creep",
       "sha256": "8c9f74a78dc15257b77d2193718ab22bad902a68282b5dd3d45ab00900deb9ac",
       "loadable": true,
       "warnings": [
@@ -2711,7 +2711,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Mirage Pluck",
+      "name": "Soft Sawtooth Pluck 01",
       "sha256": "0135a6d7c6fcbf4ea2d8a11589783b870e81200f7bcf2b8a34ba4cd1204e3878",
       "loadable": true,
       "warnings": [
@@ -2724,7 +2724,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Petal Pluck",
+      "name": "Table Knock 05",
       "sha256": "d5cd9abfb46033c5372d4e952a6c6f5d35aa11e4c77c7cc28ac22156f01aa097",
       "loadable": true,
       "warnings": [
@@ -2737,7 +2737,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Petal Keys",
+      "name": "Soft Overtone Organ",
       "sha256": "66cbde737f4504b103f73383b7c31146a8ac127d1b4a39f0019b90c25dc91ae4",
       "loadable": true,
       "warnings": [
@@ -2750,7 +2750,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Petal Bass",
+      "name": "Soft Chord Stack 05",
       "sha256": "667c7675b23c035850e459e41b404506544ee75aebad968342d30d80d13cf32c",
       "loadable": true,
       "warnings": [
@@ -2764,7 +2764,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Petal Chord",
+      "name": "Soft Chord Stack 06",
       "sha256": "b0fd5d377015bbc63e6091933921446767f0ed9ee5c117eb5dbb2691f2640436",
       "loadable": true,
       "warnings": [
@@ -2779,7 +2779,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Petal Keys",
+      "name": "Soft Pulse Keys 07",
       "sha256": "6939c16ef73f0e88796caf1be06c278aa9ff165af0aba83b1c9533a463b22acc",
       "loadable": true,
       "warnings": [
@@ -2792,7 +2792,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Petal Keys",
+      "name": "Stacked Saw Keys 02",
       "sha256": "9b8cbd3cd9dbe98f42af8f8ea3ea265cd6237b5a141c7e050a1a1af549f694fc",
       "loadable": true,
       "warnings": [
@@ -2805,7 +2805,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Petal Bass",
+      "name": "Soft FM Bass",
       "sha256": "ea0706f2eb3be302afb71d9615d6d70279c8d90fcd8af73ded56060bc48adf17",
       "loadable": true,
       "warnings": [
@@ -2818,7 +2818,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Petal Pluck",
+      "name": "Soft Pulse Pluck",
       "sha256": "6f84e204447becf288d7a7a0a8e3764318f4753b56531579e1a8ef75ff4fb5a0",
       "loadable": true,
       "warnings": [
@@ -2831,7 +2831,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Petal Pluck",
+      "name": "Soft Sawtooth Pluck 02",
       "sha256": "e0b2139453ea23779207f7ecdec81718b5fc0618da170f8bec84c42ebc682a20",
       "loadable": true,
       "warnings": [
@@ -2844,7 +2844,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Petal Pluck",
+      "name": "Squelchy Pulse Pluck",
       "sha256": "92f7e51294fc4cd3726638031a72cd3a4137969689d051be63f2816995bfbea3",
       "loadable": true,
       "warnings": [
@@ -2857,7 +2857,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Petal Pluck",
+      "name": "Squelchy Sawtooth Pluck",
       "sha256": "d0702b69b41e748710abeac3f61ad46928378c38f3b24f95e9a90b3c49c66325",
       "loadable": true,
       "warnings": [
@@ -2870,7 +2870,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Petal Pluck",
+      "name": "Squelchy Bent Bark 02",
       "sha256": "3f919d83bf8ea81eb289ff5eebe718d483676e10eb5c52539b240f88706642b9",
       "loadable": true,
       "warnings": [
@@ -2883,7 +2883,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Petal Pluck",
+      "name": "Soft Tine Pluck 03",
       "sha256": "2b3af260dad459451a6fb308d62003a1a93a71f361217abe6fdbbc4cfc352c02",
       "loadable": true,
       "warnings": [
@@ -2896,7 +2896,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Petal Pluck",
+      "name": "Soft Hollow Knock",
       "sha256": "35ca269010cf8bd2a92cf66773b9f8a1e5e7b6a4e29fe3d6d9f02ae8c662a58d",
       "loadable": true,
       "warnings": [
@@ -2909,7 +2909,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Petal Keys",
+      "name": "FM Keys 04",
       "sha256": "ccdf89fae7590424f39e3835028ecf0b276e46d4d58bc8486352614b38701be0",
       "loadable": true,
       "warnings": [
@@ -2922,7 +2922,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Petal Keys",
+      "name": "Ratio Tone 01",
       "sha256": "1fa7a777d696f917a49537c056d7eb1cecfa572d8eca8e36a8f8fe9a0c867a81",
       "loadable": true,
       "warnings": [
@@ -2935,7 +2935,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Current Pulse",
+      "name": "Arp Ratio Tone",
       "sha256": "8b7449fc430648c75a4a8747ba746716d9dbeb0602d83eb507b7577517a873ac",
       "loadable": true,
       "warnings": [
@@ -2949,7 +2949,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Current Bass",
+      "name": "Soft Ratio Tone 01",
       "sha256": "1b8b4e4620641e60624d3d3493ff590a2bbff625bfb973412f7de475d909c205",
       "loadable": true,
       "warnings": [
@@ -2962,7 +2962,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Current Keys",
+      "name": "Rectified Tone 01",
       "sha256": "ffefcb60ec44b96a55116b249666f3bc9df1943519141112f991dddc3b246302",
       "loadable": true,
       "warnings": [
@@ -2975,7 +2975,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Current Bass",
+      "name": "Soft Saw Stack 01",
       "sha256": "0abc9d37de9e1866e2c29844ce80f4480ee78bb9425f2248526fcea557e2327d",
       "loadable": true,
       "warnings": [
@@ -2991,7 +2991,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Current Keys",
+      "name": "Rectified Tone 02",
       "sha256": "36fd703c718c1e8c48d050860643c5b5f2d4abf72fb2d2bb6723c3ab361f81ef",
       "loadable": true,
       "warnings": [
@@ -3006,7 +3006,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Current Pad",
+      "name": "Rectified Bloom 01",
       "sha256": "959df09701e4c70327cb8a462987fc467aa3866b97927b1fe6b1c028c715b137",
       "loadable": true,
       "warnings": [
@@ -3020,7 +3020,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Current Bass",
+      "name": "Soft Saw Stack 02",
       "sha256": "f590a499dfceef757d81c8344fe5a21b041823939c16541e4593837eae75434d",
       "loadable": true,
       "warnings": [
@@ -3035,7 +3035,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Current Keys",
+      "name": "Bass Purr 01",
       "sha256": "16c65ff9ac813a2395db6d2db80977dcd94e0524c9e9d386165a22ef2fe31c6a",
       "loadable": true,
       "warnings": [
@@ -3050,7 +3050,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Current Pluck",
+      "name": "Soft Rectified Knock 01",
       "sha256": "08ad1ae2283f30263e6c1df64863dc9c0dd4171d361738e8d90f6d8ae134b10b",
       "loadable": true,
       "warnings": [
@@ -3065,7 +3065,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Current Pluck",
+      "name": "Ratio Knock 01",
       "sha256": "e0ec39e39627e6f9aaca8acbf42e637e3a6fd0ad2ca37eb1d89fd743cc5eff6a",
       "loadable": true,
       "warnings": [
@@ -3078,7 +3078,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Current Bass",
+      "name": "Soft Ratio Tone 02",
       "sha256": "72e6f530743e771e96dbdad14f64ef29da696ad898db7ffc96762ed2f3d32076",
       "loadable": true,
       "warnings": [
@@ -3091,7 +3091,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Current Pluck",
+      "name": "Sharp Ratio Knock",
       "sha256": "a7f6d282db67cb146429b82612d7e738c67bc7b366b8e1063ba63c4724122c9a",
       "loadable": true,
       "warnings": [
@@ -3104,7 +3104,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Current Pluck",
+      "name": "Ratio Knock 02",
       "sha256": "325ee4f4b11185774b59a86aaceffb55685e1e443dddef076d037d435f091790",
       "loadable": true,
       "warnings": [
@@ -3117,7 +3117,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Current Pluck",
+      "name": "Saw Stab",
       "sha256": "2e4f8f629163a1d1162da6dc790dd9cae817e58d6668f4c8fd1dcd9d0bbab4fa",
       "loadable": true,
       "warnings": [
@@ -3130,7 +3130,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Current Bass",
+      "name": "Squelchy Ratio Tone 01",
       "sha256": "f542189cccecb0031e23914006c11f7563f0dad72cb8d1f60fa28a5ffcea3be2",
       "loadable": true,
       "warnings": [
@@ -3143,7 +3143,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Current Keys",
+      "name": "Rectified Tone 03",
       "sha256": "8d51a2162f46396996447dee2ee05277b99dc0f04efe25297d235f48476d3321",
       "loadable": true,
       "warnings": [
@@ -3156,7 +3156,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Meteor Keys",
+      "name": "Soft Saw Wiggle",
       "sha256": "c989e96432f5a8af64af103dd60f770ef8107c5df8401f0c9ac818d45025f870",
       "loadable": true,
       "warnings": [
@@ -3171,7 +3171,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Meteor Pluck",
+      "name": "Soft Bent Bark 02",
       "sha256": "0c47c543dd897a18ad16009aa820f5eb9af5a7fd6bf9e92eee2e63e3f9a03afe",
       "loadable": true,
       "warnings": [
@@ -3184,7 +3184,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Meteor Pluck",
+      "name": "Saw Dust Pluck 01",
       "sha256": "e203cae02e51502ce5470294a94c61b3306f6c90e38a1cf76bcc8c015724de32",
       "loadable": true,
       "warnings": [
@@ -3197,7 +3197,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Meteor Keys",
+      "name": "Driven Bass 01",
       "sha256": "a7e06aff89278bd01df14d3e7871dfe3c23a3555c277d93640e42557b3c6026c",
       "loadable": true,
       "warnings": [
@@ -3210,7 +3210,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Meteor Bass",
+      "name": "Driven Bass 02",
       "sha256": "8d4a9b68cfc66cd3268a2588c6e99a4ae2f23a06786bb97e593b75838ec2ac33",
       "loadable": true,
       "warnings": [
@@ -3224,7 +3224,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Meteor Keys",
+      "name": "Saw Dust 01",
       "sha256": "6247c7081044c0626908798bf0ae9d30652291ae0e7947c8d3b273234427935f",
       "loadable": true,
       "warnings": [
@@ -3237,7 +3237,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Meteor Pluck",
+      "name": "Bass Thump 01",
       "sha256": "118d9a6333e965d30d27da7b4957866cdaa910e95ddd439d0b56962e252d2991",
       "loadable": true,
       "warnings": [
@@ -3250,7 +3250,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Meteor Bass",
+      "name": "Squelchy Fold Bass",
       "sha256": "3d57f5744c4ff36fc820cbc9e8ff2e93e04fbb6570000a72a6d8ba88836537ee",
       "loadable": true,
       "warnings": [
@@ -3263,7 +3263,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Meteor Pad",
+      "name": "Rectified Bloom 02",
       "sha256": "e3022a82bab75d23a5092e5c422144fb9b9bc34ea0dc1345fe69ea17d4bec128",
       "loadable": true,
       "warnings": [
@@ -3277,7 +3277,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Meteor Pluck",
+      "name": "Squelchy Saw Stack Pluck",
       "sha256": "eb7c310dd146e5599cbd2dfdc5fac64308579f7aa41103731758b5ae9b849a1e",
       "loadable": true,
       "warnings": [
@@ -3290,7 +3290,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Meteor Pluck",
+      "name": "Saw Dust Pluck 02",
       "sha256": "090de6dd6bcbd15790a614b35478b76901a01f0472f5f1712b0d1abb72ae380d",
       "loadable": true,
       "warnings": [
@@ -3303,7 +3303,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Meteor Pluck",
+      "name": "Sliding Tine Pluck",
       "sha256": "d27f210263d97568a9bdc91e5bea7cf726789cf6590ebbc4b65c742167da8d10",
       "loadable": true,
       "warnings": [
@@ -3316,7 +3316,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Meteor Pluck",
+      "name": "Squelchy Bass Thump",
       "sha256": "b39e79426acd4ff7d562601895e8f2bb626d7d38d0c7d8d77c199c50100ec9ef",
       "loadable": true,
       "warnings": [
@@ -3330,7 +3330,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Meteor Pluck",
+      "name": "Soft Rectified Knock 02",
       "sha256": "cdd83e0e698ac07b40a4e4bd8d6d49f4a0c1ab9f75ba29686dad9b6ab26867c0",
       "loadable": true,
       "warnings": [
@@ -3343,7 +3343,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Meteor Pluck",
+      "name": "Soft Rectified Knock 03",
       "sha256": "f7e768288db7187163bdd17be10e9e1ac355a818a71765c7dc13df9cce938cc4",
       "loadable": true,
       "warnings": [
@@ -3356,7 +3356,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Meteor Keys",
+      "name": "Sharp Ratio Buzz",
       "sha256": "c89f446b9383a60940f711634e5ca680c727e97fb111099eaf8c51c68375f985",
       "loadable": true,
       "warnings": [
@@ -3370,7 +3370,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Tangle Bass",
+      "name": "Squelchy Bass Purr 01",
       "sha256": "f8eb1b3f14db6bd34e9df6bf54c747e8245b5c02da031557f6602de473817977",
       "loadable": true,
       "warnings": [
@@ -3383,7 +3383,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Tangle Bass",
+      "name": "Bass Grunt 01",
       "sha256": "314c90ab2f987191eab14ecccba5b83e56d5b5c7654fac946677bab6b4c7af86",
       "loadable": true,
       "warnings": [
@@ -3396,7 +3396,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Tangle Bass",
+      "name": "Soft Saw Stack 03",
       "sha256": "baa13084b456ac4a4cb6bc2da0f4329ca3cf1a95a156d3c3ede4315952358dbd",
       "loadable": true,
       "warnings": [
@@ -3409,7 +3409,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Tangle Keys",
+      "name": "Saw Dust 02",
       "sha256": "bee1c748f1eda77c9dee788d749b69805f21ef9a0ae18c4c00af18a7db948254",
       "loadable": true,
       "warnings": [
@@ -3422,7 +3422,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Tangle Bass",
+      "name": "Squelchy Ratio Tone 02",
       "sha256": "4152f39414f0905ae24c53ea819ca070ae0bdd2e518a616b061d5ada38e55641",
       "loadable": true,
       "warnings": [
@@ -3435,7 +3435,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Tangle Bass",
+      "name": "Arp Saw Stack",
       "sha256": "6fae65e54ec6107453a78e197b16bfb7e7d50316ffe655e289393a2a1ee16744",
       "loadable": true,
       "warnings": [
@@ -3449,7 +3449,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Tangle Keys",
+      "name": "Saw Stack 01",
       "sha256": "22e298fb31f87443bd9915a246ca1383cbb0f984e472dd1776ed23431f48e614",
       "loadable": true,
       "warnings": [
@@ -3462,7 +3462,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Tangle Bass",
+      "name": "Sharp Saw Wiggle",
       "sha256": "71b06d5a19d9bc769059aa818cf64dce113d4d63bc165d136bb7968f8c77b8e0",
       "loadable": true,
       "warnings": [
@@ -3475,7 +3475,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Tangle Keys",
+      "name": "Feedback Keys 02",
       "sha256": "260107e43853a4dae59cd8b475d515e243ad45b5a32147643fecbe19fbb883c3",
       "loadable": true,
       "warnings": [
@@ -3489,7 +3489,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Tangle Pluck",
+      "name": "Tine Pluck",
       "sha256": "0c12bc22abb3f35f4402186395ef606618099439adfd6160c7e7a157f0aa2cfa",
       "loadable": true,
       "warnings": [
@@ -3502,7 +3502,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Tangle Bass",
+      "name": "Soft Saw Stack 04",
       "sha256": "eae11cba8b7be1f70d6d653eda83c350424500e2a6a714d8fd698d0354a36bcf",
       "loadable": true,
       "warnings": [
@@ -3515,7 +3515,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Tangle Bass",
+      "name": "Soft Saw Stack 05",
       "sha256": "10a8dd322e3423f25ab0c07b9f07ee67f3af0b2cc7aac6c8a419ffda806ca60c",
       "loadable": true,
       "warnings": [
@@ -3528,7 +3528,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Tangle Bass",
+      "name": "Soft Saw Stack 06",
       "sha256": "1e25deb7338c623ea4e18d8583090b1614ff400bd5a7e57c0986d4e852626606",
       "loadable": true,
       "warnings": [
@@ -3541,7 +3541,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Tangle Pluck",
+      "name": "Arp Hollow Knock 01",
       "sha256": "b107392cddfc46a304b50a2961fa71716a86d540be329e31509666a53f53474b",
       "loadable": true,
       "warnings": [
@@ -3555,7 +3555,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Tangle Bass",
+      "name": "Soft Clang Bass 02",
       "sha256": "9e77f4a02bd5870e171754e2d66802ca5407d4cb47b825df2e46c945cb2ea2d2",
       "loadable": true,
       "warnings": [
@@ -3568,7 +3568,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Tangle Mallet",
+      "name": "Ringing Body 02",
       "sha256": "ccb6d31365e6cc72095ae7b086f0e59f3430062408277b65e2f5128cd6015453",
       "loadable": true,
       "warnings": [
@@ -3581,7 +3581,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Horizon Keys",
+      "name": "Saw Stack 02",
       "sha256": "8c2555e63b8d36a981dd48e12ad4e67840dc3f11442b5cb55dcd5538c02c6187",
       "loadable": true,
       "warnings": [
@@ -3594,7 +3594,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Horizon Pad",
+      "name": "Squelchy Saw Stack Swell",
       "sha256": "9c4d2055c73d3d47b3b99516bb135fc14347a00bbde75d97efddade9d57cea0f",
       "loadable": true,
       "warnings": [
@@ -3609,7 +3609,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Horizon Pad",
+      "name": "Bass Creep 01",
       "sha256": "80bd5a20c7398c20b0ab3bf466c6d6d6add3f2f0f334484d8974194870044042",
       "loadable": true,
       "warnings": [
@@ -3623,7 +3623,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Horizon Pluck",
+      "name": "Bass Thump 02",
       "sha256": "2cddde9386b2cd6ad1a66521fe99ec0d63508baf66081bf5366efa06eac738b1",
       "loadable": true,
       "warnings": [
@@ -3638,7 +3638,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Horizon Keys",
+      "name": "Bass Purr 02",
       "sha256": "1be3b57ac7f6544f7899a0c73109588f90da1882de0a8313c4f64bf93283711e",
       "loadable": true,
       "warnings": [
@@ -3651,7 +3651,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Horizon Keys",
+      "name": "Saw Wiggle",
       "sha256": "083929fd3f916d9bfeb777e2732eeb0a456b16aea80a2457164a82b67fb50e66",
       "loadable": true,
       "warnings": [
@@ -3664,7 +3664,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Horizon Pad",
+      "name": "Ratio Bloom 01",
       "sha256": "659a81a703c1f2395e632f1a82db1680811dcd7a24fafba2eb164892bba6293f",
       "loadable": true,
       "warnings": [
@@ -3677,7 +3677,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Horizon Pulse",
+      "name": "Arp Rectified Tone",
       "sha256": "56ed18417d8ab2a639e73ff16415e36a35ab70057a799b28de40fcd59e699da5",
       "loadable": true,
       "warnings": [
@@ -3691,7 +3691,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Horizon Pad",
+      "name": "Ratio Bloom 02",
       "sha256": "018639794fe1c8b6af2bbae420ea14efe470036b585fd3e93aaeb4b60df76f05",
       "loadable": true,
       "warnings": [
@@ -3705,7 +3705,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Horizon Pad",
+      "name": "Bass Purr 03",
       "sha256": "25483f539b2b3ba44d44085f63be5bf30d9753c0b5f7e19618e42ab3f043cfe0",
       "loadable": true,
       "warnings": [
@@ -3719,7 +3719,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Horizon Keys",
+      "name": "Squelchy Bass Purr 02",
       "sha256": "bb4be4880dc74b2b2df46fcf1b9d3ba7d6e265d6992eba9753e8b6aab44f4615",
       "loadable": true,
       "warnings": [
@@ -3732,7 +3732,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Horizon Keys",
+      "name": "Bass Purr 04",
       "sha256": "c68af37a64ba132035257c33932c06b8edb30fa9fc540dd8277a9fd38f6b949c",
       "loadable": true,
       "warnings": [
@@ -3745,7 +3745,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Horizon Pluck",
+      "name": "Ratio Knock 03",
       "sha256": "84e6bd0d2febea35b86c243686bf9cc540de5eed2164920ed612b2f1970ba83a",
       "loadable": true,
       "warnings": [
@@ -3758,7 +3758,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Horizon Pad",
+      "name": "Soft Saw Stack 07",
       "sha256": "44499c2208476b3212b7bc0535de7beed86e0ce199e7c6159dfb6be759499934",
       "loadable": true,
       "warnings": [
@@ -3771,7 +3771,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Horizon Keys",
+      "name": "Ratio Tone 02",
       "sha256": "20207653d116bf87c0262519d3908c812cd9a874fa3085746149bbbe715b11c0",
       "loadable": true,
       "warnings": [
@@ -3784,7 +3784,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Horizon Chord",
+      "name": "Soft Chord Stack 07",
       "sha256": "ebf2cb3184d0656763c52cca807a5d5bd05e6176f877b8d4c95bad0a32b86641",
       "loadable": true,
       "warnings": [
@@ -3797,7 +3797,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Quarry Pad",
+      "name": "Ratio Bloom 03",
       "sha256": "7d29dcecad46c29a8624c27b41dce44e225b57088664458fe2c5ba6426bc9260",
       "loadable": true,
       "warnings": [
@@ -3810,7 +3810,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Quarry Keys",
+      "name": "Ratio Tone 03",
       "sha256": "abf92dc4fa812e31f28b5d3f2d1775e283a15fd7383f9979d50972ed5daf3524",
       "loadable": true,
       "warnings": [
@@ -3823,7 +3823,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Quarry Pluck",
+      "name": "Bass Thump 03",
       "sha256": "a4453f1062e88c6b257590aa69de611d7c04a9d0d95c5e85abab19f076b20648",
       "loadable": true,
       "warnings": [
@@ -3836,7 +3836,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Quarry Bass",
+      "name": "Soft Rectified Tone 01",
       "sha256": "32909590906f4e6039eb0cf0ff186aea9d534f8a4d52072fe14d4350c6564d01",
       "loadable": true,
       "warnings": [
@@ -3849,7 +3849,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Quarry Keys",
+      "name": "Bass Purr 05",
       "sha256": "3ac0ac83fc4f28a33c1da0d57da8baa83e8e5c43ec77f9c4c1ad0add51678bde",
       "loadable": true,
       "warnings": [
@@ -3862,7 +3862,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Quarry Keys",
+      "name": "Ratio Tone 04",
       "sha256": "51c442f2469e5a30f478151974aea8996d4c48081efb56bcb8057e76ab812216",
       "loadable": true,
       "warnings": [
@@ -3875,7 +3875,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Quarry Bass",
+      "name": "Soft Sawtooth Bass",
       "sha256": "b6970422f4d6af2af14148c172447232c89f8825b0386ae7a9bc2ca7121d3906",
       "loadable": true,
       "warnings": [
@@ -3888,7 +3888,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Quarry Keys",
+      "name": "Bass Purr 06",
       "sha256": "f8daaf4abbdfe1cb7e4b12ba7b5359f9a78c7ea00fafbffd93d6857b12606d6c",
       "loadable": true,
       "warnings": [
@@ -3903,7 +3903,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Quarry Pluck",
+      "name": "Bass Drool",
       "sha256": "7ab1f39308bdb418cecaf4dfdac608ee0a414b527eaee26102e45663771d52e8",
       "loadable": true,
       "warnings": [
@@ -3916,7 +3916,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Quarry Pluck",
+      "name": "Soft Saw Stack Pluck 01",
       "sha256": "ad8ff7f64298da8992d2065c768607132bb158d3c7d6c045ba95b3d7e1a12de3",
       "loadable": true,
       "warnings": [
@@ -3929,7 +3929,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Quarry Keys",
+      "name": "Ratio Tone 05",
       "sha256": "d3efa58053895f79dcbee5bf3f6701b0d3ed4b19063a78d52d5121aa1c33ed64",
       "loadable": true,
       "warnings": [
@@ -3942,7 +3942,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Quarry Pluck",
+      "name": "Arp Saw Stack Pluck",
       "sha256": "c97b9c061c3a7ce988ab98027625bcb9cca236d4d56a59395c558771f411b4db",
       "loadable": true,
       "warnings": [
@@ -3956,7 +3956,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Quarry Keys",
+      "name": "Soft Saw Dust 01",
       "sha256": "2335db499d927497a574a4d7adfd24673c2e4d4ac34c72fc1b61ad5ee2ac2f67",
       "loadable": true,
       "warnings": [
@@ -3970,7 +3970,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Quarry Pluck",
+      "name": "Soft Saw Stack Pluck 02",
       "sha256": "6c14477bd6102acc7bcdf2b701892abd3643597a1210abbfbf9cfab0dc97b0f3",
       "loadable": true,
       "warnings": [
@@ -3983,7 +3983,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Quarry Pad",
+      "name": "Bass Creep 02",
       "sha256": "a4331ced6606dcd7892134b70d924cb42f242456b674c67663716792123479c9",
       "loadable": true,
       "warnings": [
@@ -3996,7 +3996,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Quarry Pluck",
+      "name": "Arp Ratio Knock",
       "sha256": "12e7cc198619f16ffb38e9f9f218d61191381389e8e95feb1adbfe267904b084",
       "loadable": true,
       "warnings": [
@@ -4010,7 +4010,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Capsule Pluck",
+      "name": "Arp Bass Thump",
       "sha256": "9c47f33504373bb370f059bdb8c8f5c5fb56b927fe04ef58b5b6174a4e9cde17",
       "loadable": true,
       "warnings": [
@@ -4024,7 +4024,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Capsule Bass",
+      "name": "Bass Purr 07",
       "sha256": "4603c9a9906065810a1abe659c51096e587d71355aef55aafb9ba029dd9f006d",
       "loadable": true,
       "warnings": [
@@ -4037,7 +4037,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Capsule Keys",
+      "name": "Soft Ratio Tone 03",
       "sha256": "9dac20e4633afc38a7cdf40cd28ce1f6c4cdce00f7f5c18580fe5db6d92fa2a5",
       "loadable": true,
       "warnings": [
@@ -4050,7 +4050,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Capsule Pad",
+      "name": "Soft Rectified Bloom",
       "sha256": "ab8fb16cb52a325018ff7368082f9856132f857d905d0daf464c5f41f99be820",
       "loadable": true,
       "warnings": [
@@ -4064,7 +4064,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Capsule Keys",
+      "name": "Squelchy Bass Purr 03",
       "sha256": "176d973d158b4d8daa83f49472277a616d9645faac89495254e29305690cb2cb",
       "loadable": true,
       "warnings": [
@@ -4077,7 +4077,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Capsule Bass",
+      "name": "Soft Saw Dust 02",
       "sha256": "5c7df02bc0a1ed53dd3ee217c3fb7a1e045b9f36ae03416d096862aac054cc4b",
       "loadable": true,
       "warnings": [
@@ -4090,7 +4090,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Capsule Pluck",
+      "name": "Soft Saw Dust Pluck 01",
       "sha256": "76ef0f055bae055c6f2a15233bacc8225685f7f9464ab5dd4c2ecbfd85cdf150",
       "loadable": true,
       "warnings": [
@@ -4103,7 +4103,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Capsule Pluck",
+      "name": "Soft Rectified Knock 04",
       "sha256": "7484bdfa3d0364099ef5778849ec48e87ea3701d1f370acbccb5e8e891936827",
       "loadable": true,
       "warnings": [
@@ -4116,7 +4116,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Capsule Pluck",
+      "name": "Squelchy Rectified Knock",
       "sha256": "b3725a04df6206886906a731f4c9f7f9ca132a7a2f351944de957153bc3506cb",
       "loadable": true,
       "warnings": [
@@ -4129,7 +4129,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Capsule Bass",
+      "name": "Bass Purr 08",
       "sha256": "f36b1cc2a2668ea847665cbcb30b3295fcc561585895edea04f2a2d65652048e",
       "loadable": true,
       "warnings": [
@@ -4142,7 +4142,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Capsule Keys",
+      "name": "Soft Saw Stack 08",
       "sha256": "539c08b38160b3930e5ef9ad92475ef47d9db20282fb4b33d15c7218d21b3ff7",
       "loadable": true,
       "warnings": [
@@ -4155,7 +4155,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Capsule Keys",
+      "name": "Soft Ratio Tone 04",
       "sha256": "d06934667d5ae0a78442c6cc942622b17fca23855bd4f4c06fdea13f198226ba",
       "loadable": true,
       "warnings": [
@@ -4168,7 +4168,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Capsule Bass",
+      "name": "Fold Bass 02",
       "sha256": "cb1ca8ddc040b5429d0b3c4590d3ca3b53a7474eff0d86fe2631faa65233ef77",
       "loadable": true,
       "warnings": [
@@ -4181,7 +4181,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Capsule Bass",
+      "name": "Rectified Tone 04",
       "sha256": "d78bea8e4df2501ea4104e3f64ee7fcd2b9f1f77ece3f916b02069cca3f8d7b0",
       "loadable": true,
       "warnings": [
@@ -4194,7 +4194,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Capsule Keys",
+      "name": "Sharp Saw Dust",
       "sha256": "33fb9c694bfaf3ae88f93c2e73bdaf5cf12ffcbbdbb85730dbf7ea50904087ad",
       "loadable": true,
       "warnings": [
@@ -4207,7 +4207,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Capsule Keys",
+      "name": "Unavailable 312",
       "sha256": "f9f67762d6399abc0cf81f64e7a6a3f7d3fef54edcf6af30ef94b9f72c797011",
       "loadable": false,
       "warnings": [
@@ -4221,7 +4221,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Beacon Keys",
+      "name": "Unavailable 313",
       "sha256": "80b3a204a59fa0bcd4744a2ac1faeff1bb9bda0c78e13bcad1353da2d8e7b3d4",
       "loadable": false,
       "warnings": [
@@ -4235,7 +4235,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Beacon Bass",
+      "name": "Unavailable 314",
       "sha256": "d502db61a88a2a40d52c82d8eb7ad6666e55cae25dd5ad94c7efe1e73021320f",
       "loadable": false,
       "warnings": [
@@ -4249,7 +4249,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Beacon Keys",
+      "name": "Unavailable 315",
       "sha256": "10fd9d96bfd19f27a3d267de2c6990bd9ae7a952b6ada4134c1e48270fc84490",
       "loadable": false,
       "warnings": [
@@ -4263,7 +4263,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Beacon Keys",
+      "name": "Unavailable 316",
       "sha256": "c712c4f6e202b22099c9e7f64b001572b385033ca1b133974999c4e534ccd957",
       "loadable": false,
       "warnings": [
@@ -4277,7 +4277,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Beacon Keys",
+      "name": "Unavailable 317",
       "sha256": "e0184b612bdb3999ab89dc27b3efb541d7b8d705da573bf9efbb81a90c664b32",
       "loadable": false,
       "warnings": [
@@ -4291,7 +4291,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Beacon Pulse",
+      "name": "Unavailable 318",
       "sha256": "4259f78fb74beee6851c7940b5e48d58b81498e56807bb6625ec5d082c446633",
       "loadable": false,
       "warnings": [
@@ -4306,7 +4306,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Beacon Keys",
+      "name": "Unavailable 319",
       "sha256": "f350dabfbbcc1a4c9ec303b1e1f3240ef2dffe0c559a66c3fc8972aa6f483b2b",
       "loadable": false,
       "warnings": [
@@ -4320,7 +4320,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Beacon Bass",
+      "name": "Unavailable 320",
       "sha256": "89d25a9586b69add50210d70ddfc45159da8481124163630d21b50525553a5a6",
       "loadable": false,
       "warnings": [
@@ -4334,7 +4334,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Beacon Bass",
+      "name": "Unavailable 321",
       "sha256": "f090d99b30bb8e42741c804e07f73dd5f540ff0c62ec54dadbc2109dc96fdea3",
       "loadable": false,
       "warnings": [
@@ -4348,7 +4348,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Beacon Keys",
+      "name": "Unavailable 322",
       "sha256": "f735ba1d012e1e872d0de13b9cb4894d5e34f4461fec05ecfa654238afcb015b",
       "loadable": false,
       "warnings": [
@@ -4362,7 +4362,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Beacon Keys",
+      "name": "Unavailable 323",
       "sha256": "c5783af6bb561c080b6adea58f5078e8b086944870a45f2a4841473be7ff5e6a",
       "loadable": false,
       "warnings": [
@@ -4376,7 +4376,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Beacon Keys",
+      "name": "Unavailable 324",
       "sha256": "e3602fa6b9b2fcd6627c13519e7ee6c76e81c93d8ee9c17157f2e58cfefb8a53",
       "loadable": false,
       "warnings": [
@@ -4390,7 +4390,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Beacon Bass",
+      "name": "Unavailable 325",
       "sha256": "d5143450a84e767ff81701a95326782681ceb749a2fd41e1737287a103a062e9",
       "loadable": false,
       "warnings": [
@@ -4404,7 +4404,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Beacon Keys",
+      "name": "Unavailable 326",
       "sha256": "3e33b7807f4c2f36baa0f26e6e977b09e1aed8d92cc971a1f7bc8cdf6eea9a9c",
       "loadable": false,
       "warnings": [
@@ -4418,7 +4418,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Beacon Bass",
+      "name": "Unavailable 327",
       "sha256": "12b7315986d8f9b88fe12321d993dc081cdac90628a557e88873580a4a0ea7d1",
       "loadable": false,
       "warnings": [
@@ -4432,7 +4432,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Beacon Keys",
+      "name": "Unavailable 328",
       "sha256": "4deb77da33a9c571b5c7233bb95f920093509a51ea7f8ab53b523dd24fc5df0f",
       "loadable": false,
       "warnings": [
@@ -4446,7 +4446,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Vector Keys",
+      "name": "Unavailable 329",
       "sha256": "bf088034b3d085293b7dc049c6ca737490e1d630a661c1a33f80788e104361cd",
       "loadable": false,
       "warnings": [
@@ -4460,7 +4460,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Vector Pluck",
+      "name": "Unavailable 330",
       "sha256": "937829239ba66dc7624a0e84200aba764b2605733273af7997c2b9ca49d0e4f4",
       "loadable": false,
       "warnings": [
@@ -4474,7 +4474,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Vector Keys",
+      "name": "Unavailable 331",
       "sha256": "34886a4619e0c2bef5e3420c9a8914528fde3f2c845b4ddb3c0d21e4f97ba715",
       "loadable": false,
       "warnings": [
@@ -4488,7 +4488,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Vector Keys",
+      "name": "Unavailable 332",
       "sha256": "6ad5a182ac89f1e6dc2b0cd2470045b877413639e0827f5d77830f6988b7fcff",
       "loadable": false,
       "warnings": [
@@ -4502,7 +4502,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Vector Bass",
+      "name": "Robot Ramble 02",
       "sha256": "71b78da3be85f93b7bbbc2247060369777e7d8553dbe109da7b1e4ea249edca0",
       "loadable": true,
       "warnings": [
@@ -4515,7 +4515,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Vector Keys",
+      "name": "Unavailable 334",
       "sha256": "78842b3fb89018273cbd876fe14b45f6545c174c3bcdfdb4d88b16335e686a35",
       "loadable": false,
       "warnings": [
@@ -4529,7 +4529,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Vector Keys",
+      "name": "Unavailable 335",
       "sha256": "dfd8b77f4f99cf0f7fb7618106f344992534a04dd0e98e6a354e69f8ba4ceefb",
       "loadable": false,
       "warnings": [
@@ -4543,7 +4543,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Vector Pluck",
+      "name": "Unavailable 336",
       "sha256": "f10a676b096dc71b8e4bec420d159926453f00cc257c2a89cadb8748e03c2d00",
       "loadable": false,
       "warnings": [
@@ -4557,7 +4557,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Vector Pad",
+      "name": "Unavailable 337",
       "sha256": "f58a732f9b4f55177592569805bb6f3fb941ea0e3cb56c3e39bf3a22e7d4ac9a",
       "loadable": false,
       "warnings": [
@@ -4571,7 +4571,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Vector Keys",
+      "name": "Unavailable 338",
       "sha256": "b4867269420015456a4418f74d59bf8a0025786a83ef014c88a07bedecafcecc",
       "loadable": false,
       "warnings": [
@@ -4585,7 +4585,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Vector Bass",
+      "name": "Soft Rectified Tone 02",
       "sha256": "943a648e56ce3dbcdafe68262a1486c054775c5f81bef3f1305f49d4054afd99",
       "loadable": true,
       "warnings": [
@@ -4598,7 +4598,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Vector Keys",
+      "name": "Unavailable 340",
       "sha256": "cc26581dd29c031449bad1abb1093448fcddb535e5297a8f03bf08c560cbf670",
       "loadable": false,
       "warnings": [
@@ -4612,7 +4612,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Vector Bass",
+      "name": "Unavailable 341",
       "sha256": "05516f4a1dc337e8bdac845ab8960e2e3b15b3c7ab8456514d2610deaf4782e1",
       "loadable": false,
       "warnings": [
@@ -4626,7 +4626,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Vector Keys",
+      "name": "Unavailable 342",
       "sha256": "d66c06286d27a5676efa3bfe932548b9c7e2a1dfa81085d7fd2cc5a6e6a9150e",
       "loadable": false,
       "warnings": [
@@ -4640,7 +4640,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Vector Pluck",
+      "name": "Unavailable 343",
       "sha256": "9949a6b22688da2d9f1381c24122a0907740900a77f61544b77180c051bc4671",
       "loadable": false,
       "warnings": [
@@ -4655,7 +4655,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Vector Keys",
+      "name": "Sliding Feedback Keys",
       "sha256": "3c17e454ea8bcf0c267da617397f74c5656d6554c5d5d0d9ea86bd4410555206",
       "loadable": true,
       "warnings": [
@@ -4668,7 +4668,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Ripple Keys",
+      "name": "Unavailable 345",
       "sha256": "2727e74cf7a8dc9a503ce169d3dacb91d32fa94d5b5a57a1334837edafe42a4d",
       "loadable": false,
       "warnings": [
@@ -4682,7 +4682,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Ripple Pluck",
+      "name": "Soft Tine Pluck 04",
       "sha256": "58c0707423f9cc42b3096ef7e5ad27c6ba235c856021df8d69bce88dab5d13ee",
       "loadable": true,
       "warnings": [
@@ -4695,7 +4695,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Ripple Keys",
+      "name": "Soft Bent Reed",
       "sha256": "5477f756d2a36f9b5b866b13faddca0346b5fcb3a2046068be1ebb6b4face912",
       "loadable": true,
       "warnings": [
@@ -4708,7 +4708,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Ripple Keys",
+      "name": "Unavailable 348",
       "sha256": "a0ea7def4f33a94d73dbc6caf464a068bbb39cfd1c73ba6790c3d93c7aeb3a8d",
       "loadable": false,
       "warnings": [
@@ -4722,7 +4722,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Ripple Pluck",
+      "name": "Arp Hollow Knock 02",
       "sha256": "bfbf56d5aea5f8ad0196d0b16836a01ffbf3230e809f3e470322d0ddcdd12a88",
       "loadable": true,
       "warnings": [
@@ -4738,7 +4738,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Ripple Pluck",
+      "name": "Unavailable 350",
       "sha256": "03126580d0c2beb549513bc1aa376497c1be4a43c9d8592559dd36442cea9f07",
       "loadable": false,
       "warnings": [
@@ -4752,7 +4752,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Ripple Bass",
+      "name": "Soft Feedback Bass",
       "sha256": "8763d23beca78af45a8a55695d81fd42d592cd188593d15511b793db3c00b838",
       "loadable": true,
       "warnings": [
@@ -4765,7 +4765,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Ripple Pluck",
+      "name": "Unavailable 352",
       "sha256": "e34efefa7d324b6644590d1f45b3bfaddadc5bb9e0e67d021dac5ad17272853b",
       "loadable": false,
       "warnings": [
@@ -4779,7 +4779,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Ripple Pluck",
+      "name": "Unavailable 353",
       "sha256": "5818cc6ada86d03370a60003c25945a2921c213e505c7c1a871488ca0d0ebd5e",
       "loadable": false,
       "warnings": [
@@ -4793,7 +4793,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Ripple Pluck",
+      "name": "Unavailable 354",
       "sha256": "48c610e5321a9ae414943abba5aef3aaebe051a239da26f1c8ff68698b2e31de",
       "loadable": false,
       "warnings": [
@@ -4807,7 +4807,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Ripple Pad",
+      "name": "Unavailable 355",
       "sha256": "93fd4bdbef574441342b92ea35ca802087bd78ff3bec1edd67cc55fcda0670e8",
       "loadable": false,
       "warnings": [
@@ -4821,7 +4821,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Ripple Bass",
+      "name": "Unavailable 356",
       "sha256": "91bfe1a68913a99590c27d1eac2d21cf79147575f9f55ef10bfe36e5de7db808",
       "loadable": false,
       "warnings": [
@@ -4835,7 +4835,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Ripple Keys",
+      "name": "Unavailable 357",
       "sha256": "f4e7575ac3c3f36af4adab72c57a49c87423b877b68fd2ab3778acc3d8509804",
       "loadable": false,
       "warnings": [
@@ -4849,7 +4849,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Ripple Pluck",
+      "name": "Unavailable 358",
       "sha256": "5cff307016a643e75488ed945ff861ee553cc72387972d12c41219fb883e0cb2",
       "loadable": false,
       "warnings": [
@@ -4863,7 +4863,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Ripple Keys",
+      "name": "Unavailable 359",
       "sha256": "b927bcc0fbb561c2b388ec7c467c9dc46a42c87197595077a6d6f8b57658aa03",
       "loadable": false,
       "warnings": [
@@ -4877,7 +4877,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Ripple Bass",
+      "name": "Unavailable 360",
       "sha256": "fa5baf204bfa4864397235bb31074d320031e252cc5cde42cdc06b2673216509",
       "loadable": false,
       "warnings": [
@@ -4891,7 +4891,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Lattice Pluck",
+      "name": "Unavailable 361",
       "sha256": "1aa1afbb65023802f27f3c0319b47e6ae6213bf53e77b74633faac2adc3ad127",
       "loadable": false,
       "warnings": [
@@ -4905,7 +4905,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Lattice Bass",
+      "name": "Unavailable 362",
       "sha256": "6e245dd54eacacdcdbb8b114fe0dc465d9edc23e61af8caf8e46f7a4aef1dbd0",
       "loadable": false,
       "warnings": [
@@ -4919,7 +4919,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Lattice Keys",
+      "name": "Unavailable 363",
       "sha256": "3ad0c9ccd556b6b9db2d91086532b21cecaad5b199d1570a4496816f9bf4757d",
       "loadable": false,
       "warnings": [
@@ -4934,7 +4934,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Lattice Pad",
+      "name": "Table Creep",
       "sha256": "c7d8ca26a60a7babb76531df8fec25ae199d90138112a2ac567ec07331e80b18",
       "loadable": true,
       "warnings": [
@@ -4947,7 +4947,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Lattice Pad",
+      "name": "Unavailable 365",
       "sha256": "5355a369aeb3b536291f24cb36f63d7d678fe647a4ff00bfdb4ecbd76b5b1f23",
       "loadable": false,
       "warnings": [
@@ -4961,7 +4961,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Lattice Pulse",
+      "name": "Unavailable 366",
       "sha256": "96ca3face5f0a48a31738c841f270da94c10b67ea10df90fc08ea7eaedc0d715",
       "loadable": false,
       "warnings": [
@@ -4976,7 +4976,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Lattice Keys",
+      "name": "Unavailable 367",
       "sha256": "ce347cf2ccc2427b54286493a2dd064290e5154141b378ff2764bd8dbb2f1255",
       "loadable": false,
       "warnings": [
@@ -4990,7 +4990,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Lattice Keys",
+      "name": "Unavailable 368",
       "sha256": "ba455dfb44227e9cc5a5cd8bbd6ffcac9ef3d3648e0118a77b17aa1f9431bac3",
       "loadable": false,
       "warnings": [
@@ -5004,7 +5004,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Lattice Bass",
+      "name": "Bass Grunt 02",
       "sha256": "ffa39f231755475b286e060cdfd519ab3bb5640cc9dd54564b3fb79ec579414a",
       "loadable": true,
       "warnings": [
@@ -5018,7 +5018,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Lattice Pad",
+      "name": "Unavailable 370",
       "sha256": "34b0e4827432959a6db9379b143e1f450dbd26a0b20cba5828df0c0deca418c3",
       "loadable": false,
       "warnings": [
@@ -5032,7 +5032,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Lattice Keys",
+      "name": "Unavailable 371",
       "sha256": "45e7127486ac239821b9fdc0a109b3b57a7342d247070f959f14c9acea677eee",
       "loadable": false,
       "warnings": [
@@ -5046,7 +5046,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Lattice Pluck",
+      "name": "Unavailable 372",
       "sha256": "ee4b0f59455cabf03f417fddccde98b102c7f7b857b8233fcebbab7e1dee969d",
       "loadable": false,
       "warnings": [
@@ -5060,7 +5060,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Lattice Pluck",
+      "name": "Unavailable 373",
       "sha256": "2c0754ff0d976c3e8caec6543ef45997039fa74c6cd9785ad2a10f60af284c80",
       "loadable": false,
       "warnings": [
@@ -5074,7 +5074,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Lattice Pluck",
+      "name": "Unavailable 374",
       "sha256": "c3a90ace3248d779bc55d6dce2deee74f168540dd29dafad55316a04e0cee171",
       "loadable": false,
       "warnings": [
@@ -5088,7 +5088,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Lattice Keys",
+      "name": "Unavailable 375",
       "sha256": "cd9c136e2577052ee40736524ba3e7a72ce1d6c6f0d9453fef7cc1418855e5ed",
       "loadable": false,
       "warnings": [
@@ -5102,7 +5102,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Lattice Pluck",
+      "name": "Unavailable 376",
       "sha256": "0d63a24a758ad332f3fdd4827c4b5cf1dd4e22470d9315997fea3f8f5badc9a2",
       "loadable": false,
       "warnings": [
@@ -5116,7 +5116,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Shadow Pluck",
+      "name": "Unavailable 377",
       "sha256": "90c4a2688126627d7906b9c546340afddf7e26b3b87aa7c04cf964bd9611c43c",
       "loadable": false,
       "warnings": [
@@ -5130,7 +5130,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Shadow Keys",
+      "name": "Unavailable 378",
       "sha256": "4b375793c28ba2433ae7519cced7600c081cbabe8f02ac66afedbe69eaa25c90",
       "loadable": false,
       "warnings": [
@@ -5144,7 +5144,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Shadow Pluck",
+      "name": "Unavailable 379",
       "sha256": "6aa6aab69c676801bfc1e3d560dbfb3664abfdeddaee9879c1eb79c0e7f493e9",
       "loadable": false,
       "warnings": [
@@ -5158,7 +5158,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Shadow Keys",
+      "name": "Unavailable 380",
       "sha256": "9ebabcab51bb1dfe88795a7d01dc5894a2a4bd29f92d7d83e512def2bbcc1ee2",
       "loadable": false,
       "warnings": [
@@ -5172,7 +5172,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Shadow Keys",
+      "name": "Soft Saw Stack 09",
       "sha256": "64c4d23e4605a32f7f324a804dd811e6deff637cfc35561ef0de2f9a526faa14",
       "loadable": true,
       "warnings": [
@@ -5185,7 +5185,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Shadow Bass",
+      "name": "Unavailable 382",
       "sha256": "7d8f3c517fcf1a83c8a5effdf01e601851d12b5b4ad600efbace8430dde17a30",
       "loadable": false,
       "warnings": [
@@ -5199,7 +5199,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Shadow Pad",
+      "name": "Unavailable 383",
       "sha256": "4336b1b8e84a42fca30eb9ad62454f48eb36a58c2b7f55d725113096a9b896a9",
       "loadable": false,
       "warnings": [
@@ -5213,7 +5213,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Shadow Pluck",
+      "name": "Unavailable 384",
       "sha256": "33892cc991eb978b9f66c88653030c34d90df43e064bc536cd933d68bb28fdde",
       "loadable": false,
       "warnings": [
@@ -5227,7 +5227,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Shadow Pad",
+      "name": "Unavailable 385",
       "sha256": "0d92564230f7e5ff110cba5d4fec2cbad2a98bc54063de43cf7e8260fef634ca",
       "loadable": false,
       "warnings": [
@@ -5241,7 +5241,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Shadow Pluck",
+      "name": "Soft Bent Bark 03",
       "sha256": "f3eb1c11b605f9024eeca1355b8665430a2670f8b8bf84580278bff4cadb4f4d",
       "loadable": true,
       "warnings": [
@@ -5254,7 +5254,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Shadow Pluck",
+      "name": "Unavailable 387",
       "sha256": "52f274219b02ce6f68a3cce61d0fdc647494dd5cc58dc2b238cb1c83cea4d626",
       "loadable": false,
       "warnings": [
@@ -5268,7 +5268,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Shadow Pad",
+      "name": "Soft Detune Saw Swell 03",
       "sha256": "31ceeba388bf9adc7f54ab3f97454dac520e51628b9b4bce93dd406068443f84",
       "loadable": true,
       "warnings": [
@@ -5281,7 +5281,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Shadow Pluck",
+      "name": "Soft Saw Stack Pluck 03",
       "sha256": "287c792d22bf060b6620c8a07d76ea34f11f316c5c1b3e2b00a46f6497d39635",
       "loadable": true,
       "warnings": [
@@ -5294,7 +5294,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Shadow Keys",
+      "name": "Unavailable 390",
       "sha256": "fa0c9f94e17772004f4585e653a9bfbdb3c740086529112770081bf64bf6d95c",
       "loadable": false,
       "warnings": [
@@ -5308,7 +5308,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Shadow Keys",
+      "name": "Unavailable 391",
       "sha256": "4031b71949ec40ff3405e75900124e9a8516afd63ca31e997a259c496e2c86ee",
       "loadable": false,
       "warnings": [
@@ -5322,7 +5322,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Shadow Bass",
+      "name": "Unavailable 392",
       "sha256": "ef09867a73fd906c47e10f1ac267088087ad4d0e740de4b9aeccb03de4c2962f",
       "loadable": false,
       "warnings": [
@@ -5336,7 +5336,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Arcade Bass",
+      "name": "Soft Ringing Body 02",
       "sha256": "361552e62ede7715f9f1c985ed29a979e5595a5a344116b489c265642b88e6c7",
       "loadable": true,
       "warnings": [
@@ -5349,7 +5349,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Arcade Keys",
+      "name": "Soft Detune Pulse Keys 02",
       "sha256": "65c102691f3d4d7ff479ee306e8ce731291da9134fb86638ffe32bb18836a459",
       "loadable": true,
       "warnings": [
@@ -5363,7 +5363,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Arcade Pad",
+      "name": "Sharp Detune Saw Swell",
       "sha256": "ee118949c82c74ee088d67bcad83bc77dac909b263710c790d7118a3c74a0d7b",
       "loadable": true,
       "warnings": [
@@ -5376,7 +5376,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Arcade Bass",
+      "name": "Throat Bass",
       "sha256": "f197448d2f30b721824427fcc9041e0deaaa81153186f3edf3e4965a21e9b5a8",
       "loadable": true,
       "warnings": [
@@ -5389,7 +5389,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Arcade Pluck",
+      "name": "Unavailable 397",
       "sha256": "48aee09ee7db4a2c971e4449c9f5f2726e6ff44d7ac0c8e1cdede8442a6d1e39",
       "loadable": false,
       "warnings": [
@@ -5403,7 +5403,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Arcade Keys",
+      "name": "Unavailable 398",
       "sha256": "3f0ab053eb7bfe23f49884ffb278f17d02472382fbea9ebb23f5a1e32ac25a84",
       "loadable": false,
       "warnings": [
@@ -5417,7 +5417,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Arcade Keys",
+      "name": "Unavailable 399",
       "sha256": "5006cd9693c0b6c25a2bb20ef37e08a27ac6e2999ee4591618aefbf35b841059",
       "loadable": false,
       "warnings": [
@@ -5433,7 +5433,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Arcade Keys",
+      "name": "Unavailable 400",
       "sha256": "7ddffeb0fb6afcb8100f2fa361e79b4a8dc01c4a50773c4945bdbd88d8c09e4a",
       "loadable": false,
       "warnings": [
@@ -5447,7 +5447,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Arcade Pluck",
+      "name": "Unavailable 401",
       "sha256": "e1f5ce5bc5589f9d31490537e19c08e212a376daa989d4e1e7164f29a9358095",
       "loadable": false,
       "warnings": [
@@ -5461,7 +5461,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Arcade Pad",
+      "name": "Unavailable 402",
       "sha256": "a226ffb7d913625f8f7900b33ba4b8346402dbc5d51a155fea7cd7b6bf1893f1",
       "loadable": false,
       "warnings": [
@@ -5475,7 +5475,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Arcade Bass",
+      "name": "Unavailable 403",
       "sha256": "1a6f76df7f1db66107c3783749c5d859d94fa3ee89a7ec6885681ba51b606596",
       "loadable": false,
       "warnings": [
@@ -5489,7 +5489,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Arcade Pad",
+      "name": "Unavailable 404",
       "sha256": "4d90da9c6217ab4f1a7442e5017dd6c99c5d36625340cffb8481b1dd8e92ee61",
       "loadable": false,
       "warnings": [
@@ -5503,7 +5503,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Arcade Pluck",
+      "name": "Unavailable 405",
       "sha256": "b1d386e8381cf3bda1bf2eba8fba6948a695486b740978babbd5132be1ce0663",
       "loadable": false,
       "warnings": [
@@ -5517,7 +5517,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Arcade Pad",
+      "name": "Unavailable 406",
       "sha256": "e3851335fda3c8792c85ae6376d4ca1e411400ae1b20c113b929f28cc3bc25fe",
       "loadable": false,
       "warnings": [
@@ -5531,7 +5531,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Arcade Bass",
+      "name": "Unavailable 407",
       "sha256": "f52e1bae4fa66bcabca45420bc517dba1621bbc07971f428d82a7bf45bc0e957",
       "loadable": false,
       "warnings": [
@@ -5545,7 +5545,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Arcade Pad",
+      "name": "Sliding Stacked Pulse Keys",
       "sha256": "b2934585c7a8999d1e179462a7d724d2cfdecc71069df9afd402877eddadbfa5",
       "loadable": true,
       "warnings": [
@@ -5558,7 +5558,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Tundra Keys",
+      "name": "Unavailable 409",
       "sha256": "ed9321c1e24c0a27fc476e3cd74c42bf3365e8708943605658080eac8d90e648",
       "loadable": false,
       "warnings": [
@@ -5572,7 +5572,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Tundra Keys",
+      "name": "Unavailable 410",
       "sha256": "831bd719cce8cb75919e88f430a5b12b3e7fb47f644fc39a90de6a07ef673738",
       "loadable": false,
       "warnings": [
@@ -5586,7 +5586,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Tundra Pluck",
+      "name": "Unavailable 411",
       "sha256": "8c77a8d76c562f2eb79368e00d2ce057258e092d56db75f5b9b2570da62e6b1f",
       "loadable": false,
       "warnings": [
@@ -5601,7 +5601,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Tundra Keys",
+      "name": "Unavailable 412",
       "sha256": "0c8642aaa101075a7c5b0cb98b886606e3eef2bc226114fbb0b74266f952287e",
       "loadable": false,
       "warnings": [
@@ -5615,7 +5615,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Tundra Bass",
+      "name": "Unavailable 413",
       "sha256": "fa7f1f35b07ff171f6785f6e4b7995f0ee8e6bf8dddbad15e78cdbea513e6a92",
       "loadable": false,
       "warnings": [
@@ -5629,7 +5629,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Tundra Mallet",
+      "name": "Soft Ringing String 03",
       "sha256": "0321e74ae47dc2e4460746d35bdb325b29339e07fa327cc2035f1447f78830ab",
       "loadable": true,
       "warnings": [
@@ -5643,7 +5643,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Tundra Keys",
+      "name": "Unavailable 415",
       "sha256": "bea9615948f42a40d3fcb8181b74f903a556ba567328771480f788e4d0519dbb",
       "loadable": false,
       "warnings": [
@@ -5657,7 +5657,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Tundra Pad",
+      "name": "Unavailable 416",
       "sha256": "c10637604350dcc636f895cc84c6c46d5fcb01b580876ea7aa678d0a4ddd7296",
       "loadable": false,
       "warnings": [
@@ -5671,7 +5671,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Tundra Keys",
+      "name": "Unavailable 417",
       "sha256": "3393ae7cfb9b5af8c7d75a24cd1dd39f26666559ea0932b133ba4a4e6f45cee4",
       "loadable": false,
       "warnings": [
@@ -5685,7 +5685,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Tundra Keys",
+      "name": "Unavailable 418",
       "sha256": "479d875808ec1b76bb2230cc06fcc6cc45ed4a79f27aedc9dcde79a71f079067",
       "loadable": false,
       "warnings": [
@@ -5699,7 +5699,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Tundra Keys",
+      "name": "Soft Table Glide",
       "sha256": "3aff0ee6770a962401e7b18104157976715080b0504ca2e37cf8f56f6e54f123",
       "loadable": true,
       "warnings": [
@@ -5712,7 +5712,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Tundra Bass",
+      "name": "Unavailable 420",
       "sha256": "443a29d7edbcd40ad1e74061711e29feae7c559f2d0a9c37f8c9b23229f3c90a",
       "loadable": false,
       "warnings": [
@@ -5726,7 +5726,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Tundra Keys",
+      "name": "Unavailable 421",
       "sha256": "e05eefdbf105753e7bcfb4a138181c4d119cf263bd6f4a756a4fa545a3e9d748",
       "loadable": false,
       "warnings": [
@@ -5740,7 +5740,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Tundra Keys",
+      "name": "Unavailable 422",
       "sha256": "dd08163722e316f4a7e70c7eb717115cc670fbe4f29a8fee30ad4bd0d9382a83",
       "loadable": false,
       "warnings": [
@@ -5754,7 +5754,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Tundra Pad",
+      "name": "Unavailable 423",
       "sha256": "88e2342e295240fd5925ec40ea437f6b7ff1171db9b106af1db49869705a3d1d",
       "loadable": false,
       "warnings": [
@@ -5768,7 +5768,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Tundra Pad",
+      "name": "Sliding Mouth Organ",
       "sha256": "cd3b46979b126273cf0afdb477cf82554272130511c18f004595ab96169e6eba",
       "loadable": true,
       "warnings": [
@@ -5782,7 +5782,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Spark Keys",
+      "name": "Squelchy Mouth Organ",
       "sha256": "4403548d7a5f22ee7b2c36b9e72bc0acc7e93a418e9f3c8ff5bcc22f960ab386",
       "loadable": true,
       "warnings": [
@@ -5795,7 +5795,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Spark Pluck",
+      "name": "Unavailable 426",
       "sha256": "7381d092c844e27673f7d36495b78cc8ad703ee0abf27f414b672f428c219e50",
       "loadable": false,
       "warnings": [
@@ -5809,7 +5809,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Spark Keys",
+      "name": "Unavailable 427",
       "sha256": "eb05b7db8532d9c253bcbe7c81312fc35ed9a3cb28423a4b03b78faf4d3af2bf",
       "loadable": false,
       "warnings": [
@@ -5825,7 +5825,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Spark Pluck",
+      "name": "Unavailable 428",
       "sha256": "5e7a3bf7140e0569ffc3cbd2b19713e3951d1e9a712920b2b026acd7526c7fbd",
       "loadable": false,
       "warnings": [
@@ -5839,7 +5839,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Spark Pad",
+      "name": "Unavailable 429",
       "sha256": "c0f6b58513bcadf588280a050205734a8d76521658abc2290b038e3d4c3a6ff2",
       "loadable": false,
       "warnings": [
@@ -5853,7 +5853,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Spark Keys",
+      "name": "Unavailable 430",
       "sha256": "0f3fbb96a1f025664021840a82417d15ca20d57397f64c746f407a26db0a9ea5",
       "loadable": false,
       "warnings": [
@@ -5868,7 +5868,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Spark Keys",
+      "name": "Soft Pulse Keys 08",
       "sha256": "74b86af45b53184510939e8f3302ee10122f1fb1a311716633e276a2ed3b411d",
       "loadable": true,
       "warnings": [
@@ -5881,7 +5881,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Spark Pluck",
+      "name": "Unavailable 432",
       "sha256": "5308a2fb7ecbcf2c9a26de385afdc546a9bf67bb04e990fbf0396e461a420b85",
       "loadable": false,
       "warnings": [
@@ -5895,7 +5895,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Spark Pad",
+      "name": "Squelchy Bent Drone",
       "sha256": "6b96ebf8f2d9db3eae95c5531cf3e7d9229ed114fb4117b851c7ec617760be0b",
       "loadable": true,
       "warnings": [
@@ -5908,7 +5908,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Spark Keys",
+      "name": "Saw Dust 03",
       "sha256": "4fd45e5a358edb25a07e359ffc6f1d93468c679dbd0af5d47048abc441b0ae78",
       "loadable": true,
       "warnings": [
@@ -5921,7 +5921,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Spark Bass",
+      "name": "Unavailable 435",
       "sha256": "9ac4b79ed8de6e0ce8773c6597c2110da70fcedcde2c549888395dd9ee464816",
       "loadable": false,
       "warnings": [
@@ -5935,7 +5935,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Spark Mallet",
+      "name": "Ringing Body 03",
       "sha256": "96418162980a0aaecee649da11862dc3f991a84ed1648cc0bdcaa3051dcf1589",
       "loadable": true,
       "warnings": [
@@ -5948,7 +5948,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Spark Pad",
+      "name": "Unavailable 437",
       "sha256": "40022c2fcc9fae83d28643682d9531a50cc440887281389c89f81ed082456bde",
       "loadable": false,
       "warnings": [
@@ -5962,7 +5962,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Spark Bass",
+      "name": "Soft Throat Bass 02",
       "sha256": "03ab623fe295f68cd30cdf0d50dadcf6178dffdc888661ceaf076c9f415a0e81",
       "loadable": true,
       "warnings": [
@@ -5975,7 +5975,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Spark Pluck",
+      "name": "Unavailable 439",
       "sha256": "e7723e73acf53eaaf5d8bac7baf3e833d6b12902bc93cb4da264bae9d5e39222",
       "loadable": false,
       "warnings": [
@@ -5989,7 +5989,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Spark Pluck",
+      "name": "Soft Saw Dust Pluck 02",
       "sha256": "4019764b547ae4b498035feaa3793980475b2590c3b3d1d4352b7172e9da5ea5",
       "loadable": true,
       "warnings": [
@@ -6003,7 +6003,7 @@
       "has_sequence": true
     },
     {
-      "name": "Velvet Echo Keys",
+      "name": "Unavailable 441",
       "sha256": "825493edc12a095c249454f1c435ac17dcc76b231c8cf8428ea25400a4cb5906",
       "loadable": false,
       "warnings": [
@@ -6017,7 +6017,7 @@
       "has_sequence": true
     },
     {
-      "name": "Neon Echo Keys",
+      "name": "Unavailable 442",
       "sha256": "7c081eb73b9161bde6dbb11637bc719a06987e806ad5f8b723b4886b0c7682dc",
       "loadable": false,
       "warnings": [
@@ -6031,7 +6031,7 @@
       "has_sequence": true
     },
     {
-      "name": "Copper Echo Pluck",
+      "name": "Unavailable 443",
       "sha256": "f4805513743d1a0fc3edc22e40bcb4992d48a62beaa3cc416e8e84c70944b89b",
       "loadable": false,
       "warnings": [
@@ -6045,7 +6045,7 @@
       "has_sequence": true
     },
     {
-      "name": "Silver Echo Bass",
+      "name": "Unavailable 444",
       "sha256": "a3855f7ac57227f49a6c0b480f448286baf94f576612c5633c9a9ba0f232d597",
       "loadable": false,
       "warnings": [
@@ -6059,7 +6059,7 @@
       "has_sequence": true
     },
     {
-      "name": "Lunar Echo Bass",
+      "name": "FM Bass",
       "sha256": "3d99b81242acabb36e22de57de65513b8700e5f2640faa728520735c51b7ea1f",
       "loadable": true,
       "warnings": [
@@ -6072,7 +6072,7 @@
       "has_sequence": true
     },
     {
-      "name": "Amber Echo Pad",
+      "name": "Unavailable 446",
       "sha256": "cd0100745b237f8b29096590ec1c284a5dd82023bda1a92d2097b1c59f4f3ac0",
       "loadable": false,
       "warnings": [
@@ -6086,7 +6086,7 @@
       "has_sequence": true
     },
     {
-      "name": "Cobalt Echo Pluck",
+      "name": "Unavailable 447",
       "sha256": "03a3949f32504eb88cfd94511b66a68658fced77bf42c798569633397bd26a80",
       "loadable": false,
       "warnings": [
@@ -6100,7 +6100,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ivory Echo Pluck",
+      "name": "Soft Saw Stab 02",
       "sha256": "a7ce386c61612fb65d6179b818608fdb60f82a252d67969368868e49ccdf15df",
       "loadable": true,
       "warnings": [
@@ -6113,7 +6113,7 @@
       "has_sequence": true
     },
     {
-      "name": "Prism Echo Pad",
+      "name": "Soft Table Creep 02",
       "sha256": "e0d961f21e924d5e9592d7bf875807304508a722bd2f99cca98fe828992d1a75",
       "loadable": true,
       "warnings": [
@@ -6127,7 +6127,7 @@
       "has_sequence": true
     },
     {
-      "name": "Ember Echo Keys",
+      "name": "Unavailable 450",
       "sha256": "5f5727fb1ac5d42c3b28f47abee5fe9abd68a45cfd106d44d094dd1dd277423a",
       "loadable": false,
       "warnings": [
@@ -6141,7 +6141,7 @@
       "has_sequence": true
     },
     {
-      "name": "Polar Echo Pluck",
+      "name": "Unavailable 451",
       "sha256": "de7869fb74f36750c974646505d33e783896a6da789bcd19abcf6cf0aca2fae1",
       "loadable": false,
       "warnings": [
@@ -6155,7 +6155,7 @@
       "has_sequence": true
     },
     {
-      "name": "Violet Echo Bass",
+      "name": "Unavailable 452",
       "sha256": "c919524104182de10c9587cacf045f0858a4b831325ae8e894b060fe9a8c99b7",
       "loadable": false,
       "warnings": [
@@ -6169,7 +6169,7 @@
       "has_sequence": true
     },
     {
-      "name": "Solar Echo Keys",
+      "name": "Unavailable 453",
       "sha256": "3299df4e3fe7a927aa69e15c1294789d999619a1dd351b52c6436d33609d82d1",
       "loadable": false,
       "warnings": [
@@ -6183,7 +6183,7 @@
       "has_sequence": true
     },
     {
-      "name": "Jade Echo Keys",
+      "name": "Unavailable 454",
       "sha256": "dd89c696b0d299db034e05f906d4a048d4d4f0e747e2e7f3ca6a35e07af7f7c6",
       "loadable": false,
       "warnings": [
@@ -6197,7 +6197,7 @@
       "has_sequence": true
     },
     {
-      "name": "Scarlet Echo Pad",
+      "name": "Unavailable 455",
       "sha256": "c2e8a5e6ce76f95464d91158ba6eb66ab2635977f3f01af296ed628190c663fe",
       "loadable": false,
       "warnings": [
@@ -6211,7 +6211,7 @@
       "has_sequence": true
     },
     {
-      "name": "Opal Echo Pluck",
+      "name": "Unavailable 456",
       "sha256": "86db1f3c2437b7ce798a97b685a65d9bbb50b16eb01d4268f6dea8f0558a4d49",
       "loadable": false,
       "warnings": [
