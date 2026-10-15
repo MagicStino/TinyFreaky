@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(Tinyfreaky VERSION 0.3.1 LANGUAGES C CXX)
+project(Tinyfreaky VERSION 0.3.2 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 if(NOT VST3_SDK_ROOT)

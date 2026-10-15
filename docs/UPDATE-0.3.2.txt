@@ -1,0 +1,7 @@
+Tinyfreaky 0.3.2-preview.1
+
+Paraphonic mode now allocates eight voices for every implemented engine. Mono mode remains one voice. Voice nine steals the oldest voice. Note-off, sustain, all-notes-off and engine reset cover all eight voices. The shared filter and modulation topology remain paraphonic.
+
+Existing parameter IDs, MFZ2 state and factory preset selection remain compatible. The screen reports the actual count up to 8 VOICES. The existing gain for one to four notes is preserved; the peak-only output limiter handles larger chord peaks. CPU and oscillator memory costs increase with the number of active voices. Force hardware performance still needs verification.
+
+Includes all 0.3.1 clarity and display changes. Tests cover eight-note chords across all 16 implemented engines, all three filter modes and four parameter extremes, plus allocation, oldest-voice stealing, note release and mono behavior. Six unavailable engine families and approximate factory sound remain limitations.

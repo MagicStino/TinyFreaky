@@ -1,3 +1,8 @@
+Eight-voice update
+==================
+
+Paraphonic mode supports eight simultaneous notes on every implemented engine. Mono remains one voice. See docs/UPDATE-0.3.2.txt for compatibility and hardware-performance limits.
+
 Tinyfreaky
 ==========
 
