@@ -1,0 +1,19 @@
+{
+  "schema": "openplugin.community/1",
+  "id": "microfreeze",
+  "name": "Microfreeze",
+  "author": "MagicStino",
+  "repo": "MagicStino/microfreeze",
+  "summary": "Experimental independent synthesizer. Original sound equivalence and full preset compatibility are unverified.",
+  "kind": "instrument",
+  "category": "synth",
+  "license": "MIT",
+  "tags": [
+    "synth",
+    "cleanroom",
+    "experimental",
+    "force",
+    "armv7"
+  ],
+  "packages": []
+}
