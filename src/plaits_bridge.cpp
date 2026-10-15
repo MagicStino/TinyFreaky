@@ -45,7 +45,12 @@ extern "C" float tf_plaits_sample(void*p,int model,float hz,float wave,float tim
  v.phase+=47872.34/44100.;
  while(v.phase>=1){
   v.before=v.current;
-  if(v.pos>=24){plaits::EngineParameters params{};params.note=69.f+12.f*std::log2(hz/440.f);params.harmonics=wave;params.timbre=timbre;params.morph=shape;params.accent=accent;params.trigger=(gate?plaits::TRIGGER_HIGH:plaits::TRIGGER_LOW)|(v.trigger?plaits::TRIGGER_RISING_EDGE:0);bool enveloped=false;{std::lock_guard<std::mutex>g(lock);v.active->Render(params,v.out,v.aux,24,&enveloped);}v.pos=0;v.trigger=false;}
+  if(v.pos>=24){plaits::EngineParameters params{};params.note=69.f+12.f*std::log2(hz/440.f);params.harmonics=wave;params.timbre=timbre;params.morph=shape;params.accent=accent;
+   // Keep the filtered-noise clock in an audible range. Its old bottom half
+   // clocked only a few samples a second, turning ordinary patches into ticks.
+   // Raise the internal filter center; the instrument's main VCF still shapes it.
+   if(model==12){params.timbre=.55f+.45f*timbre;params.note+=24.f;}
+   params.trigger=(gate?plaits::TRIGGER_HIGH:plaits::TRIGGER_LOW)|(v.trigger?plaits::TRIGGER_RISING_EDGE:0);bool enveloped=false;{std::lock_guard<std::mutex>g(lock);v.active->Render(params,v.out,v.aux,24,&enveloped);}v.pos=0;v.trigger=false;}
   v.current=v.out[v.pos++];v.phase-=1;
  }
  float y=v.before+(v.current-v.before)*v.phase;return std::isfinite(y)?y:0;

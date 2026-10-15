@@ -36,6 +36,11 @@ int main(void){
  silence(s);for(int i=0;i<32;i++)assert(s->visual[i]==8);assert(s->visual[34]==0);
  // Aliasing regression: exact multiples of the 10Hz refresh must show a full LFO sweep.
  for(int shape=0;shape<4;shape++)for(int hz=10;hz<=40;hz+=10){preset(s,0);silence(s);s->p[16]=shape;s->p[17]=hz;s->p[18]=0;render(s,audio,128);for(int b=1;b<35;b++)render(s,audio,128);assert(s->visual[33]==136);}
+ // A modest decay must carry a pluck body, not vanish in the first 20 ms.
+ preset(s,0);silence(s);s->p[10]=0;s->p[11]=.25f;s->p[12]=0;noteon(s,60,100);
+ for(int b=0;b<35;b++)render(s,audio,128);assert(s->v[0].env>.45f&&s->v[0].env<.55f);
+ unsigned char off_pluck[]={0x80,60,0};voice_midi(s,off_pluck,3);
+ for(int b=0;b<17;b++)render(s,audio,128);assert(s->v[0].stage==4&&s->v[0].env>.15f);
  // Cached motion stays bounded; pitch and velocity independently select styles.
  for(int pitch=0;pitch<3;pitch++)for(int velocity=0;velocity<3;velocity++){
   preset(s,0);silence(s);noteon(s,33+pitch*30,velocity==0?28:velocity==1?70:127);

@@ -30,9 +30,9 @@ jobs:
         shell: bash
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
-          if [[ "$GITHUB_REF_TYPE" != tag ]]; then VERSION=0.3.7; fi
+          if [[ "$GITHUB_REF_TYPE" != tag ]]; then VERSION=0.3.8; fi
           python3 "$RUNNER_TEMP/mpc-vst-plugins/tools/release.py" --so vst/build/tinyfreaky.so --skin 'vst/build/skin/MagicStino - VST - Tinyfreaky' --entry vst/build/pluginlist-entry.xml --version "$VERSION" --id tinyfreaky --repo MagicStino/TinyFreaky --license MIT --user-data presets --extra docs:docs --extra THIRD_PARTY_NOTICES.md:THIRD_PARTY_NOTICES.md --about 'TinyFreaky eight-voice instrument. Six engine families remain unavailable; hardware playback still needs verification.' -o dist
-          python3 tools/make-openplugin.py --package "dist/Tinyfreaky-$VERSION-mpc-armv7.zip" --version "$VERSION" --output dist/openplugin-0.3.7.json
+          python3 tools/make-openplugin.py --package "dist/Tinyfreaky-$VERSION-mpc-armv7.zip" --version "$VERSION" --output dist/openplugin-0.3.8.json
           cp assets/tinyfreaky-artwork.png assets/force-readable-preview.png assets/mascot-velocity.gif dist/
           git archive --format=zip --prefix=TinyFreaky/ HEAD > "dist/Tinyfreaky-$VERSION-source.zip"
       - uses: actions/upload-artifact@v4
@@ -56,5 +56,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh release view v0.3.7 || gh release create v0.3.7 --target "${{ github.sha }}" --title "TinyFreaky 0.3.7" --notes "MagicStino eight-voice instrument, 456 TinyFreaky patch names, expressive pitch and velocity mascot, VST3 and AU. Six engine families remain unavailable."
-          gh release upload v0.3.7 packages/*.zip packages/*.png packages/*.gif packages/openplugin-0.3.7.json --clobber
+          gh release view v0.3.8 || gh release create v0.3.8 --target "${{ github.sha }}" --title "TinyFreaky 0.3.8" --notes "MagicStino eight-voice instrument, 456 TinyFreaky patch names, expressive pitch and velocity mascot, VST3 and AU. Six engine families remain unavailable."
+          gh release upload v0.3.8 packages/*.zip packages/*.png packages/*.gif packages/openplugin-0.3.8.json --clobber

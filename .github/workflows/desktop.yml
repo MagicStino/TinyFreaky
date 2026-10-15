@@ -43,11 +43,11 @@ jobs:
         run: ctest --test-dir desktop/build -C Release --output-on-failure
       - name: Package shareable VST3
         shell: bash
-        run: python3 tools/package-desktop.py --platform "${{ runner.os }}" --version 0.3.7
+        run: python3 tools/package-desktop.py --platform "${{ runner.os }}" --version 0.3.8
       - uses: actions/upload-artifact@v4
         with:
           name: Tinyfreaky-${{ runner.os }}-VST3
-          path: dist/Tinyfreaky-0.3.7-*-VST3.zip
+          path: dist/Tinyfreaky-0.3.8-*-VST3.zip
 
   publish:
     if: github.ref == 'refs/heads/tinyfreaky'
@@ -66,5 +66,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh release view v0.3.7 || gh release create v0.3.7 --target "${{ github.sha }}" --title "Tinyfreaky 0.3.7" --notes "Eight-voice VST3 instrument with live output scope, modulation matrix, arp/swing and sequencer. Native platform builds passed the Steinberg validator and desktop smoke test. macOS includes Apple Silicon and Intel; the Mac build is ad-hoc signed, not notarized. Six engine families remain unavailable; sequence/sample payloads are not fully supported."
-          gh release upload v0.3.7 packages/*.zip --clobber
+          gh release view v0.3.8 || gh release create v0.3.8 --target "${{ github.sha }}" --title "Tinyfreaky 0.3.8" --notes "Eight-voice VST3 instrument with live output scope, modulation matrix, arp/swing and sequencer. Native platform builds passed the Steinberg validator and desktop smoke test. macOS includes Apple Silicon and Intel; the Mac build is ad-hoc signed, not notarized. Six engine families remain unavailable; sequence/sample payloads are not fully supported."
+          gh release upload v0.3.8 packages/*.zip --clobber

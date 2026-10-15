@@ -44,6 +44,7 @@ class Panel final:public CView {
  std::array<double,Count> previous{};std::array<double,VisualCount> visualPrevious{};const mpc_engine_t*api=mpc_engine();void*display=nullptr;
  void text(CDrawContext*d,const char*s,double x,double y,double w,double h,int size=28,CColor colour=white){d->setFont(kNormalFont,size);d->setFontColor(colour);d->drawString(s,CRect(x,y,x+w,y+h),kCenterText);}
  std::string value(int id){String128 str{};controller->getParamStringByValue(id,controller->getParamNormalized(id),str);char b[192]{};UString(str,128).toAscii(b,sizeof b);auto&def=definitions[id];double raw=def.lo+controller->getParamNormalized(id)*(def.hi-def.lo);
+  if(id==10||id==11){double t=.002*std::pow(10000.,id==11?std::sqrt(std::clamp(raw,0.,1.)):raw);std::snprintf(b,sizeof b,t<1?"%.0f ms":"%.2f s",t<1?t*1000:t);return b;}
   if(!std::strncmp(def.key,"seq_note_",9)){int pitch=(int)std::lround(raw);const char*notes[]={"C","C#","D","D#","E","F","F#","G","G#","A","A#","B"};if(pitch<0)std::snprintf(b,sizeof b,"REST");else std::snprintf(b,sizeof b,"%s%d",notes[pitch%12],pitch/12-1);}
   else if(!std::strcmp(def.key,"cutoff"))std::snprintf(b,sizeof b,"%.0f Hz",30+19970*raw*raw*raw);
   else if(!std::strcmp(def.key,"filter_amount"))std::snprintf(b,sizeof b,"%+.0f",raw*200-100);
@@ -58,7 +59,7 @@ public:
  ~Panel()override{finish();if(display)api->destroy(display);}
  void onIdle()override{bool changed=false;for(int i=0;i<Count;i++){double v=controller->getParamNormalized(i);if(v!=previous[i]){previous[i]=v;changed=true;}}for(int i=0;i<VisualCount;i++){double v=controller->getParamNormalized(VisualBase+i);if(v!=visualPrevious[i]){visualPrevious[i]=v;changed=true;}}if(changed)invalid();}
  void draw(CDrawContext*d)override{
-  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));if(wordmark)wordmark->draw(d,CRect(24,2,324,54));text(d,pageNames[page],450,13,380,34,24,green);text(d,"MagicStino  /  GitHub",908,10,340,24,21,orange);text(d,"0.3.7",1140,35,100,18,13,green);
+  d->setDrawMode(kAntiAliasing);gradient(d,getViewSize(),CColor(24,58,48),CColor(14,37,31));if(wordmark)wordmark->draw(d,CRect(24,2,324,54));text(d,pageNames[page],450,13,380,34,24,green);text(d,"MagicStino  /  GitHub",908,10,340,24,21,orange);text(d,"0.3.8",1140,35,100,18,13,green);
   d->setFillColor(oled);d->drawRect(CRect(24,60,1256,234),kDrawFilled);gradient(d,CRect(24,252,1256,574),CColor(28,64,53),CColor(19,48,39));d->setFrameColor(CColor(80,114,96));d->setLineWidth(1);d->drawLine(CPoint(24,252),CPoint(1256,252));
   auto preset=value(0);if(preset.rfind("~ ",0)==0)preset.erase(0,2);text(d,preset.c_str(),48,68,800,54,36,cyan);
   int model=indexOf("osc_type");std::string modelText="ENGINE  "+value(model);text(d,modelText.c_str(),48,125,800,48,36,white);

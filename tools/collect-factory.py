@@ -3,6 +3,7 @@
 import argparse,hashlib,importlib.util,json,re,zipfile
 from pathlib import Path
 from patch_names import patch_name
+from preset_tuning import tune
 ROOT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('preset_import',ROOT/'tools/import-presets.py');imp=importlib.util.module_from_spec(spec);spec.loader.exec_module(imp)
 def collect(source,out):
@@ -23,7 +24,7 @@ def collect(source,out):
   for p in numeric:
    d=p.get('default',p.get('min',0));d=p['options'].index(d) if isinstance(d,str) else d
    vals.append(patch['parameters'].get(p['key'],d))
-  entries[digest]=dict(name=patch_name(len(entries),vals),sha256=digest,loadable=patch['engine_loadable'],values=vals,warnings=patch['warnings'],unmapped_count=len(patch['unmapped_records']),has_sequence=bool(patch['sequence_hex']))
+  entries[digest]=dict(name=patch_name(len(entries),vals),sha256=digest,loadable=patch['engine_loadable'],values=tune(vals) if patch['engine_loadable'] else vals,warnings=patch['warnings'],unmapped_count=len(patch['unmapped_records']),has_sequence=bool(patch['sequence_hex']))
  if len(entries)>504:raise ValueError('More than 504 unique factory slots; increase bank capacity before packaging')
  out.mkdir(parents=True,exist_ok=True)
  rows=[]
