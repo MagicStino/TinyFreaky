@@ -7,8 +7,8 @@
 <key>CFBundleName</key><string>Tinyfreaky</string>
 <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
 <key>CFBundlePackageType</key><string>BNDL</string>
-<key>CFBundleVersion</key><string>0.3.5</string>
-<key>CFBundleShortVersionString</key><string>0.3.5</string>
+<key>CFBundleVersion</key><string>0.3.6</string>
+<key>CFBundleShortVersionString</key><string>0.3.6</string>
 <key>AudioComponents</key><array><dict>
 <key>factoryFunction</key><string>AUWrapperFactory</string>
 <key>description</key><string>Tinyfreaky eight-voice synthesizer</string>
@@ -16,7 +16,7 @@
 <key>name</key><string>MagicStino: Tinyfreaky</string>
 <key>subtype</key><string>TyFk</string>
 <key>type</key><string>aumu</string>
-<key>version</key><integer>773</integer>
+<key>version</key><integer>774</integer>
 <key>sandboxSafe</key><true/>
 <key>tags</key><array><string>Synthesizer</string></array>
 </dict></array></dict></plist>

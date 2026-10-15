@@ -1,5 +1,5 @@
 {
-  "protocol": "MIDI C4 velocity100, 0.5s, factory patch unchanged except arp/sequence disabled for a repeatable held note. HF energy fraction above2kHz; not a comparison with MicroFreak hardware.",
+  "protocol": "MIDI C4 velocity100, 0.5s, factory patch unchanged except arp/sequence disabled for a repeatable held note. HF energy fraction above2kHz; not a comparison with hardware.",
   "patches": [
     {
       "slot": 8,

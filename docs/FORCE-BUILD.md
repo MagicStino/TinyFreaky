@@ -20,7 +20,7 @@ The helper checks that `vst/build/tinyfreaky.so` is ARM hard-float, exports `VST
 - The completed Tinyfreaky plugin compiled and exported `VSTPluginMain`; highest GLIBC dependency: 2.27.
 - Skin generation completed without layout warnings. The upstream artwork renderer emitted one compiler warning about potentially truncated text formatting; it did not prevent rendering.
 
-Compilation and ELF checks establish the binary architecture and link compatibility. They do not establish device CPU usage, correct playback on Force, project persistence on hardware, or sonic equivalence to MicroFreak. Device smoke testing remains required. This build process does not access or modify a Force.
+Compilation and ELF checks establish the binary architecture and link compatibility. They do not establish device CPU usage, correct playback on Force, project persistence on hardware, or sonic equivalence to other hardware. Device smoke testing remains required. This build process does not access or modify a Force.
 
 ## Local wrapper correction
 

@@ -1,14 +1,3 @@
-MicroFreak preset compatibility research
+Preset archive format
 
-Original .mfprojz files are ZIP archives containing .mbp Boost text archives. Their packed decimal byte payload decodes using one MSB mask per seven data bytes. Unpacked records are self describing: # plus three-character group, followed by length-prefixed field names and three value bytes. All known control and matrix names are in the JSON specification. Stable names are safer than historical offsets.
-
-The first value byte is NOT a direct oscillator index. Type uses a firmware-dependent resolution count R; the final two bytes form Q15 selector Q. Observed selector steps give index round(Q*R/32768)-1. Old engines retain their order; vocoder precedes the Noise Engineering additions and WaveUser. V5 additions require direct fixture confirmation.
-
-Matrix Co1–Co7 are destination columns and EG1/EG2/LFO/Xpr/Key are source rows. Matrix amounts are signed 16-bit Q15. AssignN final two bytes instead encode control ID and group ID. The JSON enumerates known IDs.
-
-A read-only public fixture was inspected locally and is not redistributed. It validates legacy named-record framing, 4672 packed bytes -> 4088 unpacked bytes, and numerous controls. The binary sequence area and V5 sample references remain unresolved. A usable importer can parse synthesis and modulation fields now, but complete original-preset compatibility cannot honestly be claimed until those gaps and the sound engine are implemented and tested.
-
-Sources:
-https://github.com/francoisgeorgy/microfreak-reverse
-https://github.com/colinmreed/community-microfreak-reader
-https://github.com/feakk/Microfreak
+The optional importer reads named synthesis and modulation records from legacy .mbp archives or ZIP banks. Values are mapped to TinyFreaky controls. Sequence/sample payloads remain unsupported. Importing a patch does not ensure compatibility with another instrument. See preset-format-spec.json for structural parser details.

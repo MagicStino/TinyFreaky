@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Adapter to unmodified upstream MIT engines. This does not claim Arturia's exact adaptations.
+// Adapter to unmodified upstream MIT engines. This does not claim other implementations.
 #include "plaits_bridge.h"
 #include "plaits/dsp/engine/virtual_analog_engine.h"
 #include "plaits/dsp/engine/waveshaping_engine.h"

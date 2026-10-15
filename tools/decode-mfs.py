@@ -2,7 +2,6 @@
 """Decode observed MCC .mfs signed-byte vectors to 16-bit/32kHz mono WAV.
 
 This inspects container data; it does not run firmware or implement sample engines.
-Rate/channel format is documented in Arturia's MicroFreak V5 manual, section 17.6.
 """
 import argparse,hashlib,json,re,wave
 from pathlib import Path

@@ -15,6 +15,6 @@ Native IDs 0-15 remain stable.
 12 Noise: Mutable Instruments Plaits NoiseEngine.
 13 Bass / 14 SawX / 15 Harm: independent approximations.
 
-These source cores are functional oscillator paths, not proof of equality with Arturia's adaptations or its macro response curves. No proprietary firmware implementation is included.
+Sixteen functional oscillator paths are available. See the source license notices for attribution.
 
-User wavetable, Sample, Scan/Cloud/Hit granular and input Vocoder paths remain unavailable. Original sample/wavetable files are preserved, but bundling an asset is not an implementation of its engine. Original binary factory sequences/modulation lanes are preserved, not decoded. The new 64-step sequencer is an independent editable note sequence.
+User wavetable, Sample, Scan/Cloud/Hit granular and input Vocoder paths remain unavailable. Sample/wavetable assets are not bundled. Source sequence/modulation payloads are not fully decoded. The new 64-step sequencer is an independent editable note sequence.

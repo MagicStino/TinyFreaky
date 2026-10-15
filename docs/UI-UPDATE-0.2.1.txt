@@ -13,7 +13,7 @@ The static oscillator/preset artwork has been removed. Four polled string
 readouts show the actual preset number/name, oscillator, focused parameter
 value and availability status. The presentation uses a dark OLED-like panel
 with blue-white text, inspired by the hardware. It is not a pixel-identical
-copy of the MicroFreak display.
+copy of the hardware display.
 
 This update targets the Force UI. Desktop editor layout and DSP are unchanged.
 334 factory entries remain partial, 114 remain unavailable/muted. Recognizable

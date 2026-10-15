@@ -1,6 +1,6 @@
 # Desktop VST3
 
-This wrapper builds the same independent Tinyfreaky engine using Steinberg's official MIT VST3 SDK. The SDK revision is pinned in `SDK_REVISION`; its license is included. It does not incorporate Arturia firmware.
+This wrapper builds the same independent Tinyfreaky engine using Steinberg's official MIT VST3 SDK. The SDK revision is pinned in `SDK_REVISION`; its license is included. It does not incorporate proprietary firmware.
 
 ## Build
 
