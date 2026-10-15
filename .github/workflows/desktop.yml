@@ -1,0 +1,39 @@
+name: Desktop VST3
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: SDK
+        shell: bash
+        run: |
+          git clone --recursive https://github.com/steinbergmedia/vst3sdk.git "$RUNNER_TEMP/vst3sdk"
+          git -C "$RUNNER_TEMP/vst3sdk" checkout "$(cat desktop/SDK_REVISION)"
+          git -C "$RUNNER_TEMP/vst3sdk" submodule update --init --recursive
+      - name: Linux dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libx11-dev libxcb-util-dev libxcb-cursor-dev libxcb-keysyms1-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libfreetype-dev libgtkmm-3.0-dev
+      - name: Configure
+        shell: bash
+        run: |
+          python3 tools/gen-desktop-params.py
+          if [[ "$RUNNER_OS" == macOS ]]; then
+            cmake -S desktop -B desktop/build -DCMAKE_BUILD_TYPE=Release -DVST3_SDK_ROOT="$RUNNER_TEMP/vst3sdk" "-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64"
+          else
+            cmake -S desktop -B desktop/build -DCMAKE_BUILD_TYPE=Release -DVST3_SDK_ROOT="$RUNNER_TEMP/vst3sdk"
+          fi
+      - name: Build
+        run: cmake --build desktop/build --config Release --parallel 2
+      - name: Desktop smoke
+        run: ctest --test-dir desktop/build -C Release --output-on-failure
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Microfreeze-${{ runner.os }}-VST3
+          path: desktop/build/VST3/**/*.vst3

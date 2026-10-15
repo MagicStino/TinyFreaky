@@ -1,0 +1,711 @@
+[
+  {
+    "key": "preset",
+    "name": "Preset",
+    "default": 0,
+    "min": 0,
+    "max": 511,
+    "display": "int",
+    "nudge_pct": 10
+  },
+  {
+    "key": "master",
+    "name": "Master",
+    "default": 0.65,
+    "min": 0,
+    "max": 1
+  },
+  {
+    "key": "paraphonic",
+    "name": "Paraphonic",
+    "default": "Four voices",
+    "options": [
+      "Mono",
+      "Four voices"
+    ]
+  },
+  {
+    "key": "osc_type",
+    "name": "Model",
+    "default": "BasicWaves",
+    "options": [
+      "BasicWaves",
+      "SuperWave",
+      "Wavetable",
+      "Harmo",
+      "KarplusStr",
+      "V.Analog",
+      "Waveshaper",
+      "Two Op.FM",
+      "Formant",
+      "Chords",
+      "Speech",
+      "Modal",
+      "Noise",
+      "Bass",
+      "Sawx",
+      "Harm"
+    ]
+  },
+  {
+    "key": "osc_wave",
+    "name": "Wave",
+    "default": 0.25,
+    "min": 0,
+    "max": 1,
+    "cc": 10
+  },
+  {
+    "key": "osc_timbre",
+    "name": "Timbre",
+    "default": 0.4,
+    "min": 0,
+    "max": 1,
+    "cc": 12
+  },
+  {
+    "key": "osc_shape",
+    "name": "Shape",
+    "default": 0.2,
+    "min": 0,
+    "max": 1,
+    "cc": 13
+  },
+  {
+    "key": "glide",
+    "name": "Glide",
+    "default": 0,
+    "min": 0,
+    "max": 1,
+    "cc": 5
+  },
+  {
+    "key": "cutoff",
+    "name": "Cutoff",
+    "default": 0.78,
+    "min": 0,
+    "max": 1,
+    "cc": 23
+  },
+  {
+    "key": "resonance",
+    "name": "Resonance",
+    "default": 0.1,
+    "min": 0,
+    "max": 1,
+    "cc": 83
+  },
+  {
+    "key": "attack",
+    "name": "Attack",
+    "default": 0.01,
+    "min": 0,
+    "max": 1,
+    "cc": 105
+  },
+  {
+    "key": "decay",
+    "name": "Decay / Release",
+    "default": 0.25,
+    "min": 0,
+    "max": 1,
+    "cc": 106
+  },
+  {
+    "key": "sustain",
+    "name": "Sustain",
+    "default": 0.7,
+    "min": 0,
+    "max": 1,
+    "cc": 29
+  },
+  {
+    "key": "filter_amount",
+    "name": "Filter amount",
+    "default": 0.15,
+    "min": 0,
+    "max": 1,
+    "cc": 26
+  },
+  {
+    "key": "amp_mod",
+    "name": "Amp envelope",
+    "default": 1,
+    "min": 0,
+    "max": 1
+  },
+  {
+    "key": "filter_type",
+    "name": "Filter mode",
+    "default": "Low pass",
+    "options": [
+      "Low pass",
+      "Band pass",
+      "High pass"
+    ]
+  },
+  {
+    "key": "lfo_shape",
+    "name": "LFO shape",
+    "default": "Sine",
+    "options": [
+      "Sine",
+      "Triangle",
+      "Rising saw",
+      "Square",
+      "Random stepped",
+      "Random gliding"
+    ]
+  },
+  {
+    "key": "lfo_rate_free",
+    "name": "LFO Hz",
+    "default": 2,
+    "min": 0.05,
+    "max": 100,
+    "cc": 93
+  },
+  {
+    "key": "lfo_sync",
+    "name": "LFO sync",
+    "default": "Free",
+    "options": [
+      "Free",
+      "Sync"
+    ]
+  },
+  {
+    "key": "lfo_rate_sync",
+    "name": "LFO division",
+    "default": 4,
+    "min": 0,
+    "max": 10,
+    "cc": 94
+  },
+  {
+    "key": "tempo",
+    "name": "Tempo",
+    "default": 120,
+    "min": 20,
+    "max": 300
+  },
+  {
+    "key": "cyc_mode",
+    "name": "Cycling mode",
+    "default": "Env",
+    "options": [
+      "Env",
+      "Run",
+      "Loop"
+    ]
+  },
+  {
+    "key": "cyc_rise",
+    "name": "Rise",
+    "default": 0.2,
+    "min": 0,
+    "max": 1,
+    "cc": 102
+  },
+  {
+    "key": "cyc_fall",
+    "name": "Fall",
+    "default": 0.3,
+    "min": 0,
+    "max": 1,
+    "cc": 103
+  },
+  {
+    "key": "cyc_hold",
+    "name": "Hold / Sustain",
+    "default": 0.2,
+    "min": 0,
+    "max": 1,
+    "cc": 28
+  },
+  {
+    "key": "cyc_amount",
+    "name": "Amount",
+    "default": 1,
+    "min": 0,
+    "max": 1,
+    "cc": 24
+  },
+  {
+    "key": "cyc_rise_curve",
+    "name": "Rise curve",
+    "default": 0,
+    "min": -1,
+    "max": 1
+  },
+  {
+    "key": "cyc_fall_curve",
+    "name": "Fall curve",
+    "default": 0,
+    "min": -1,
+    "max": 1
+  },
+  {
+    "key": "hold",
+    "name": "Hold",
+    "default": "Off",
+    "options": [
+      "Off",
+      "On"
+    ],
+    "cc": 64
+  },
+  {
+    "key": "bend_range",
+    "name": "Bend semitones",
+    "default": 2,
+    "min": 0,
+    "max": 24
+  },
+  {
+    "key": "octave",
+    "name": "Octave",
+    "default": 0,
+    "min": -3,
+    "max": 3
+  },
+  {
+    "key": "assign1",
+    "name": "Assign 1",
+    "default": "Shape",
+    "options": [
+      "Glide",
+      "Oscillator Type",
+      "Sample",
+      "Wave",
+      "Timbre",
+      "Shape",
+      "Cutoff",
+      "Resonance",
+      "Attack",
+      "Decay / Release",
+      "Sustain",
+      "Filter Amt",
+      "LFO Rate",
+      "Arp / Seq Rate",
+      "Cycling Rise",
+      "Cycling Fall",
+      "Cycling Hold",
+      "Cycling Amount",
+      "Matrix 1",
+      "Matrix 2",
+      "Matrix 3",
+      "Matrix 4",
+      "Matrix 5",
+      "Matrix 6",
+      "Matrix 7",
+      "Matrix 8",
+      "Matrix 9",
+      "Matrix 10",
+      "Matrix 11",
+      "Matrix 12",
+      "Matrix 13",
+      "Matrix 14",
+      "Matrix 15",
+      "Matrix 16",
+      "Matrix 17",
+      "Matrix 18",
+      "Matrix 19",
+      "Matrix 20",
+      "Matrix 21",
+      "Matrix 22",
+      "Matrix 23",
+      "Matrix 24",
+      "Matrix 25",
+      "Matrix 26",
+      "Matrix 27",
+      "Matrix 28",
+      "Matrix 29",
+      "Matrix 30",
+      "Matrix 31",
+      "Matrix 32",
+      "Matrix 33",
+      "Matrix 34",
+      "Matrix 35"
+    ]
+  },
+  {
+    "key": "assign2",
+    "name": "Assign 2",
+    "default": "Cutoff",
+    "options": [
+      "Glide",
+      "Oscillator Type",
+      "Sample",
+      "Wave",
+      "Timbre",
+      "Shape",
+      "Cutoff",
+      "Resonance",
+      "Attack",
+      "Decay / Release",
+      "Sustain",
+      "Filter Amt",
+      "LFO Rate",
+      "Arp / Seq Rate",
+      "Cycling Rise",
+      "Cycling Fall",
+      "Cycling Hold",
+      "Cycling Amount",
+      "Matrix 1",
+      "Matrix 2",
+      "Matrix 3",
+      "Matrix 4",
+      "Matrix 5",
+      "Matrix 6",
+      "Matrix 7",
+      "Matrix 8",
+      "Matrix 9",
+      "Matrix 10",
+      "Matrix 11",
+      "Matrix 12",
+      "Matrix 13",
+      "Matrix 14",
+      "Matrix 15",
+      "Matrix 16",
+      "Matrix 17",
+      "Matrix 18",
+      "Matrix 19",
+      "Matrix 20",
+      "Matrix 21",
+      "Matrix 22",
+      "Matrix 23",
+      "Matrix 24",
+      "Matrix 25",
+      "Matrix 26",
+      "Matrix 27",
+      "Matrix 28",
+      "Matrix 29",
+      "Matrix 30",
+      "Matrix 31",
+      "Matrix 32",
+      "Matrix 33",
+      "Matrix 34",
+      "Matrix 35"
+    ]
+  },
+  {
+    "key": "assign3",
+    "name": "Assign 3",
+    "default": "Resonance",
+    "options": [
+      "Glide",
+      "Oscillator Type",
+      "Sample",
+      "Wave",
+      "Timbre",
+      "Shape",
+      "Cutoff",
+      "Resonance",
+      "Attack",
+      "Decay / Release",
+      "Sustain",
+      "Filter Amt",
+      "LFO Rate",
+      "Arp / Seq Rate",
+      "Cycling Rise",
+      "Cycling Fall",
+      "Cycling Hold",
+      "Cycling Amount",
+      "Matrix 1",
+      "Matrix 2",
+      "Matrix 3",
+      "Matrix 4",
+      "Matrix 5",
+      "Matrix 6",
+      "Matrix 7",
+      "Matrix 8",
+      "Matrix 9",
+      "Matrix 10",
+      "Matrix 11",
+      "Matrix 12",
+      "Matrix 13",
+      "Matrix 14",
+      "Matrix 15",
+      "Matrix 16",
+      "Matrix 17",
+      "Matrix 18",
+      "Matrix 19",
+      "Matrix 20",
+      "Matrix 21",
+      "Matrix 22",
+      "Matrix 23",
+      "Matrix 24",
+      "Matrix 25",
+      "Matrix 26",
+      "Matrix 27",
+      "Matrix 28",
+      "Matrix 29",
+      "Matrix 30",
+      "Matrix 31",
+      "Matrix 32",
+      "Matrix 33",
+      "Matrix 34",
+      "Matrix 35"
+    ]
+  },
+  {
+    "key": "matrix_0_0",
+    "name": "CycEnv > Pitch",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_0_1",
+    "name": "CycEnv > Wave",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_0_2",
+    "name": "CycEnv > Timbre",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_0_3",
+    "name": "CycEnv > Cutoff",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_0_4",
+    "name": "CycEnv > Assign1",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_0_5",
+    "name": "CycEnv > Assign2",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_0_6",
+    "name": "CycEnv > Assign3",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_1_0",
+    "name": "ENV > Pitch",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_1_1",
+    "name": "ENV > Wave",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_1_2",
+    "name": "ENV > Timbre",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_1_3",
+    "name": "ENV > Cutoff",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_1_4",
+    "name": "ENV > Assign1",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_1_5",
+    "name": "ENV > Assign2",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_1_6",
+    "name": "ENV > Assign3",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_2_0",
+    "name": "LFO > Pitch",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_2_1",
+    "name": "LFO > Wave",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_2_2",
+    "name": "LFO > Timbre",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_2_3",
+    "name": "LFO > Cutoff",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_2_4",
+    "name": "LFO > Assign1",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_2_5",
+    "name": "LFO > Assign2",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_2_6",
+    "name": "LFO > Assign3",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_3_0",
+    "name": "PRESSURE > Pitch",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_3_1",
+    "name": "PRESSURE > Wave",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_3_2",
+    "name": "PRESSURE > Timbre",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_3_3",
+    "name": "PRESSURE > Cutoff",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_3_4",
+    "name": "PRESSURE > Assign1",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_3_5",
+    "name": "PRESSURE > Assign2",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_3_6",
+    "name": "PRESSURE > Assign3",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_4_0",
+    "name": "KEY / ARP > Pitch",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_4_1",
+    "name": "KEY / ARP > Wave",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_4_2",
+    "name": "KEY / ARP > Timbre",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_4_3",
+    "name": "KEY / ARP > Cutoff",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_4_4",
+    "name": "KEY / ARP > Assign1",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_4_5",
+    "name": "KEY / ARP > Assign2",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "matrix_4_6",
+    "name": "KEY / ARP > Assign3",
+    "default": 0,
+    "min": -100,
+    "max": 100
+  },
+  {
+    "key": "all_notes_off",
+    "name": "All notes off",
+    "default": 0,
+    "min": 0,
+    "max": 1,
+    "momentary": true
+  },
+  {
+    "key": "status",
+    "name": "Implementation status",
+    "display": "string",
+    "poll": false
+  }
+]

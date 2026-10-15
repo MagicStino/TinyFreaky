@@ -1,0 +1,669 @@
+{
+  "source": {
+    "url": "https://downloads.arturia.net/products/microfreak/manual/microfreak_Manual_5_0_1_EN.pdf",
+    "revision": "6 July 2023",
+    "product_version": "5.0.0",
+    "page_numbering": "printed page; PDF page number = printed + 5"
+  },
+  "scope": "Documented controls only. No firmware behavior recovered. No binary equivalence claim.",
+  "groups": {
+    "global": [
+      {
+        "id": "matrix",
+        "label": "Matrix",
+        "widget": "encoder_push",
+        "midi_cc": null
+      },
+      {
+        "id": "assign1",
+        "label": "Assign 1",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "assign2",
+        "label": "Assign 2",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "assign3",
+        "label": "Assign 3",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "paraphonic",
+        "label": "Paraphonic",
+        "widget": "toggle",
+        "midi_cc": null
+      },
+      {
+        "id": "panel",
+        "label": "Panel",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "preset",
+        "label": "Preset",
+        "widget": "encoder_push",
+        "midi_cc": null
+      },
+      {
+        "id": "save",
+        "label": "Save",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "utility",
+        "label": "Utility",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "master",
+        "label": "Master",
+        "widget": "knob",
+        "midi_cc": null
+      }
+    ],
+    "oscillator": [
+      {
+        "id": "glide",
+        "label": "Glide",
+        "widget": "knob",
+        "midi_cc": 5
+      },
+      {
+        "id": "osc_type",
+        "label": "Type",
+        "widget": "encoder",
+        "midi_cc": 9
+      },
+      {
+        "id": "osc_wave",
+        "label": "Wave",
+        "widget": "encoder",
+        "midi_cc": 10
+      },
+      {
+        "id": "osc_timbre",
+        "label": "Timbre",
+        "widget": "encoder",
+        "midi_cc": 12
+      },
+      {
+        "id": "osc_shape",
+        "label": "Shape",
+        "widget": "encoder",
+        "midi_cc": 13
+      }
+    ],
+    "filter": [
+      {
+        "id": "filter_type",
+        "label": "Type",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "cutoff",
+        "label": "Cutoff",
+        "widget": "knob",
+        "midi_cc": 23
+      },
+      {
+        "id": "resonance",
+        "label": "Resonance",
+        "widget": "knob",
+        "midi_cc": 83
+      }
+    ],
+    "cycling_envelope": [
+      {
+        "id": "cyc_mode",
+        "label": "Mode",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "cyc_rise",
+        "label": "Rise",
+        "widget": "knob",
+        "midi_cc": 102
+      },
+      {
+        "id": "cyc_fall",
+        "label": "Fall",
+        "widget": "knob",
+        "midi_cc": 103
+      },
+      {
+        "id": "cyc_hold",
+        "label": "Hold / Sustain",
+        "widget": "knob",
+        "midi_cc": 28
+      },
+      {
+        "id": "cyc_amount",
+        "label": "Amount",
+        "widget": "knob",
+        "midi_cc": 24
+      }
+    ],
+    "performance": [
+      {
+        "id": "oct_down",
+        "label": "Octave -",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "oct_up",
+        "label": "Octave +",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "shift",
+        "label": "Shift",
+        "widget": "modifier",
+        "midi_cc": null
+      },
+      {
+        "id": "keyboard",
+        "label": "Keyboard",
+        "widget": "25_keys",
+        "midi_cc": null
+      },
+      {
+        "id": "hold",
+        "label": "Hold",
+        "widget": "touch_button",
+        "midi_cc": 64
+      },
+      {
+        "id": "bend",
+        "label": "Bend",
+        "widget": "touch_button",
+        "midi_cc": null
+      },
+      {
+        "id": "spice",
+        "label": "Spice",
+        "widget": "touch_button",
+        "midi_cc": 2
+      },
+      {
+        "id": "dice",
+        "label": "Dice",
+        "widget": "touch_button",
+        "midi_cc": null
+      },
+      {
+        "id": "strip",
+        "label": "Touch strip",
+        "widget": "touch_strip",
+        "midi_cc": null
+      }
+    ],
+    "arp_seq": [
+      {
+        "id": "arp_seq",
+        "label": "Arp / Seq",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "oct_mod",
+        "label": "Oct / Mod",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "arp_rate",
+        "label": "Rate / Sync / Swing",
+        "widget": "encoder_push",
+        "midi_cc": null
+      },
+      {
+        "id": "up_a",
+        "label": "Up / A",
+        "widget": "touch_button",
+        "midi_cc": null
+      },
+      {
+        "id": "order_b",
+        "label": "Order / B",
+        "widget": "touch_button",
+        "midi_cc": null
+      },
+      {
+        "id": "random_record",
+        "label": "Random / Record",
+        "widget": "touch_button",
+        "midi_cc": null
+      },
+      {
+        "id": "pattern_play",
+        "label": "Pattern / Play",
+        "widget": "touch_button",
+        "midi_cc": null
+      }
+    ],
+    "lfo": [
+      {
+        "id": "lfo_shape",
+        "label": "Shape",
+        "widget": "button",
+        "midi_cc": null
+      },
+      {
+        "id": "lfo_rate",
+        "label": "Rate / Sync",
+        "widget": "encoder_push",
+        "midi_cc": null
+      }
+    ],
+    "envelope": [
+      {
+        "id": "amp_mod",
+        "label": "Amp Mod",
+        "widget": "toggle",
+        "midi_cc": null
+      },
+      {
+        "id": "attack",
+        "label": "Attack",
+        "widget": "knob",
+        "midi_cc": 105
+      },
+      {
+        "id": "decay",
+        "label": "Decay / Release",
+        "widget": "knob",
+        "midi_cc": 106
+      },
+      {
+        "id": "sustain",
+        "label": "Sustain",
+        "widget": "knob",
+        "midi_cc": 29
+      },
+      {
+        "id": "filter_amount",
+        "label": "Filter Amt",
+        "widget": "knob",
+        "midi_cc": 26
+      }
+    ]
+  },
+  "midi_cc": {
+    "spice": 2,
+    "glide": 5,
+    "osc_type": 9,
+    "osc_wave": 10,
+    "osc_timbre": 12,
+    "osc_shape": 13,
+    "cutoff": 23,
+    "cyc_amount": 24,
+    "filter_amount": 26,
+    "cyc_hold": 28,
+    "sustain": 29,
+    "hold": 64,
+    "resonance": 83,
+    "arp_rate_free": 91,
+    "arp_rate_sync": 92,
+    "lfo_rate_free": 93,
+    "lfo_rate_sync": 94,
+    "cyc_rise": 102,
+    "cyc_fall": 103,
+    "attack": 105,
+    "decay": 106
+  },
+  "midi_cc_reference": "Appendix D, printed pp.141\u2013142; all CC values 0\u2013127; hold toggles",
+  "matrix": {
+    "sources": [
+      "CycEnv",
+      "ENV",
+      "LFO",
+      "PRESSURE",
+      "KEY / ARP"
+    ],
+    "fixed_destinations": [
+      "Pitch",
+      "Wave",
+      "Timbre",
+      "Cutoff"
+    ],
+    "assignable_columns": [
+      "Assign1",
+      "Assign2",
+      "Assign3"
+    ],
+    "amount_range_percent": [
+      -100,
+      100
+    ],
+    "assignable_parameters": [
+      "Glide",
+      "Oscillator Type",
+      "Sample",
+      "Wave",
+      "Timbre",
+      "Shape",
+      "Cutoff",
+      "Resonance",
+      "Attack",
+      "Decay / Release",
+      "Sustain",
+      "Filter Amt",
+      "LFO Rate",
+      "Arp / Seq Rate",
+      "Cycling Rise",
+      "Cycling Fall",
+      "Cycling Hold",
+      "Cycling Amount",
+      "Matrix point amount"
+    ],
+    "excluded": [
+      "Master",
+      "Preset",
+      "Shift parameters",
+      "buttons",
+      "touch icons"
+    ],
+    "reference_pages": [
+      31,
+      32,
+      33,
+      34
+    ]
+  },
+  "oscillator_parameter_labels": [
+    {
+      "engine": "BasicWaves",
+      "wave": "Morph",
+      "timbre": "Sym",
+      "shape": "Sub",
+      "reference_page": 38
+    },
+    {
+      "engine": "SuperWave",
+      "wave": "Wave",
+      "timbre": "Detune",
+      "shape": "Volume",
+      "reference_page": 39
+    },
+    {
+      "engine": "Wavetable",
+      "wave": "Table",
+      "timbre": "Position",
+      "shape": "Chorus",
+      "reference_page": 39
+    },
+    {
+      "engine": "Harmo",
+      "wave": "Content",
+      "timbre": "Sculpting",
+      "shape": "Chorus",
+      "reference_page": 40
+    },
+    {
+      "engine": "KarplusStr",
+      "wave": "Bow",
+      "timbre": "Position",
+      "shape": "Decay",
+      "reference_page": 41
+    },
+    {
+      "engine": "V.Analog",
+      "wave": "Detune",
+      "timbre": "Shape",
+      "shape": "Wave",
+      "reference_page": 42
+    },
+    {
+      "engine": "Waveshaper",
+      "wave": "Wave",
+      "timbre": "Amount",
+      "shape": "Asym",
+      "reference_page": 42
+    },
+    {
+      "engine": "Two Op.FM",
+      "wave": "Ratio",
+      "timbre": "Amount",
+      "shape": "Feedback",
+      "reference_page": 43
+    },
+    {
+      "engine": "Formant",
+      "wave": "Interval",
+      "timbre": "Formant",
+      "shape": "Shape",
+      "reference_page": 43
+    },
+    {
+      "engine": "Chords",
+      "wave": "Chord type",
+      "timbre": "Inv/Transp",
+      "shape": "Waveform",
+      "reference_page": 44
+    },
+    {
+      "engine": "Speech",
+      "wave": "Category",
+      "timbre": "Formant",
+      "shape": "Word",
+      "reference_page": 45
+    },
+    {
+      "engine": "Modal",
+      "wave": "Inharm",
+      "timbre": "Brightness / dust",
+      "shape": "Decay",
+      "reference_page": 46
+    },
+    {
+      "engine": "Noise",
+      "wave": "Noise source",
+      "timbre": "Rate reduction",
+      "shape": "Wave mix",
+      "reference_page": 47
+    },
+    {
+      "engine": "Bass",
+      "wave": "Saturate",
+      "timbre": "Fold",
+      "shape": "Noise",
+      "reference_page": 47
+    },
+    {
+      "engine": "Sawx",
+      "wave": "Saw Mod",
+      "timbre": "Noise",
+      "shape": "Chorus",
+      "reference_page": 48
+    },
+    {
+      "engine": "Harm",
+      "wave": "Spread",
+      "timbre": "Rectification",
+      "shape": "Noise",
+      "reference_page": 48
+    },
+    {
+      "engine": "WaveUser",
+      "wave": "Table",
+      "timbre": "Position",
+      "shape": "Bitdepth",
+      "reference_page": 49
+    },
+    {
+      "engine": "Sample",
+      "wave": "Start",
+      "timbre": "Length",
+      "shape": "Loop",
+      "reference_page": 50
+    },
+    {
+      "engine": "Scan grains",
+      "wave": "Scan",
+      "timbre": "Density",
+      "shape": "Chaos",
+      "reference_page": 51
+    },
+    {
+      "engine": "Cloud grains",
+      "wave": "Start",
+      "timbre": "Density",
+      "shape": "Chaos",
+      "reference_page": 51
+    },
+    {
+      "engine": "Hit grains",
+      "wave": "Start",
+      "timbre": "Density",
+      "shape": "Shape",
+      "reference_page": 52
+    },
+    {
+      "engine": "Vocoder",
+      "wave": "Wave",
+      "timbre": "Frequency range",
+      "shape": "Bandwidth",
+      "reference_page": 52
+    }
+  ],
+  "shift_functions": [
+    {
+      "control": "Wave / Timbre / Shape",
+      "action": "invert editing speed",
+      "reference_page": 139
+    },
+    {
+      "control": "Type in sample engines",
+      "action": "sample selection",
+      "reference_page": 139
+    },
+    {
+      "control": "Rise",
+      "action": "rise curvature",
+      "reference_page": 140
+    },
+    {
+      "control": "Fall",
+      "action": "fall curvature",
+      "reference_page": 140
+    },
+    {
+      "control": "Arp / Seq",
+      "action": "switch arp / seq",
+      "reference_page": 139
+    },
+    {
+      "control": "Rate",
+      "action": "swing; sequence length while step recording",
+      "reference_page": 140
+    },
+    {
+      "control": "keyboard note",
+      "action": "transpose active arp / sequence",
+      "reference_page": 140
+    },
+    {
+      "control": "Up / A",
+      "action": "transfer arp to A; reload saved A in sequence mode",
+      "reference_page": 140
+    },
+    {
+      "control": "Order / B",
+      "action": "transfer arp to B; reload saved B in sequence mode",
+      "reference_page": 140
+    },
+    {
+      "control": "Matrix long press",
+      "action": "clear matrix",
+      "reference_page": 139
+    },
+    {
+      "control": "Preset",
+      "action": "character range while naming",
+      "reference_page": 139
+    }
+  ],
+  "other_gestures": [
+    {
+      "gesture": "Matrix press",
+      "action": "toggle navigation / amount editing"
+    },
+    {
+      "gesture": "Matrix hold 0.5 sec",
+      "action": "zero selected amount"
+    },
+    {
+      "gesture": "Assign + knob",
+      "action": "assign target for whole column"
+    },
+    {
+      "gesture": "Assign + matrix point",
+      "action": "assign modulation amount as target"
+    },
+    {
+      "gesture": "Save hold",
+      "action": "quick save"
+    },
+    {
+      "gesture": "Preset triple press",
+      "action": "initialize preset"
+    },
+    {
+      "gesture": "A / B + Hold for 1 sec",
+      "action": "clear sequence; recording must be off"
+    },
+    {
+      "gesture": "Oct / Mod + Hold",
+      "action": "clear modulation track"
+    }
+  ],
+  "enums": {
+    "filter_type": [
+      "Low pass",
+      "Band pass",
+      "High pass"
+    ],
+    "cycling_mode": [
+      "Env",
+      "Run",
+      "Loop"
+    ],
+    "lfo_shape": [
+      "Sine",
+      "Triangle",
+      "Rising saw",
+      "Square",
+      "Random stepped",
+      "Random gliding"
+    ],
+    "arp_pattern": [
+      "Up",
+      "Order",
+      "Random",
+      "Pattern"
+    ]
+  },
+  "implementation_notes": [
+    "Use MIDI notes, velocity, channel/poly pressure and pitch bend for Force performance.",
+    "Four voice paraphony; shared filter; internal per-voice amplitude envelopes.",
+    "Decay and release share one panel control.",
+    "Sample length supports negative values for reverse playback.",
+    "Keep stable parameter IDs; labels change with selected engine.",
+    "Vocoder type cannot be modulated while vocoder active.",
+    "Sample selection belongs to four sample engines and is assignable.",
+    "LFO free rate documented 0.05\u2013100 Hz.",
+    "Do not infer engineering units, DSP curves or exact engine equivalence from panel labels."
+  ]
+}

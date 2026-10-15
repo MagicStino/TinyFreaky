@@ -1,0 +1,726 @@
+{
+  "sources": [
+    "https://github.com/francoisgeorgy/microfreak-reverse",
+    "https://github.com/colinmreed/community-microfreak-reader",
+    "https://github.com/feakk/Microfreak"
+  ],
+  "status": "Behavior-only observations; no parser code copied. Legacy .mbp sample inspected; V5 sample preset fixture not yet verified.",
+  "container": {
+    "mfprojz": "ZIP with arbitrary nested directories and .mbp files. Ignore directories and metadata/empty slots.",
+    "mfpz": "Expected analogous ZIP single preset; not verified in collected fixture.",
+    "mbp": "Boost text serialization, starts 22 serialization::archive. Not XML or JSON. Length-prefixed string fields allow spaces in preset name.",
+    "example_prefix_structure": "22 serialization::archive 10 0 4 [version-like values] [name_length] [name] [category and metadata] 18 [18-character flags] [metadata] [payload_byte_count] [decimal payload bytes]",
+    "payload_locator": "A count token followed by that many decimal values in range 0..127; packed payload starts 0 35 86 67 79. Do not hardcode count: observed 4672.",
+    "safety": "Validate count, byte range, complete input, ZIP size limits, and archive member traversal; never extract untrusted paths."
+  },
+  "packing": {
+    "scheme": "7-bit SysEx MSB prefix. For each 8 packed bytes, first is mask; subsequent up to 7 bytes are low seven bits. Bit j of mask supplies bit7 of following byte j. Concatenate across transport packets before unpacking.",
+    "observed_packed_size": 4672,
+    "observed_unpacked_size": 4088
+  },
+  "records": {
+    "section": "ASCII # followed by 3-byte group, often preceded by @. Example #VCO.",
+    "field": "byte 0x40+N, N ASCII name bytes, literal 0x63, three value bytes.",
+    "value": "resolution byte R, then unsigned little-endian 16-bit Q. Continuous Q15 generally Q/32768; modulation signed int16(Q)/32768. Preserve all 3 bytes.",
+    "discrete": "R often supplies scaling count. Q commonly multiples 32768/R. Modes generally derive round(Q*R/32768). Type uses one-based steps; see engines.",
+    "termination": "@ closes group. @ followed by space observed before binary sequence region. Stop named scanning before this region.",
+    "warning": "Known field offsets vary by firmware; use names and lengths. Some factories use different layouts. Unknown records must remain preserved."
+  },
+  "field_mapping": {
+    "VCO": {
+      "Type": "oscillator type",
+      "Param1": "Wave",
+      "Param2": "Timbre",
+      "Param3": "Shape",
+      "BendRng": "bend range"
+    },
+    "VCF": {
+      "DType": "filter type",
+      "Cutoff": "filter cutoff",
+      "Reso": "filter resonance"
+    },
+    "EG1": {
+      "Mode": "cycling mode",
+      "RiseLvl": "cycling rise",
+      "RiseSlp": "rise curvature",
+      "FallLvl": "cycling fall",
+      "Hold": "cycling hold",
+      "FallSlp": "fall curvature",
+      "Amount": "cycling amount"
+    },
+    "Kbd": {
+      "Glide": "glide",
+      "Octave": "keyboard octave",
+      "Veloc": "pressure/velocity selection",
+      "Hold": "hold",
+      "GlMode": "glide mode",
+      "PresAmp": "pressure amount",
+      "Scale": "scale",
+      "Root": "scale root"
+    },
+    "Arp": {
+      "Enable": "arp/seq enable",
+      "Range": "octave range",
+      "Div": "clock division",
+      "Rate": "free rate",
+      "Swing": "swing",
+      "Sync": "sync",
+      "Spice": "spice",
+      "Dice": "dice",
+      "Dir": "arp pattern",
+      "SeqOn": "sequencer selection"
+    },
+    "LFO": {
+      "Shape": "LFO shape",
+      "Div": "synced division",
+      "Rate": "free rate",
+      "Sync": "sync",
+      "Retrig": "retrigger mode"
+    },
+    "EG2": {
+      "Mode": "Amp Mod",
+      "Attack": "attack",
+      "DecRel": "decay/release",
+      "Sustain": "sustain",
+      "Legato": "legato mode"
+    },
+    "Gen": {
+      "Parafon": "paraphonic",
+      "PolyCnt": "voice count",
+      "PrstVol": "preset volume",
+      "Volume": "master volume"
+    },
+    "Mat": {
+      "Assign1": "assignment 1",
+      "Assign2": "assignment 2",
+      "Assign3": "assignment 3"
+    },
+    "Seq": {
+      "Length": "sequence length",
+      "XiceRst": "dice reset",
+      "GateLen": "default gate",
+      "Smooth1": "mod track smoothing 1",
+      "Smooth2": "mod track smoothing 2",
+      "Smooth3": "mod track smoothing 3",
+      "Smooth4": "mod track smoothing 4"
+    },
+    "Voc": {
+      "HissMod": "vocoder hiss mode",
+      "HissVol": "vocoder hiss level"
+    }
+  },
+  "observed_field_schema": [
+    {
+      "group": "VCO",
+      "name": "Type",
+      "resolution_byte": 14
+    },
+    {
+      "group": "VCO",
+      "name": "Param1",
+      "resolution_byte": 238
+    },
+    {
+      "group": "VCO",
+      "name": "Param2",
+      "resolution_byte": 238
+    },
+    {
+      "group": "VCO",
+      "name": "Param3",
+      "resolution_byte": 238
+    },
+    {
+      "group": "VCO",
+      "name": "BendRng",
+      "resolution_byte": 24
+    },
+    {
+      "group": "VCF",
+      "name": "Type",
+      "resolution_byte": 2
+    },
+    {
+      "group": "VCF",
+      "name": "Cutoff",
+      "resolution_byte": 0
+    },
+    {
+      "group": "VCF",
+      "name": "Reso",
+      "resolution_byte": 0
+    },
+    {
+      "group": "EG1",
+      "name": "Mode",
+      "resolution_byte": 2
+    },
+    {
+      "group": "EG1",
+      "name": "RiseLvl",
+      "resolution_byte": 0
+    },
+    {
+      "group": "EG1",
+      "name": "RiseSlp",
+      "resolution_byte": 0
+    },
+    {
+      "group": "EG1",
+      "name": "FallLvl",
+      "resolution_byte": 0
+    },
+    {
+      "group": "EG1",
+      "name": "Hold",
+      "resolution_byte": 0
+    },
+    {
+      "group": "EG1",
+      "name": "FallSlp",
+      "resolution_byte": 0
+    },
+    {
+      "group": "EG1",
+      "name": "Amount",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Kbd",
+      "name": "Glide",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Kbd",
+      "name": "Octave",
+      "resolution_byte": 6
+    },
+    {
+      "group": "Kbd",
+      "name": "Veloc",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Kbd",
+      "name": "Hold",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Kbd",
+      "name": "GlMode",
+      "resolution_byte": 2
+    },
+    {
+      "group": "Kbd",
+      "name": "PresAmp",
+      "resolution_byte": 10
+    },
+    {
+      "group": "Kbd",
+      "name": "Scale",
+      "resolution_byte": 8
+    },
+    {
+      "group": "Kbd",
+      "name": "Root",
+      "resolution_byte": 11
+    },
+    {
+      "group": "Arp",
+      "name": "Enable",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Arp",
+      "name": "Range",
+      "resolution_byte": 3
+    },
+    {
+      "group": "Arp",
+      "name": "Div",
+      "resolution_byte": 10
+    },
+    {
+      "group": "Arp",
+      "name": "Rate",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Arp",
+      "name": "Swing",
+      "resolution_byte": 25
+    },
+    {
+      "group": "Arp",
+      "name": "Sync",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Arp",
+      "name": "Spice",
+      "resolution_byte": 238
+    },
+    {
+      "group": "Arp",
+      "name": "Dice",
+      "resolution_byte": 238
+    },
+    {
+      "group": "Arp",
+      "name": "Dir",
+      "resolution_byte": 3
+    },
+    {
+      "group": "Arp",
+      "name": "SeqOn",
+      "resolution_byte": 1
+    },
+    {
+      "group": "LFO",
+      "name": "Shape",
+      "resolution_byte": 5
+    },
+    {
+      "group": "LFO",
+      "name": "Div",
+      "resolution_byte": 12
+    },
+    {
+      "group": "LFO",
+      "name": "Rate",
+      "resolution_byte": 0
+    },
+    {
+      "group": "LFO",
+      "name": "Sync",
+      "resolution_byte": 1
+    },
+    {
+      "group": "LFO",
+      "name": "Retrig",
+      "resolution_byte": 2
+    },
+    {
+      "group": "EG2",
+      "name": "Mode",
+      "resolution_byte": 1
+    },
+    {
+      "group": "EG2",
+      "name": "Attack",
+      "resolution_byte": 0
+    },
+    {
+      "group": "EG2",
+      "name": "DecRel",
+      "resolution_byte": 0
+    },
+    {
+      "group": "EG2",
+      "name": "Sustain",
+      "resolution_byte": 0
+    },
+    {
+      "group": "EG2",
+      "name": "Legato",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Gen",
+      "name": "Parafon",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Gen",
+      "name": "PolyCnt",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Gen",
+      "name": "PrstVol",
+      "resolution_byte": 24
+    },
+    {
+      "group": "Gen",
+      "name": "Volume",
+      "resolution_byte": 230
+    },
+    {
+      "group": "Sys",
+      "name": "PrsetID",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Sys",
+      "name": "PrsetBt",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Sys",
+      "name": "Save",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Sys",
+      "name": "Utility",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Mat",
+      "name": "MatEnc",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Mat",
+      "name": "MatBtn",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Mat",
+      "name": "Assign1",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Mat",
+      "name": "Assign2",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Mat",
+      "name": "Assign3",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co1",
+      "name": "EG1",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co1",
+      "name": "EG2",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co1",
+      "name": "LFO",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co1",
+      "name": "Xpr",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co1",
+      "name": "Key",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co2",
+      "name": "EG1",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co2",
+      "name": "EG2",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co2",
+      "name": "LFO",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co2",
+      "name": "Xpr",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co2",
+      "name": "Key",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co3",
+      "name": "EG1",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co3",
+      "name": "EG2",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co3",
+      "name": "LFO",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co3",
+      "name": "Xpr",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co3",
+      "name": "Key",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co4",
+      "name": "EG1",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co4",
+      "name": "EG2",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co4",
+      "name": "LFO",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co4",
+      "name": "Xpr",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co4",
+      "name": "Key",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co5",
+      "name": "EG1",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co5",
+      "name": "EG2",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co5",
+      "name": "LFO",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co5",
+      "name": "Xpr",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co5",
+      "name": "Key",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co6",
+      "name": "EG1",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co6",
+      "name": "EG2",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co6",
+      "name": "LFO",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co6",
+      "name": "Xpr",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co6",
+      "name": "Key",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co7",
+      "name": "EG1",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co7",
+      "name": "EG2",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co7",
+      "name": "LFO",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co7",
+      "name": "Xpr",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Co7",
+      "name": "Key",
+      "resolution_byte": 0
+    },
+    {
+      "group": "Seq",
+      "name": "Length",
+      "resolution_byte": 60
+    },
+    {
+      "group": "Seq",
+      "name": "XiceRst",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Seq",
+      "name": "GateLen",
+      "resolution_byte": 80
+    },
+    {
+      "group": "Seq",
+      "name": "Smooth1",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Seq",
+      "name": "Smooth2",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Seq",
+      "name": "Smooth3",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Seq",
+      "name": "Smooth4",
+      "resolution_byte": 1
+    },
+    {
+      "group": "Voc",
+      "name": "HissMod",
+      "resolution_byte": 2
+    },
+    {
+      "group": "Voc",
+      "name": "HissVol",
+      "resolution_byte": 20
+    }
+  ],
+  "matrix": {
+    "columns": {
+      "Co1": "Pitch",
+      "Co2": "Wave",
+      "Co3": "Timbre",
+      "Co4": "Cutoff",
+      "Co5": "Assign1",
+      "Co6": "Assign2",
+      "Co7": "Assign3"
+    },
+    "rows": {
+      "EG1": "CycEnv",
+      "EG2": "Envelope",
+      "LFO": "LFO",
+      "Xpr": "Pressure",
+      "Key": "Key/Arp"
+    },
+    "amount": "signed int16 of final two bytes /32768, giving approximately -1..1. Multiply by100 for percent.",
+    "assignment_triplet": "#Mat AssignN values observed [0, control_id, group_id]; final two bytes are IDs, not Q15.",
+    "assignment_groups": {
+      "0": {
+        "0": "osc_type",
+        "1": "wave",
+        "3": "timbre",
+        "5": "shape"
+      },
+      "1": {
+        "1": "cutoff",
+        "2": "resonance"
+      },
+      "2": {
+        "1": "cyc_rise",
+        "3": "cyc_fall",
+        "4": "cyc_hold",
+        "6": "cyc_amount"
+      },
+      "3": {
+        "0": "glide"
+      },
+      "4": {
+        "3": "arp_rate"
+      },
+      "5": {
+        "0": "lfo_shape",
+        "1": "lfo_division",
+        "2": "lfo_rate"
+      },
+      "6": {
+        "1": "attack",
+        "2": "decay",
+        "3": "sustain"
+      },
+      "10": "matrix Pitch amount, control=source index0..4",
+      "11": "matrix Wave amount",
+      "12": "matrix Timbre amount",
+      "13": "matrix Cutoff amount",
+      "14": "matrix Assign1 amount",
+      "15": "matrix Assign2 amount",
+      "16": "matrix Assign3 amount"
+    },
+    "unknown": "Sample target IDs and Filter Amount target encoding not established by legacy research."
+  },
+  "engines": {
+    "selector": "#VCO Type triplet. R denotes available engine step count (observed12/13/14/17/18). For observed saved step values index = clamp(round(Q*R/32768)-1,0,R-1). Validate this with V5 fixture before accepting general V5 compatibility. Q=0 maps Basic as a defensive policy.",
+    "order": [
+      "BasicWaves",
+      "SuperWave",
+      "Wavetable",
+      "Harmo",
+      "KarplusStr",
+      "V.Analog",
+      "Waveshaper",
+      "Two Op.FM",
+      "Formant",
+      "Chords",
+      "Speech",
+      "Modal",
+      "Noise",
+      "Vocoder",
+      "Bass",
+      "Sawx",
+      "Harm",
+      "WaveUser",
+      "Sample",
+      "Scan grains",
+      "Cloud grains",
+      "Hit grains"
+    ],
+    "confidence": "First12 corroborated old reader mapping; additions align firmware chronology. V5 order is proposed until a V5 sample fixture or firmware enum confirms."
+  },
+  "dependencies": {
+    "factory_wavetable": "Needs original table bank or corresponding authorized user-provided tables for sound equivalence.",
+    "WaveUser": "Preset refers to installed table slots, no wavetable audio found in .mbp fixture.",
+    "sample_engines": "V5 presets require sample slot metadata plus installed sample audio; archive packaging not verified here. Missing samples must be reported, not silently replaced.",
+    "vocoder": "Needs external audio input or hiss source behavior."
+  },
+  "unknowns": [
+    "Exact metadata prefix grammar and version mapping",
+    "V5 sample ID record/group and embedded sample archive handling",
+    "Binary sequence region: notes, ties, gates, four automation tracks and A/B framing",
+    "Filter Amt storage: no named field found in fixture; likely a direct ENV to cutoff routing, must verify",
+    "Engineering-unit mapping for Q15 rates/time/cutoff and nonlinear interpolation",
+    "Factory alternate modulation layout",
+    "Discrete scaling edge rules and zero endpoint",
+    "Full V5 engine enum confirmation"
+  ],
+  "implementation_proposal": [
+    "Parse known named fields into internal parameter IDs, preserve unsupported raw records.",
+    "Report partial import when sequence, samples, wavetable dependencies or unknown assignments remain.",
+    "Keep imported Q15 values exact and defer engineering unit transforms to DSP adapter.",
+    "Do not claim original presets sound identical until model DSP and resources are validated."
+  ]
+}

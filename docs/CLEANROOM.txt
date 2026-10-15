@@ -1,0 +1,13 @@
+Investigation and implementation boundary
+
+Target: MicroFreak firmware archive 5.0.0.2084, with public V5 manual.
+Research tools: REA 6.5.0 skill version 42 and command-line diagnostics; ordinary byte inventory separately identified.
+REA firmware-region analysis: unavailable because Binwalk is not supplied. Native decompilation providers: unavailable. No claim of recovered firmware DSP.
+
+Research worker inspected archive/container identity and public file-format research.
+Control worker derived a public-manual specification and a behavior-only preset schema.
+Cleanroom implementation worker started with no inherited conversation and could read only the manual-derived specification and the MIT host interface/build documentation. It was prohibited from firmware/research trees and from copied synth implementations.
+
+The independently written DSP uses general synthesis algorithms. Original waveforms, speech words, wavetables, sample assets, exact timing curves and sequence behavior have not been recovered. Six unsupported model slots are rejected. Preset parsing is partial and preserves unknown data.
+
+No original binary, recovered source, lookup table, preset content or sample recording is included in repository source or playable packages. Specification reports record source references and remaining unknowns. This documents the process used; it is not an external audit or a proof of sonic equivalence.

@@ -1,0 +1,31 @@
+{
+  "schema": "openplugin.community/1",
+  "id": "microfreeze",
+  "name": "Microfreeze",
+  "author": "MagicStino",
+  "repo": "MagicStino/microfreeze",
+  "summary": "Experimental independent synth: 16 oscillator prototypes, four-voice paraphony and a 5x7 modulation matrix. Original sound equivalence and full preset compatibility are unverified.",
+  "kind": "instrument",
+  "category": "synth",
+  "license": "MIT",
+  "tags": [
+    "synth",
+    "cleanroom",
+    "experimental",
+    "force",
+    "armv7"
+  ],
+  "packages": [
+    {
+      "version": "0.1.0",
+      "arch": "armv7",
+      "layout": "portable",
+      "devices": [
+        "force"
+      ],
+      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.1.0/Microfreeze-0.1.0-mpc-armv7.zip",
+      "size": 63257,
+      "sha256": "74f3944d4caa4e6eba4c0629a6a2c3ea8b0945d329ca1ff5b14c4f782663463a"
+    }
+  ]
+}

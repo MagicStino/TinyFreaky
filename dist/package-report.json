@@ -1,0 +1,22 @@
+{
+  "package": "Microfreeze-0.1.0-mpc-armv7.zip",
+  "bytes": 63257,
+  "sha256": "74f3944d4caa4e6eba4c0629a6a2c3ea8b0945d329ca1ff5b14c4f782663463a",
+  "zip_members": 24,
+  "internal_checksums_verified": 23,
+  "catalog_check": "OK, 0 warnings",
+  "arch": "armv7",
+  "max_glibc": "2.27",
+  "os_compat": [
+    "3.x"
+  ],
+  "hardware_tested": false,
+  "cpu_benchmarked": false,
+  "firmware_or_audio_samples_included": false,
+  "user_data": [
+    "presets"
+  ],
+  "upstream_host_abi_test": "PASSED with ASAN/UBSAN; leak detection disabled because ptrace environment unsupported",
+  "upstream_commit": "3167a8df46c085f41277537eebaba4b8d6530ea0",
+  "wrapper_patch_sha256": "9c90ee28bcc93ff9a3d089b025e2753c4fb965b14d6fabca0870b645b385c006"
+}

@@ -1,0 +1,39 @@
+# Independent prototype coverage
+
+All code in src/engine.c is original MIT code written from public control names and general synthesis mathematics. It is not firmware-derived and does not establish sonic fidelity or original factory preset compatibility.
+
+Indices 0–15 are Microfreeze stable UI indices, never firmware model IDs. Indices 16–21 identify unavailable documented models for import diagnostics and are omitted from the selectable UI.
+
+| UI indices / names | Independent implementation | Limits |
+|---|---|---|
+| 0 BasicWaves | Bandlimited saw/pulse morph and sine sub | Approximate panel behavior |
+| 1 SuperWave | Three phase-offset saws | No independent detuned phases yet |
+| 2 Wavetable | Analytic phase-modulated sine family | No original tables |
+| 3 Harmo | Twelve partial additive synthesis | No original spectral curves |
+| 4 KarplusStr | Noise-excited damped delay loop | Simplified pluck/bow response |
+| 5 V.Analog | Saw/pulse blend | Simplified oscillator interaction |
+| 6 Waveshaper | Sine nonlinear shaping | Independent transfer curve |
+| 7 Two Op.FM | Two-operator FM with feedback | Independent ratios and scaling |
+| 8 Formant | Harmonic vowel-like oscillator | Simplified formant control |
+| 9 Chords | Four chord interval sets | Phase-derived chord voices; approximate inversion |
+| 10 Speech | Vowel-like harmonic oscillator | No words, categories or intelligible speech; prototype only |
+| 11 Modal | Inharmonic additive bank | Not physical modal resonator simulation |
+| 12 Noise | Sample-held noise and saw blend | Independent noise spectrum |
+| 13 Bass | Saturation and wavefolding | Independent nonlinear curves |
+| 14 Sawx | Phase-shaped saw and noise | Independent synthesis |
+| 15 Harm | Rectified harmonic pair and noise | Independent synthesis |
+| 16 WaveUser | UNAVAILABLE | Omitted from selectable UI; state import rejected |
+| 17 Sample / 18 Scan grains / 19 Cloud grains / 20 Hit grains | UNAVAILABLE | Omitted from selectable UI; state import rejected |
+| 21 Vocoder | UNAVAILABLE | Omitted from selectable UI; state import rejected |
+
+The engine has four-note paraphony, shared topology-preserving state-variable LP/BP/HP filter, per-voice envelopes with shared decay/release control, glide, bend, velocity and pressure. Six LFO shapes support free and host-tempo synchronized rates. Cycling envelope has rise/fall, curvature and hold; Env is gated, Run is free, Loop restarts on note triggers. Curves and timings are independent.
+
+The full 5x7 matrix supports bipolar amounts, fixed destinations and three assignments, including matrix amounts via a one-sample-delayed routing feedback. Unsupported assignment destinations Sample and Arp/Seq rate retain their automation values but remain inactive, with an explicit status message. Arpeggiator, sequencer, spice/dice, sample import and user wavetable import are not implemented. Factory data must not be silently imported for unsupported controls or engines.
+
+State MFZ1 stores stable numeric parameter order, validates all fields and rejects user-table/sample/vocoder models. It contains patch controls only; live notes, random generator and transport state are not serialized. Eight original built-in sounds are supplied. Original factory patch translation remains a separate compatibility task, with sound equivalence unverified.
+
+44.1 kHz engine only. Native device performance and acoustic fidelity require actual hardware validation.
+
+External banks: create(data_dir) scans sorted .mfz text files once, preloading up to 504 valid patches plus eight built-ins. Optional first line MFZNAME:name, followed by the MFZ1 state line. Invalid or unsupported patches are omitted. bank_count reports available slots; preset selection acknowledges 0..511 for host automation. Selecting an absent slot retains the previous sound, stores the selected slot and explicitly reports unavailable. MIDI CC9 is intentionally ignored because the public model chapter order does not establish firmware enumeration. Other documented synthesis CCs are mapped; arp CC91/92 are unavailable.
+
+The preset control is an integer selector rounded by the engine, with programs available through the native preset menu. Its 512-slot Q-Link behavior depends on the host wrapper handling continuous drags separately from wheel ticks. Unavailable slot selection is retained for host automation while the last playable patch continues sounding.

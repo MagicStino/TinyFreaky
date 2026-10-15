@@ -1,0 +1,41 @@
+{
+  "status": "experimental",
+  "force": {
+    "target": "Force 3.9.1 OpenPlugin ARMv7",
+    "arm_build": true,
+    "vst_abi_tests": "passed ASan/UBSan; leak checker unavailable under ptrace",
+    "catalog_warnings": 0,
+    "hardware_tested": false,
+    "cpu_benchmarked": false
+  },
+  "desktop": {
+    "linux_x86_64_build": true,
+    "steinberg_validator_passed": 47,
+    "steinberg_validator_failed": 0,
+    "sample_rates_tested": [
+      44100,
+      48000,
+      96000
+    ],
+    "midi_timing": true,
+    "state_roundtrip": true,
+    "windows_build": "workflow supplied, not yet run",
+    "macos_build": "workflow supplied, not yet run"
+  },
+  "original_presets": {
+    "importer": "partial; 5 parser tests passed",
+    "original_audio_equivalence": false,
+    "sequence_import": false,
+    "sample_dependencies": false
+  },
+  "packages": {
+    "Microfreeze-0.1.0-mpc-armv7.zip": {
+      "bytes": 63257,
+      "sha256": "74f3944d4caa4e6eba4c0629a6a2c3ea8b0945d329ca1ff5b14c4f782663463a"
+    },
+    "Microfreeze-linux-x86_64-VST3.zip": {
+      "bytes": 143974,
+      "sha256": "fb41c2d4cd79903b3b3f57b391a35f326b8a666f8a8213a72865c2001503e6d3"
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "name": "Microfreeze",
   "author": "MagicStino",
   "repo": "MagicStino/microfreeze",
-  "summary": "Experimental independent synthesizer. Original sound equivalence and full preset compatibility are unverified.",
+  "summary": "Experimental independent synth: 16 oscillator prototypes, four-voice paraphony and a 5x7 modulation matrix. Original sound equivalence and full preset compatibility are unverified.",
   "kind": "instrument",
   "category": "synth",
   "license": "MIT",

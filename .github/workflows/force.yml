@@ -1,0 +1,37 @@
+name: Force ARMv7
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  force:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build prerequisites
+        run: |
+          python3 -m pip install Pillow jsonschema
+          git clone https://github.com/sd88me/mpc-vst-plugins.git "$RUNNER_TEMP/mpc-vst-plugins"
+          git -C "$RUNNER_TEMP/mpc-vst-plugins" checkout 3167a8df46c085f41277537eebaba4b8d6530ea0
+      - name: Test independent engine and importer
+        run: |
+          cc -std=c99 -Wall -Wextra -Werror -Isrc src/engine.c tests/engine_test.c -lm -o engine-test
+          ./engine-test
+          python3 tests/test_import.py
+      - name: Test VST2 host contract
+        run: MPC_VST_TOOLS="$RUNNER_TEMP/mpc-vst-plugins" bash tools/test-force-host.sh
+      - name: Build native plugin
+        run: MPC_VST_TOOLS="$RUNNER_TEMP/mpc-vst-plugins" bash tools/build-force.sh
+      - name: Package
+        shell: bash
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          if [[ "$GITHUB_REF_TYPE" != tag ]]; then VERSION=0.1.0; fi
+          python3 "$RUNNER_TEMP/mpc-vst-plugins/tools/release.py" --so vst/build/microfreeze.so --skin 'vst/build/skin/Cleanroom Audio - VST - Microfreeze' --entry vst/build/pluginlist-entry.xml --version "$VERSION" --id microfreeze --repo MagicStino/microfreeze --license MIT --user-data presets --about 'Experimental independent instrument. Original sound equivalence and hardware playback unverified.' -o dist
+          python3 tools/make-openplugin.py --package "dist/Microfreeze-$VERSION-mpc-armv7.zip" --version "$VERSION" --output dist/openplugin-release.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Microfreeze-Force-ARMv7
+          path: dist/*

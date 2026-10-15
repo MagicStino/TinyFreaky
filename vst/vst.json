@@ -1,0 +1,30 @@
+{
+  "name": "Microfreeze",
+  "vendor": "Cleanroom Audio",
+  "uid": "McFz",
+  "version": 1000,
+  "so": "microfreeze.so",
+  "params": "params.json",
+  "layout": "layout.conf",
+  "cc": false,
+  "programs": {
+    "param": "preset"
+  },
+  "build": {
+    "root": "..",
+    "sources": [
+      "src/engine.c"
+    ],
+    "cflags": [
+      "-std=c99"
+    ],
+    "libs": [
+      "-lm"
+    ]
+  },
+  "defines": {
+    "SAMPLE_ACCURATE": 1,
+    "HAS_SONG_POS": 1,
+    "MODULE_SUBDIR": "\"presets\""
+  }
+}

@@ -1,0 +1,27 @@
+diff --git a/wrapper/vst2_wrap.c b/wrapper/vst2_wrap.c
+index ba380ec..c16d2bf 100644
+--- a/wrapper/vst2_wrap.c
++++ b/wrapper/vst2_wrap.c
+@@ -317,7 +317,10 @@ static void set_param_now(AEffect *e, int32_t i, float n) {
+         float span = p->max - p->min, pos = clamp01(n) * span, cur = get_norm(w, i) * span, steps;
+         float tickmax = p->nudge_pct > 0 ? fmaxf(0.5f, span * p->nudge_pct / 100.0f) : 0.5f;
+         int edge = (pos < 0.001f || pos > span - 0.001f) && fabsf(pos - cur) >= 0.5f;
+-        if ((p->qlink_ticks > 1 || p->nudge_pct > 0) && (fabsf(pos - roundf(pos)) > 0.001f || edge) && fabsf(pos - cur) < tickmax) {
++        /* Repeated sub-step positions are an absolute drag, not independent wheel ticks.
++         * Keep settle() responsible for their direction and monotonic rounding. */
++        int continuous_drag = !edge && w->last_pos[i] >= 0 && fabsf(pos - w->last_pos[i]) < 0.5f;
++        if (!continuous_drag && (p->qlink_ticks > 1 || p->nudge_pct > 0) && (fabsf(pos - roundf(pos)) > 0.001f || edge) && fabsf(pos - cur) < tickmax) {
+             float d = pos - cur;
+             w->last_pos[i] = pos;
+             if (p->qlink_ticks > 1) {
+@@ -365,6 +368,10 @@ static void flush_pend0(AEffect *e) {
+ static void setParameter(AEffect *e, int32_t i, float n) {
+     wrap_t *w = e->object;
+     if (i == 0 && NPARAMS > 0) {
++        /* Preserve ordered drag positions while retaining the host's far-end/back toggle suppression. */
++        if (__atomic_load_n(&w->has_pend0, __ATOMIC_ACQUIRE) &&
++            fabsf(n - w->pend0_from) > 1e-6f && fabsf(n - w->pend0) > 1e-6f)
++            flush_pend0(e);
+         if (!__atomic_load_n(&w->has_pend0, __ATOMIC_ACQUIRE)) w->pend0_from = get_norm(w, 0);
+         w->pend0 = n;
+         __atomic_store_n(&w->has_pend0, 1, __ATOMIC_RELEASE);
