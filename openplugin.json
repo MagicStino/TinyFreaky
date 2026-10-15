@@ -4,7 +4,7 @@
   "name": "Tinyfreaky",
   "author": "MagicStino",
   "repo": "MagicStino/TinyFreaky",
-  "summary": "MagicStino eight-voice synth with 16 engines, output scope, velocity mascot, 5x7 matrix, arp/swing and 64-step sequencer. 456 original TinyFreaky patch names: 342 playable slots, 114 unavailable/muted. Sequence/sample payloads are not fully supported.",
+  "summary": "MagicStino eight-voice synth with 16 engines, output scope, 5x7 matrix, arp/swing and 64-step sequencer. Sound-informed names and stable IDs across 456 slots: 342 playable slots, 114 unavailable/muted. Sequence/sample payloads are not fully supported.",
   "kind": "instrument",
   "category": "synth",
   "license": "MIT",
@@ -15,19 +15,19 @@
     "armv7"
   ],
   "images": [
-    "https://github.com/MagicStino/TinyFreaky/releases/download/v0.3.9/tinyfreaky-artwork.png"
+    "https://github.com/MagicStino/TinyFreaky/releases/download/v0.4.0/tinyfreaky-artwork.png"
   ],
   "packages": [
     {
-      "version": "0.3.9",
+      "version": "0.4.0",
       "arch": "armv7",
       "layout": "portable",
       "devices": [
         "force"
       ],
-      "url": "https://github.com/MagicStino/TinyFreaky/releases/download/v0.3.9/Tinyfreaky-0.3.9-mpc-armv7.zip",
-      "size": 5247671,
-      "sha256": "b96f25aed5b8e3a21d5532b6616b3a374ce29dc4c50526eccf1ff404ad9b639d"
+      "url": "https://github.com/MagicStino/TinyFreaky/releases/download/v0.4.0/Tinyfreaky-0.4.0-mpc-armv7.zip",
+      "size": 5256047,
+      "sha256": "32459e5cafb5f4bb2ba9c47f2fc66673659f0dfd42d06ee06b413cb3a0e6da44"
     }
   ]
 }
