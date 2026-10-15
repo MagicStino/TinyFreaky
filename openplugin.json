@@ -14,7 +14,21 @@
     "force",
     "armv7"
   ],
+  "images": [
+    "https://github.com/MagicStino/microfreeze/releases/download/v0.2.2-preview.1/force-readable-preview.png"
+  ],
   "packages": [
+    {
+      "version": "0.2.2-preview.1",
+      "arch": "armv7",
+      "layout": "portable",
+      "devices": [
+        "force"
+      ],
+      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.2.2-preview.1/Tinyfreaky-0.2.2-preview.1-mpc-armv7.zip",
+      "size": 11519416,
+      "sha256": "acde53320f2793b115f01997953071a8fb798450daa4e948a4c4255a5bc2f071"
+    },
     {
       "version": "0.2.1-preview.1",
       "arch": "armv7",
@@ -37,8 +51,5 @@
       "size": 12101686,
       "sha256": "de1a0fc0497e56b898fdf2d29be66f0f2b08a698ebe8f0872484150c16436144"
     }
-  ],
-  "images": [
-    "https://github.com/MagicStino/microfreeze/releases/download/v0.2.1-preview.1/force-readable-preview.png"
   ]
 }
