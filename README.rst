@@ -1,3 +1,8 @@
+TinyFreaky 0.3.5 / MagicStino
+===========================
+
+White line mascot with glasses between Master and Glide, a small velocity-driven nod and sway, and italic TinyFreaky lettering. Desktop MagicStino branding opens https://github.com/MagicStino/microfreeze; Force includes the same address on its MagicStino page. Seventeen cached poses share the existing 10 Hz display updates and settle to rest. Audio and preset controls are unchanged. macOS AUv2 is packaged alongside the VST3 builds.
+
 Live display
 ============
 
