@@ -15,6 +15,7 @@
     "armv7"
   ],
   "images": [
+    "https://github.com/MagicStino/microfreeze/releases/download/v0.2.2-preview.1/tinyfreaky-artwork.png",
     "https://github.com/MagicStino/microfreeze/releases/download/v0.2.2-preview.1/force-readable-preview.png"
   ],
   "packages": [
