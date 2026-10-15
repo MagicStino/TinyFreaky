@@ -17,5 +17,5 @@ params={p['key']:p for p in json.loads((r/'vst/params.json').read_text())}
 assert params['screen_mascot']['max']==540
 assert len(params['screen_mascot_style']['options'])==9
 layout=(r/'vst/layout.conf').read_text()
-for style in range(9):assert f'when=screen_mascot_style:{style}' in layout
+for style in range(9):assert f'cx=640 cy=487 w=112 h=166 key=screen_mascot_{style}' in layout and f'when=screen_mascot_style:{style}' in layout
 print('mascot: 540 distinct poses, unclipped artwork, bounded strips and style visibility PASS')

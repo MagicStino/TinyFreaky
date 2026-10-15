@@ -37,7 +37,7 @@ def header(tab,title):
  'meter cx=854 cy=234 w=8 h=56 key=screen_env strip=env-strip.png frames=17',
  'meter cx=870 cy=234 w=8 h=56 key=screen_lfo strip=lfo-strip.png frames=153'])
  if tab!='Matrix':
-  for layer in range(9):lines.append(f'meter cx=640 cy=589 w=112 h=166 key=screen_mascot_{layer} strip=mascot-{layer}.png frames={62 if layer==0 else 61} when=screen_mascot_style:{layer}')
+  for layer in range(9):lines.append(f'meter cx=640 cy=487 w=112 h=166 key=screen_mascot_{layer} strip=mascot-{layer}.png frames={62 if layer==0 else 61} when=screen_mascot_style:{layer}')
 
 def knobs(keys,labels=None,bank=None):
  for i,key in enumerate(keys):
