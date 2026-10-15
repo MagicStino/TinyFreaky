@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleDevelopmentRegion</key><string>English</string>
+<key>CFBundleExecutable</key><string>Tinyfreaky</string>
+<key>CFBundleIdentifier</key><string>com.magicstino.tinyfreaky.au</string>
+<key>CFBundleName</key><string>Tinyfreaky</string>
+<key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+<key>CFBundlePackageType</key><string>BNDL</string>
+<key>CFBundleVersion</key><string>0.3.6</string>
+<key>CFBundleShortVersionString</key><string>0.3.6</string>
+<key>AudioComponents</key><array><dict>
+<key>factoryFunction</key><string>AUWrapperFactory</string>
+<key>description</key><string>Tinyfreaky eight-voice synthesizer</string>
+<key>manufacturer</key><string>MgSt</string>
+<key>name</key><string>MagicStino: Tinyfreaky</string>
+<key>subtype</key><string>TyFk</string>
+<key>type</key><string>aumu</string>
+<key>version</key><integer>774</integer>
+<key>sandboxSafe</key><true/>
+<key>tags</key><array><string>Synthesizer</string></array>
+</dict></array></dict></plist>

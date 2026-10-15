@@ -1,11 +1,8 @@
 {
   "source": {
-    "url": "https://downloads.arturia.net/products/microfreak/manual/microfreak_Manual_5_0_1_EN.pdf",
-    "revision": "6 July 2023",
-    "product_version": "5.0.0",
-    "page_numbering": "printed page; PDF page number = printed + 5"
+    "description": "TinyFreaky control inventory"
   },
-  "scope": "Documented controls only. No firmware behavior recovered. No binary equivalence claim.",
+  "scope": "Parameter inventory; unavailable engines are explicitly identified.",
   "groups": {
     "global": [
       {

@@ -1,0 +1,11 @@
+Tinyfreaky 0.3.3-preview.1
+
+Live output scope and state symbols
+----------------------------------
+The main display now draws the actual final output signal in a compact scope, with separate envelope (green) and LFO (orange) indicators. A square means idle, a triangle means playing, two bars mean waiting for clock, and an outlined square means hold. Existing engine name, preset name, focused control/value, route count and arp/sequence position remain visible.
+
+The scope displays 32 samples across about 11.6 ms, aligned to the first rising zero crossing found in the window. It automatically scales the picture for visibility. It is a coarse output waveform, including filter, modulation, all voices and output gain, rather than an exact oscillator-cycle drawing or calibrated level meter. Silence is a flat line. High-frequency detail can alias in this coarse display; the audio path is unchanged by display sampling.
+
+Capture uses a fixed 32-float buffer and 35 quantized display values. Publication is capped at 10 Hz. No display allocation, FFT, file access, network access or image creation occurs while rendering audio. Force uses four small shared prebuilt filmstrips, reused across pages; display controls have no touch actions. Desktop uses simple lines and rectangles, updates through read-only parameters outside the saved 148 musical controls, and redraws only when values change. The MIDI/automation IDs and MFZ2 state stay unchanged. The display-only parameters are not musical controls and are not included in the desktop saved state.
+
+Includes eight-voice paraphony and all 0.3.1 clarity changes. Device performance and native redraw behavior still require Force hardware verification. Six engines remain unavailable and exact original factory sound/sequence import remains incomplete.

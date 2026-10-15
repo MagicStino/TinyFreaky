@@ -1,0 +1,58 @@
+name: macOS Audio Unit
+on:
+  push:
+    branches: [tinyfreaky]
+    paths: ['src/**', 'desktop/**', '.github/workflows/au.yml', 'tools/package-au.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pinned official SDKs
+        run: |
+          git clone --recursive https://github.com/steinbergmedia/vst3sdk.git "$RUNNER_TEMP/vst3sdk"
+          git -C "$RUNNER_TEMP/vst3sdk" checkout "$(cat desktop/SDK_REVISION)"
+          git -C "$RUNNER_TEMP/vst3sdk" submodule update --init --recursive
+          git clone https://github.com/apple/AudioUnitSDK.git "$RUNNER_TEMP/AudioUnitSDK"
+          git -C "$RUNNER_TEMP/AudioUnitSDK" checkout 53a9a2008aae7fb1b0a9f093dd523b9b12f6c0d9
+      - name: Build universal Audio Unit
+        run: |
+          python3 tools/gen-desktop-params.py
+          cmake -S desktop -B desktop/build-au -DCMAKE_BUILD_TYPE=Release -DVST3_SDK_ROOT="$RUNNER_TEMP/vst3sdk" -DAUDIOUNIT_SDK_ROOT="$RUNNER_TEMP/AudioUnitSDK" -DTINYFREAKY_BUILD_AU=ON "-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64"
+          cmake --build desktop/build-au --parallel 3
+          ctest --test-dir desktop/build-au --output-on-failure
+      - name: Install and validate AU
+        run: |
+          mkdir -p "$HOME/Library/Audio/Plug-Ins/Components"
+          ditto desktop/build-au/AU/Tinyfreaky.component "$HOME/Library/Audio/Plug-Ins/Components/Tinyfreaky.component"
+          lipo desktop/build-au/AU/Tinyfreaky.component/Contents/MacOS/Tinyfreaky -verify_arch arm64 x86_64
+          codesign --verify --deep --strict desktop/build-au/AU/Tinyfreaky.component
+          killall -9 AudioComponentRegistrar || true
+          auval -v aumu TyFk MgSt | tee auval.log
+          grep -q 'AU VALIDATION SUCCEEDED' auval.log
+      - name: Package
+        run: python3 tools/package-au.py --apple-sdk "$RUNNER_TEMP/AudioUnitSDK"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Tinyfreaky-macOS-AU
+          path: dist/Tinyfreaky-0.3.6-macOS-AU.zip
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: Tinyfreaky-macOS-AU
+          path: package
+      - name: Add AU to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release view v0.3.6 || gh release create v0.3.6 --target "${{ github.sha }}" --title "Tinyfreaky 0.3.6" --notes "MagicStino branding, subtle velocity-reactive white line mascot and Mac Audio Unit. Eight voices, 456 original TinyFreaky patch names, stable slots and unchanged sound settings. Six engine families remain unavailable."
+          gh release upload v0.3.6 package/*.zip --clobber

@@ -1,0 +1,257 @@
+{
+  "width": 1280,
+  "height": 628,
+  "groups": [
+    {
+      "label": "MODULATION MATRIX",
+      "x": 24,
+      "y": 80,
+      "w": 430,
+      "h": 158
+    },
+    {
+      "label": "DIGITAL OSCILLATOR",
+      "x": 24,
+      "y": 252,
+      "w": 430,
+      "h": 152
+    },
+    {
+      "label": "ANALOG FILTER",
+      "x": 470,
+      "y": 252,
+      "w": 330,
+      "h": 152
+    },
+    {
+      "label": "CYCLING ENVELOPE",
+      "x": 816,
+      "y": 252,
+      "w": 440,
+      "h": 152
+    },
+    {
+      "label": "LFO",
+      "x": 24,
+      "y": 420,
+      "w": 430,
+      "h": 160
+    },
+    {
+      "label": "ENVELOPE",
+      "x": 470,
+      "y": 420,
+      "w": 440,
+      "h": 160
+    },
+    {
+      "label": "PERFORMANCE",
+      "x": 926,
+      "y": 420,
+      "w": 330,
+      "h": 160
+    }
+  ],
+  "controls": [
+    {
+      "key": "osc_type",
+      "label": "TYPE",
+      "x": 83,
+      "y": 325,
+      "color": "orange",
+      "r": 27
+    },
+    {
+      "key": "osc_wave",
+      "label": "WAVE",
+      "x": 188,
+      "y": 325,
+      "color": "orange",
+      "r": 27
+    },
+    {
+      "key": "osc_timbre",
+      "label": "TIMBRE",
+      "x": 293,
+      "y": 325,
+      "color": "orange",
+      "r": 27
+    },
+    {
+      "key": "osc_shape",
+      "label": "SHAPE",
+      "x": 398,
+      "y": 325,
+      "color": "orange",
+      "r": 27
+    },
+    {
+      "key": "filter_type",
+      "label": "MODE",
+      "x": 525,
+      "y": 325,
+      "color": "green",
+      "r": 27
+    },
+    {
+      "key": "cutoff",
+      "label": "CUTOFF",
+      "x": 635,
+      "y": 325,
+      "color": "green",
+      "r": 27
+    },
+    {
+      "key": "resonance",
+      "label": "RESONANCE",
+      "x": 745,
+      "y": 325,
+      "color": "green",
+      "r": 27
+    },
+    {
+      "key": "cyc_rise",
+      "label": "RISE",
+      "x": 872,
+      "y": 325,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "cyc_fall",
+      "label": "FALL",
+      "x": 980,
+      "y": 325,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "cyc_hold",
+      "label": "HOLD",
+      "x": 1088,
+      "y": 325,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "cyc_amount",
+      "label": "AMOUNT",
+      "x": 1196,
+      "y": 325,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "lfo_shape",
+      "label": "SHAPE",
+      "x": 83,
+      "y": 493,
+      "color": "green",
+      "r": 27
+    },
+    {
+      "key": "lfo_rate_free",
+      "label": "RATE",
+      "x": 188,
+      "y": 493,
+      "color": "green",
+      "r": 27
+    },
+    {
+      "key": "lfo_sync",
+      "label": "SYNC",
+      "x": 293,
+      "y": 493,
+      "color": "green",
+      "r": 27
+    },
+    {
+      "key": "lfo_rate_sync",
+      "label": "DIVISION",
+      "x": 398,
+      "y": 493,
+      "color": "green",
+      "r": 27
+    },
+    {
+      "key": "attack",
+      "label": "ATTACK",
+      "x": 526,
+      "y": 493,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "decay",
+      "label": "DECAY / REL",
+      "x": 634,
+      "y": 493,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "sustain",
+      "label": "SUSTAIN",
+      "x": 742,
+      "y": 493,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "filter_amount",
+      "label": "FILTER AMT",
+      "x": 850,
+      "y": 493,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "glide",
+      "label": "GLIDE",
+      "x": 982,
+      "y": 493,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "hold",
+      "label": "HOLD",
+      "x": 1090,
+      "y": 493,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "octave",
+      "label": "OCTAVE",
+      "x": 1198,
+      "y": 493,
+      "color": "white",
+      "r": 27
+    },
+    {
+      "key": "preset",
+      "label": "PRESET",
+      "x": 1040,
+      "y": 148,
+      "color": "white",
+      "r": 31
+    },
+    {
+      "key": "master",
+      "label": "MASTER",
+      "x": 1195,
+      "y": 148,
+      "color": "white",
+      "r": 31
+    },
+    {
+      "key": "paraphonic",
+      "label": "PARAPHONIC",
+      "x": 534,
+      "y": 158,
+      "color": "white",
+      "r": 31
+    }
+  ]
+}

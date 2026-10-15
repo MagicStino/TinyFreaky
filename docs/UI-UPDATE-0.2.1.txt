@@ -1,0 +1,25 @@
+Tinyfreaky 0.2.1-preview.1 — Force readability and live display
+
+User hardware report for 0.2.0-preview.1: plugin runs reasonably; labels are
+unreadable and factory sounds are not recognizable. This is a user report,
+not an independently measured fidelity/CPU test.
+
+The Force skin now uses 35px knob names instead of 11px (3.18x), and instead
+of 14px on the old advanced page (2.5x). Values are 35px instead of 14px.
+Controls are split into eight-knob pages; each matrix source has its own
+seven-knob Q-Link bank. Numeric parameter IDs and serialized state stay stable.
+
+The static oscillator/preset artwork has been removed. Four polled string
+readouts show the actual preset number/name, oscillator, focused parameter
+value and availability status. The presentation uses a dark OLED-like panel
+with blue-white text, inspired by the hardware. It is not a pixel-identical
+copy of the hardware display.
+
+This update targets the Force UI. Desktop editor layout and DSP are unchanged.
+334 factory entries remain partial, 114 remain unavailable/muted. Recognizable
+original sounds need engine and parameter-response work; this UI update does
+not claim to resolve that.
+
+Checks: live display transitions, unchanged engine/state tests, upstream VST2
+host ABI, generated control bounds and name/value extents, ARMv7 ELF checks.
+Updated touchscreen rendering still needs a Force user check.

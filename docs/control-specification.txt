@@ -1,10 +1,3 @@
-MicroFreak V5 control implementation specification
+TinyFreaky control implementation
 
-Source: https://downloads.arturia.net/products/microfreak/manual/microfreak_Manual_5_0_1_EN.pdf
-Printed pages 9–18: front panel; 31–34: matrix; 38–52: engine controls; 57–65: modulation; 66–91: performance; 139–142: gestures and CC. PDF page numbers are five higher.
-
-Use the adjacent JSON as the parameter inventory. Build eight sections matching its groups. Keep Wave/Timbre/Shape automation IDs stable while their displayed meanings follow the engine. Present the complete 5 × 7 matrix with bipolar amounts and three user-defined target columns. Add explicit controls for shifted functions so a Force user does not require a physical Shift key.
-
-Use host MIDI notes, pitch bend and aftertouch for performance. Expose the documented CC mapping. Shared Decay/Release must remain one parameter. Free and synchronized LFO/arp rates have distinct CCs. Do not equate a button with a CC unless listed. Appendix D assigns Rise to 102 (an earlier tutorial mistakenly says 5, which Appendix D assigns to Glide).
-
-Engine list here follows manual chapter order, not a verified binary engine enumeration. Do not use array indices as firmware IDs. The 22 documented models include vocoder and four sample engines. Native implementation and sound behavior require separate code or reverse-engineering work; this inventory does not recover them.
+Keep parameter and automation IDs stable. Wave, Timbre and Shape labels follow the selected engine. The 5 x 7 matrix contains bipolar routing amounts and three assignable destinations. MIDI input supports notes, pitch bend, pressure and assigned CC messages. Use distinct free/synchronized LFO and rhythm rates. Shared Decay/Release is one control. The implementation supports sixteen engines; six additional families remain unavailable.

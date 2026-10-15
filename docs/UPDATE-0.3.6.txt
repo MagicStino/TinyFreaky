@@ -1,0 +1,3 @@
+TinyFreaky 0.3.6
+
+All 456 patch slots have original TinyFreaky display names. Numeric settings, available/unavailable states, automation IDs and patch slots are unchanged. Vendor-instrument and workflow comparisons were removed from current product copy. Required third-party license notices are retained. Source-bank archives and unused sample/wavetable bundles are not distributed with the plugin. All native formats rebuilt; macOS AU is validated again after renaming.

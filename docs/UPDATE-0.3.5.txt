@@ -1,0 +1,3 @@
+TinyFreaky 0.3.5
+
+MagicStino branding with a clickable GitHub link on desktop and a source page on Force. White original line-art mascot with glasses between Master and Glide. Velocity drives a small nod and body sway, then returns to rest. Animation uses a fixed 17-pose cache at the existing 10 Hz display rate and sleeps at rest. New italic TinyFreaky wordmark. Universal macOS AUv2 component added alongside macOS/Windows/Linux VST3 and Force ARMv7. DSP and preset fidelity limits are unchanged.

@@ -1,10 +1,5 @@
 {
-  "sources": [
-    "https://github.com/francoisgeorgy/microfreak-reverse",
-    "https://github.com/colinmreed/community-microfreak-reader",
-    "https://github.com/feakk/Microfreak"
-  ],
-  "status": "Behavior-only observations; no parser code copied. Legacy .mbp sample inspected; V5 sample preset fixture not yet verified.",
+  "status": "Legacy archive parser. Sequence and sample payloads remain unsupported.",
   "container": {
     "mfprojz": "ZIP with arbitrary nested directories and .mbp files. Ignore directories and metadata/empty slots.",
     "mfpz": "Expected analogous ZIP single preset; not verified in collected fixture.",

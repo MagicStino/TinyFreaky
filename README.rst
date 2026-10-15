@@ -1,49 +1,46 @@
-Microfreeze
-===========
+TinyFreaky
+=========
 
-Independent synthesizer prototype for Akai Force OpenPlugin (ARMv7 VST2) and desktop hosts (VST3).
+An **8-voice synthesizer by MagicStino** for Akai Force, Windows, macOS and Linux.
 
-Status
-------
+.. image:: assets/tinyfreaky-artwork.png
+   :alt: TinyFreaky artwork
+   :width: 840
 
-This is an experimental cleanroom implementation, not the Arturia firmware running in a plugin. Sixteen oscillator prototypes, four-voice paraphony, a shared multimode filter, envelopes, LFO, MIDI expression and a 5 x 7 modulation matrix are implemented. Original sound equivalence has not been established. Read MODEL_COVERAGE.txt before using it for an existing patch.
+Play with 16 engines, shape the sound with the 5 × 7 modulation matrix, and build patterns with the arpeggiator, swing and 64-step sequencer. The green, orange and white panel has large labels, a clear engine display and a live output scope.
 
-User wavetable, sample/granular and vocoder models are unavailable and are explicitly rejected. Original sequences and some modulation assignments are not implemented. The panel inventory documents the target feature set; it does not imply every documented feature is implemented.
+.. image:: assets/force-readable-preview.png
+   :alt: TinyFreaky interface with the mascot between Master and Glide
+   :width: 1100
 
-Force
------
+A small white line-art mascot responds subtly to note velocity, then settles back to rest.
 
-Use the ARMv7 portable package with Force OpenPlugin on Force 3.9.1. The package contains the library, touchscreen pages, Q-Link mapping and upstream installer. Hardware playback and CPU use still need testing. Follow the install instructions inside the ZIP. The desktop VST3 is a separate binary.
+.. image:: assets/mascot-velocity.gif
+   :alt: Subtle velocity-driven mascot animation
+   :width: 600
 
-Eight independently created presets are included. Save the plugin in a Force project to preserve its parameter state. User .mfz banks are read from the plugin's presets directory when the instrument is instantiated; reopen the instrument after adding files.
+Downloads
+---------
 
-Original presets
-----------------
+Get the latest version from `Releases <https://github.com/MagicStino/TinyFreaky/releases/latest>`_.
 
-tools/import-presets.py reads legacy .mbp/.mfp and ZIP .mfprojz/.mfpz containers into a preservation report. It maps understood controls and retains unknown records. It does not claim matching sound, sequences or samples. The V5 engine order still needs fixture verification.
+* **Force:** ARMv7 package through the OpenPlugin catalog.
+* **Windows:** 64-bit VST3.
+* **macOS:** universal Intel/Apple Silicon VST3 and Audio Unit.
+* **Linux:** 64-bit VST3.
 
-Run ``python3 tools/import-presets.py input.mfprojz converted`` for reports. Only ``--allow-partial`` explicitly emits experimental .mfz patches for supported models. Inspect every report. Unsupported models are not emitted as playable replacements. No original bank or firmware asset is distributed here.
+The macOS builds are ad-hoc signed and are not Apple-notarized. The AU is checked with Apple's Audio Unit validator before publication.
 
-Desktop
--------
+Patches and projects
+--------------------
 
-The desktop version uses Steinberg's official VST3 SDK. Linux, Windows and macOS require separate builds. The host's generic parameter editor is used; the Force touchscreen skin is specific to Force. See desktop/ and the desktop build workflow. Engine processing is 44.1 kHz internally; the desktop wrapper converts other host rates.
+456 TinyFreaky-named patch slots keep stable IDs and sound settings. 342 slots are playable; 114 require unavailable engines and are clearly marked. Six engine families and full sequence/sample payload support remain unfinished.
 
-Build and test
---------------
+Save the instrument in your project to retain its settings. Install the entire desktop plug-in bundle and follow the instructions included with its download.
 
-Force build: set MPC_VST_TOOLS to the pinned upstream checkout and run tools/build-force.sh. See docs/FORCE-BUILD.md. Desktop: set VST3_SDK_ROOT to the recursive checkout at desktop/SDK_REVISION and run tools/build-desktop.sh.
-
-Engine tests: ``cc -std=c99 -Wall -Wextra -Werror -Idesktop src/engine.c tests/engine_test.c -lm -o engine-test`` followed by ``./engine-test``. Importer tests: ``python3 tests/test_import.py``.
-
-Cleanroom boundary
+Source and license
 ------------------
 
-The engine was written by an implementation worker that received only the public-manual control specification and the MIT host ABI. It was instructed not to inspect the firmware, disassembly, recovered DSP, original tables or other synth implementations. Research and implementation were separated. This is a recorded workflow boundary, not an independently audited cleanroom certification.
+Source and updates: https://github.com/MagicStino/TinyFreaky
 
-Public control and file-format specifications are in docs/. Original firmware, disassembly, factory banks and extracted audio data are excluded. Firmware inventory observations are research evidence rather than a recovered audio implementation. Full behavioral reverse engineering remains incomplete.
-
-License
--------
-
-Independent code is MIT. Steinberg SDK components and the Force wrapper retain their respective MIT notices. Product and model names identify compatibility targets and documented controls; this project is unaffiliated with Arturia, Akai, inMusic or Steinberg.
+Plugin code is MIT. Required licenses and copyright notices for reused code are included in THIRD_PARTY_NOTICES.md.

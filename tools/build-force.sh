@@ -4,7 +4,7 @@ set -euo pipefail
 PROJECT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 UPSTREAM="${MPC_VST_TOOLS:-$PROJECT/vendor/mpc-vst-plugins}"
 PYTHON="${PYTHON:-python3}"
-IMAGE="${FORCE_BUILD_IMAGE:-microfreeze-force-cross:bullseye}"
+IMAGE="${FORCE_BUILD_IMAGE:-tinyfreaky-force-cross:bullseye}"
 PIN=3167a8df46c085f41277537eebaba4b8d6530ea0
 if [[ ! -f "$UPSTREAM/tools/gen_vst.py" ]]; then
   echo "Set MPC_VST_TOOLS to mpc-vst-plugins checkout at $PIN" >&2; exit 1
@@ -22,6 +22,7 @@ patch -s -d "$PROJECT/vst/build" -p1 < "$PROJECT/tools/wrapper-nudge.patch"
 "${HOST_CC:-cc}" -O2 -I"$UPSTREAM/tools/vendor/force-shadow/tools" \
   -o "$PROJECT/vst/build/shadow_art" "$UPSTREAM/tools/shadow_art.c" -lm
 "$PYTHON" "$UPSTREAM/tools/gen_vst.py" "$PROJECT/vst/vst.json"
+"$PYTHON" "$PROJECT/tools/polish-force-art.py"
 docker build --platform linux/amd64 -t "$IMAGE" -f "$PROJECT/tools/Dockerfile.force" "$PROJECT/tools"
 "$PYTHON" - "$PROJECT" "$UPSTREAM" "$IMAGE" <<'PY'
 import json, os, pathlib, re, subprocess, sys
@@ -32,18 +33,23 @@ root = pathlib.Path(project, 'vst', build.get('root', '.')).resolve()
 if root != pathlib.Path(project).resolve():
     raise SystemExit('build.root must resolve to the project root')
 sources = build.get('sources', [])
-if not sources or any(not s.endswith('.c') for s in sources):
-    raise SystemExit('This helper currently supports C sources only')
+if not sources or any(not s.endswith(('.c','.cc','.cpp','.cxx')) for s in sources):
+    raise SystemExit('Expected C/C++ source files')
 output = '/b/vst/build/' + cfg['so']
 base = ['docker', 'run', '--rm', '--platform', 'linux/amd64', '-u', f'{os.getuid()}:{os.getgid()}',
         '-v', project + ':/b', '-v', upstream + ':/upstream:ro', '-w', '/b', image]
-command = ['arm-linux-gnueabihf-gcc', '-O2', '-Wall', '-Wextra', '-Wno-unused-parameter',
-           '-fPIC', '-shared', '-fvisibility=hidden', '-std=gnu11',
-           '-Ivst/build', '-Ivst/build/wrapper']
-command += build.get('cflags', []) + build.get('cflags_arm', [])
-command += sources + ['/b/vst/build/wrapper/vst2_wrap.c']
-command += build.get('libs', ['-lm']) + ['-lpthread', '-Wl,--no-undefined', '-o', output]
-subprocess.run(base + command, check=True)
+objects=[]
+for i,source in enumerate(sources+['/b/vst/build/wrapper/vst2_wrap.c']):
+    cpp=source.endswith(('.cc','.cpp','.cxx'))
+    obj=f'/b/vst/build/source-{i}.o'
+    command=['arm-linux-gnueabihf-g++' if cpp else 'arm-linux-gnueabihf-gcc',
+             '-O2','-Wall','-Wextra','-Wno-unused-parameter','-fPIC','-fvisibility=hidden',
+             '-std=gnu++17' if cpp else '-std=gnu11','-Ivst/build','-Ivst/build/wrapper']
+    command += build.get('cflags',[])+build.get('cflags_arm',[])
+    subprocess.run(base+command+['-c',source,'-o',obj],check=True)
+    objects.append(obj)
+subprocess.run(base+['arm-linux-gnueabihf-g++','-shared','-static-libstdc++','-static-libgcc']+
+               objects+build.get('libs',['-lm'])+['-lpthread','-Wl,--no-undefined','-o',output],check=True)
 subprocess.run(base + ['arm-linux-gnueabihf-strip', output], check=True)
 report = []
 for options in (['-h'], ['-A'], ['--version-info'], ['--dyn-syms', '--wide']):
