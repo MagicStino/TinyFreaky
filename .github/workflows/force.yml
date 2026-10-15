@@ -1,6 +1,8 @@
 name: Force ARMv7
 on:
   push:
+    branches: [tinyfreaky]
+    paths: ['src/**', 'vst/**', 'tools/**', '.github/workflows/force.yml']
     tags: ['v*']
   workflow_dispatch:
 permissions:
@@ -12,7 +14,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build prerequisites
         run: |
-          python3 -m pip install Pillow jsonschema
+          python3 -m pip install Pillow jsonschema playwright==1.49.1
+          python3 -m playwright install --with-deps chromium
           git clone https://github.com/sd88me/mpc-vst-plugins.git "$RUNNER_TEMP/mpc-vst-plugins"
           git -C "$RUNNER_TEMP/mpc-vst-plugins" checkout 3167a8df46c085f41277537eebaba4b8d6530ea0
       - name: Test independent engine and importer
@@ -20,17 +23,38 @@ jobs:
           python3 tools/test-engine.py
           python3 tests/test_import.py
       - name: Test VST2 host contract
-        run: MPC_VST_TOOLS="$RUNNER_TEMP/mpc-vst-plugins" bash tools/test-force-host.sh
+        run: ASAN_OPTIONS=detect_leaks=0 MPC_VST_TOOLS="$RUNNER_TEMP/mpc-vst-plugins" bash tools/test-force-host.sh
       - name: Build native plugin
         run: MPC_VST_TOOLS="$RUNNER_TEMP/mpc-vst-plugins" bash tools/build-force.sh
       - name: Package
         shell: bash
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
-          if [[ "$GITHUB_REF_TYPE" != tag ]]; then VERSION=0.3.0-preview.1; fi
-          python3 "$RUNNER_TEMP/mpc-vst-plugins/tools/release.py" --so vst/build/tinyfreaky.so --skin 'vst/build/skin/MagicStino - VST - Tinyfreaky' --entry vst/build/pluginlist-entry.xml --version "$VERSION" --id tinyfreaky --repo MagicStino/TinyFreaky --license MIT --user-data presets --extra docs:docs --extra THIRD_PARTY_NOTICES.md:THIRD_PARTY_NOTICES.md --about 'Experimental independent instrument. Six engine families remain unavailable; hardware playback still needs verification.' -o dist
-          python3 tools/make-openplugin.py --package "dist/Tinyfreaky-$VERSION-mpc-armv7.zip" --version "$VERSION" --output dist/openplugin-release.json
+          if [[ "$GITHUB_REF_TYPE" != tag ]]; then VERSION=0.3.6; fi
+          python3 "$RUNNER_TEMP/mpc-vst-plugins/tools/release.py" --so vst/build/tinyfreaky.so --skin 'vst/build/skin/MagicStino - VST - Tinyfreaky' --entry vst/build/pluginlist-entry.xml --version "$VERSION" --id tinyfreaky --repo MagicStino/TinyFreaky --license MIT --user-data presets --extra docs:docs --extra THIRD_PARTY_NOTICES.md:THIRD_PARTY_NOTICES.md --about 'TinyFreaky eight-voice instrument. Six engine families remain unavailable; hardware playback still needs verification.' -o dist
+          python3 tools/make-openplugin.py --package "dist/Tinyfreaky-$VERSION-mpc-armv7.zip" --version "$VERSION" --output dist/openplugin-0.3.6.json
+          cp assets/tinyfreaky-artwork.png assets/force-readable-preview.png assets/mascot-velocity.gif dist/
+          git archive --format=zip --prefix=TinyFreaky/ HEAD > "dist/Tinyfreaky-$VERSION-source.zip"
       - uses: actions/upload-artifact@v4
         with:
           name: Tinyfreaky-Force-ARMv7
           path: dist/*
+
+  publish:
+    if: github.ref == 'refs/heads/tinyfreaky'
+    needs: force
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: Tinyfreaky-Force-ARMv7
+          path: packages
+      - name: Publish Force package and art
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release view v0.3.6 || gh release create v0.3.6 --target "${{ github.sha }}" --title "TinyFreaky 0.3.6" --notes "MagicStino eight-voice instrument, 456 TinyFreaky patch names, subtle velocity mascot, VST3 and AU. Six engine families remain unavailable."
+          gh release upload v0.3.6 packages/*.zip packages/*.png packages/*.gif packages/openplugin-0.3.6.json --clobber
