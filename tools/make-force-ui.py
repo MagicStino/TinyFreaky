@@ -65,5 +65,5 @@ for start in range(0,64,8):
 p=ROOT/'vst/vst.json';cfg=json.loads(p.read_text());cfg['defines']['PARAM_TEXT_MAX']=128;cfg['version']=3000;p.write_text(json.dumps(cfg,indent=2)+'\n')
 
 header('MagicStino','MAGICSTINO / TINYFREAKY')
-lines.extend(['text cx=640 cy=430 label="github.com/MagicStino/microfreeze" size=3.4 color=f2efdf', 'text cx=640 cy=484 label="Source, updates and desktop downloads" size=2.6 color=b8db91'])
+lines.extend(['text cx=640 cy=430 label="github.com/MagicStino/TinyFreaky" size=3.4 color=f2efdf', 'text cx=640 cy=484 label="Source, updates and desktop downloads" size=2.6 color=b8db91'])
 (ROOT/'vst/layout.conf').write_text('\n'.join(lines)+'\n')

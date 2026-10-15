@@ -9,11 +9,11 @@ import re
 def manifest(package=None,version='0.3.6',image=None):
     result={
         'schema':'openplugin.community/1','id':'tinyfreaky','name':'Tinyfreaky',
-        'author':'MagicStino','repo':'MagicStino/microfreeze',
+        'author':'MagicStino','repo':'MagicStino/TinyFreaky',
         'summary':'MagicStino eight-voice synth with 16 engines, output scope, velocity mascot, 5x7 matrix, arp/swing and 64-step sequencer. 456 original TinyFreaky patch names: 342 playable slots, 114 unavailable/muted. Sequence/sample payloads are not fully supported.',
         'kind':'instrument','category':'synth','license':'MIT',
         'tags':['synth','experimental','force','armv7'],
-        'images':[image or f'https://github.com/MagicStino/microfreeze/releases/download/v{version}/tinyfreaky-artwork.png'],
+        'images':[image or f'https://github.com/MagicStino/TinyFreaky/releases/download/v{version}/tinyfreaky-artwork.png'],
         'packages':[]
     }
     if package:
@@ -21,7 +21,7 @@ def manifest(package=None,version='0.3.6',image=None):
             raise ValueError('Invalid release version')
         result['packages']=[{
             'version':version,'arch':'armv7','layout':'portable','devices':['force'],
-            'url':f'https://github.com/MagicStino/microfreeze/releases/download/v{version}/{package.name}',
+            'url':f'https://github.com/MagicStino/TinyFreaky/releases/download/v{version}/{package.name}',
             'size':package.stat().st_size,'sha256':hashlib.sha256(package.read_bytes()).hexdigest()
         }]
     return result

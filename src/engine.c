@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: MIT
- * Independent instrument. DSP remains approximate. Factory parameter data is included with provenance.
+ * Independent instrument. DSP remains approximate. Patch-bank settings retain stable slots.
  * Model names describe the public control inventory, not sonic equivalence.
  */
 #include "engine.h"

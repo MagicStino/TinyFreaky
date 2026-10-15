@@ -3,7 +3,7 @@
   "id": "tinyfreaky",
   "name": "Tinyfreaky",
   "author": "MagicStino",
-  "repo": "MagicStino/microfreeze",
+  "repo": "MagicStino/TinyFreaky",
   "summary": "MagicStino eight-voice synth with 16 engines, output scope, velocity mascot, 5x7 matrix, arp/swing and a 64-step sequencer. 456 TinyFreaky patch names: 342 playable slots, 114 unavailable/muted. Sequence/sample payloads are not fully supported.",
   "kind": "instrument",
   "category": "synth",
@@ -15,21 +15,9 @@
     "armv7"
   ],
   "images": [
-    "https://github.com/MagicStino/microfreeze/releases/download/v0.3.5/tinyfreaky-artwork.png",
-    "https://github.com/MagicStino/microfreeze/releases/download/v0.3.5/force-readable-preview.png"
+    "https://github.com/MagicStino/TinyFreaky/releases/download/v0.3.4/tinyfreaky-artwork.png"
   ],
   "packages": [
-    {
-      "version": "0.3.5",
-      "arch": "armv7",
-      "layout": "portable",
-      "devices": [
-        "force"
-      ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.3.5/Tinyfreaky-0.3.5-mpc-armv7.zip",
-      "size": 12992714,
-      "sha256": "fd25c311ad703840bec55d398d4e453350fa15b6fe5e1447decb7eab13878d4f"
-    },
     {
       "version": "0.3.4",
       "arch": "armv7",
@@ -37,97 +25,9 @@
       "devices": [
         "force"
       ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.3.4/Tinyfreaky-0.3.4-mpc-armv7.zip",
+      "url": "https://github.com/MagicStino/TinyFreaky/releases/download/v0.3.4/Tinyfreaky-0.3.4-mpc-armv7.zip",
       "size": 12671251,
       "sha256": "acac7994ac3a76b4235fa6feebdaa093cea1cdcca2a35057e160fe15cf8756cf"
-    },
-    {
-      "version": "0.3.3",
-      "arch": "armv7",
-      "layout": "portable",
-      "devices": [
-        "force"
-      ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.3.3/Tinyfreaky-0.3.3-mpc-armv7.zip",
-      "size": 12669964,
-      "sha256": "e2659dc8b59560872a97fc87340d36dac67d000f03e1d1747a572b8d23af6c0a"
-    },
-    {
-      "version": "0.3.3-preview.1",
-      "arch": "armv7",
-      "layout": "portable",
-      "devices": [
-        "force"
-      ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.3.3-preview.1/Tinyfreaky-0.3.3-preview.1-mpc-armv7.zip",
-      "size": 12670758,
-      "sha256": "f193fa8fc2522cde612a0e579690bc8eeb26c8acfcd1cb283c27c47e6a0dbda6"
-    },
-    {
-      "version": "0.3.2-preview.1",
-      "arch": "armv7",
-      "layout": "portable",
-      "devices": [
-        "force"
-      ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.3.2-preview.1/Tinyfreaky-0.3.2-preview.1-mpc-armv7.zip",
-      "size": 12626611,
-      "sha256": "315baa0c4980dbaee30a4bf6b166fc217587f5032697b8ac916687ae9471ddde"
-    },
-    {
-      "version": "0.3.1-preview.1",
-      "arch": "armv7",
-      "layout": "portable",
-      "devices": [
-        "force"
-      ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.3.1-preview.1/Tinyfreaky-0.3.1-preview.1-mpc-armv7.zip",
-      "size": 12625445,
-      "sha256": "01e524037a4df76a48ec0f112b28727c97b0c7b8f4b334354972cbc9daa174dd"
-    },
-    {
-      "version": "0.3.0-preview.1",
-      "arch": "armv7",
-      "layout": "portable",
-      "devices": [
-        "force"
-      ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.3.0-preview.1/Tinyfreaky-0.3.0-preview.1-mpc-armv7.zip",
-      "size": 12071429,
-      "sha256": "1d58e5b53a9652dc013ce191fb9d07274d96cec4d045f0d062139d0b7456248e"
-    },
-    {
-      "version": "0.2.2-preview.1",
-      "arch": "armv7",
-      "layout": "portable",
-      "devices": [
-        "force"
-      ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.2.2-preview.1/Tinyfreaky-0.2.2-preview.1-mpc-armv7.zip",
-      "size": 11519416,
-      "sha256": "acde53320f2793b115f01997953071a8fb798450daa4e948a4c4255a5bc2f071"
-    },
-    {
-      "version": "0.2.1-preview.1",
-      "arch": "armv7",
-      "layout": "portable",
-      "devices": [
-        "force"
-      ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.2.1-preview.1/Tinyfreaky-0.2.1-preview.1-mpc-armv7.zip",
-      "size": 11734008,
-      "sha256": "1320da403fedd7c7d257e4d76e6570dd28311e44388fed2410e318b5821742ec"
-    },
-    {
-      "version": "0.2.0-preview.1",
-      "arch": "armv7",
-      "layout": "portable",
-      "devices": [
-        "force"
-      ],
-      "url": "https://github.com/MagicStino/microfreeze/releases/download/v0.2.0-preview.1/Tinyfreaky-0.2.0-preview.1-mpc-armv7.zip",
-      "size": 12101686,
-      "sha256": "de1a0fc0497e56b898fdf2d29be66f0f2b08a698ebe8f0872484150c16436144"
     }
   ]
 }

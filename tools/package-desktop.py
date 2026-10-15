@@ -9,7 +9,7 @@ install={'Windows':r'C:\Program Files\Common Files\VST3','macOS':'~/Library/Audi
 with zipfile.ZipFile(out/f'Tinyfreaky-{a.version}-{a.platform}-VST3.zip','w',zipfile.ZIP_DEFLATED) as z:
  for f in folder.rglob('*'):
   if f.is_file():z.write(f,str(f.relative_to(folder.parent)))
- z.writestr('INSTALL.txt',f'Tinyfreaky {a.version} VST3 for {a.platform}\n\nCopy the entire Tinyfreaky.vst3 bundle into {install}, then rescan plug-ins in your DAW.\n\nmacOS: universal Intel/Apple Silicon build, ad-hoc signed, not Apple-notarized.\nWindows: x64 build.\n\nEight-voice paraphonic instrument. Six engine families remain unavailable; sequence/sample payloads are not fully supported.\nSource: https://github.com/MagicStino/microfreeze\n')
+ z.writestr('INSTALL.txt',f'Tinyfreaky {a.version} VST3 for {a.platform}\n\nCopy the entire Tinyfreaky.vst3 bundle into {install}, then rescan plug-ins in your DAW.\n\nmacOS: universal Intel/Apple Silicon build, ad-hoc signed, not Apple-notarized.\nWindows: x64 build.\n\nEight-voice paraphonic instrument. Six engine families remain unavailable; sequence/sample payloads are not fully supported.\nSource: https://github.com/MagicStino/TinyFreaky\n')
  for f in [r/'LICENSE',r/'THIRD_PARTY_NOTICES.md',r/'README.rst']:
   if f.exists():z.write(f,f.name)
 print(out)

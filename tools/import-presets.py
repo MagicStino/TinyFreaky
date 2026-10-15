@@ -173,7 +173,7 @@ def translate(data, name, params):
     model=int(values.get('osc_type',0))
     if model>=16:
         warnings.append('Selected engine needs unavailable wavetable/sample/audio-input support')
-    return {'schema':'microfreeze.import/1','name':name,'status':'partial',
+    return {'schema':'tinyfreaky.import/1','name':name,'status':'partial',
             'source_sha256':hashlib.sha256(data).hexdigest(),'parameters':values,
             'warnings':warnings,'records':items,'unmapped_records':unknown,
             'sequence_hex':sequence.hex(),'source_prefix':prefix,'source_suffix':suffix,

@@ -5,7 +5,7 @@ An eight-voice instrument for Force OpenPlugin, Windows/macOS/Linux VST3, and ma
 
 Original TinyFreaky patch names identify 456 stable slots. Eight starter patches and 334 mapped patches are playable; 114 slots require unavailable engines and remain explicitly muted. Names are new; numeric sound settings and slot IDs are preserved. Sequence/sample payloads are not fully supported.
 
-MagicStino branding links to https://github.com/MagicStino/microfreeze on desktop. Force has a MagicStino source page. The white line-art mascot between Master and Glide responds subtly to velocity using 17 cached poses at 10 Hz, then settles to rest.
+MagicStino branding links to https://github.com/MagicStino/TinyFreaky on desktop. Force has a MagicStino source page. The white line-art mascot between Master and Glide responds subtly to velocity using 17 cached poses at 10 Hz, then settles to rest.
 
 Builds
 ------
