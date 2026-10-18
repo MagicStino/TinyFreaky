@@ -5,7 +5,7 @@ TinyFreaky
    :alt: TinyFreaky — 8 voices, 16 engines, MagicStino
    :width: 960
 
-An **8-voice synthesizer by MagicStino** for Akai Force and MPC via OpenPlugin, Windows, macOS and Linux.
+An **8-voice synthesizer by MagicStino** for Akai Force (experimental ARMv7 build), Windows, macOS and Linux.
 
 .. image:: assets/tinyfreaky-artwork.png
    :alt: TinyFreaky artwork
@@ -49,10 +49,13 @@ Downloads
 
 Get the latest version from `Releases <https://github.com/MagicStino/TinyFreaky/releases/latest>`_.
 
-* **Force / MPC:** ARMv7 package through the OpenPlugin catalog; see its device and firmware compatibility listing.
+* **Force (experimental):** ARMv7 package from Releases. The OpenPlugin manifest currently declares only ``devices: ["force"]``. Catalog inclusion is requested in `issue #475 <https://github.com/sd88me/mpc-vst-plugins/issues/475>`_; submission does not mean acceptance or hardware validation.
+* **MPC Gen1:** the 32-bit ARM build and upstream installer target this hardware class, but TinyFreaky 0.4.0 operation has not been confirmed on a physical MPC. MPC is not currently declared in the OpenPlugin device list. ARMv7 alone does not establish firmware, UI or playback compatibility. This package does not target aarch64/Gen2 devices.
 * **Windows:** 64-bit VST3.
 * **macOS:** universal Intel/Apple Silicon VST3 and Audio Unit.
 * **Linux:** 64-bit VST3.
+
+Physical-device confirmation of TinyFreaky 0.4.0 remains pending on Force as well. Automated build, ELF and VST2 host checks do not replace a device test. Installation requires a modified device with root/SSH access; use the instructions included in the ARMv7 package. Its ``mpc-armv7`` filename is an architecture/package label, not proof of MPC compatibility.
 
 The macOS builds are ad-hoc signed and are not Apple-notarized. The AU is checked with Apple's Audio Unit validator before publication.
 
