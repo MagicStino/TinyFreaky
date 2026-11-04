@@ -1,0 +1,43 @@
+name: Publish verified TinyFreaky 0.4.2
+on:
+  push:
+    branches: [fix/qlink-automation]
+    paths: ['.github/workflows/publish-force.yml']
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download successful ARM build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          test "$(gh api repos/$GH_REPO/actions/runs/41815634041/jobs --jq '.jobs[] | select(.name == "force") | .conclusion')" = success
+          gh run download 41815634041 --name Tinyfreaky-Force-ARMv7 --dir packages
+          python3 - <<'PY'
+          import hashlib,json,pathlib
+          m=json.loads(pathlib.Path('packages/openplugin.json').read_text())
+          p=m['packages'][0]
+          f=pathlib.Path('packages/Tinyfreaky-0.4.2-mpc-armv7.zip')
+          assert p['version']=='0.4.2' and p['size']==f.stat().st_size
+          assert p['sha256']==hashlib.sha256(f.read_bytes()).hexdigest()
+          PY
+      - name: Publish complete downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release view v0.4.2 >/dev/null 2>&1 || gh release create v0.4.2 --draft --target c79c8afe67bf552375987a6d1f86ccfaeefe86a0 --title 'TinyFreaky 0.4.2' --notes 'Fix Q-Link automation screen redraws using pinned open-mpc wrapper bf1054c. Preserve 0.4.1 CPU optimizations and refresh oscillator labels on Model changes. Native ARMv7 build and automated host tests pass. Physical Force/MPC Q-Link automation validation is pending; provided for device testing.'
+          for asset in packages/*; do gh release upload v0.4.2 "$asset" --clobber; done
+          gh release edit v0.4.2 --draft=false
+          cp packages/openplugin.json openplugin.json
+          cp packages/Tinyfreaky-0.4.2-mpc-armv7.zip .
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add openplugin.json Tinyfreaky-0.4.2-mpc-armv7.zip
+          git commit -m 'Add TinyFreaky 0.4.2 package and verified release manifest'
+          git push origin HEAD:fix/qlink-automation

@@ -40,29 +40,3 @@ jobs:
         with:
           name: Tinyfreaky-Force-ARMv7
           path: dist/*
-
-  publish:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/fix/qlink-automation'
-    needs: force
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with:
-          name: Tinyfreaky-Force-ARMv7
-          path: packages
-      - name: Publish version 0.4.2 for Force testing
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-        run: |
-          gh release create v0.4.2 packages/* --target "$GITHUB_SHA" --title 'TinyFreaky 0.4.2' --notes 'Fix Q-Link automation screen redraws using the pinned open-mpc wrapper. Preserve 0.4.1 CPU optimizations and refresh oscillator labels when Model changes. Native ARMv7 build and automated host tests pass. Physical Force/MPC Q-Link automation validation is pending; this release is provided for device testing.'
-          cp packages/openplugin.json openplugin.json
-          cp packages/Tinyfreaky-0.4.2-mpc-armv7.zip .
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add openplugin.json Tinyfreaky-0.4.2-mpc-armv7.zip
-          git commit -m 'Add TinyFreaky 0.4.2 package and verified release manifest'
-          git push origin HEAD:fix/qlink-automation
