@@ -46,7 +46,8 @@
       "Bass",
       "Sawx",
       "Harm"
-    ]
+    ],
+    "refresh_display": true
   },
   {
     "key": "osc_wave",
